@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="http://www.kanamic.net" />
+<title>システムメンテナンスのお知らせ</title>
+<link rel="Shortcut Icon" href="http://www.kanamic.net/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="css/default.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="../common/js/jquery-1.2.3.pack.js"></script>
+<script type="text/javascript" src="../common/js/yuga-0.6.1.js"></script>
+</head>
+
+<body>
+
+<div id="toraTop"></div>
+
+<div id="contents">
+	<h1><img src="http://www.kanamic.net/common/img/logo_kanamic_error.png" alt="カナミックネットワーク" width="295" height="44" title="カナミックネットワーク" /></h1>
+	<h2>弊社システムをご利用の皆様へ　システムメンテナンスのお知らせ</h2>
+	<div class="menteInfo">
+		<p>いつも弊社のクラウドサービスをご利用いただきありがとうございます。<br />
+                弊社の業務システム｢CICシステム｣「HAMシステム」「TRITRUSシステム」は、システムメンテナンスの為<br />
+		<!--  ↓日付変更部分↓  -->
+		<span>2019年02月20日（水）19:00から23:59まで</span>サービスが一時停止となります。<br /><br />
+		<!--  ↑日付変更部分↑  -->
+
+		情報共有システム「TRITRUS」の一部機能（コミュニティ等）は<br />
+		情報の閲覧のみご利用いただけます。</p>
+		<p style="margin-left:20px;"><a href="https://www.kanamic.net/portalsite/"><img src="../common/img/iog/iog_topBtn.gif" alt="TRITRUSログイン画面へ" width="242" height="87" class="btn" /></a></p>
+		<p style="margin-left:20px;"><a href="https://p.kanamic.net/tritrus/"><img src="../help/img/systemselect/certificate.png" alt="電子証明書専用ログイン" width="189" height="91" class="btn" /></a></p>
+
+		<p>ご迷惑をおかけ致しますが、ご了承の程宜しくお願い申し上げます。</p>
+	</div>
+</div>
+
+<div id="toraBottom">
+<address>
+All Rights Reserved. Copyright &copy;KANAMIC NETWORK Co.LTD 2000-<script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script>
+</address>
+</div>
+
+</body>
+</html>

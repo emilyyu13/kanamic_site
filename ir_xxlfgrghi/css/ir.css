@@ -1,0 +1,496 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***************************
+　タイトル画像
+**************************/
+
+.ir #ttlArea .inner h1 {
+    background: url("../img/ttl_index.jpg") no-repeat scroll left top;
+		background-color:#B5D8EC;
+}
+
+/***************************
+　レイアウト
+**************************/
+
+.ir .section .snav { width:240px; float:left;}
+.ir .section .main { margin-left:280px;}
+.ir .section .main h2 { position:relative;}
+.ir .section .main h2 .btn-list{ position:absolute; right: 10px; top:15px; font-size:14px; font-weight:normal;}
+.ir .section .main h2 .btn-list a { display:inline-block; background:url(../../common/img/ico_arrow05.png) left center no-repeat;padding-left:25px;}
+.ir .section .main .col .imgL{ text-align:center;}
+.ir .section .main .col .imgL img { width:100%;}
+
+.mb10 { margin-bottom:10px;}
+.mb20 { margin-bottom:20px;}
+
+/***************************
+　サイドメニュー
+**************************/
+
+.ir .section .snav h1 { font-size:1.3rem; background-color:#f29715;padding:10px; box-sizing:border-box; }
+.ir .section .snav h1 a { color:#FFF;background: url(../../common/img/ico_arrow03.png) no-repeat left center; padding: 0 0 0 35px;}
+
+.ir .section .snav ul li { border-bottom:1px solid #DDDDDD;background-color: #F3F3F3;}
+
+.ir .section .snav ul li a {  padding: 10px 10px 10px 40px; display:block; box-sizing:border-box; line-height:1.4; display:block; position:relative; color:#333333; }
+.ir .section .snav ul li a.active { font-weight:bold;background-color:rgba(150,150,150,0.6);}
+.ir .section .snav ul li a:before {
+	background:url(../../common/img/ico_circle_ss.png) no-repeat 10px center ;
+	content: "";
+    display: block;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top:10px;
+    margin-top:0;
+	z-index:10;}
+.ir .section .snav ul li a { font-size:1.3rem;}
+.ir .section .snav ul li ol { display:none; background-color:#FFF;}
+
+.ir .section .snav#management ul li ol.management, .ir .section .snav#library ul li ol.library, .ir .section .snav#stock ul li ol.stock { display:block; padding: 5px 0; }
+
+.ir .section .snav ul li ol li { border-bottom:none;background-color:#FFF;}
+
+.ir .section .snav ul li ol li a { padding: 5px 10px 5px 40px; font-size:1.1rem; }
+.ir .section .snav ul li ol li a:before { background-image:none;} 
+
+.ir .section .snav ul li ol li.active a { color:#f29715; font-size:1.1rem; }
+
+/***************************
+　ニュース
+**************************/
+
+.ir .main .topicList dl dt {
+    padding: 15px;
+    float: left;
+/*    width: 215px;
+    box-sizing: border-box;
+*/}
+.ir .main .topicList.lib dl dt {width: 150px; }
+.ir .main .topicList dl dd {
+    padding: 15px;
+    padding-left: 210px;
+    border-bottom: 1px dotted #ccc;
+}
+.ir .main .topicList.lib dl dd { padding-left:150px;}
+.ir .main .topicList dl dd.nodate { padding-left:15px;}
+.ir .main .topicList dl dt span.label { width:60px; display:inline-block; text-align:center; font-size:0.8rem; color:#FFF; margin-left:10px;}
+.cat-news-press { background-color: #69C;}
+.cat-news-tanshin { background-color: #D83D41;}
+.cat-news-yuho { background-color: #696;}
+.cat-news-ir_material_for_fiscal_ym{ background-color: #99C;}
+.cat-sub-ir_material1,
+.cat-sub-id330{ background-color: #f1cd2d;}
+.cat-news-pr,
+.cat-sub-ir_material{ background-color: #ff7000;}
+
+.ir .main .topicList dl dd:after { content:""; clear:both; }
+.ir .main .topicList dl dd a.pdf { background:url(../img/icon_pdf.gif) right top no-repeat;padding-right:24px; background-size:contain;}
+
+.yearSelect, #type { margin-bottom:20px;}
+#type li { display:inline-block; margin-right:1px; } 
+#type li a { display:block; padding:10px 15px; background-color:#EEEEEE; color:#333333;}
+#type li a:hover { text-decoration:none;background-color:#f29715; color:#FFFFFF;}
+#type li.active a {background-color:#f29715; color:#FFFFFF;}
+
+
+/***************************
+　インデックス
+**************************/
+
+.index-container { 
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.index-container .block { width:48%; margin-bottom:20px;}
+.index-container .block.last { margin-bottom:0;}
+.index-container .block h2 { background:#F3F3F3 url(../../common/img/ico_arrow04.png) 10px center no-repeat; background-size:15px; padding-left:30px;}
+.index-container .block a:hover h2 { background-color:#f8cb7b;}
+.index-container .block a:hover{ text-decoration:none;}
+.index-container .block ol { margin:10px 0 20px;}
+.index-container .block ol li { padding-left:10px;}
+.index-container .block ol li a:hover { text-decoration:underline;}
+
+
+/***************************
+　PDF box
+**************************/
+
+.pdf-box { overflow:hidden;padding:15px; box-sizing:border-box; border-top:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD;}
+.pdf-box img { float: left; }
+.pdf-box p { padding-left:170px;}
+
+
+/***************************
+　トップメッセージ
+**************************/
+
+.photo-box { float:right; width:200px;}
+.photo-box img { margin-bottom:10px; width:100%; height:auto;}
+.photo-box p.caption { text-align:center;}
+.message-txt { padding-right:220px;}
+
+
+/***************************
+　株主メモ
+**************************/
+
+.ir .formBlock {
+    border-top: 1px solid #ccc;
+    margin-bottom: 45px;
+}
+.ir .formBlock .box {
+    display: table;
+    width: 100%;
+	border-collapse:collapse;
+}
+.ir .formBlock .box .ttl {
+    background: #ffeccf none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+    width: 30% !important;
+}
+.ir .formBlock .box .ttl img {
+    padding-left: 8px;
+    vertical-align: middle;
+}
+.ir .formBlock .box .txt {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+    width: 70% !important;
+}
+.ir .formBlock .box .txt dl dd {
+    margin-bottom: 20px;
+}
+.ir .formBlock .box .txt .sp {
+    display: none;
+}
+
+/***************************
+　FAQ
+**************************/
+
+.ir .main .faq-box dl { border-bottom: 1px dotted #ccc;}
+.ir .main .faq-box.answer dl { margin-bottom:20px; margin-top: -100px; padding-top: 100px;}
+.ir .main .faq-box dl dt { width:100%; float:none; margin-left:1.2em; text-indent:-1.2em;}
+.ir .main .faq-box dl dt:before { content:"Q."; font-size:1.2rem;}
+.ir .main .faq-box dl dd { width:100%; padding-left:0; padding:15px; box-sizing:border-box; border-bottom:none;margin-left:1.2em; text-indent:-1.2em;}
+.ir .main .faq-box dl dd:before { content:"A."; font-size:1.2rem; color:#f29715;}
+.ir .main .faq-box.answer dl p { text-align:right; margin-bottom:15px;}
+
+
+
+
+
+/*追加します。*/
+.box .ttl {
+	border: 1px solid #ccc;
+	display: table-cell;
+	width: 195px;
+	background: #ffeccf;
+	vertical-align: middle;
+	padding: 20px;
+	box-sizing: border-box
+}
+.box .input {
+	border: 1px solid #ccc;
+	width: 745px;
+	display: table-cell;
+	box-sizing: border-box;
+	padding: 20px;
+	vertical-align: middle
+}
+.box .ttl img {
+	vertical-align: middle;
+	padding-left: 8px
+}
+.w090{width:90%;}
+.u-line{
+	text-decoration:underline;
+}
+.mb50{
+	margin-bottom:50px;}
+.inquiryCheck
+ {
+	height: 125px;
+	overflow: scroll;
+	overflow-x: hidden;
+	border: 1px solid #333;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.taC,
+.taC {
+	text-align: center;
+	margin-bottom: 35px
+}
+.taC p,
+.taC p {
+	display: inline;
+	padding-right: 30px
+}
+.taC p input,
+.taC p input {
+	vertical-align: middle;
+	margin-right: 10px
+}
+.submitBtn {
+	margin: 40px auto 100px;
+	text-indent: 100%;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(../../request/img/btn_confirm.png) no-repeat left top;
+	width: 332px;
+	height: 52px;
+	cursor: pointer
+}
+.confirmBtn {
+	margin: 40px auto 100px;
+	text-indent: 100%;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(../../request/img/btn_send.png) no-repeat left top;
+	width: 380px;
+	height: 52px;
+	cursor: pointer
+}
+.returnBtn {
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+	text-indent: 100%;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(../../request/img/btn_back.png) no-repeat left top;
+	width: 205px;
+	height: 52px;
+	cursor: pointer
+}
+.returnTopBtn a {
+	margin: 40px auto 100px;
+	text-indent: 100%;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(../../request/img/btn_returntop.png) no-repeat left top;
+	width: 205px;
+	height: 52px;
+	cursor: pointer
+}
+.fl{float:left;}
+.fr{float:right;}
+.clear{ clear:both;}
+
+.ml50{ margin-left:50px}
+.mt30{ margin-top:20px;}
+
+.under .section .ttlLL + p {
+	margin-bottom: 35px;
+	padding: 0 10px;
+	font-size:120%;
+}
+.under .section .ttlL + p {
+	margin-bottom: 35px;
+	padding: 0 10px;
+	font-size:120%;
+}
+.linktext{
+	display:inline-block;
+	font-size:18px;
+	color:#006990;
+	margin:10px 0 0 0;
+}
+.linktext span{
+	display:inline-block;
+	margin-top:3px;}
+
+.topTittle {
+	font-size: 129%;
+	font-weight: 700;
+	background: url(../img/ico_line01.png) no-repeat left center;
+	margin-bottom: 20px;
+	padding-right:220px;
+}
+.top-sig{text-align:right;
+	padding-right:220px;
+}
+.important-point li{
+	list-style-type: square;
+	margin-left:20px;}
+.toiawaseTEL{
+	font-size:21px;
+	padding-left:10px;}
+	
+	
+.ir .main .topicList p{
+	  padding:0px 0px 30px;
+    border-bottom: 1px dotted #ccc;
+}
+.ir .main .topicList p a{
+	  padding: 20px 0px 20px 15px;
+}
+.ir .main .topicList p a span{
+	font-size:20px;
+	color:#ef2205;
+}
+
+
+.ir .main .topicList p {
+	border-bottom: 1px dotted #ccc;
+	}
+
+.ir .main .topicList p a:after { content:""; clear:both; }
+.ir .main .topicList p a {
+	font-size:16px;
+	background:url(../img/icon_pdf.gif) right top no-repeat;padding-right:24px; background-size:26px;
+	background-position:560px 18px;
+}
+/* -- 2018年12月25日株主優待発表用 -- */
+
+.ir .winner {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	background: #ffebeb;
+	/* background: #e7feeb; */
+}
+.ir .winner dl dt {
+	padding: 15px;
+    float: left;
+	line-height: 1;
+}
+.ir .winner dl dd {
+	padding: 15px;
+    padding-left: 15px!important;
+	border: none!important;
+	line-height: 1;
+	font-weight: bold;
+}
+.yutai {
+	font-size: 16px!important;
+}
+.yutai .yutai-date {
+	text-align: right;
+	margin-bottom: 2em;
+}
+.yutai h2 {
+	font-size: 18px!important;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-align: center;
+}
+.yutai p {
+	border:none!important;
+	padding: 0!important;
+}
+.yutai p.txtttt {
+	width: 100%!important;
+
+	text-indent: 1em!important;
+	width: 100%!important;
+	line-height: 1.8!important;
+	display: inline-block!important;
+	margin-bottom: 2em!important;
+}
+.yutai p.shirusu {
+	text-align: center;
+	margin-bottom: 2em;
+	font-size: 16px!important;
+}
+.yutai h3 {
+	font-size: 18px!important;
+	margin-bottom: 1em;
+	text-indent: 1em;
+}
+.yutai table {
+	width: 83%;
+	margin: 0 auto;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 3em;
+}
+.yutai table th,
+.yutai table td {
+	padding: 0.4em 1em;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	font-weight: normal;
+	}
+.yutai p.txtttt2 {
+	text-indent: 1em!important;
+	line-height: 1.8!important;
+	display: block!important;
+	margin-bottom: 2em!important;
+	padding-left: 3em!important;
+}
+.ir .irpresent-box {
+	display: flex;
+}
+.ir .irpresent-box .irpresent-left {
+	width: 50%;
+	text-align: left;
+	margin-right: 20px;
+}
+.ir .irpresent-box .irpresent-right {
+	width: 50%;
+	text-align: right;
+}
+/*190919*/
+.under .section .topicList-wrap.library{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.under .section .topicList-wrap.library .col{
+	width:48%;
+	margin-top:0;
+}
+.ir .main .topicList-wrap.library .topicList dl dt {
+    padding: 0 15px;
+    float:inherit;
+}
+.ir .main .library .topicList.lib dl dd{
+	padding-left:15px;
+	margin-left:0;
+}
+.pdf-box + .pdf-box{
+	border-top: none;
+}
+
+.ir .main .topicList .pdfNote p,
+.ir .main .topicList p.eir_pnexNote_item{
+	border-bottom:none;
+	padding-bottom:0;
+	padding:0 0 0 170px;
+}
+
+.banner01{
+	text-align: center;
+}
+
+.banner02{
+	visibility: hidden;
+	height: 0px;
+}

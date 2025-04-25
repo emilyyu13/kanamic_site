@@ -1,0 +1,1937 @@
+/*-------------------
+⭐︎⭐︎⭐︎⭐︎⭐︎共通⭐︎⭐︎⭐︎⭐︎⭐︎
+--------------------*/
+/*非表示*/
+.pc-none {display: none;}
+.middle{display: none;}
+.pmark_sp{display: none;}
+
+/*フッター*/
+#footer ul {
+    margin: 15px 0 5px 0;
+    padding-top: 10;
+    padding-bottom: 20px;}
+
+/*共通の枠*/
+.wrapper {
+  width: 1180px;
+	max-width: 1180px;
+  margin: 0 auto;
+}
+.wrapper2 {
+  width: 940px;
+	max-width: 940px;
+  margin: 0 auto;
+}
+.min_wrapper {
+  width: 720px;
+	max-width: 720px;
+  margin: 0 auto;
+}
+/*追加の枠*/
+.contact_2_wrapper {
+  width: 1280px;
+	max-width: 1280px;
+  margin: 0 auto;
+}
+#point3 .wrapper{
+	width: 1080px;
+	max-width: 1080px;
+  margin: 0 auto;}
+
+
+/*テキスト装飾*/
+*{margin: 0;padding: 0;line-height: 0;}
+h1{line-height: 0;}
+h2{
+	font-size: 35px;
+	text-align: center;
+	line-height: 1.8em;}
+h3 {
+  font-size: 33px;
+	line-height: 1.5em;
+  text-align: center;
+  margin: 20px auto;
+}
+h4{
+	font-size:22px;
+	line-height: 1.5em;
+}
+h5{
+	font-size:17px;
+	line-height: 1.5em;
+}
+#main p {
+  font-size: 19px;
+	line-height: 1.9em;
+}
+.point{color: #E95D04;}
+.point2{color: #EA8239;}
+.point3{color: #EFC550;}
+.marker1{background:linear-gradient(transparent 60%, #F4D9D0 60%);}
+.marker2{background:linear-gradient(transparent 60%, #FFD092 60%);}
+.marker3{background:linear-gradient(transparent 60%, #EA5B02 60%);}
+.strong{font-size: 1.6em;padding: 0 3px;}
+.remark1 {/*注釈*/
+	color: #E95D04;	
+  margin: 0px auto;
+  font-size: 0.6em!important;
+	
+	padding-bottom: 4px;
+	line-height: 1.4em!important;
+}
+.catch1{
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 1.8em;}
+.underline {border-bottom: 1px solid #fff;}
+.underline2 {border-bottom: 1px solid #E95D04;}
+.underline3 {
+	border-bottom: 2px solid #E95D04;
+	padding: 5px;
+	width: 90%;
+	margin: 0px auto 10px auto;
+}
+.dash-underline {order-bottom: 4px dotted #D6660F;}
+.dash-underline2 {border-bottom: 4px dotted #D6660F;}
+
+/*横並び*/
+.flame{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;}
+.box3,.box4,.box5,.box6{border: 2px solid #000;}
+.box1{width: 150px;margin-right: 18px;}
+.box2{flex:1;}
+.box3{width: 300px;margin-left: 20px;}
+.box4{flex:1;}
+.box5{width: 540px;}
+.box6{flex:1;}
+.box7{width: 200px;margin-right: 20px;}
+.box8{flex:1;}
+.box9{width: 700px;}
+.box10{flex:1;}
+.box_50{width: 50%;}
+
+/*余白*/
+section{margin-bottom: 60px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+.mb60{margin-bottom: 60px;}
+
+/*-------------------
+⭐︎⭐︎⭐︎⭐︎⭐︎main背景⭐︎⭐︎⭐︎⭐︎⭐︎
+--------------------*/
+#main{
+	background-image: url("../img/back_a1.png"),url("../img/back_a2.png");
+	background-size: 900px,900px;
+	background-repeat: no-repeat,no-repeat;
+	background-position:top 16% right,top 50% left;
+}
+
+/*-------------------
+⭐︎⭐︎⭐︎⭐︎⭐︎セクション別⭐︎⭐︎⭐︎⭐︎⭐︎
+--------------------*/
+
+/*--------追従ボタン-----------*/
+.fixed_btn{
+  	position: fixed;
+	z-index: 99999;
+  	bottom: -8px; 
+ 	right: 15%;
+ 	padding: 28px 120px 30px 50px;	
+	border: none;
+	border-radius: 5px;
+	background-image: linear-gradient(#3FA6E0 0%, #2E3192 100%);
+	color: #fff;
+	font-size: 17px;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	display: block;
+	cursor: pointer;
+  	transition: .3s;
+	
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.fixed_btn::before {
+        content: '';
+        position: absolute;
+        top:-92px;
+        right:-60px;
+        width: 170px;
+        height: 170px;
+        background-image: url("../img/button_icon.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;}
+
+
+/*--------トップ部分-----------*/
+/*トップ画像1280px*/
+.top img,.top_sp img{width: 100%;}
+
+/*カナミックロゴの位置調整*/
+.top-bg{position: relative;}
+
+.company_logo_top{
+	position: absolute;
+	top: 4%;
+	left: 3%;}
+
+.toptxt{
+	position: absolute;
+	top: 12%;
+	left: 2%;}
+.toptxt img{width: 300px;}
+
+.toptxt img{
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+/*読み込み時にテキスト表示*/
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+.company_logo_top img{width: 400px;}
+
+#top .flame{padding-bottom: 12px;}
+
+#top p{font-weight: bold;}
+
+.box1{position: relative;}
+
+/*準備できていますか*/
+.catch{
+	position: absolute;
+	top: -8px;
+	left: -26px;
+}
+.catch img{width: 160px;}
+
+/*ボタンの上相談だけでもOK*/
+#top .contact p{
+	text-align: center;
+	color: #EA5B02;
+}
+
+.contact .cta_text_box_large p.cta_small_copy, #contact3 .cta_text_box_large p.cta_small_copy {
+    text-align: center;
+    font-size: 1.1em;
+}
+.contact .cta_small_copy img,#contact3 .cta_small_copy img {
+  width: 12px;
+  margin: 0 15px;
+}
+
+.contact a.cta_btn {font-size: 26px;}
+
+/*ストライプライン*/
+.line1{
+	background-color: #fc693b;
+  background-image:
+	 repeating-linear-gradient(-28deg,#fff, #fff 9px,transparent 0, transparent 18px);
+	width: 100%;
+	height: 26px;
+}
+
+/*-----------追加css-----*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+.cta_wrapper {margin-top: 60px;}
+
+/* コンタクト */
+#contact{margin-bottom: 10px;}
+#contact .wrapper{
+	position: relative;
+	background-color: #EA5B02;
+}
+#contact .catch2 img {width: 160px;}/* ご相談だけでもOK */
+
+#contact3{margin-bottom: 10px;}
+#contact3 .wrapper{
+	position: relative;
+	background-color: #EA5B02;
+}
+#contact3 .catch2 img {width: 160px;}/* ご相談だけでもOK */
+
+#contact .catch2,#contact3 .catch2 {
+	position: absolute;
+	top: -60px;
+	right: -40px;
+}
+
+/* background */
+#contact .cta_bg ,#contact3 .cta_bg{
+  background-image: url("../img/dott.png");
+	background-repeat: no-repeat;
+	background-position: right;
+  width: 100%;
+  height: 360px;
+}
+/* flex_box */
+#contact .flex_box ,#contact3 .flex_box {
+  display: flex;
+  gap: 8px;
+}
+/* 写真 */
+#contact .m_contact img ,#contact3 .m_contact img {
+	width: 390px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  position: relative;
+  bottom: 42px;
+}
+/* text */
+.cta_text_box_small {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+#contact .cta_text_box_large p ,#contact3 .cta_text_box_large p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+}
+#contact .cta_text_box_large p.cta_txt1,
+#contact3 .cta_text_box_large p.cta_txt1{
+	padding-top: 20px;
+  line-height: 0.5em;
+}
+
+#contact .cta_txt ,#contact3 .cta_txt {position: relative;}
+#contact .cta_txt .cta_kome,#contact3 .cta_txt .cta_kome {
+	display: none;
+  position: absolute;
+  z-index: 3;
+	top: 8px;
+  right: 10px;
+  font-size: 2em;
+}
+
+.komemark{
+	font-size: 1.5rem;
+}
+
+#contact .cta_text_box_large p.cta_txt2,#contact3 .cta_text_box_large p.cta_txt2 {font-size: 2.6em;}
+
+#contact .cta_text_box_large p.cta_txt2 span.cta_dot,#contact3 .cta_text_box_large p.cta_txt2 span.cta_dot {
+  background-image: radial-gradient(circle at center, #EFC550 20%, transparent 20%); /* 点の色とサイズ調整 */
+  background-position: top right; /* 点の位置 */
+  background-repeat: repeat-x; /* 横方向に繰り返し */
+  background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
+  padding-top: .4em; /* 縦方向の位置調整 */
+}
+
+#contact .cta_text_box_large p.cta_txt3,
+#contact3 .cta_text_box_large p.cta_txt3  {font-size: 1.6em;}
+
+#contact .cta_text_box_large p.cta_txt3 span.cta_orange,
+#contact3 .cta_text_box_large p.cta_txt3 span.cta_orange  {color: #EFC550;}
+
+#contact .cta_text_box_large p.cta_txt3 span.cta_border,
+#contact3 .cta_text_box_large p.cta_txt3 span.cta_border {border-bottom: 2px solid #fff;}
+
+#contact .attention_mark img
+,#contact3 .attention_mark img  {
+  width: 80px;
+  margin-bottom: 10px;
+}
+/* 補助金 */
+#contact .cta_text_box_large p.cta_small_copy,#contact3 .cta_text_box_large p.cta_small_copy  {
+  text-align: center;
+  font-size: 1.1em;
+}
+/* 左右 */
+#contact .cta_small_copy img,#contact3 .cta_small_copy img {
+  width: 12px;
+  margin: 0 15px;
+}
+
+#contact .cta_small_copy span.cta_orange ,#contact3 .cta_small_copy span.cta_orange {
+  color: #EFC550;
+}
+
+/* -------------------
+お問い合わせボタン
+^---------------------*/
+#contact .contact,
+#contact3 .contact{
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#contact2 .contact {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#contact4 .contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+#contact .contact a.cta_btn ,.contact a.cta_btn,
+#contact3 .contact a.cta_btn ,.contact a.cta_btn {
+	display: block;	
+  width: 100%;
+	padding: 30px 0 30px 0;
+  margin: 5px auto 10px auto;
+  border-radius: 6px;	
+	background-image: -webkit-linear-gradient(#3FA6E0 0%, #2E3192 100%);
+  background-image: linear-gradient(#3FA6E0 0%, #2E3192 100%);
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  -webkit-transition: all 0.3s;
+	transition: all .3s;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+	letter-spacing: .05em; 
+}
+#contact2 .contact a.cta_btn {
+  width: 100%;
+  display: block;
+  margin: 5px auto 10px auto;
+  border-radius: 6px;
+  background: linear-gradient(#3FA6E0, #2E3192);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  letter-spacing: .05em;
+  font-size: 24px;
+}
+#contact4 .contact a.cta_btn {
+  width: 90%;
+  display: block;
+  padding: 35px 0 30px 0;
+  margin: 5px auto 10px auto;
+  border-radius: 6px;
+  background: linear-gradient(#3FA6E0, #2E3192);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  letter-spacing: .05em;
+  opacity: 1;
+}
+#contact .contact a.cta_btn span,
+#contact3 .contact a.cta_btn span {font-size: 1.3em;}
+.contact a.cta_btn span {font-size: 1.5em;}
+#contact .contact a.cta_btn:hover,
+#contact2 .contact a.cta_btn:hover,
+#contact3 .contact a.cta_btn:hover,
+#contact4 .contact a.cta_btn:hover,
+.contact a.cta_btn:hover {
+   background-image: -webkit-linear-gradient(#E89105 0%, #EA5B02 100%);
+   background-image: linear-gradient(#E89105 0%, #EA5B02 100%);
+	color: #E0FF00;
+}
+
+/* PDF資料の画像追加１ */
+.contact .link-box{position: relative;}
+
+.contact .img-paper{
+	position: absolute;
+	right: -10%;
+	bottom: 30%;
+	width: 150px;
+}
+.contact .img-paper img{
+	width: 100%;
+}
+
+/* PDF資料の画像追加２ */
+.contact .link-box2{position: relative;}
+
+.contact .img-paper2{
+	position: absolute;
+	right: -10%;
+	bottom: 15%;
+	width: 150px;
+}
+.contact .img-paper2 img{
+	width: 100%;
+}
+
+/* PDF資料の画像追加3 */
+.contact .link-box3{position: relative;}
+
+.contact .img-paper3{
+	position: absolute;
+	right: -4%;
+	bottom: 20%;
+	width: 180px;
+}
+.contact .img-paper3 img{
+	width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+	.contact .img-paper,
+	.contact .img-paper2,
+	.contact .img-paper3{display: none;}
+}
+
+
+/*-----------追加css-----*/
+
+/*導入チェックリスト*/
+#checklist{margin-top: 40px;}
+#checklist .check{margin: 0 auto;text-align: center;}
+#checklist img{width: 90%;}
+
+/*---------請求できないかもテキスト------*/
+#anxiety p{
+	padding-bottom: 30px;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.7em;
+  text-align: center;
+}
+
+/*----------上を見る写真-----------*/
+/*写真配置用の枠*/
+.contact_2_wrapper{position: relative;}
+/*上を見る写真*/
+.m_check{
+	position: absolute;
+	top: -335px;
+	right: 0px;}
+.m_check img{width: 450px;}
+
+/*追加CSS２*/
+#contact2{margin-bottom: 20px;}
+
+#contact2 .cta2_bg{background-color: #EA5B02;}
+
+/* 三角の白下矢印 */
+#contact2 .triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #fff;
+  margin: 0 auto;
+}
+/* flex_box */
+#contact2 .flex_box {display: flex;}
+/* 写真 */
+#contact2 .m_nayami_img img {
+	width: 560px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  position: relative;
+  bottom: 0px;
+  left: -120px;}
+/* 吹き出し */
+#contact2 .hukidashi {
+  position: relative;
+  padding: 30px 0;
+  width: 700px;
+  height: 150px;
+  line-height: 90px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 100px;
+  box-sizing: border-box;
+}
+
+#contact2 .hukidashi:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  margin-top: -20px;
+  border: 20px solid transparent;
+  border-right: 40px solid #fff;
+  z-index: 0;
+}
+/*オンライン請求の導入がないと*/
+#contact2 .hukidashi p {
+  color: #4C4C6C;
+  line-height: 1.6em;
+  font-size: 1.8em;
+  position: relative;
+  top: -13px;
+}
+/*請求できなくなります*/
+#contact2 .hukidashi p span {
+  color: #EA5B02;
+  font-size: 1.4em;
+}
+/* text全体枠*/
+#contact2 .cta_text_box_large {
+  position: relative;
+  left: -105px;
+  top: 35px;
+}
+/* 吹き出し以下*/
+#contact2 .cta_text_box_small {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+#contact2 .cta_text_box_small p {
+  font-weight: 600;
+  font-size: 30px;
+	line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .02em;
+}
+
+#contact2 .cta_txt {
+  position: relative;
+  color: #fff;
+}
+
+#contact2 .cta_txt .cta_kome {
+	display: none;
+  position: absolute;
+  z-index: 3;
+  right: 10px;
+  font-size: 2.3em;
+}
+
+#contact2 .cta_text_box_large p.cta_txt2 {
+  font-size: 2.6em;
+}
+
+#contact2 .cta_text_box_large p.cta_txt2 span.cta_dot {
+  background-image: radial-gradient(circle at center, #EFC550 20%, transparent 20%); /* 点の色とサイズ調整 */
+  background-position: top right; /* 点の位置 */
+  background-repeat: repeat-x; /* 横方向に繰り返し */
+  background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
+  padding-top: .4em; /* 縦方向の位置調整 */
+}
+
+#contact2 .cta_text_box_large p.cta_txt3 {
+  font-size: 1.6em;
+}
+
+#contact2 .cta_text_box_large p.cta_txt3 span.cta_orange {
+  color: #EFC550;
+}
+
+#contact2 .cta_text_box_large p.cta_txt3 span.cta_border {
+  border-bottom: 2px solid #fff;
+}
+
+#contact2 .attention_mark img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* 補助金 */
+#contact2 .cta_text_box_large p.cta_small_copy {
+  text-align: center;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 600;
+}
+#contact2 .cta_small_copy img {
+  width: 12px;
+  margin: 0 15px;
+	padding-top: 30px;
+}
+
+#contact2 .cta_small_copy span.cta_orange {color: #EFC550;}
+
+#contact2 .contact a.cta_btn span {font-size: 1.4em;}
+
+/*追加２ここまで*/
+
+/*-------オンライン請求とオンライン資格確認とは？------*/
+#about{padding-top: 60px;}
+/*タイトル装飾*/
+#about .about_title{
+	width: 600px;
+	padding: 10px 0;
+	margin: 0 auto;
+	background-image: url("../img/kagi_l.png"), url("../img/kagi_r.png");
+	background-repeat: no-repeat,no-repeat;
+	background-size:contain,contain;
+	background-position: left 50%,right 50%;
+}
+#about .about_icon{text-align: center;}
+#about .about_icon img{width: 60px;}
+
+#about .flame{padding-top: 40px;padding-bottom: 10px;}
+#about .box_50 img{width: 94%;}
+
+/*-------------矢印------------*/
+.arrow{text-align: center;margin-top: 20px;}
+.arrow img{width: 60px;}
+
+
+/*-----------おすすめポイント-----------*/
+#point3{
+	background-color: #F18300;
+	color: #fff;
+	margin-top: 40px;
+	padding-top: 40px;
+	padding-bottom: 80px;	
+	background-image: url("../img/back_a6.png"),url("../img/back_a5.png"),url("../img/dotto_orange.png");
+	background-size: 300px,300px,100%;
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-position:top right,bottom -20% left,bottom center;	
+}
+
+#point3 h3{    /*タイトル*/
+	text-align: left;
+	padding-bottom: 40px;
+}
+#point3 h3 img{width: 850px;}
+
+.pointbox {text-align: left;}
+.pointbox img{width: 100%;}
+.pointbox h4{font-size:32px; }
+
+.point01,.point02,.point03{
+	width: 750px;
+}
+.point01 .flame,.point02 .flame,.point03 .flame{
+	margin: 0;
+	width: 540px;
+}
+/*写真サイズ位置調整*/
+.point01_yohaku{position: relative;}
+.m_point3{
+	width: 400px;
+	position: absolute;
+	top: -100px;
+	right: -50px;
+}
+.m_point3 img{width: 100%;}
+
+/*QR*/
+.pointqr {text-align: center;}
+.pointqr img{width: 80%;}
+
+/*-----追加4　医療観察-----*/
+#iryoukansatsu{
+	margin-bottom:110px;
+}
+	
+#iryoukansatsu .iryoukansatsu_title{
+	width: 700px;
+	padding: 10px 30px;
+	margin: 0 auto;
+	margin-bottom:30px;
+	background-image: url("../img/kagi_l.png"), url("../img/kagi_r.png");
+	background-repeat: no-repeat,no-repeat;
+	background-size:contain,contain;
+	background-position: left 50%,right 50%;
+}
+
+#iryoukansatsu p{
+  width: 90%;
+  max-width: 800px;
+  line-height: 1.8em;
+  margin: 20px auto;
+  font-weight: 500;
+}
+
+#iryoukansatsu .title_sp{
+	display:none;
+}
+
+
+
+/*------------動画------------------*/
+#moviebox{
+	margin: 0 auto 60px auto;
+	text-align: center;
+	/*背景画像*/
+	background-image: url("../img/bill_r.png"), url("../img/bill_l.png");
+	background-repeat: no-repeat,no-repeat;
+	background-size:auto,auto;
+	background-position: left  bottom,right bottom;
+}
+.movie_txt{padding-bottom: 40px;}
+.movie_txt img{width: 500px;}
+.movie_img img{width: 100%;}
+
+/*動画の入れ物*/
+.movie_img{
+	width: 560px;
+	margin: 0 auto;
+	position: relative;
+}
+/*動画の周りの枠*/
+iframe{border: 8px solid #E95D04;}
+
+/*後ろの画像*/
+.m_back{
+	position: absolute;
+	bottom: 0;
+	right: -197px;
+}
+.m_back img{width: 230px;}
+
+/*３追加css*/
+/* コンタクト */
+#contact4 {margin-bottom: 10px;}
+#contact4 .wrapper {position: relative;}
+
+#contact4 .cta_bg {
+	background-color: #EA5B02;
+  background-image: url("../img/dott.png");
+	background-position: left,center;
+	background-size: cover;
+  width: 100%;
+	height: auto;
+	position: relative;
+}
+
+/*ご相談だけでもOK*/
+#contact4 .catch2 {
+  position: absolute;
+  top: -50px;
+  right: -20px;
+}
+
+#contact4 .catch2 img {width: 140px;}
+
+/* flex_box */
+#contact4 .flex_box {display: flex;}
+
+/* 写真 */
+#contact4 .m_contact{
+	flex: 1;
+	position: relative;
+}
+#contact4 .m_contact_img {
+	width: 400px;
+	position: absolute;
+	bottom: 0;
+}
+#contact4 .m_contact img {width: 360px;}
+
+/* text */
+#contact4 .cta_text_box_large {
+	width: 820px;
+  position: relative;
+}
+#contact4 .cta_text_box_small {
+  display: flex;
+	margin-left: 30px;
+  margin-top: 20px;
+  width: 715px;
+}
+
+#contact4 .cta_text_box_large p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .02em;
+}
+
+#contact4 .cta_txt {position: relative;}
+
+#contact4 .cta_txt .cta_kome {
+	display: none;
+  position: absolute;
+  z-index: 3;
+  right: 8px;
+  font-size: 2em;
+}
+
+#contact4 .cta_text_box_large p.cta_txt2 {
+  font-size: 2.6em;
+	line-height: 1.2em;
+}
+
+#contact4 .cta_text_box_large p.cta_txt2 span.cta_dot {
+  background-image: radial-gradient(circle at center, #EFC550 20%, transparent 20%); /* 点の色とサイズ調整 */
+  background-position: top right; /* 点の位置 */
+  background-repeat: repeat-x; /* 横方向に繰り返し */
+  background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
+  padding-top: .3em; /* 縦方向の位置調整 */
+}
+
+#contact4 .cta_text_box_large p.cta_txt3 {font-size: 1.6em;}
+#contact4 .cta_text_box_large p.cta_txt3 span.cta_orange {color: #EFC550;}
+#contact4 .cta_text_box_large p.cta_txt3 span.cta_border {border-bottom: 2px solid #fff;}
+
+#contact4 .attention_mark img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* 補助金 */
+#contact4 .cta_text_box_large p.cta_small_copy {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#contact4 .cta_small_copy img {
+  width: 13px;
+  margin: 0 15px;
+}
+
+#contact4 .cta_small_copy span.cta_orange {color: #EFC550;}
+#contact4 .contact a.cta_btn span {font-size: 1.2em;}
+
+/*白枠*/
+#contact4 .cta_tel {
+  background-color: #fff;
+  padding: 20px 0 8px 0;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto 25px auto;
+  position: relative;
+  z-index: 1;
+}
+
+#contact4 .cta_tel .cta_logo img {
+  width: 540px;
+  margin-left: 40px;
+}
+
+#contact4 .cta_tel_num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*お電話でのお問い合わせ*/
+#contact4 .cta_tel_num .cta_tel_num_box1 {
+  /*position: relative;*/
+  padding: 0 10px 0 0;}
+#contact4 .cta_tel_num .cta_tel_num_box1 img{width: 150px;}
+
+/*電話全体の文字*/
+#contact4 .cta_tel_num .cta_tel_num_box2 p {
+  font-size: 14px;
+	padding-bottom: 10px;
+  color: #EA5B02;
+}
+/*55*/
+#contact4 .cta_tel_num .cta_tel_num_box2 p.cta_tel_num_box2_txt1 {text-align: right;}
+/*受付時間*/
+#contact4 .cta_tel_num .cta_tel_num_box2 p.cta_tel_num_box2_txt2 {text-align: center;}
+/*電話番号*/
+#contact4 .cta_tel_num .cta_tel_num_box2 a p{
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 46px;
+	line-height: 0.5em;
+  color: #EA5B02;
+}
+
+.cta_note {
+  font-size: 15px;
+  color: #EA5B02;
+  font-weight: 500;
+}
+
+/*-------会社概要---------*/
+#company_profile .min_wrapper{padding-top: 65px;}
+
+#company_profile h2{
+	margin-bottom: 25px;
+	font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+#footer .f_logo img{width: 42%;}
+#footer p{line-height: 1.8em;}
+#footer .flame{width: 100%;}
+
+.pmark_r img{
+	width: 70px;
+	vertical-align: bottom;
+}
+
+.f_prime ul{
+	vertical-align: bottom;
+	display: flex;}
+#footer .f_prime ul li{
+	vertical-align: bottom!important;}
+
+#footer ul li{vertical-align: bottom;}
+
+#footer .f_prime>ul {
+	font-size: 16px;
+	font-weight: bold;
+	color: #b07e0f!important; 
+	margin-bottom: 10px;
+}
+
+.p_img,
+.a_img,
+.y_img{
+	display: inline-block;
+	width: 130px;
+	text-align: center;
+}
+.p_img img{width: 68%;}
+.a_img img{width: 60%;}
+.y_img img{width: 100%;}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merit-layout {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.merit-layout img {
+  width: 28%;
+  margin: 30px 10px;
+}
+
+.pic-time, .pic-cost {
+  margin-top: 20px;
+}
+
+.merit-icon {
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+section#merit-family {
+  background: #F0F4F6;
+  padding: 50px 0;
+}
+
+.merit-family-bg {
+  background: #fff;
+  border: 3px solid #80ADBC;
+  border-radius: 10px;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+/*.pic-method {width: 40%;}*/
+
+/*.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
+/*.pic-company {
+  margin: 50px auto 20px auto;
+  width: 40%;
+}*/
+
+/*.company-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 3px solid #D6660F;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.company-item div:first-child {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.company-item div:last-child {
+  flex-basis: 120%;
+}*/
+
+/*.company-txt p:first-child {
+  margin: 20px 0;
+  color: #E95D04;
+  font-size: 26px;
+  font-weight: bold;
+}*/
+
+
+@media only screen and (max-width: 1400px) {
+	
+  .wrapper {
+		width: 80%;
+	}
+	.min_wrapper {width: 70%;}
+  section.contact {width: 60%;}
+	.contact_2_wrapper {width: 100%;}
+}
+
+@media only screen and (max-width: 1280px) {
+	
+	.toptxt{display: none;}
+	.top{display: none;}
+	.middle{display: block;}
+	
+	#contact .catch2 img,
+	contact4 .catch2 img{display: none;}
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .sp-none {display: none;}
+  .middre {display: none;}
+  .pc-none {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+
+	
+	#contact4 .catch2 img {display: none;}
+	
+	.pc-none img{
+		text-align: center;
+		margin: 0 auto;}
+	
+	#main{
+	/*background-image: url("../img/back_a1.png"),url("../img/back_a2.png"),url("../img/back_p.png");
+	background-size: 600px,600px,100%;
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-position:top 14% right,top 38% left,top 55% center;*/
+		background: none;
+	}
+
+	.wrapper {
+    width: 96%;
+    margin: 0 auto;}
+	.wrapper2 {
+    width: 96%;
+    margin: 0 auto;}
+	.min_wrapper {
+    width: 92%;
+    margin: 0 auto;}
+	
+	#main p {
+    font-size: 21px;
+    line-height: 1.8em;}
+	
+	.contact a.cta_btn {
+		font-size: 1.3em;
+		padding: 46px 0 40px 0;
+	}
+	.contact a.cta_btn span {font-size: 1.8em;}
+	
+	.remark1 {
+    color: #E95D04;
+    margin: 0px auto;
+    font-size: 0.8em!important;
+    padding-bottom: 6px;
+    line-height: 1.6em!important;
+	}
+	.remark1 ,
+	.cta_note_txt {
+		text-align: center;
+		margin: 0 auto;
+ width: 90%;}
+	
+	#top .box1{display: none;}
+	
+	#about .box_50 img {width: 96%;}	
+	
+	#anxiety {width: 90%;margin: 0 auto;}
+	#anxiety p {
+    padding-bottom: 40px;
+    font-size: 28px;
+    line-height: 1.5em;
+    text-align: left;
+		}
+	.m_check {
+    position: absolute;
+    top: -224px;}
+	.m_check img {width: 300px;}
+	
+	#point3{background-image: none;}
+	
+	.m_point3_sp{
+		width: 60%;
+		margin: 0 auto 30px auto;}
+	.m_point3_sp img{width: 100%;}
+
+	.point_no img{
+    width: 40%;
+		padding-top: 20px;
+	}
+	.pointbox h4 {font-size: 40px;}
+
+	.pointicon{
+		width: 40%;
+		margin: 10px auto 20px auto;
+}
+	.pointicon img{width: 100%;}
+	
+	.point1_txt,
+	.point2_txt,
+	.point3_txt{
+		width: 70%;
+		padding-bottom: 30px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.pointqr img{width: 90%;}
+	
+	
+	/*--------------セクションごと------------*/
+	
+	.contact_2_wrapper {
+    width: 100%;
+    margin: 0 auto;}
+	
+	#point3 .wrapper {
+    width: 100%;
+    margin: 0 auto;}
+	#point3 h3 {
+    text-align: center;
+    padding-bottom: 30px;
+	}
+	#point3 h3 img {width: 70%;}
+	
+	.movie_img {
+		width: 60%;
+		height: auto;
+    margin: 0 auto;
+    position: relative;}
+	iframe{width: 100%;}
+	
+	.m_back img {display: none;}
+	
+	
+	/*-------------コンタクト1,3-----------------*/
+	.m_contact_sp{
+		margin: 20px auto 0 auto;
+		text-align: center;
+	}
+	#contact .catch2 img, #contact3 .catch2 img {display: none;}
+	
+	#contact .cta_bg,
+	#contact3 .cta_bg{height: auto;}
+	
+	#contact .flex_box,
+	#contact3 .flex_box{display: block;}
+	
+	.cta_text_box_small {
+		display: block;
+		text-align: center;}
+	
+	#contact .contact,
+	#contact3 .contact{
+		padding-bottom: 30px;}
+	
+	#contact .cta_txt .cta_kome,
+	#contact3 .cta_txt .cta_kome {
+		display: none;
+    top: 8px;
+    right: 130px;
+    font-size: 2em;}
+	
+	/*コンタクトボタン余白幅*/
+	.contact a.cta_btn,
+	#contact .contact a.cta_btn,
+	#contact3 .contact a.cta_btn,
+	#contact2 .contact a.cta_btn,
+	#contact4 .contact a.cta_btn
+	{
+		width: 80%;
+		padding: 30px 0 30px 0;
+		font-size: 1.2em;
+		border-radius: 50px;
+	}
+	
+	.contact a.cta_btn{width: 90%;}
+	.contact a.cta_btn {font-size: 1.2em;}
+	
+	#contact .contact{margin-top: 0;}
+	
+	#contact .contact a.cta_btn, .contact a.cta_btn, #contact3 .contact a.cta_btn, .contact a.cta_btn {
+  margin: 0px auto 10px auto;}
+	
+	#contact .catch2 img,
+	#contact3 .catch2 img {width: 140px;}
+	
+	#contact .catch2,
+	#contact3 .catch2 {
+    top: -40px;
+    right: 10px;
+	}
+	
+	#contact .wrapper,
+	#contact3 .wrapper {
+		padding-top: 10px;
+		background-image: url(http://localhost/kanamic/lp/k_houkan-online-seikyu/css/../img/dott.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+		background-size: cover;
+		width: 100%;
+	}
+	
+	#contact .cta_bg,
+	#contact3 .cta_bg {background: none;}
+	
+	.m_contact{display: none;}
+	#contact .m_contact img, #contact3 .m_contact img {
+    width: 220px;
+    margin-left: 40px;
+    bottom: 50px;
+	}
+	
+	/*コンタクト2*/
+	#contact2 .triangle {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #fff;}
+	
+	#contact2 .flex_box {display: block;}
+	
+	.m_nayami_img{display: none;}
+	
+	#contact2 .hukidashi {
+		width: 80%;
+		margin: 25px auto;
+		position: relative;
+	}
+	#contact2 .hukidashi::before {
+		content: "";
+		position: absolute;
+		border: 40px solid transparent;
+		border-top: 40px solid #fff;
+		width: 0;
+		height: 0;
+		left: 44%;
+		right: 0;
+		top: 100%; /* 三角表示位置（要素上から）*/
+	}
+	
+	#contact2 .cta_text_box_large {position: static;}
+	
+	#contact2 .cta_text_box_small,
+	#contact4 .cta_text_box_small {
+		display: block;
+		margin-top: 0;
+	}
+	#contact2 .contact a.cta_btn {
+		margin: 0px auto 10px auto;}
+	
+	#contact .contact, #contact3 .contact {
+		margin-top: 0px;}
+	
+		
+	
+	#contact2 .cta2_bg {padding-bottom: 25px;}
+	
+	#contact2 .cta_txt .cta_kome {
+		display: none;
+    right: 120px;
+    font-size: 2.2em;}
+	#contact4 .cta_txt .cta_kome {
+		display: none;
+		top: 0px;
+		right: 90px;}
+	
+	
+	#contact4 .catch2 img{width: 95px;}
+	#contact4 .catch2 {
+    top: -10px;
+    right: 0px;
+	}
+	
+	#contact4 .cta_text_box_large {
+    width: 100%;}
+	
+	#contact4 .contact {margin-top: 0px;}
+	#contact4 .contact a.cta_btn {margin: 0px auto 10px auto;}
+	
+}
+
+
+
+@media only screen and (max-width: 840px) {
+	
+	h2 {font-size: 1.9em;}
+
+	.pmark_r img{width: 70px;}
+
+	.f_prime ul{display: flex;}
+	#footer .f_prime>ul {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.p_img,
+	.a_img,
+	.y_img{
+		width: 80px;
+	}
+	.p_img img{width: 68%;}
+	.a_img img{width: 60%;}
+	.y_img img{width: 100%;}
+
+	#iryoukansatsu{
+		margin-bottom:90px;
+	}
+
+	#iryoukansatsu .iryoukansatsu_title{
+	  width: 75%;
+	  padding: 10px 10px;
+	}
+
+	#iryoukansatsu p{
+		width: 80%;
+	}
+
+	#iryoukansatsu .title_sp{
+		display:block;
+		font-size:1.2em;
+	}
+
+	#iryoukansatsu .title_pc{
+		display:none;
+	}
+
+	
+	/*フッターの会社ロゴサイズ*/
+	#footer .f_logo img {width: 65%;}
+	
+	#footer .copy {
+    padding-bottom: 70px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 720px) {
+	
+	h2 {font-size: 1.6em;}
+	
+	
+	/*--------追従ボタン-----------*/
+		.fixed_btn
+		{
+			bottom: -8px; 
+			right: 15%;
+			padding: 28px 120px 30px 50px;
+			font-size: 14px;
+		}
+		.fixed_btn::before {
+						content: '';
+						position: absolute;
+						top:-100px;
+						right:-60px;
+						width: 180px;
+						height: 180px;
+					}
+	
+	/*請求できないかも*/
+	#anxiety p {
+		font-size: 20px;
+    line-height: 1.6em;
+		padding-bottom: 60px;}
+	.m_check img { width: 270px;}
+	.m_check {top: -201px;}
+	
+	#contact2 .triangle {display: none;}
+	
+	/*悩み*/
+	#contact2 .hukidashi {
+		height: auto;
+		margin-top: 30px;	
+		padding: 20px 0;
+	}
+	#contact2 .hukidashi p {
+    color: #4C4C6C;
+    font-size: 1.6em;
+		position: static;
+		top: 13px;}
+	#contact2 .cta_text_box_large {
+    position: static;
+    padding-top: 30px;
+	}
+	#contact2 .cta_text_box_large p.cta_txt2 span.cta_dot {
+    padding-top: 0.2em;
+	}
+	#contact2 .cta_txt .cta_kome {
+		display: none;
+		top: -5%;
+    right: 3%;
+    font-size: 1.8em;
+	}
+	
+	/*用語説明*/
+	#about .about_title {
+		width: 75%;}
+	h3 {
+    font-size: 26px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 20px auto;
+		}
+	
+	/*コンタクト*/
+	#contact .cta_txt .cta_kome, #contact3 .cta_txt .cta_kome {
+		display: none;
+    top: 0;
+		right: 20px;
+	}
+	#contact2 .contact a.cta_btn {width: 88%;}
+	
+	#contact .cta_text_box_large p,
+	#contact2 .cta_text_box_large p,
+	#contact3 .cta_text_box_large p {
+		font-size: 19px;}
+	
+	/*ポイント*/
+	#point3 h3 {padding-bottom: 0px;}
+	
+	.point_no img {width: 30%;}
+	.pointbox h4 {font-size: 28px;}
+	
+	/*動画*/
+	.movie_txt img{width: 80%;}
+	.movie_img1 {
+		width: 100%;
+		position: relative;
+     padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+     height: 0;
+     overflow: hidden;
+	}
+	
+	.movie_img1 iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+	}
+	
+	/*最後のCTA*/
+	.m_back{display: none;}
+	
+	#contact4 .attention_mark img {
+    margin-top: 30px;
+	}
+	
+	#contact4 .cta_text_box_small {
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+    width: 82%;
+		margin: 0 auto;
+	}
+	#contact4 .cta_txt .cta_kome {
+		display: none;
+    right: 10px;
+	}
+	#contact4 .cta_text_box_large p.cta_txt2 span.cta_dot {
+    padding-top: 0.1em;
+	}
+	
+	#contact4 .cta_text_box_large p {
+    font-size: 16px;
+	}
+	
+	#contact4 .cta_tel .cta_logo img {
+    width: 80%;
+		margin: 0 auto;
+		text-align: center;
+    margin-left: 4%;
+	}
+	#contact4 .catch2 img {display: none;}
+	
+	#contact4 .cta_tel_num .cta_tel_num_box2 a p {
+    font-size: 34px;
+    line-height: 0.5em;}
+	#contact4 .cta_tel_num .cta_tel_num_box2 p {
+    font-size: 9px;
+    padding-bottom: 10px;}
+	
+	/*フッターの会社ロゴサイズ*/
+	#footer .f_logo img {width: 92%;}
+	
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+	
+		#company_profile h2 {font-size: 2.2em;}
+
+		/*会社概要table,pマークtable*/
+		.c_txt_table,
+		.p_txt_table{width:80%;}
+
+		.p_img{width: 80px;}
+	
+		/*フッターの会社ロゴサイズ*/
+		#footer .f_logo img {width: 94%;}
+}
+
+
+
+@media only screen and (max-width: 520px) {
+
+	/*.pmark_r img{width: 60px;}*/
+
+	.f_prime ul{display: flex;}
+	#footer .f_prime>ul {
+		font-size: 15px;
+	}
+	.p_img,
+	.a_img,
+	.y_img{
+		width: 70px;
+	}
+	
+	
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+	/*共通枠*/
+	body{min-width: 380px;}
+	.pmark_sp{display: block;}
+	
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+	.min_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+	.wrapper2 {
+    width: 94%;
+    margin: 0 auto;
+  }
+	
+	#main { background-image:none;}
+	
+	/*余白*/
+	section {margin-bottom: 30px;}
+	.mb50 {margin-bottom: 30px!important;}
+	#contact2 {margin-bottom: 0px;}
+
+	/*文字*/	
+	h2 {font-size: 1.5em;}
+	
+  h3 {font-size: 24px;}
+	#main p {
+    font-size: 18px;
+		line-height: 1.8em;}
+	.remark1 {
+    font-size: 0.8em!important;
+		padding-top: 8px;
+    padding-bottom: 8px;
+	}
+
+	/*コンタクト*/
+	.cta_wrapper {
+		margin-top: 20px;}
+	
+	section.contact {width: 90%;}
+	.m_contact_sp{width: 90%;}
+	
+	.contact a.cta_btn{width: 90%;}
+	
+	.contact a.cta_btn,
+	#contact2 .contact a.cta_btn 
+		{
+    font-size: 0.8em;
+    padding: 30px 10px 30px 10px;
+		line-height: 1.5em;
+		letter-spacing: 0;
+		border-radius: 50px;
+	}
+	.contact a.cta_btn{font-size: 1.2em;}
+	
+	#contact2 .contact a.cta_btn {font-size:1.2em;}
+	
+	#contact4 .contact a.cta_btn {font-size:1.4em;}
+	
+	/*チェックリスト*/
+	#checklist img {width: 98%;}
+
+	/*請求できないかも*/
+	#anxiety p {padding-bottom: 160px;}
+	.m_check {top: -172px;}
+	.m_check img {width: 230px;}
+	
+	#contact2 .triangle {display: none;}
+	#contact2 .cta_text_box_large {
+    padding-top: 20px;
+	}
+	
+	/*悩み*/
+	#contact2 .hukidashi {
+    width: 90%;
+    margin: 25px auto;
+	}
+	
+	#contact2 .hukidashi p {
+    line-height: 1.6em;
+    font-size: 0.9em;
+    top: 0px;
+	}	
+	#contact2 .hukidashi {
+    padding: 20px 0;
+		height: auto;}
+
+	/*※ジルシ*/
+	#contact .cta_txt .cta_kome,
+	#contact3 .cta_txt .cta_kome,
+	#contact2 .cta_txt .cta_kome ,
+	#contact4 .cta_txt .cta_kome 
+	{
+		display: none;
+		top: -5%;
+    right: 3%;
+    font-size: 1.8em;
+	}
+	
+	/*義務化オレンジ点*/
+	#contact .cta_text_box_large p.cta_txt2 span.cta_dot, #contact3 .cta_text_box_large p.cta_txt2 span.cta_do,
+	#contact2 .cta_text_box_large p.cta_txt2 span.cta_dot{
+    background-image: radial-gradient(circle at center, #EFC550 20%, transparent 20%);
+    padding-top: 0.2em;}
+	#contact4 .cta_text_box_large p.cta_txt2 span.cta_dot{
+    background-image: radial-gradient(circle at center, #EFC550 20%, transparent 20%);
+    padding-top: 0.1em;}
+	/*補助金*/
+	#contact4 .cta_text_box_large p.cta_small_copy { font-size: 0.9em;}
+	#contact .cta_text_box_large p.cta_small_copy,
+	#contact2 .cta_text_box_large p.cta_small_copy,
+	#contact3 .cta_text_box_large p.cta_small_copy {font-size: 0.9em;}
+	
+	/*用語説明*/
+	#about .about_title {width: 82%;}
+	#about .flame {
+		display: block;
+		padding-bottom: 0;
+	}
+	.box_50 {width: 92%; margin: 0 auto;}
+	#about .flame img{width: 100%;}
+	#about .flame img:first-of-type{margin-bottom: 30px;}
+	
+	/*おすすめポイント*/
+	#point3 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	#point3 h3{
+		padding-bottom: 0;
+		line-height: 0;
+		margin: 0 auto;
+}
+	#point3 h3 img {width: 80%;}
+	.point1_txt, .point2_txt, .point3_txt {
+    width: 95%;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;}
+
+	.m_point3_sp{
+		width: 55%;
+		margin: 0 auto 30px auto;}
+	.m_point3_sp img{width: 100%;}
+
+	.point_no img{
+    width: 25%;
+		padding-top: 20px;
+	}
+	.pointbox h4 {font-size: 22px;}
+
+	.pointicon{
+		width: 40%;
+		margin: 10px auto 20px auto;
+}
+	.pointicon img{width: 100%;}
+	
+	/*動画*/
+	.m_back {display: none;}
+	/*動画*/
+	.movie_txt img{width: 90%;}
+	.movie_img {width: 100%;}
+	
+	/*最後のCTA*/
+	#contact4 .cta_text_box_small {
+    display: block;
+		width: 90%;}
+	#contact4 .cta_text_box_large p.cta_txt2 {
+    font-size: 2.4em;
+    line-height: 1.3em;}
+	#contact4 .catch2 {display: none;}
+	#contact4 .cta_tel .cta_logo{text-align: center;}
+	#contact4 .cta_tel .cta_logo img {
+    width: 90%;
+		margin: 0 auto;
+    margin-left: 0;}
+	#contact4 .cta_tel_num {display: block;}
+	#contact4 .cta_tel_num .cta_tel_num_box1 img {display: none;}
+	#contact4 .cta_tel_num .cta_tel_num_box2 a p {
+		text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 38px;
+    line-height: 0.4em;}
+	#contact4 .cta_tel_num .cta_tel_num_box2 p.cta_tel_num_box2_txt1 {
+    text-align: right;
+    padding-right: 20px;
+}
+	#contact4 .cta_tel_num .cta_tel_num_box2 p {
+		font-size: 11px;}
+	#contact4 .cta_tel_num .cta_tel_num_box2 p {
+		font-size: 11px;}
+	
+	
+	/*会社概要 table縦並び*/
+	#company_profile h2 {font-size: 1.8em;}
+	/*会社概要table,pマークtable*/
+	.c_txt_table,
+	.p_txt_table,
+	.c_txt_table tbody,
+	.p_txt_table tbody,
+	.c_txt_table tr,
+	.p_txt_table tr,
+	.c_txt_table td,
+	.p_txt_table td,
+	.c_txt_table th,
+	.p_txt_table th
+	{
+		display: block;
+ 		width: 100%;
+		text-align: center;}
+	
+	.c_txt_table tr,
+	.p_txt_table tr{margin-bottom: 10px;}
+	
+	.c_txt_table tr td:first-child,
+	.p_txt_table tr td span.num{font-weight: bold;}
+
+	.p_txt_table{margin-top: 30px;}
+	.p_img {
+    width: 100px;
+		margin: 10px auto;}
+	
+	
+	.f_prime ul{display: flex;}
+	#footer .flame{display: block;}
+	
+	/*PマークをPCの並びのものは非表示*/
+	.p_img,
+	.a_img,
+	.y_img{
+		display: none;
+	}
+	.pmark_sp{
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+	/*Pマークスマホ並びのもの表示しサイズ指定*/
+	.p_sp_img,
+	.a_sp_img,
+	.y_sp_img{
+		display: inline-block;
+		width: 30%;
+	}
+	.p_sp_img img{width: 75%;}
+	.a_sp_img img{width: 60%;}
+	.y_sp_img img{width: 90%;}
+	
+	#footer{
+		text-align: center;
+		height: 400px;
+		background:none;
+	}
+	
+	#footer .f_logo {margin-left: 0px;}
+	#footer .f_prime{margin-left: 0%;}
+	
+	.f_prime ul {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.f_prime ul img{
+		width: 61px;
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+	}
+	
+	#footer .copy {
+		padding-bottom: 150px;
+    padding-left: 0px;
+    text-align: center;
+	}
+
+  .company-item {flex-direction: column;}
+  .company-item div:first-child {width: 100%;margin-right: 0;}
+  .company-txt p:first-child {font-size: 18px;}
+	
+}
+
+
+/*iPhone13 mini*/
+@media only screen and (max-width: 380px) {
+	
+	
+	.wrapper {
+    min-width: 320px;
+  }
+	.min_wrapper {
+    min-width: 280px;
+  }
+	.wrapper2 {
+    min-width: 280px;
+  }
+
+	#contact4 .cta_tel_num .cta_tel_num_box2 a p {font-size: 33px;}
+	
+	#contact4 .cta_tel_num .cta_tel_num_box2 p {font-size: 10px;}
+	
+}

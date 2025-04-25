@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <!-- Google Tag Manager -->
+      <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagでんName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MZL6ZGP");
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta http-equiv="content-style-type" content="text/css" />
+      <meta http-equiv="Content-Script-Type" content="text/javascript" />
+      <meta name="viewport" content="width=device-width" />
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+      <title>異なる介護ソフトでも無料で自動連携！医療・介護のチーム連携はカナミックにおまかせ！ </title>
+      <meta name="keywords" content=" 医療 介護 連携システム,介護 連携 コミュニケーション,介護 連携コミュニケーション,介護士 看護師 連携,介護施設 医療機関 連携,多職種連携,チームケア" />
+      <meta
+        name="”description”"
+        content="医療介護の連携ならカナミッククラウドシステム！異なる介護ソフトでも無料で連携可能だから専門職同士のコミュニケーションがスムーズ。地域包括ケアにもご活用ください。"
+      />
+      <link rel="stylesheet" href="css/reset.css" type="text/css" />
+      <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    </head>
+
+    <body id="pagetop">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MZL6ZGP"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <script>
+        (function (i, s, o, g, r, a, m) {
+          i["GoogleAnalyticsObject"] = r;
+          (i[r] =
+            i[r] ||
+            function () {
+              (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+        })(
+          window,
+          document,
+          "script",
+          "//www.google-analytics.com/analytics.js",
+          "ga"
+        );
+
+        ga("create", "UA-462660-7", "auto");
+        ga("send", "pageview");
+
+        $(function () {
+          /* click tracking google ana */
+          var dir1 = location.href.split("/");
+          var dir = dir1[dir1.length - 2];
+          $("a").click(function (e) {
+            var ahref = $(this).attr("href");
+            var atxt = "";
+            if ($(this).children("img").length > 0) {
+              atxt = "画像_" + $(this).children("img").attr("alt");
+            } else {
+              atxt = $(this).text();
+            }
+            if (
+              (ahref.indexOf("https") != -1 || ahref.indexOf("http") != -1) &&
+              ahref.indexOf("http://www.kanamic.net/") == -1
+            ) {
+              ga("send", "event", dir + "_外部link", atxt, ahref);
+            } else if (ahref.indexOf(".pdf") != -1) {
+              ga("send", "event", dir + "_PDFlink", atxt, ahref);
+            }
+          });
+        });
+      </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-462660-12"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-462660-12");
+      </script>
+
+      <main id="main" class="main">
+
+      <!--追従ボタン-->
+      <button type="button" class="fixed_btn" onclick="window.open('https://www14.webcas.net/form/pub/kanamic/request')">
+        ▶ まずは無料の資料請求
+      </button>
+
+      <section class="header-section">
+
+        <header>
+
+          <div class="wrapper">
+            <div class="title-group">
+              <p class="_copy">
+                <img src="img/header/title_copy.png" alt="介護ソフトのご準備はお済みですか？" />
+              </p>
+              <h1 class="_main">
+                <img src="img/header/title_main.png" alt="令和5年〜令和6年は介護に関わる法改正ラッシュ！" />
+              </h1>
+            </div>
+            <div class="company-group">
+              <p class="_logo">
+                <img src="img/header/logo_kanamic.png" alt="株式会社カナミックネットワーク" />
+              </p>
+            </div>
+            <div class="cta-group">
+              <div class="_link">
+                <a href="#point" class="ga-link-point" >法改正のポイントを読む</a >
+                <a href="https://www14.webcas.net/form/pub/kanamic/request" class="ga-link-header-webcas" >
+                  <img src="img/header/icon_free.png" alt="資料請求は無料です" />
+                  <span>カナミックの資料はこちらから</span>
+                </a >
+              </div>
+            </div>
+            <div class="photo-group">
+              <picture>
+                <source srcset="img/header/picture_fujimoto_pc.png" media="(min-width: 768px)" />
+                <img src="img/header/picture_fujimoto_sp.png" alt="藤本美貴さん" />
+              </picture>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <div class="stack -size-xl">
+        <div class="read-section">
+          <div class="wrapper -size-s">
+            <div class="inner">
+              <div class="stack">
+                <div class="title-group">
+                  <p>「ケアプランデータ連携システム」が2023年4月スタート</p>
+                  <h2 class="_title">これからの地域包括ケアは<br>データ連携が主流になります</h2>
+                  <p>令和６年介護保険法改正の基本指針として、<br>
+                    地域包括ケアにデジタル技術を活用し連携を円滑に進めるための<br>
+                    基盤を整備する方針が示されています。 
+                  </p>
+                  <small>出典：厚生労働省老健局<br>
+                    第107回社会保障審議会介護保険部会　資料1-1<br>
+                    第９期介護保険事業（支援）計画の基本指針（大臣告示）のポイント（案）<br>
+                    「2.② デジタル技術を活用し、介護事業所間、医療・介護間での連携を円滑に進めるための医療・介護情報基盤を整備」と記述あり
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="schedule-section">
+          <div class="wrapper">
+            <h3 class="_title">
+              <span class="_accent">医療・介護職のみなさん</span ><br>
+                情報共有のためにアナログ作業していませんか。
+            </h3>
+            <div class="_pc only-pc">
+              <img src="img/schedule/image_schedule_pc.png" usemap="#ImageMap2" alt="" />
+            </div>
+
+            <div class="_sp only-sp">
+              <img src="img/schedule/image_schedule_sp.png" usemap="#ImageMap" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="ikou-section">
+          <div class="wrapper">
+            <div class="_text">
+              <p>その作業、カナミックにすれば<br>介護ソフト内で完結しますよ！ </p>
+              <p>必要なのはカナミッククラウドだけ！ </p>
+            </div>
+            <div class="_image">
+              <img src="img/ikou/picure_fujimoto.png" alt="藤本美貴さん" />
+            </div>
+          </div>
+        </section>
+
+        <section class="move-section">
+          <div class="wrapper">
+            <p>カナミッククラウドを<br class="only-sp" />導入すると・・・？</p>
+            <div class="_icon">
+              <img src="img/move/icon_arrow.gif" alt="下向きの矢印" />
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+
+      <section class="cta-section">
+        <div class="wrapper">
+          <div class="message-group">
+            <div class="_image">
+              <img src="img/cta/photo_fujimoto.png" alt="藤本美貴さん" />
+            </div>
+            <div class="_text">
+              <div class="stack -size-xl">
+                <div class="stack -size-m">
+                  <h2 class="_title">
+                    カナミックなら<br />ユーサー同士はもちろん、なんと他法人でも、他ソフトでも、<br>無料で自動連携できるんです！
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="renkeisuruto-section">
+        <div class="wrapper">
+          <div class="_text">
+            <p>だれとでも介護ソフトを連携できるから <br>情報共有のためのアナログ作業は不要に！ </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!--effect-->
+      <section id="effect" class="effect-section -effect-1">
+        <div class="wrapper">
+          <div class="effect-group">
+
+            <div class="_image">画像</div>
+
+            <div class="_box">
+              <h2 class="_title">連携業務が<br>介護ソフト内で完結できると・・・</h2>
+              <ol>
+                <li>事務作業の負担が減る！</li>
+                <li>印刷や郵送の手間・コストが削減できる！</li>
+                <li>転記ミスが減る！</li>
+                <li>チーム内で常に最新の情報を共有できる!</li>
+              </ol>
+            </div>
+
+          </div>
+        </div>
+
+        <!--member-->
+        <div id="member" class="wrapper">
+          <div class="stack -size-l">
+            <div class="_tab">
+              <img src="img/point/tab_1.png" alt="メンバー連携の方法" />
+            </div>
+
+            <div class="member-group stack -size-xl">
+
+              <div class="title-group stack">
+                
+              </div>
+
+              <div class="_flexbox">
+                <div class="_box _panel">
+                  <p>カナミックユーザー同士の連携</p>
+                  <p>カナミッククラウドサービスのユーザー同士のデータ連携の場合、1クリックで連携が可能です。</p>
+                </div>
+                <div class="_box _panel">
+                  <p>ユーザー以外のメンバーの連携方法</p>
+                  <p>異なる介護ソフトを使用している相手でもカナミックユーザーが招待することで無料でカナミックの連携機能を利用できます。メールアドレスでリンク共有して招待できます。</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA 1-->
+      <section class="cta-section">
+        <div class="wrapper">
+          <div class="message-group">
+            <div class="_image">
+              <img src="img/cta/photo_fujimoto.png" alt="藤本美貴さん" />
+            </div>
+            <div class="_text">
+              <div class="stack -size-xl">
+                <div class="stack -size-m">
+                  <h2 class="_title">
+                    カナミッククラウドで<br>
+                    チーム連携を<br>
+                    スムーズにしませんか？
+                  </h2>
+                  <p class="_copy">
+                    今使用している介護システムのお悩みや法改正対応について知りたい、などお気軽にご相談だけでもOKです。システムの無料お試しも可能です！
+                  </p>
+                </div>
+                <div class="stack -size-s">
+                  <a href="https://www14.webcas.net/form/pub/kanamic/request" class="_button ga-link-cta-1">
+                    <img src="img/cta/icon_free.png" alt="資料請求は無料です" />
+                    資料請求はこちら
+                  </a >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="stack" -size-m></div>
+
+      <!-- 機能の一例-->
+      <section class="cta-section">
+        <div class="wrapper">
+          <div class="message-group">
+            <div class="_image">
+              <img src="img/cta/photo_fujimoto.png" alt="藤本美貴さん" />
+            </div>
+
+            <div class="_text">
+              <div class="stack -size-xl">
+                <div class="stack -size-m">
+                  <h2 class="_title"> カナミックの機能の一例 </h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 機能４-->
+      <section id="function" class="introduction-section -introduction-3">
+        <div class="wrapper">
+          <div class="stack -size-l">
+
+            <div class="introduction-group stack -size-xl">
+              <div class="title-group stack">
+                <h3 class="_title">1.ケアレポート<br>（タイムライン）</h3>
+              </div>
+              <div class="_text">
+                <p>クラウドサービスだから常に最新の記録をどこからでも共有・閲覧可能です。タイムライン上に記録が閲覧できるため、チームメンバーの動きや記録内容が把握できます。画像や動画もアップロードで共有できます。</p>
+              </div>
+             </div>
+             
+            <div class="introduction-group stack -size-xl">
+              <div class="title-group stack">
+                <h3 class="_title">2.サービスカレンダー</h3>
+              </div>
+              <div class="_text">
+                <p>ご利用者様の介護サービスの日時や予定が共有カレンダー上ですぐに把握可能です。前後のサービスの予定も把握できるため、ケアの予定も立てやすくなります。</p>
+              </div>
+             </div>
+
+            <div class="introduction-group stack -size-xl">
+              <div class="title-group stack">
+                <h3 class="_title">3.フェイスシート</h3>
+              </div>
+              <div class="_text">
+                <p>見やすく入力しやすいフェイスシートがメンバー間で共有可能。内容に追加や変更があってもリアルタイムに反映されるため、常に最新の情報を共有できます。</p>
+              </div>
+             </div>
+             
+             <div class="introduction-group stack -size-xl">
+              <div class="title-group stack">
+                <h3 class="_title">4.予定調整機能つき<br> TV会議</h3>
+              </div>
+              <div class="_text">
+                <p>メンバーの予定から会議可能な日程をすぐに見つけられます。予定調整のために各メンバーに電話やメールで確認する事務作業の必要がなくなります。</p>
+              </div>
+             </div>
+
+             <div class="_text">
+              <div class="stack -size-xl">
+                <div class="stack -size-m">
+                  <p> ほかにも多職種・他法人間連携のための<br>
+                    専門的な高機能なメニューを数多く搭載！ </h2>
+                  </p>
+              </div>
+            </div>
+             
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    <!-- 各種法改正に対応-->
+    <section class="cta-section">
+      <div class="wrapper">
+        <div class="message-group">
+          <div class="_image">
+            <img src="img/cta/photo_fujimoto.png" alt="藤本美貴さん" />
+          </div>
+
+          <div class="_text">
+            <div class="stack -size-xl">
+              <div class="stack -size-m">
+                <h2 class="_title"> 各種法改正に対応 </h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="houkaisei-section">
+      <div class="wrapper">
+        <div class="_text">
+          <h2>カナミッククラウドの導入だけで法改正への対応が可能！ </h2>
+          <p>カナミックはクラウドサービスだから、常に最新の情報がソフトにリアルタイムに反映されます。介護関連の法改正が行われる度にシステムがすぐに対応。ユーザー様の負担は最小限で抑えられます。令和５年〜令和６年の介護関連の法改正にも対応。 </p>
+        </div>
+        <div class="_image">
+          <img src="img/cta/photo_fujimoto.png" alt="藤本美貴さん" />
+        </div>
+      </div>
+    </section>
+
+    <!-- セキュリティ対策-->
+    <section class="cta-section">
+      <div class="wrapper">
+        <div class="message-group">
+          <div class="_image">
+            <img src="img/cta/photo_fujimoto.png" alt="藤本美貴さん" />
+          </div>
+
+          <div class="_text">
+            <div class="stack -size-xl">
+              <div class="stack -size-m">
+                <h2 class="_title"> セキュリティ対策 </h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 機能４-->
+    <section id="Security-function" class="Security-function-section -introduction-3">
+      <div class="wrapper">
+        <div class="stack -size-l">
+
+          <div class="introduction-group stack -size-xl">
+            <div class="title-group stack">
+              <h3 class="_title">万全のセキュリティ</h3>
+            </div>
+            <div class="_text">
+              <p>サーバーの通信路は暗号化されており安心してお使いいただけます。</p>
+            </div>
+           </div>
+           
+          <div class="introduction-group stack -size-xl">
+            <div class="title-group stack">
+              <h3 class="_title">強固なデータ管理</h3>
+            </div>
+            <div class="_text">
+              <p>お預かりしている情報・データは複数のデータセンターで管理し災害時でもお守ります。</p>
+            </div>
+           </div>
+
+          <div class="introduction-group stack -size-xl">
+            <div class="title-group stack">
+              <h3 class="_title">カスタマーサポートの充実</h3>
+            </div>
+            <div class="_text">
+              <p>導入後もシステムに精通したカナミックネットワークのスタッフが電話でサポートいたします。ＰＣ操作に不安のある方も安心です。</p>
+            </div>
+           </div>
+           
+           <div class="introduction-group stack -size-xl">
+            <div class="title-group stack">
+              <h3 class="_title">プライバシーマーク取得</h3>
+            </div>
+            <div class="_text">
+              <p>株式会社カナミックネットワークは、「個人情報について適切な保護措置を講ずる体制を整備している事業者」に与えられるプライバシーマークを取得しています。</p>
+            </div>
+           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 導入事例-->
+    <section class="case-section">
+      <div class="wrapper">
+        <div class="message-group">
+          <div class="_image">
+            <img src="img/cta/photo_fujimoto.png" alt="藤本美貴さん" />
+          </div>
+
+          <div class="_text">
+            <div class="stack -size-xl">
+              <div class="stack -size-m">
+                <h2 class="_title"> 導入事例 </h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="Security-function" class="Security-function-section -introduction-3">
+      <div class="wrapper">
+        <div class="stack -size-l">
+
+          <div class="introduction-group stack -size-xl">
+            <div class="title-group stack">
+              <h3 class="_title">柏プロジェクト</h3>
+            </div>
+            <div class="_text">
+              <p>東京大学高齢社会総合研究機構（ＩＯＧ）と協働で<br>行った地域包括ケアのプラットフォームを構築した事例</p>
+            </div>
+           </div>
+           
+          <div class="introduction-group stack -size-xl">
+            <div class="title-group stack">
+              <h3 class="_title">のぞみの花クリニック</h3>
+            </div>
+            <div class="_text">
+              <p>カナミック導入で近隣市町村と連携し<br>情報共有範囲の拡大した事例</p>
+            </div>
+           </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="footer-cta-section">
+        <div class="wrapper">
+          <div class="message-group">
+            <div class="_image">
+              <img src="img/footer/photo_fujimoto.png" alt="藤本美貴さん" />
+            </div>
+            <div class="_text">
+              <div class="stack -size-xl">
+                <div class="stack -size-m">
+                  <h2 class="_title">
+                    法改正に強い！頼れる介護ソフトカナミック
+                  </h2>
+                </div>
+                <div class="stack -size-s">
+                  <div class="_balloon">
+                    <img
+                      src="img/cta/voice_1.png"
+                      alt="ご相談だけでもお気軽にどうぞ"
+                    />
+                  </div>
+                  <a
+                    href="https://www14.webcas.net/form/pub/kanamic/request"
+                    class="_button ga-link-footer-cta"
+                    ><img
+                      src="img/cta/icon_free.png"
+                      alt="資料請求は無料です"
+                    /><span
+                      >カナミッククラウドの<br
+                        class="only-sp"
+                      />資料請求はこちら！</span
+                    ></a
+                  >
+                </div>
+                <div class="stack -size-s">
+                  <div class="_address">
+                    <div class="_name">
+                      <img
+                        src="img/footer/logo.png"
+                        alt="株式会社カナミックネットワーク"
+                      />
+                    </div>
+                    <div class="_phone">
+                      <div class="_label">
+                        <img
+                          src="img/footer/tel_label.png"
+                          alt="お電話でのお問い合わせ"
+                        />
+                      </div>
+                      <div class="_number">
+                        <a href="tel:03-5798-3955" class="ga-link-footer-tel">
+                          <img
+                            src="img/footer/tel_number.png"
+                            alt="03-5798-3955"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="_detail">
+                      受付時間：9時〜18時（土日祝日・年末年始を除く）
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--to top-->
+      <p class="pageTop clear">
+        <a href="#pagetop" class="ga-link-footer-to-top"
+          ><span class="icon-page-top f18"></span>ページの先頭へ</a
+        >
+      </p>
+      <section class="footer-section">
+        <div class="_border"></div>
+        <div class="copyright-group">
+          <div class="wrapper">
+            <div class="stack -size-s">
+              <div class="_logo">
+                <img
+                  src="img/footer/logo.png"
+                  alt="株式会社カナミックネットワーク"
+                />
+              </div>
+              <div class="_container">
+                <div class="prime-group">
+                  <div class="_logo">
+                    <img src="img/footer/jpx0404.jpg" alt="" />
+                  </div>
+                  <div class="_title">
+                    <p>
+                      株式会社カナミックネットワークは<br
+                        class="only-sp"
+                      />東証プライム上場企業です。
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-group">
+                  <div class="_icon">
+                    <img
+                      src="img/footer/icon_privacy.jpg"
+                      alt="プライバシーマーク"
+                    />
+                  </div>
+                  <div class="_icon">
+                    <img
+                      src="img/footer/icon_asp.jpg"
+                      alt="ASPICクラウドサービス情報開示認定制度"
+                    />
+                  </div>
+                  <div class="_icon">
+                    <img
+                      src="img/footer/icon_yuryo.jpg"
+                      alt="健康経営優良法人"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="link-group">
+                <ul>
+                  <li class="_link">
+                    <a
+                      target="_blank"
+                      href="http://www.kanamic.net/company/outline.html"
+                      >会社概要</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="http://www.kanamic.net/company/privacy.html"
+                      >プライバシーポリシー</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="_copy">
+                <p>
+                  Copyright(c) <span class="year"></span> Kanamic Network
+                  Co.,LTD
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <!--フッターに追従ボタン-->
+    <script>
+      // smooth scroll
+      $('[href^="#"]').click(function () {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? "html" : href);
+        var position = target.offset().top;
+        var speed = 500;
+        $("html, body").animate(
+          {
+            scrollTop: position,
+          },
+          speed,
+          "swing"
+        );
+        return false;
+      });
+      $(function () {
+        // 変数にクラスを入れる
+        var btn = $(".fixed_btn");
+        //スクロールしてページトップから100に達したらボタンを表示
+        $(window).on("load scroll", function () {
+          if ($(this).scrollTop() > 100) {
+            btn.addClass("active");
+          } else {
+            btn.removeClass("active");
+          }
+        });
+      });
+      $("map").imageMapResize();
+    </script>
+  </body>
+</html>

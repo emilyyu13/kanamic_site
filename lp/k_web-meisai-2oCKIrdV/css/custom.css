@@ -1,0 +1,531 @@
+.top-bg {
+  margin-bottom: 100px;
+}
+
+.pc-none {
+  display: none;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+section#top h3 {
+  line-height: 2;
+}
+
+h3 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.title h3 {
+  margin: 50px auto 20px auto;
+}
+
+h3 span {
+  font-size: 2em;
+}
+
+main p {
+  font-size: 22px;
+}
+
+.invoice {
+  display: flex;
+  margin-top: 50px;
+}
+
+.invoice-item {
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.invoice-item img:first-child {
+  width: 16%;
+  margin-bottom: 40px;
+}
+
+.invoice-item img:last-child {
+  width: 90%;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+section#what h4 {
+  display: inline-block;
+  font-size: 28px;
+}
+
+section#what h3 span {
+  color: #CECCCE;
+}
+
+section#merit h3 span {
+  color: #D6660F;
+}
+
+.title {
+  position: relative;
+  margin: 50px auto;
+}
+
+.title img {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-txt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.yellow-underline {
+  border-bottom: 5px solid #FDF73C;
+}
+
+.txt-overview {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.txt-overview p {
+  margin-bottom: 5px;
+}
+
+.txt-overview p:first-child {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section#merit {
+  background: #FDFED7;
+  padding: 20px 0;
+}
+
+.merit-bg, .merit-bg2 {
+  background: #fff;
+  border: 3px solid #D6660F;
+  border-radius: 10px;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.merit-bg2 {
+  width: 50%;
+}
+
+.dash-underline {
+  padding: 30px 5px;
+  border-bottom: 4px dotted #D6660F;
+}
+
+.pic-profile {
+  /* border: 3px solid #D6660F;
+  border-radius: 50%; */
+  height: 100px;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.pic-profile img {
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merit-layout {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.merit-layout img {
+  width: 28%;
+  margin: 30px 10px;
+}
+
+.pic-time, .pic-cost {
+  margin-top: 20px;
+}
+
+.merit-icon {
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.merit-bg-layout {
+  display: flex;
+}
+
+.merit-bg-layout div.merit-bg2:first-child {
+  margin-right: 20px;
+}
+
+.remark {
+  text-align: center;
+  margin: 20px auto 50px auto;
+  font-size: .8em;
+}
+
+section#merit-family {
+  background: #F0F4F6;
+  padding: 50px 0;
+}
+
+.merit-family-bg {
+  background: #fff;
+  border: 3px solid #80ADBC;
+  border-radius: 10px;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+section#merit-family h3 span {
+  color: #80ADBC;
+}
+
+.dash-underline2 {
+  padding: 30px 5px;
+  border-bottom: 4px dotted #80ADBC;
+}
+
+.pic-profile2 {
+  /* border: 3px solid #80ADBC;
+  border-radius: 50%; */
+  height: 100px;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.merit-family-layout img {
+  margin: 15px;
+  width: 28%;
+}
+
+.pic-method {
+  width: 40%;
+}
+
+.step {
+  width: 55%;
+}
+
+.step p {
+  text-align: left;
+  border: 2px solid #80ADBC;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.step strong {
+  color: #80ADBC;
+  margin-right: 5px;
+}
+
+.step span {
+  display: inline-block;
+  margin: 10px 0 8px 10px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.contact {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+.contact-bg {
+  background: #FDFED6;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-bg p {
+  color: #DD6110;
+  font-weight: bold;
+}
+
+.contact-bg a {
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  background: #E85B02;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 50px;
+  margin: 30px auto 10px auto;
+  font-size: 1.2em;
+}
+
+.contact-bg a span {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: .2em;
+}
+
+section#bpo {
+  background: #E7F7F0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+section#bpo h3 span {
+  color: #60B38D;
+}
+
+.dash-underline3 {
+  padding: 30px 5px;
+  border-bottom: 4px dotted #60B38D;
+}
+
+.bpo-bg {
+  background: #fff;
+  border: 3px solid #60B38D;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 10px 40px;
+}
+
+.bpo-txt {
+  margin: 10px 0;
+  width: 50%;
+  text-align: left;
+}
+
+.pic-huh {
+  width: 45%;
+  padding: 30px 0;
+}
+
+.wrapper2 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* .company-layout {
+  display: flex;
+  flex-direction: column;
+} */
+
+.pic-company {
+  margin: 50px auto 20px auto;
+  width: 40%;
+}
+
+.company-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 3px solid #D6660F;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.company-item div:first-child {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.company-item div:last-child {
+  flex-basis: 120%;
+
+}
+
+
+
+.company-txt p:first-child {
+  margin: 20px 0;
+  color: #E95D04;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1400px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  section.contact {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .sp-none {
+    display: none;
+  }
+
+  .pc-none {
+    display: block;
+  }
+
+  .title img {
+    width: 40%;
+  }
+
+  .txt-overview {
+    width: 100%;
+  }
+
+  .step p {
+    padding: 10px;
+  }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .top-bg {
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .title h3 {
+    margin: 10px auto;
+  }
+
+  main p {
+    font-size: 14px;
+  }
+
+  .invoice {
+    margin-top: 20px;
+  }
+
+  .invoice-item img:first-child {
+    margin-bottom: 20px;
+  }
+
+  section#what h4 {
+    font-size: 16px;
+  }
+
+  section#top .flex {
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .title img {
+    width: 50%;
+  }
+
+  .txt-overview {
+    width: 100%;
+  }
+
+  .merit-bg {
+    padding: 10px;
+  }
+
+  .merit-bg2 {
+    width: 100%;
+  }
+
+  .pic-profile, .pic-profile2 {
+    height: auto;
+  }
+
+  .merit-layout img {
+    margin: 10px;
+    width: 40%;
+  }
+
+  .merit-bg-layout {
+    flex-direction: column;
+  }
+
+  .merit-bg-layout div.merit-bg:first-child, .merit-bg-layout div.merit-bg2:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .merit-family-bg, .bpo-bg {
+    padding: 10px;
+  }
+
+  .merit-family-layout img {
+    margin: 10px;
+    width: 40%;
+  }
+
+  .merit-family-bg .flex-between, .bpo-bg .flex-between {
+    flex-direction: column;
+  }
+
+  .pic-method {
+    width: 100%;
+  }
+
+  .step {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  section.contact {
+    width: 90%;
+  }
+
+  .bpo-txt {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pic-huh {
+    width: 100%;
+  }
+
+  .wrapper2 {
+    width: 100%;
+  }
+
+  .pic-company {
+    width: 90%;
+  }
+
+  .company-item {
+    flex-direction: column;
+  }
+
+  .company-item div:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .company-txt p:first-child {
+    font-size: 18px;
+  }
+}

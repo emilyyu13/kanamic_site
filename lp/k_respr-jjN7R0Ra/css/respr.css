@@ -1,0 +1,820 @@
+@charset "utf-8";
+
+body {
+    --respr-green: #90CB00;
+    --respr-blue: #00BAB5;
+    --respr-grey: #7B747D;
+    --resper-lightGreen: #E6F1C4;
+}
+
+.pc-none {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.wrapper-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hover:hover {
+    transform: scale(0.98, 0.98);
+    transition: 0.2s ease;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    padding: 1rem;
+    width: 100%;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+}
+
+header>.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#header-btn01 {
+    color: #fff;
+    background: #90CB00;
+    background: var(--respr-green);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1.875rem;
+    margin-right: 2rem;
+}
+
+.tel {
+    color: #00BAB5;
+    color: var(--respr-blue);
+    font-size: 1.875rem;
+}
+
+#header-btn02 {
+    color: #90CB00;
+    color: var(--respr-green);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo>img {
+    width: 20vw;
+}
+
+main p {
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.875rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+#keyv {
+    background: url(../img/top-img.png) no-repeat 80% 80%;
+}
+
+.keyv-logo {
+    padding-top: 9rem;
+    width: 40%;
+}
+
+.keyv-content {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+
+.keyv-content-txt>p {
+    font-size: 1.875rem;
+    color: #444;
+    /* color: #7B747D;
+    color: var(--respr-grey); */
+    text-shadow: 1px 1px #fff;
+}
+
+.keyv-content-txt span {
+    color: #00BAB5;
+    color: var(--respr-blue);
+    font-size: 2.5rem;
+}
+
+.trouble-content {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.875rem;
+}
+
+.trouble-img {
+    flex-basis: 30%;
+}
+
+.trouble-content>ul>li {
+    margin: 1rem;
+    padding-left: 4rem;
+    background: url(../img/check-icon.png) no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+}
+
+.solve-txt01 {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin: 4rem 0;
+}
+
+.solve-txt01>p {
+    font-size: 1.875rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #A5C442, #5EB5A8);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.solve-txt01>p:first-child {
+    margin-right: 1rem;
+}
+
+.solve-txt01>p>span {
+    font-size: 3rem;
+}
+
+.solve-img>img {
+    width: 100%;
+}
+
+.solve-txt02 {
+    text-align: center;
+}
+
+.solve-txt02>p {
+    display: inline-block;
+    border: 3px solid #00BAB5;
+    border: 3px solid var(--respr-blue);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.solve-txt02>p>span {
+    font-size: 2.5rem;
+}
+
+section#what, section.contact, section#nasa {
+    background: #E6F1C4;
+    background: var(--resper-lightGreen);
+}
+
+.youtube {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.what-ncc, .what-ozone, .what-different {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.what-ncc>h2, .what-ozone>h2 {
+    padding-top: 0;
+    padding-left: 4rem;
+    text-align: left;
+    background: url(../img/ozone-icon.png) no-repeat;
+    background-size: contain;
+}
+
+.what-ncc-content01 {
+    padding-left: 4rem;
+    display: flex;
+}
+
+.what-ncc-content01>img {
+    width: auto;
+}
+
+.what-ncc-content01>p {
+    margin-right: 1rem;
+}
+
+.what-ncc-content01>p>small {
+    font-size: 0.8em;
+}
+
+.what-ncc-content02 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.what-ncc-content02>img {
+    width: 24rem;
+    object-fit: contain;
+}
+
+.what-ozone {
+    margin: 2rem 0;
+}
+
+.what-ozone-txt, .what-ozone-img {
+    padding-left: 4rem;
+}
+
+.what-different>h2 {
+    padding-top: 0;
+}
+
+.what-different>img {
+    margin: 2rem 0;
+}
+
+.what-different>h2>span:first-child, .what-different>h2>span:last-child {
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    margin: 0 0.2rem;
+    border-radius: 5px;
+}
+
+.what-different>h2>span:first-child {
+    background: #90CB00;
+    background: var(--respr-green);
+}
+
+.what-different>h2>span:last-child {
+    background: #7B747D;
+    background: var(--respr-grey);
+}
+
+section.contact {
+    padding: 2rem 0;
+}
+
+.contact-content {
+    background: #fff;
+    text-align: center;
+    padding: 3rem;
+    margin: 3rem 0;
+}
+
+.contact-content>h2 {
+    padding-top: 0;
+    color: #7B747D;
+    color: var(--respr-grey);
+}
+
+.contact-content>h2>span {
+    color: #00BAB5;
+    color: var(--respr-blue);
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-detail>a {
+    border-radius: 100px;
+    width: 30rem;
+    height: 6rem;
+    margin: 1rem 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.contact-detail>a:first-child {
+    background: #90CB00;
+    background: var(--respr-green);
+    color: #fff;
+}
+
+.contact-detail>a:first-child>p {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.contact-detail>a:last-child {
+    border: 3px solid #90CB00;
+    border: 3px solid var(--respr-green);
+    color: #90CB00;
+    color: var(--respr-green);
+}
+
+section#test, section#nasa, section#product {
+    padding-bottom: 3rem;
+}
+
+.test-corona {
+    border: 3px solid #00BAB5;
+    border: 3px solid var(--respr-blue);
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.test-corona>ul>li {
+    background: url(../img/ozone-icon.png) no-repeat;
+    padding-left: 4rem;
+}
+
+.test-corona>ul>li:first-child {
+    margin-bottom: 1rem;
+}
+
+.test-corona>ul span {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.test-item {
+    border: 3px solid #00BAB5;
+    border: 3px solid var(--respr-blue);
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.test-item>h2 {
+    background: #00BAB5;
+    background: var(--respr-blue);
+    color: #fff;
+    padding: 1rem;
+}
+
+.test-item>div {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.test-item>div>p>span {
+    font-weight: normal;
+}
+
+.hvac {
+    display: flex;
+    align-items: center;
+}
+
+.hvac>a {
+    background: #90CB00;
+    background: var(--respr-green);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    margin-left: 1rem;
+}
+
+.test-layout {
+    display: flex;
+}
+
+.test-layout>.test-item {
+    flex: 1;
+}
+
+.test-layout>.test-item:first-child {
+    margin-right: 2rem;
+}
+
+.nasa-ncc {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.nasa-ncc>img {
+    width: 30%;
+}
+
+.nasa-ncc>p {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.nasa-img {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.nasa-img figure:first-child {
+    margin-right: 2rem;
+}
+
+.nasa-img figcaption {
+    text-align: center;
+    font-size: 1.875rem;
+}
+
+.case-facility {
+    display: flex;
+    margin-top: -10vh;
+}
+
+.case-facility>img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.case-company {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.case-company>img {
+    margin: 1rem 0;
+}
+
+.product-layout {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.product-item>img {
+    width: 20rem;
+}
+
+.product-item>p {
+    text-align: center;
+}
+
+.product-item>p>span {
+    font-size: 1.875rem;
+}
+
+.product-txt {
+    text-align: center;
+    border: 3px solid #00BAB5;
+    border: 3px solid var(--respr-blue);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+/* footer */
+
+.kanamic {
+    margin: 2rem;
+    text-align: center;
+}
+
+.kanamic>img {
+    width: 20rem;
+}
+
+p.pageTop {
+    text-align: right;
+    margin: 20px;
+}
+
+p.pageTop a {
+    font-size: 14px;
+    margin-left: 4px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.8);
+    box-shadow: rgb(0 0 0 / 50%) 0 0 2px;
+    transition: .2s linear;
+}
+
+p.pageTop a:hover {
+    color: #FFFFFF;
+    background: #007CFF;
+}
+
+
+#footer {
+    width: 100%;
+    font-size: 14px;
+    height: 75px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 80%) 0 0 6px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%)
+}
+
+#footer ul {
+    margin: 0 0 5px 0;
+    padding-top: 8px;
+    color: #3399FF;
+}
+
+#footer ul li.line {
+    border-right: 1px solid #999;
+}
+
+#footer ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+#footer ul li a:hover {
+    color: #F77300;
+}
+
+#footer div.boder {
+    width: 100%;
+    height: 0;
+    top: 0;
+    border-top: 5px solid #FF932D;
+    border-bottom: 5px solid #3979C5;
+}
+
+
+/* icon */
+
+nav .icon-icon_file, nav .icon-icon_phone {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+nav .icon-icon_phone {
+    font-size: 2.6em;
+}
+
+.contact-detail .icon-icon_phone {
+    font-size: 3.4rem;
+}
+
+.contact-detail .icon-icon_file {
+    font-size: 2.6rem;
+}
+
+.icon-Aarrow-right {
+    font-size: 2.6rem;
+}
+
+.icon-file-pdf {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+
+
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 13px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1150px) {
+    .trouble-img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    .wrapper-inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .keyv-content-pic {
+        width: 20vw;
+    }
+
+    .solve-txt01>p>span {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+
+    .wrapper-inner, .wrapper {
+        width: 94%;
+    }
+
+    .test-corona>ul>li {
+        background-size: 4%;
+    }
+
+    .trouble-content {
+        flex-direction: column;
+    }
+
+    .trouble-img {
+        width: 50vw;
+    }
+
+    .youtube>iframe {
+        width: 300px;
+        height: 169px;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+    .sp-none {
+        display: none;
+    }
+
+    .pc-none {
+        display: block;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+    main p {
+        font-size: 1.5rem;
+    }
+
+    .header-logo>img {
+        width: 30vw;
+    }
+
+    #keyv {
+        background: url(../img/top-img-sp.jpg) no-repeat top right;
+    }
+
+    .keyv-content,
+    .solve-txt01, 
+    .what-ncc-content01, 
+    .what-ncc-content02, 
+    .case-facility, 
+    .contact-detail,
+    .hvac,
+    .test-layout,
+    .product-layout {
+        flex-direction: column;
+    }
+
+    .keyv-logo {
+        padding-top: 4rem;
+        width: 50%;
+    }
+
+    .keyv-content {
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    
+
+    .solve-txt01>p:first-child {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .solve-txt01>p {
+        border-radius: 5px;
+        padding: 1rem 2rem;
+    }
+
+    .product-item {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .product-item>h1 {
+        padding-top: 1rem;
+    }
+
+    /* .product-item:first-child {
+        margin-right: 2rem;
+    } */
+
+    .product-item>img {
+        width: 40vw;
+    }
+
+    .product-item>p:last-child {
+        margin-top: 1rem;
+    }
+
+    .what-ncc-content01>p {
+        margin: 1rem 0;
+    }
+
+    .what-ncc-content01>img {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .what-ncc-content02>img {
+        width: 80vw;
+        margin: 2rem auto;
+    }
+
+    .test-layout>.test-item:first-child {
+        margin-right: 0;
+    }
+
+    .case-facility>img {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .case-facility {
+        margin-top: -6vh;
+    }
+
+    .case-facility>img:last-child {
+        margin-top: -6vh;
+    }
+
+    .product-txt {
+        text-align: left;
+    }
+
+    .hvac>a {
+        margin-left: 0;
+        margin-top: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .test-corona>ul>li {
+        background-size: 8%;
+        background-position-y: 8%;
+    }
+
+    .what-ncc {
+        margin-top: 2rem;
+    }
+
+    .contact-detail>a {
+        width: 90%;
+    }
+
+    .trouble-content, .keyv-content-txt>p {
+        font-size: 1.5rem;
+    }
+
+    .keyv-content-txt>p>span {
+        font-size: 2rem;
+    }
+
+    .contact-content>h2 {
+        margin-bottom: 1rem;
+    }
+
+    .what-ozone-txt {
+        margin: 1rem 0;
+    }
+
+    .test-item>div>p {
+        margin-bottom: 1rem;
+    }
+    
+}

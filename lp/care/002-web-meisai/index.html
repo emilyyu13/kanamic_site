@@ -1,0 +1,548 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="keywords" content="電子請求書,介護ソフト,介護システム,介護事業所,カナミック,ウェブ明細,電子化,郵送代行,クラウド,クラウドサービス">
+    <meta name="description" content="請求書のアップロード不要!介護ソフトと連動し利用者様への電子送付または紙の請求書を発行・郵送まで一気通貫で管理可能。郵便料金の値上げ対策にもおすすめのサービスです。">
+    <title>介護事業所向け電子請求書発行システム｜カナミックかんたんWeb明細・かんたん郵送代行</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W54DTMS');</script>
+  <!-- End Google Tag Manager -->
+  
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MZL6ZGP');</script>
+  <!-- End Google Tag Manager -->
+
+    <!-- <link rel="stylesheet" href="base.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="./js/venobox/venobox.css" type="text/css" />
+    <script
+      src="./js/jquery-1.8.3.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="./js/yuga.js" type="text/javascript"></script>
+    <script src="./js/tinyscrolling.js" type="text/javascript"></script>
+    <script src="./js/prefixfree.js" type="text/javascript"></script>
+    <script src="./js/fitie.js" type="text/javascript"></script>
+    
+    <script
+      src="./js/venobox/venobox.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="./js/picturefill.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        kanaDate = new Date();
+        kanaYear = kanaDate.getFullYear();
+        $(".year").html(kanaYear);
+
+        /* default settings */
+        $(".venobox").venobox();
+      });
+    </script>
+  </head>
+
+<body id="pagetop">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W54DTMS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZL6ZGP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
+
+    ga("create", "UA-462660-7", "auto");
+    ga("send", "pageview");
+
+    $(function () {
+      /* click tracking google ana */
+      /* click tracking google ana */
+      var dir1 = location.href.split("/");
+      var dir = dir1[dir1.length - 2];
+      $("a").click(function (e) {
+        var ahref = $(this).attr("href");
+        var atxt = "";
+        if ($(this).children("img").length > 0) {
+          atxt = "画像_" + $(this).children("img").attr("alt");
+        } else {
+          atxt = $(this).text();
+        }
+        if (
+          (ahref.indexOf("https") != -1 || ahref.indexOf("http") != -1) &&
+          ahref.indexOf("http://www.kanamic.net/") == -1
+        ) {
+          ga("send", "event", dir + "_外部link", atxt, ahref);
+        } else if (ahref.indexOf(".pdf") != -1) {
+          ga("send", "event", dir + "_PDFlink", atxt, ahref);
+        }
+      });
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-462660-12"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-462660-12");
+  </script>
+
+
+  <main>
+    <!-- ファーストビュー -->
+    <section id="top">
+      <!-- h1画像 -->
+      <h1 class="top-bg">
+        <!-- PC画像 -->
+        <img src="img/top_img_2024.png" alt="介護業界に特化した電子請求書発行システムカナミックかんたんWEB明細・郵送代行。請求書のアップロード不要。カナミックのクラウドサービスと自動連携" class="sp-none">
+        <!-- スマホ用画像 -->
+        <img src="img/sp/sp_top0914.png" alt="介護業界に特化した電子請求書発行システムカナミックかんたんWEB明細・郵送代行。請求書のアップロード不要。カナミックのクラウドサービスと自動連携" class="pc-none">
+      	<div class="top-contact-bg sp-none">
+          <a href="https://senses-form.mazrica.com/webforms/?webformid=K6bqXwugvoVA" target="_blank">資料請求はこちら</a>
+          <!-- <a href="https://www14.webcas.net/form/pub/kanamic/inquiry" target="_blank">資料請求はこちら</a> -->
+      	</div>
+      </h1>
+      <!-- スマホ用ボタンエリア -->
+      <div class="top-contact-bg_sp pc-none">
+        <div class="point-list">
+          <li>明細書のアップロード不要！</li>
+          <li>郵便料金の値上げ対策として！</li>
+          <li>サービス実績データに基づいた電子請求書〜発行まで一気通貫！</li>
+        </div>
+        <a href="https://senses-form.mazrica.com/webforms/?webformid=K6bqXwugvoVA" target="_blank">資料請求はこちら</a>
+        <!-- <a href="https://www14.webcas.net/form/pub/kanamic/inquiry" target="_blank">資料請求はこちら</a> -->
+      </div>
+
+      <div class="wrapper read">
+          <h2>カナミック<br>かんたんWEB明細・かんたん郵送代行とは？</h2> 
+          <h3><span class="smalltxt">介護システムの提供企業だからできる</span><br>介護事業者様に特化した電子請求書・郵送サービスです</h3>
+      </div>
+      <!-- 横並び 動画とテキスト -->
+      <div class="read-flexbox">
+          <!-- 左の枠 -->
+          <div class="flex-leftbox">
+            <!-- 動画 -->
+              <div class="youtube">
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T02UUismHDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              </div>
+          </div>
+          <!-- 右の枠 -->
+          <div class="flex-rightbox">
+            <p>カナミックかんたんWEB明細・郵送代行は、介護事業所の電子申請書発行・郵送代行をかんたんに行えるようサポートするサービスです。介護システムの提供企業であるカナミックのサービスだから、<span class="pointtxt">介護業界に特化した設計</span>を実現。</p>
+            <p>カナミックの介護システムと連動し、<span class="pointtxt">サービスの実績データに基づいた電子請求書の発行</span>と、<span class="pointtxt"></span>利用者様への電子送付または紙の請求書を発行・郵送までを一気通貫で対応</span>できるため、事務作業時間を大幅に短縮しコスト削減に繋げます。</p>
+            <p>また、請求書を電子化することで、利用者様への郵送コストを抑えることが可能。<span class="pointtxt">郵便料金の値上げへの対応策</span>になります。</p>
+          </div>
+      </div>
+    </section>
+
+    
+    <!-- 他社サービスとの違い -->
+    <section id="better-point">
+      <div class="wrapper">
+        <!-- オレンジ色のライン -->
+        <div class="lineorange"></div>
+        <h2>他社の電子請求書サービスとの比較</h2>
+        <!-- 表の画像 -->
+        <div class="imgbox">
+          <img class="sp-none" src="img/list.png" alt="介護事業所に特化したカナミックかんたんWEB明細・郵送代行の他社との比較表">
+          <img class="pc-none" src="img/list-sp.png" alt="介護事業所に特化したカナミックかんたんWEB明細・郵送代行の他社との比較表">
+        </div>
+        <!-- ポイント1 -->
+        <div class="better-point-flexbox better-point-flexbox1">
+          <!-- 左の枠 アイコン-->
+          <div class="better-point-flex-leftbox">
+            <div class="imgbox">
+              <img src="img/point1img.png" alt="">
+            </div>
+          </div>
+          <!-- 右の枠 テキスト-->
+          <div class="better-point-flex-rightbox">
+            <div class="imgbox imgbox-left">
+              <img src="img/point1txt.png" alt="point1">
+            </div>
+            <h3>明細書のアップロードが不要</h3>
+            <p>他社では明細書をPDFに出力してからシステムにアップロードする必要があり、手間がかかります。一方、カナミックかんたんWEB明細・郵送代行では、明細書をアップロードする作業は不要です。一手間減らせて、事業所様の事務作業がよりスムーズになります。
+          </div>
+        </div>
+        <!-- ポイント２ -->
+        <div class="better-point-flexbox better-point-flexbox2">
+          <!-- 左の枠アイコン -->
+          <div class="better-point-flex-leftbox">
+            <div class="imgbox">
+              <img src="img/point2img.png" alt="">
+            </div>
+          </div>
+          <!-- 右の枠 テキスト-->
+          <div class="better-point-flex-rightbox">
+            <div class="imgbox imgbox-left">
+              <img src="img/point2txt.png" alt="point2">
+            </div>
+            <h3>利用者様のサービスの実績データに基づいた電子請求書の発行から送付(電子送付または紙)まで一気通貫で行える</h3>
+            <p>カナミックの介護システムとの自動で連動するため、利用者のサービス実績データに基づいた簡単に電子請求書を発行できます。また、電子送付または紙の請求書の発行・送付まで一気通貫で行えるため、新たなシステムの導入は不要です。</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- サービス概要 -->
+    <section id="what">
+      <div class="wrapper">
+        <div class="mt50 txtC">
+          <h2>サービス概要</h2>
+        </div>
+        <!-- 概要図 -->
+        <div class="imgbox">
+          <img src="img/overview.png" alt="カナミックかんたんWEB明細・郵送代行のサービス概要図。ご利用者様・ご家族様は紙または画面上で明細閲覧が可能です">
+        </div>
+        <div class="txt-overview">
+          <h3>請求事務のご担当者様が手作業で行っている「印刷」「三つ折り」「封入封緘」「郵送手続き」といった作業負担を大幅削減するサービスです。</h3>
+          <p>カナミックかんたんWeb明細は、カナミックの介護請求ソフトで作成した利用者請求書と領収書の「発行」「連絡」をWeb上で完結。手渡し、郵送、Web明細といったお渡し方法はご利用者様ごとにご設定いただけます。</p>
+          <p>カナミックかんたん郵送代行（BPO）は、ご事業所のスタッフ様が手作業で行っている「印刷」「三つ折り」「封入封緘」「郵送」といった大量の作業をカナミックネットワークが代行するサービスです。</p>
+          <p>カナミックかんたんWeb明細、カナミックかんたん郵送代行（BPO）合わせてのご利用がおすすめです。</p>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- メリット -->
+    <section id="merit">
+      <div class="wrapper">
+        <div class="title">
+          <img src="img/title_logo.png" alt="logo">
+          <div class="title-txt">
+            <h3><span class="icon-title_left sp-none"></span></h3>
+            <h3>
+              「カナミックかんたんWeb明細」<br>
+              介護事業者様の導入メリットはこんなにたくさん！ 
+            </h3>
+            <h3><span class="icon-title_right sp-none"></span></h3>
+          </div>
+        </div>
+        <p class="txtC">請求担当者様を悩ませる膨大な費用と作業量を大幅削減し<br class="sp-none">
+          受け取り側のご利用者様・ご家族様にも便利なサービスです。
+        </p>
+
+        <div class="merit-bg mt50">
+          <div class="flex-center">
+            <div class="pic-profile">
+              <img src="img/profile/company.png" alt="">
+            </div>
+            <h3  class="yellow-underline">介護事業所様の<br class="pc-none">導入メリット</h3>
+          </div>
+          <div class="merit-point-flame">
+            <!-- ポイント２並び -->
+            <div class="merit-point-box merit-point-box1">
+              <img class="sp-none" src="img/point-top.png" alt="紙の請求書を発送するコストをカット！郵便料金の値上げ対策になります。">
+              <img class="pc-none" src="img/point-top-sp.png" alt="紙の請求書を発送するコストをカット！郵便料金の値上げ対策になります。">
+            </div>
+            <!-- ポイント３つ並び -->
+            <div class="merit-point-box merit-point-box2 sp-none">
+              <img src="img/merit/merit_2.png" alt="介護システムと連動。カナミックの請求・債権システムから連動します">
+              <img src="img/merit/merit_3.png" alt="固定料金制(WEB明細)。安心の固定料金制で割安にご利用できます">
+              <img src="img/merit/merit_4.png" alt="時間創出。作業量を大幅カットし時間を創出します">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt50">コスト削減・時間創出の効果！</h3>
+        <p class="txtC">（※ご利用者様 100名の事業所を 1サービス運営されている場合の年間コスト想定例）</p>
+        <div class="merit-bg-layout mt25">
+          <div class="merit-bg2">
+            <div class="dash-underline flex-center">
+              <img src="img/merit/merit_1_icon.png" alt="" class="merit-icon">
+              <h3 class="yellow-underline">コスト削減</h3>
+            </div>
+            <div class="pic-cost">
+              <img src="img/cut_cost.png" alt="カナミックかんたんWeb明細を活用すれば約28.5万円のコスト削減に！">
+            </div>
+          </div>
+          <div class="merit-bg2">
+            <div class="dash-underline flex-center">
+              <img src="img/merit/merit_4_icon.png" alt="" class="merit-icon">
+              <h3 class="yellow-underline">時間創出</h3>
+            </div>
+            <div class="pic-time">
+              <img src="img/save_time.png" alt="カナミックかんたんWeb明細を活用すれば印刷・三つ折り・封入封緘・郵送にかかる時間が不要に!">
+            </div>
+          </div>
+        </div>
+        <p class="remark">※用紙1円/1枚、印刷3円/1枚、封筒3.5円/1枚、郵送94円/1通、人件費1,210円/時、複合機リース2万円/月、収入印紙は半数の利用者に使用した場合</p>
+      </div>
+    </section>
+
+
+    <section id="merit-family">
+      <div class="wrapper">
+        <div class="title">
+          <img src="img/title_logo.png" alt="logo">
+          <div class="title-txt">
+            <h3><span class="icon-title_left sp-none"></span></h3>
+            <h3>
+              「カナミックかんたんWeb明細」は<br>
+              受け取り側のご利用者様・ご家族様にとっても便利！ 
+            </h3>
+            <h3><span class="icon-title_right sp-none"></span></h3>
+          </div>
+        </div>
+        <p class="txtC">明細発行時にメール通知が届きます。また履歴はいつでも確認可能です。</p>
+        <div class="merit-family-bg mt50">
+          <div class="dash-underline2 flex-center">
+            <div class="pic-profile2">
+              <img src="img/profile/user.png" alt="">
+            </div>
+            <h3 class="yellow-underline">ご利用者様・ご家族様の導入メリット</h3>
+          </div>
+          <div class="merit-family-layout mt25">
+            <img src="img/merit_family/merit_1.png" alt="すぐに確認。画面上なら郵送を待たずに確認できます">
+            <img src="img/merit_family/merit_2.png" alt="いつでも履歴閲覧。過去の領収書をいつでも画面上で確認できます">
+            <img src="img/merit_family/merit_3.png" alt="紛失しない。クラウドで管理しており紛失の心配がありません">
+            <img src="img/merit_family/merit_4.png" alt="医療控除額の確認。明細からいつでも確認できます">
+          </div>
+        </div>
+        <h3 class="mt100 bpotitle1">ご利用者様・ご家族様も<br class="pc-none">登録は「かんたん」！</h3>
+        <p class="txtC">登録はWeb上でかんたんに行えるため、ご利用者様・ご家族様に負担をかけません。</p>
+        <div class="merit-family-bg mt50">
+          <div class="dash-underline2">
+            <h3>ご利用者様・ご家族の<br class="pc-none">ご利用方法</h3>
+          </div>
+          <div class="flex-between mt25">
+            <div class="pic-method">
+              <img src="img/method.png" alt="">
+            </div>
+            <div class="step">
+              <p><strong>1.</strong> 介護事業所様からご案内メール送信</p>
+              <span class="icon-arrow_down"></span>
+              <p><strong>2.</strong>システム登録</p>
+              <span class="icon-arrow_down"></span>
+              <p><strong>3.</strong>毎月の明細発行がメール通知され確認</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact">
+      <div class="contact-bg">
+        <p>介護事業所に特化した<br class="pc-none">電子請求書発行システム</p>
+        <div class="imgbox">
+          <img src="img/cta-titleimg.png" alt="">
+        </div>
+        <a href="https://senses-form.mazrica.com/webforms/?webformid=K6bqXwugvoVA" target="_blank">無料相談・お問合せはこちらから</a>
+        <!-- <a href="https://www14.webcas.net/form/pub/kanamic/inquiry" target="_blank">無料相談・お問合せはこちらから
+          <span class="icon-arrow_right"></span>
+        </a> -->
+      </div>
+    </section>
+
+
+    <section id="bpo">
+      <div class="wrapper">
+        <div class="title">
+          <img src="img/title_logo.png" alt="logo">
+          <div class="title-txt">
+            <h3><span class="icon-title_left sp-none"></span></h3>
+            <h3>
+              「カナミックかんたん郵送代行（BPO）」<br>
+              その作業、カナミックが引き受けます！
+            </h3>
+            <h3><span class="icon-title_right sp-none"></span></h3>
+          </div>
+        </div>
+        <p class="txtC">必要な時期に、必要な人手を。<br>
+          介護事業所様のニーズにお応えいたします。</p>
+        <div class="bpo-bg">
+          <div class="dash-underline3">
+            <h3>郵送作業でお困りではありませんか？</h3>
+          </div>
+          <div class="flex-between">
+            <div class="bpo-txt">
+              <p>「印刷」「三つ折り」「封入封緘」「郵送手続き」。
+                作業自体は簡単だけど量が膨大で他の仕事も兼務しているから大変だし疲れているとミスもこわい。かといって忙しい時期だけ都合に合わせて働いてくれる人なんてなかなかいないし、人件費もかかる…。そんなお悩みをお持ちではありませんか？<br>
+                カナミックかんたん郵送代行（BPO）がそのお悩みを解決いたします。</p>
+            </div>
+            <div class="pic-huh">
+              <img src="img/huh.png" alt="">
+            </div>
+          </div>
+        </div>
+        <h3 class="mt50">時間創出の効果！</h3>
+        <p>（※ご利用者様100名の事業所を1サービス運営されている場合の年間想定例）</p>
+        <div class="wrapper2">
+          <div class="bpo-bg">
+            <div class="dash-underline3 flex-center">
+              <img src="img/merit/merit_4_green_icon.png" alt="" class="merit-icon">
+              <h3 class="yellow-underline">時間創出</h3>
+            </div>
+            <div class="pic-time">
+              <img src="img/save_time_green.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact">
+      <div class="contact-bg">
+        <p>介護事業所に特化した<br class="pc-none">電子請求書発行システム</p>
+        <div class="imgbox">
+          <img src="img/cta-titleimg.png" alt="">
+        </div>
+        <!-- <p>無料相談・お問合せはこちらから</p> -->
+        <a href="https://senses-form.mazrica.com/webforms/?webformid=K6bqXwugvoVA" target="_blank">無料相談・お問合せはこちらから</a>
+        
+        <!-- <a href="https://www14.webcas.net/form/pub/kanamic/inquiry" target="_blank">無料相談・お問合せはこちらから</span>
+        </a> -->
+      </div>
+    </section>
+
+
+    <section id="company">
+      <div class="wrapper">
+        <div class="pic-company">
+          <img src="img/company.png" alt="company">
+        </div>
+        <div class="company-layout">
+          <div class="company-item">
+            <div>
+              <img src="img/company/company_1.jpg" alt="">
+            </div>
+            <div class="company-txt">
+              <p>■ 多職種・他法人間連携 情報共有No.1</p>
+              <p>地域包括ケアを推進する医療・介護情報共有システムを提供。多職種・他法人間連携を強力にサポートするカナミッククラウドサービスの情報共有システムは導入実績NO.1です。</p>
+            </div>
+          </div>
+          <div class="company-item">
+            <div>
+              <img src="img/company/company_2.jpg" alt="">
+            </div>
+            <div class="company-txt">
+              <p>■ 医療・介護に特化したクラウドサービス</p>
+              <p>介護事業所をはじめ、地域包括支援センター、居宅介護支援事業所など、あらゆる介護業務をフルラインアップで支援する介護ソフトをご提供。全国で多くの事業所様にご導入いただいております。</p>
+            </div>
+          </div>
+          <div class="company-item">
+            <div>
+              <img src="img/company/company_3.jpg" alt="">
+            </div>
+            <div class="company-txt">
+              <p>■ 請求、債権管理システム</p>
+              <p>国保連や利用者負担金、その他事業所の請求を登録し、本部・事業所間でシームレスに管理。利用者自己負担金集金代行システムとの連動で引落し結果データから入金確認はじめ債権化された売掛データの消込まで自動で行えます。</p>
+            </div>
+          </div>
+          <div class="company-item">
+            <div>
+              <img src="img/company/company_4.png" alt="">
+            </div>
+            <div class="company-txt">
+              <p>■ セキュリティ</p>
+              <p>カナミックかんたんWeb明細に必要なご家族アカウントは2要素認証なので安心。カナミッククラウドサービスのデータは強固なデータセンターで厳重管理されており、通信路はTLSで暗号化しています。</p>
+              <p>弊社はプライバシーマークを取得しております。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="contact">
+      <div class="contact-bg">
+        <p>介護事業所に特化した<br class="pc-none">電子請求書発行システム</p>
+        <div class="imgbox">
+          <img src="img/cta-titleimg.png" alt="">
+        </div>
+        <a href="https://senses-form.mazrica.com/webforms/?webformid=K6bqXwugvoVA" target="_blank">無料相談・お問合せはこちらから</a>
+        <!-- <a href="https://www14.webcas.net/form/pub/kanamic/inquiry" target="_blank">無料相談・お問合せはこちらから</a> -->
+      </div>
+    </section>
+
+  </main>
+
+  <p class="pageTop clear">
+    <a href="#pagetop" ><span class="icon-page-top f18"></span>ページの先頭へ</a >
+  </p>
+
+  <div id="footer">
+    <div class="boder"></div>
+    <ul>
+      <li class="line">
+        <a target="_blank" href="http://www.kanamic.net/company/outline.html" >会社概要</a >
+      </li>
+      <li>
+        <a target="_blank" href="http://www.kanamic.net/company/privacy.html" >プライバシーポリシー</a >
+      </li>
+    </ul>
+    <p>Copyright(c) <span class="year"></span> Kanamic Network Co.,LTD</p>
+  </div>
+
+  <script type="text/javascript">
+    <!--
+    var i=0;
+    function disp(){
+      if(i%2==0)
+      document.getElementById("box").style.display="block";
+      else
+      document.getElementById("box").style.display="none";
+      i++;
+    -->
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+・各セクションごとにwrapper、innerで囲い左右幅を調整する時に使用します。
+
+
+・基本のサイズはbase.scssで定義しています。
+
+
+・index.htmlで、wrapperとクラス名をつけると
+　900px 中央揃えになるのがデフォルトになっています。
+
+・フォーマットでのサイズ展開
+
+class="wrapper"{width:900px; margin:auto;  レスポンシブ900px以下で100%}
+
+class="wrapper -size-full"{width:100%; }
+
+class="wrapper -size-l"{width:1100px;  レスポンシ11600px以下で100%}
+
+class="wrapper -size-m"{width:900px;  レスポンシブ900px以下で100%}
+
+class="wrapper -size-s"{width:900px;  レスポンシブ600px以下で100%}
+
+
+
+・index.htmlで、innerとクラス名をつけると
+　padding 0 1rem と左右に1rem余白がつくのがデフォルトになっています。
+
+・フォーマットでのサイズ展開
+
+class="inner"{padding: 0 1rem;}
+
+class="inner -size-m"{padding: 0 2rem;}
+
+class="inner -size-s"{padding: 0 1rem;}
+
+class="inner -size-xs"{padding: 0 0.5rem;}
+
+class="inner -size-xs"{padding: 0 0.25rem;}
