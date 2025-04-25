@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W54DTMS');</script>
+<!-- End Google Tag Manager -->
+	  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MZL6ZGP');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+
+    <!-- アイコン CSS -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- アニメーション CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- 調整用 CSS -->
+    <link href="../../common/css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="../../common/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../../common/js/jquery.transit.min.js"
+    ></script>
+    <script type="text/javascript" src="../../common/js/ua.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        AOS.init();
+      });
+    </script>
+
+    <!-- gNavのバナーを読み込む -->
+    <script type="text/javascript" src="../../common/js/smbn.js"></script>
+    <!-- 右下の資料請求float-button -->
+    <script
+      type="text/javascript"
+      src="../../common/js/float-button.js"
+    ></script>
+
+    <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+      var windowSm = 640;
+      if (windowWidth <= windowSm) {
+        //横幅640px以下のとき（つまりスマホ時）に行う処理を書く
+        $(function () {
+          var topBtn = $("div.container-fluid.entry");
+          topBtn.hide();
+          //スクロールが100に達したらボタン表示
+          $(window).scroll(function () {
+            if ($(this).scrollTop() < 4900) {
+              topBtn.fadeIn();
+            } else {
+              topBtn.fadeOut();
+            }
+          });
+        });
+      } else {
+        //横幅640px超のとき（タブレット、PC）に行う処理を書く
+        $(function () {
+          var topBtn = $("div.container-fluid.entry");
+          topBtn.hide();
+          //スクロールが100に達したらボタン表示
+          $(window).scroll(function () {
+            if ($(this).scrollTop() < 3800) {
+              topBtn.fadeIn();
+            } else {
+              topBtn.fadeOut();
+            }
+          });
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // 一旦hide()で隠してフェードインさせる
+        $("div.container-fluid.slide").hide().fadeIn("slow");
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".navbar-nav li a").click(function (event) {
+          $(".navbar-collapse").collapse("hide");
+        });
+      });
+    </script>
+
+    <title>
+      株式会社ヤックスケアサービス導入事例｜カナミッククラウドサービスで実現！ドラッグストア×デイサービスの次世代介護のカタチ
+    </title>
+    <meta
+      name="keywords"
+      content="株式会社ヤックスケアサービス,訪問介護記録,多職種間連携ツール"
+    />
+    <meta
+      name="description"
+      content="千葉薬品グループとして千葉県でトップクラスの介護事業所数を誇るヤックスケアサービスの代表取締役社長 末祐一郎さんと、ヘルステック企業として介護業界のDX化に貢献するカナミックネットワークの山本拓真が対談。地域に密着した次世代の介護サービスの在り方とは？"
+    />
+  </head>
+  <body data-spy="scroll" data-target="#Navbar" data-offset="100" class="under">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W54DTMS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZL6ZGP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> 
+
+    <div class="float-button"></div>
+    <div id="wrapper" itemscope itemtype="http://schema.org/Organization">
+      <header>
+        <div class="header_text">
+          <div class="header_info_position">
+            <p>
+              介護ソフト・地域包括ケア（医療介護連携システム）の
+              カナミッククラウドサービス
+            </p>
+            <!-- <div class="langswitch">
+              <a href="#"
+                >Language<span id="lang_arrow" class="icon-Aarrow-down"></span
+              ></a>
+              <div class="lang_opt">
+                <a href="../" id="jp" class="lang_selected">Japanese</a>
+                <a href="../" id="eg" class="langswitchEn">English</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="inner">
+          <p id="siteLogo"><a href="../../">KANAMIC NETWORK</a></p>
+          <nav id="gNav">
+            <ul>
+              <li class="nav01">
+                <a href="../../care/"><span>介護向けシステム</span></a>
+              </li>
+              <li class="nav02">
+                <a href="../../medical/"><span>医療向けシステム</span></a>
+              </li>
+              <li class="nav03">
+                <a href="../../child-care/"><span>子育て支援システム</span></a>
+              </li>
+              <li class="navcase current">
+                <a href="../index.html">導入事例</a>
+              </li>
+              <li class="nav04">
+                <a href="../../company/"><span>企業情報</span></a>
+              </li>
+              <li class="navir">
+                <a href="../../ir/"><span>IR情報</span></a>
+              </li>
+              <li class="nav05">
+                <a href="../../recruit/recruit.html" target="_blank"><span>採用情報</span></a>
+              </li>
+              <li class="nav06">
+                <a
+                  href="https://www14.webcas.net/form/pub/kanamic/form"
+                  onclick="ga('send', 'event', '資料請求_link', 'gNav_click', 'https://www14.webcas.net/form/pub/kanamic/form', 1, {'nonInteraction': 1});"
+                  target="_blank">資料請求 お問合せ</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="secondMenu" style="line-height: normal;">
+            <ul class="smbnCare">
+              <!--介護-->
+              <li class="secondMenuTitle">
+                <h2><a href="../../care/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <ul>
+                  <li>
+                    <a href="../../care/houkatsu.html">地域包括支援センター</a>
+                  </li>
+                  <li><a href="../../care/kyotaku.html">居宅介護支援</a></li>
+                  <li><a href="../../care/tsusho.html">通所系サービス</a></li>
+                  <li><a href="../../care/houmon.html">訪問系サービス</a></li>
+                  <li><a href="../../care/shisetsu.html">施設系サービス</a></li>
+                  <li>
+                    <a href="../../care/yougu.html">福祉用具貸与・販売</a>
+                  </li>
+                  <li>
+                    <a href="../../care/chiikimitchaku.html">地域密着型介護</a>
+                  </li>
+                  <li><a href="../../care/shogai.html">障がい者総合支援</a></li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnMedi">
+              <!--医療-->
+              <li class="secondMenuTitle">
+                <h2><a href="../../medical/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <ul>
+                  <li><a href="../../medical/#sec01">地域包括ケアを実現</a></li>
+                  <li>
+                    <a href="../../medical/#sec02"
+                      >在宅医療システムコンセプト</a
+                    >
+                  </li>
+                  <li><a href="../../medical/#sec02a">機能紹介</a></li>
+                  <li><a href="../../medical/#sec03">職種別の利用ケース</a></li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnChi">
+              <!--子育て-->
+              <li class="secondMenuTitle">
+                <h2><a href="../../child-care/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <ul>
+                  <li>
+                    <a href="../../child-care/#sec02">システムのコンセプト</a>
+                  </li>
+                  <li><a href="../../child-care/#sec03">利用メリット</a></li>
+                  <li><a href="../../child-care/#sec04">情報配信機能</a></li>
+                  <li>
+                    <a href="../../child-care/#sec05">子育て成長記録機能</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnCom"><!--企業-->
+		<li class="secondMenuTitle">
+			<h2><a href="../../company/"></a></h2>
+		</li>
+     	<li class="secondMenuContent02">
+			<ul>
+				<li><a href="../../company/concept.html">企業コンセプト</a></li>
+				<li><a href="../../company/message.html">トップメッセージ</a></li>
+                <li><a href="../../company/outline.html">会社概要</a></li>
+                <li><a href="../../company/officer.html">役員一覧</a></li>
+                <li><a href="../../company/access.html">拠点一覧</a></li>
+			    <li><a href="../../company/group.html">グループ会社</a></li>
+                <li><a href="../../topics/">ニュース一覧</a></li>
+			</ul>
+		</li>
+		<li class="smbn"></li>
+    </ul>
+            <ul class="smbnIR">
+              <!--IR-->
+              <li class="secondMenuTitle">
+                <h2><a href="../../ir/"></a></h2>
+              </li>
+              <li class="secondMenuContent02">
+                <ul>
+                  <li><a href="../../ir/management.html">トップメッセージ</a></li>
+                  <li><a href="../../ir/library.html">IRライブラリ</a></li>
+				          <li><a href="../../ir/esg.html">ESGへの取り組み</a></li>
+                  <li><a href="../../ir/stock.html">株式情報</a></li>
+                  <li><a href="../../ir/calendar.html">IRカレンダー</a></li>
+                  <li><a href="../../ir/faq.html">FAQ</a></li>
+                  <li><a href="../../ir/notice.html">電子公告</a></li>
+                  <li><a href="../../ir/irpolicy.html">ディスクロージャーポリシー</a></li>
+                  <li><a href="../../ir/disclimer.html">免責事項</a></li>
+                  <li><a href="../../ir/toiawa.html">お問合せ</a></li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnRecr">
+              <!--採用-->
+              <li class="secondMenuTitle">
+                <h2><a href="../../recruit/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <ul>
+                  <!-- <li><a href="../recruit/newgraduates.html">新卒採用</a></li> -->
+                  <!-- <li><a href="../recruit/careers.html">中途採用</a></li> -->
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <!-- / #secondMenu -->
+          </div>
+          <p class="login"><a href="../../login.html">ログイン画面へ</a></p>
+          <!-- / .inner -->
+        </div>
+      </header>
+      <header class="headerSp">
+        <div class="inner">
+          <p id="siteLogo"><a href="../../">KANAMIC NETWORK</a></p>
+          <p class="login">
+            <a href="../../login.html"><span class="icon-login"></span>ログイン</a>
+          </p>
+          <p class="contactSp">
+            <a
+              href="https://www14.webcas.net/form/pub/kanamic/form"
+              onclick="ga('send', 'event', '資料請求sp_link', 'gNav_click', 'https://www14.webcas.net/form/pub/kanamic/form', 1, {'nonInteraction': 1});"
+              target="blank"
+              ><span class="icon-contact"></span>資料請求
+            </a>
+          </p>
+          <p id="menuSp"><span class="icon-menu"></span>メニュー</p>
+          <nav id="gNav">
+            <ul>
+              <li class="gNavMedical">
+                <a href="../../medical/"><span>医療介護連携支援システム</span></a>
+              </li>
+              <li class="gNavCare">
+                <span>介護業務支援システム</span>
+				 <ul class="secondary_sp">
+					 <li class="secondary"><a href="../../care/"><span>介護ソフト（介護保険システム）</span></a></li>
+				   <li><a href="../../care/houkatsu.html"><span>地域包括支援センター</span></a></li>
+					 <li class="noBorder_right"><a href="../../care/kyotaku.html"><span>居宅介護支援</span></a></li>
+					 <li><a href="../../care/houmon.html"><span>訪問介護・看護</span></a></li>
+					 <li class="noBorder_right"><a href="../../care/tsusho.html"><span>デイサービス<br>通所介護</span></a></li>
+					 <li><a href="../../care/shisetsu.html"><span>施設・有老・サ高住</span></a></li>
+					 <li class="noBorder_right"><a href="../../care/yougu.html"><span>福祉用具</span></a></li>
+					 <li class="noBorder"><a href="../../care/chiikimitchaku.html"><span>地域密着型</span></a></li>
+					 <li class="noBorder_right noBorder"><a href="../../care/shogai.html"><span>障がい者総合支援</span></a></li>
+				  </ul>
+              </li>
+              <li class="gNavChild">
+                <a href="../../child-care/"><span>子育て支援システム</span></a>
+              </li>
+              <li class="gNavCase"><a href="../index.html">導入事例</a></li>
+              <li class="gNavCompany">
+                <a href="../../company/"><span>企業情報</span></a>
+              </li>
+              <li class="gNavIr">
+                <a href="../../ir/"><span>IR情報</span></a>
+              </li>
+              <li class="gNavRecruit">
+                <a href="../../recruit/recruit.html" target="_blank"><span>採用情報</span></a>
+              </li>
+              <li class="gNavForm">
+                <a href="https://www14.webcas.net/form/pub/kanamic/form"target="_blank">資料請求 お問合せ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="container-fluid top clearfix">
+        <div class="main_img06"><h1></h1></div>
+      </div>
+      <div class="container">
+        <div class="breadCrumbs">
+          <ul>
+            <li><a href="../">ホーム</a></li>
+            <li><a href="../index.html">介護ソフト導入事例 </a></li>
+            <li><a>株式会社ヤックスケアサービス</a></li>
+          </ul>
+          <!-- / .breadCrumbs -->
+        </div>
+        <div class="introduction row">
+          <div class="section" style="margin-bottom: 0;">
+            <div class="col" style="margin-bottom: 0;">
+              <div class="text col-sm-8">
+                <h2>
+                  カナミッククラウドサービスで実現！<br class="display_pc">ドラッグストア×デイサービスの次世代介護のカタチ
+                </h2>
+                <p class="mb20">
+                  今回は千葉薬品グループとして千葉県でトップクラスの介護事業所数を誇る<a href="https://care-yacs.co.jp/" target="_blank"
+                  >ヤックスケアサービス</a>の<span class="sue">代表取締役社長 末祐一郎さん</span>（写真：中央）と<span class="bitou">常務取締役・管理本部 兼 総務部長 美藤 和宏さん</span>（同右）のお二人と、カナミックネットワークの<span class="yamamoto">代表取締役社長 山本拓真</span>（同左）が対談し、介護DXについての取り組みから、カナミッククラウドサービスへのリプレイスの経緯などについてお話をお伺いしました。<br><br>
+                  <a href="https://youtu.be/Hy38D2UviMI?si=v5jqdT6EWEjVbPn_" target="_blank"><img src="img/youtube.png" width="20px" hight="14px"> インタビュー動画(前編)</a><br>
+                  <a href="https://youtu.be/IcaUk6yGSP0?si=bgFYZgHEthp1KsE4" target="_blank"><img src="img/youtube.png" width="20px"> インタビュー動画(後編)</a><br>
+                </p>
+              </div>
+              <div class="img" style="padding-right: 0;"><br>
+                <img src="img/yacs01.jpg" alt="介護dx対談" />
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div class="case row">
+          <div class="section">
+            <div class="col" style="margin-bottom: 0;">
+              <div>
+               
+                <p class="mb20">
+                  <span class="pickup">
+                  事業内容
+                  </span>
+                </p>
+                <img src="img/yacs02.png" alt="株式会社ヤックスケアサービス拠点"  class="img_490_fr"/>
+                <p class="mb50">
+                  <br class="sma-kaigyou">
+                  <span class="yamamoto">山本</span>：こんにちは。本日は介護業界の課題をデジタルの力で解決する「介護DX対談」と題しまして、ヤックスケアサービス様の介護DXへの取り組みを中心にお話をお伺いしていきたいと思います。よろしくお願いいたします。<br><br>
+
+                  <span class="sue">末社長</span>：よろしくお願いいたします。<br><br>
+
+                  <span class="yamamoto">山本</span>：まずは、御社の事業内容について教えてください。<br><br>
+
+                  <span class="sue">末社長</span>：当社は千葉県を中心に、「デイサービス」「訪問介護」「居宅介護支援」の３つの事業を柱として、それ以外に「福祉用具貸与」「訪問看護・リハビリ」「サービス付き高齢者向け住宅」を運営している会社です。<br><br>
+                  
+                  <span class="yamamoto">山本</span>：ヤックスケアサービス様は、千葉県では誰もが知っている大手のドラッグストアである千葉薬品様のグループでいらっしゃいますが、2000年からすでに介護事業に参入されていらっしゃったのですか？<br><br>
+                  
+                  <span class="sue">末社長</span>：はい。千葉薬品はドラッグストアとしては最も早く介護事業に参入した企業です。最初は、「訪問介護」「居宅介護支援」「福祉用具」の事業を行なっていましたが、2003年から「元気が湧き出るデイサービス」をコンセプトに、ドラッグストアにデイサービスセンターを併設した「ドラッグストア併設型デイサービス」を始めました。 
+                  ドラッグストアと併設している強みを生かして、ご利用者にドラッグストアでお買い物をしていただく「ショッピングリハビリ」といったプログラムを機能訓練の一環として行っています。<br>
+                  そもそも買い物にすごく困っているご利用者が多かったので、デイサービスのついでにドラッグストアで買い物が出来て、さらに送迎のついでに自宅まで届けてもらえるという所が、支持されている非常に大きな理由の一つだと考えております。<br><br>
+
+                  <span class="yamamoto">山本</span>：ショッピングリハビリ、面白いですね。ある意味「買い物に行く」という介護サービスも同時に叶えられるので、保険料も抑えられて、かつご本人の満足度、ご家族の満足度も上がるということで、私はこれはすごく素晴らしい事だと思います。
+                </p>
+              </div>
+            </div>
+            <!-- <div class="text col-sm-5">
+          <img src="img/rs_02.jpg" />
+        </div> -->
+            <div class="pr15 pl15">
+              <p class="mb20">
+                <span class="pickup">
+                  DXに取り組み始めた理由
+                </span>
+              </p>
+              <div class="img_490_fr-t">
+              <img src="img/yacs04.png" alt="株式会社ヤックスケアサービス・末氏と美藤氏"class="img_490_fr-t">
+              <p class="img_490_fr-t">左：ヤックスケアサービス　代表取締役社長・末祐一郎さん<br>右：常務取締役・美藤和宏さん<br><br></p>
+              </div>
+              <p class="mb50">
+                <span class="yamamoto">山本</span>：御社がDXに取り組み始めた理由についてお聞かせいただけますか？<br><br>
+
+                <span class="bitou">美藤常務</span>：DXに取り組み始めた理由は、やはり現場の事務負担の軽減と、人材不足が年々深刻になっておりますので、離職防止も含めてその辺が少しでも緩和できればということで取り組みをスタートさせました。<br><br>
+                
+                <span class="sue">末社長</span>：人が絶対やらなきゃいけない仕事以外は極力取り払って、デイサービスでいえば、朝来て夕方まで利用者さんのことを見られる体制にするのが一番必要だと思っています。働いてもらっているみんなは事務だとかそういうのをやりたいんじゃないと思うので、そういったところがDXを進めるきっかけになっています。<br><br>
+                
+                <span class="yamamoto">山本</span>：仰るとおり、事務がやりたくて介護職になっている人はあまりいないと思いますし、介護の仕事をやるということがモチベーションにすごくつながっていくということですね。 
+                </p>
+
+              <p style="clear: both;" class="mb20">
+                <span class="pickup">
+                  債権管理機能で現場と本部の連携がスムーズに
+                </span>
+              </p>	
+              <div class="img_490_fl-t">
+              <img src="img/yacs03.png" alt="株式会社カナミックネットワーク・山本拓真"  class="img_490_fl-t"/>
+              <p class="img_490_fl-t">カナミックネットワーク 代表取締役社長・山本拓真<br><br></p>
+              </div>
+              <p class="mb20">
+                <span class="yamamoto">山本</span>：もともと他社様のサービスを導入されていらっしゃって、事業所数の拡大により本部の管理機能を強化するためにカナミッククラウドサービスへのリプレイスをご決断いただいたとお伺いしました。特にリプレイスの決め手になったのは、どんな点だったのでしょうか？<br><br>
+
+                <span class="bitou">美藤常務</span>：カナミックさんに乗りかえさせてもらった理由は、債権の管理が容易にできるというところに非常に魅力を感じたからです。債権管理については、今までは本部で確認をして把握するまでにある程度の時間を要していましたが、現状はリアルタイムに現場と本部側との情報が共有できるようになったので非常に大きく変わったと感じています。<br>
+
+                <p class="mb20" style="text-align: center;">
+                <img src="img/yacs05.png" width="80%" alt="債権管理"　class="img_490_fc"><br>
+                </p>
+                <p class="mb50">
+                <span class="sue">末社長</span>：書類を並べて突合することがなくなったのは非常に大きいですね。あれって文字が小さいじゃないですか（笑）。カタカナだし、こう（目を細めて）見ないといけないですし。時間がもったいないですよね。データ取込で自動で消込が出来てて「あとは（再請求対応するのは）この人だけですよー」って一目で分かるようになったのが、やる側としては助かっています。 <br>
+                あと本部側も確認したいと思った時にいちいち現場に聞く必要がなくなりました。「ちょっとエラーが多いね」「過誤や返戻が多いね」という時にアプローチができるようになったのが一番変わったところです。<br><br>
+
+                <span class="yamamoto">山本</span>：事務処理の効率化だけではなく情報共有も重要だということですね。<br><br>
+
+                <span class="sue">末社長</span>：あと私も事業所を回るときに、データを見てから行くようにしているんですが、それで、「全部きれいにできてるね」という事業所には、伝えてあげるようにしています。<br><br>
+                
+                <span class="yamamoto">山本</span>：なるほど、職員の方も見てもらっていると分かるとうれしいですよね。<br><br>
+                
+                <span class="sue">末社長</span>：そうですね。ちゃんと出来ていることを現場に伝えてあげたいと思っているので、そこも大きく変わりましたね。<br>
+                あとは変わったのは、意識ですね。今まで何となくやっていたのを風土を変えていく一つのきっかけにもつながっていると思います。今はうるさいかも知れないんですけれども、何年か経って、今のDXへの取り組みが会社の風土を変えることにつながっていくのかなと思っています。そこが一番変わったと実感しているところです。 
+                </p>
+                </p>
+
+                <p style="clear: both;" class="mb20">
+                  <span class="pickup">
+                    郵送代行サービスで現場のストレスを軽減
+                  </span>
+                </p>	
+                <p class="mb50">
+                  <span class="yamamoto">山本</span>：御社にはBPOサービス<a href="https://www.kanamic.net/lp/care/002-web-meisai" target="_blank">（カナミックかんたん郵送代行）</a>も使っていただいていますが、利用されてみていかがでしょうか。<br>
+                  ※ヤックスケアサービス様では、各事業所で行っていた3千通近い請求書・領収書の「印刷」「封入」「発送作業」をカナミックの郵送代行へ委託<br><br>
+                  
+                  <span class="bitou">美藤常務</span>：複数サービスを展開しておりますので、一本化になればそれだけでも経費の削減につながるという点と、私も末社長も現場職を経験しておりまして、その作業の大変さを分かっているので、BPOも是非やりたいとお願いした次第です。<br><br>
+                  
+                  <span class="yamamoto">山本</span>：末社長も郵送の紙を詰めていらっしゃったことがあるんですか？<br><br>
+
+                  <img src="img/yacs07.png" alt="株式会社ヤックスケアサービス・末氏"  class="img_490_fr"/>
+
+                  <span class="sue">末社長</span>：ガンガン詰めてました(笑)。お金のことなんで遅れちゃいけないし、間違ってはいけない。すごくストレスですよね。なので、やってもらえることですごく助かっています。今は、あのとき神経をすり減らしていたのは何だったのっていうぐらいです (笑)。<br><br>
+                  
+                  <span class="yamamoto">山本</span>：間違えられない作業を利用者さんを帰した後の夕方・夜にやるのは大変ですよね。そこが改善できているというのは非常に良かったです。 私もボランティアで介護施設へ行って現場業務を体験したりするんですけど、職員の皆様はあれもこれもさらに事務も全部やっていらっしゃって、これはスーパーマンだなと。そういった面でDXしていって、要介護者の方と関わる時間をできるだけ増やしていただいて、職員の方がストレスを感じることがなくなっていくのはすごく大事ですよね。<br><br>
+                  
+                  <span class="bitou">美藤常務</span>：まだ慣れ始めてきたところなので、これから職員にはDXによる効果をより実感してもらって、利用者さんと接する時間が増えて、利用者さんの満足度が向上して、職員の精神的な不安も取り除いて定着率が上がっていくことをすごく期待しているところです。 
+                </p>
+            
+
+                <p style="clear: both;" class="mb30">
+                  <span class="pickup">
+                    今後の事業戦略
+                  </span>
+                </p>	
+                <img src="img/yacs08.jpg" alt="ヤックスドラッグ外観"  class="img_490_fl"/>
+                <p class="mb20">
+                  <span class="yamamoto">山本</span>：最後に御社のこれからの事業戦略と、少子高齢化社会に対するイノベーションとしてどんなことに取り組んでいきたいかについて教えていただけますでしょうか。<br><br>
+
+                  <span class="sue">末社長</span>：千葉薬品グループとして、ドラッグストアを基盤として、調剤薬局・介護が合わさったケアステーションモデルを推進しています。 また、ドラッグストアと併設しているからこそ、ご利用者と繋がるような仕組みが欲しいなと思っています。 タブレットなどを持ってもらってご利用者と繋がることで、介護サービスだけじゃなくて、買い物ができるとかドラッグストアのものがポチっと注文できるとか、薬局にお薬の相談や健康相談ができるとか。利用者さんもそうなんですけど、一緒にいるご家族様にもご家族様ならではの相談だったり、オンラインで繋がることでいろんなニーズが拾えるんじゃないかなと考えています。<br><br>
+                  
+                  <span class="yamamoto">山本</span>：オフラインでの人間関係はすでに出来ていらっしゃるので、さらにオンラインも含めて両方で、ご利用者のご家族も含めて繋がれるような地域社会を作っていくのが、御社の超高齢社会におけるイノベーションということですね。これから地域住民の方のためにもぜひ素晴らしいサービスを提供していただけたらと思います。今日はありがとうございました。<br><br>
+                  
+                  <span class="sue">末社長</span>：ありがとうございました。<br><br>
+                </p>
+				
+              <div class="introduction row">
+                <div class="section" style="margin-bottom: 0;">
+                  <div class="col" style="margin-bottom: 0;">
+                    <div class="text col-sm-8">
+                      <h2>
+                        株式会ヤックスケアサービス
+                      </h2>
+                      <div class="img-yacslogo0" style="padding-right: 0; padding-top: 0px;">
+                        <img src="img/yacs09.jpg" alt="株式会社ヤックスケアサービスロゴ"/>
+                      </div>
+
+                      <table class="bace">
+                        <tr>
+                          <th>組織概要</th>
+                          <td></td>
+                        </tr>
+                        
+      
+                        <tr>
+                          <td>法人名</td>
+                          <td>株式会ヤックスケアサービス</td>
+                        </tr>
+      
+                        <tr>
+                          <td>住所</td>
+                          <td>〒260-0025<br>千葉県千葉市中央区問屋町1-35 ポートサイドタワー28階</td>
+                        </tr>
+      
+                        <tr>
+                          <td>従業員人数</td>
+                          <td>900名</td>
+                        </tr>
+      
+                        <tr>
+                          <td>事業所数</td>
+                          <td>88事業所</td>
+                        </tr>
+      
+                        <tr>
+                          <td>事業内容</td>
+                          <td>通所介護、訪問介護、居宅介護支援、訪問看護・リハビリ、サービス付き高齢者向け住宅、福祉用具貸与・販売</td>
+                        </tr>
+      
+                        <tr>
+                          <td>導入システム</td>
+                          <td>居宅介護支援、訪問介護、障がい者総合支援、訪問看護、通所介護、サービス付き高齢者向け住宅、カナエルタッチ、債権管理、郵送代行BPOサービス</td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="img-yacslogo1" style="padding-right: 0; padding-top: 0px;">
+                      <img src="img/yacs09.jpg" alt="株式会社ヤックスケアサービスロゴ"/>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="container">
+        <div class="inquiry spDisNon">
+          <a
+            href="https://www14.webcas.net/form/pub/kanamic/form"
+            target="_blank"
+            ><img src="img/bnr_Inquiry.png" alt="お問い合わせフォーム" class="img01"
+          /></a>
+        </div>
+
+        <div class="inquiry sp_img">
+          <a
+            href="https://www14.webcas.net/form/pub/kanamic/form"
+            target="_blank"
+            ><img src="img/bnr_Inquiry_sp.png" alt="お問い合わせフォーム"  class="img01"
+          /></a>
+        </div>
+      </div>
+      
+      <footer id="footer">
+        <div class="bg">
+          <div class="inner">
+            <div class="footBnr"></div>
+            <div id="pagetop"><a href="#">ページトップへ戻る</a></div>
+            <div id="footNav">
+              <div class="block b01">
+                <div class="box last">
+                  <h2><a href="../../care/">介護向けシステム</a></h2>
+                  <ul>
+                    <li>
+                      <a href="../../care/houkatsu.html">地域包括支援センター向け</a>
+                    </li>
+                    <li>
+                      <a href="../../care/kyotaku.html">居宅介護支援向け</a>
+                    </li>
+                    <li>
+                      <a href="../../care/houmon.html">介護事業者(訪問)向け</a>
+                    </li>
+                    <li>
+                      <a href="../../care/tsusho.html">介護事業者(通所)向け</a>
+                    </li>
+                    <li>
+                      <a href="../../care/shisetsu.html">介護事業者(施設・有老・サ高住)向け</a>
+                    </li>
+                    <li>
+                      <a href="../../care/yougu.html">介護事業者(福祉用具)向け</a>
+                    </li>
+                    <li>
+                      <a href="../../care/chiikimitchaku.html">介護事業者(地域密着)向け</a>
+                    </li>
+                    <li>
+                      <a href="../../care/shogai.html">障がい者総合支援</a>
+                    </li>
+                  </ul>
+                  <!-- / .box -->
+                </div>
+                <div class="box mt15">
+                  <h2><a href="../../medical/">医療向けシステム</a></h2>
+                  <!-- / .box -->
+                </div>
+                <div class="box">
+                  <h2><a href="../../child-care/">子育て支援システム</a></h2>
+                  <!-- / .box -->
+                </div>
+                <!-- / .block -->
+              </div>
+              <div class="block b02">
+                <div class="box last">
+                  <h2><a href="../../company/">企業情報</a></h2>
+                  <ul>
+                    <li><a href="../../company/concept.html">企業コンセプト</a></li>
+                    <li><a href="../../company/message.html">トップメッセージ</a></li>
+                    <li><a href="../../company/outline.html">会社概要</a></li>
+                    <li><a href="../../company/officer.html">役員一覧</a></li>
+                    <li><a href="../../company/access.html">拠点一覧</a></li>
+					          <li><a href="../../company/group.html">グループ会社</a></li>
+                  </ul>
+                  <!-- / .box -->
+                </div>
+                <div class="box mt15">
+                  <h2><a href="../../case/">導入事例</a></h2>
+                  <!-- / .box -->
+                </div>
+                <div class="box">
+                  <h2>
+                    <a href="../../recruit/recruit.html" target="_blank">採用情報</a>
+                  </h2>
+                  <ul>
+                    <!-- <li><a href="../recruit/newgraduates.html">新卒採用</a></li> -->
+                    <!-- <li><a href="../recruit/careers.html">中途採用</a></li> -->
+                  </ul>
+                  <!-- / .box -->
+                </div>
+                <!-- / .block -->
+              </div>
+              <div class="block b03">
+                <div class="box last">
+                  <h2><a href="../../ir/">IR情報</a></h2>
+                  <ul>
+                    <li><a href="../../ir/management.html">トップメッセージ</a></li>
+                    <li><a href="../../ir/library.html">IRライブラリ一覧</a></li>
+					          <li><a href="../../ir/esg.html">ESGへの取り組み</a></li>
+                    <li><a href="../../ir/stock.html">株式情報</a></li>
+                    <li><a href="../../ir/calendar.html">IRカレンダー</a></li>
+                    <li><a href="../../ir/faq.html">FAQ</a></li>
+                    <li><a href="../../ir/notice.html">電子公告</a></li>
+                    <li><a href="../../ir/irpolicy.html">ディスクロージャーポリシー</a></li>
+                    <li><a href="../../ir/disclimer.html">免責事項</a></li>
+                    <li><a href="../../ir/toiawa.html">お問合せ</a></li>
+                  </ul>
+                </div>
+                <!-- / .block -->
+              </div>
+              <!-- / #footNav -->
+				
+			  <div class="block b04">
+                <div class="box last">
+                  <h2>
+                      <a href="https://www14.webcas.net/form/pub/kanamic/form"
+                        >資料請求・お問合わせ</a>
+                    </h2>
+                  <!-- / .box -->
+                </div>
+                <!-- / .block -->
+              </div>
+              <!-- / #footNav -->
+            </div>
+            <!-- / .inner -->
+          </div>
+        </div>
+      </footer>
+
+      <footer id="footer2nd">
+        <div class="inner">
+          <div id="footSubNav">
+            <ul>
+              <li><a href="../../topics/">ニュース一覧</a></li>
+              <li>
+                <a href="../../company/privacy.html">プライバシーポリシー</a>
+              </li>
+              <li class="last"><a href="../../sitemap/">サイトマップ</a></li>
+            </ul>
+          </div>
+          <div id="mark">
+            <ul>
+              <li>
+                <a href="https://www.jipdec.or.jp/" target="_blank" >
+                  <img src="../../common/img/footer-icon/foot_ico_privacy.jpg" width="90" height="90" alt="プライバシーマーク" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.cloud-nintei.org/" target="_blank" >
+                  <img src="../../common/img/footer-icon/foot_ico_asp.jpg" width="70" height="90" alt="ASPICクラウドサービス情報開示認定制度" />
+                </a>
+              </li>
+              <li style="padding: 0;">
+                <a href="../topics/press-release/2024/press-release0312.html">
+                  <img src="../../common/img/footer-icon/foot_ico_yuryo.png" width="" height="100" alt="健康経営優良法人" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <small>
+            Copyright &copy; Kanamic Network Co.,LTD<br />
+            All Rights Reserved.
+          </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

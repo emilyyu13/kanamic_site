@@ -1,0 +1,82 @@
+h4.question {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ff6600;
+  font-size: 24px;
+  font-weight: bold;
+}
+.jirei-photoR {
+  width: 50%;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.jirei-photoL {
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.jirei-photoC {
+  width: 70%;
+}
+.txtC {
+  text-align: center;
+}
+.paragraph {
+  width: 90%;
+  margin: 50px auto 0px;
+}
+.w95 {
+  width: 95%;
+}
+.profilephoto {
+  width: 140px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.pc-none {
+  display: none;
+}
+.f12 {
+  font-size: 12px;
+}
+
+.container-fluid.top .main_img {
+  background-image: url("img/top_01_n.png");
+  /* height: 460px; */
+  background-position: center;
+  background-size: cover;
+}
+
+/****** スマホ対応系共通 *****/
+
+/* スマホ向けのスタイル：767px以下に適用 */
+@media only screen and (max-width: 767px) {
+  .jirei-photoR {
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    margin: 10px auto;
+  }
+  .jirei-photoL {
+    width: 100%;
+    float: none;
+    margin-right: 0px;
+    margin: 10px auto;
+  }
+  .jirei-photoC {
+    width: 100%;
+  }
+
+  .sp-none {
+    display: none;
+  }
+  .pc-none {
+    display: block;
+  }
+
+  @media only screen and (max-width: 499px) {
+  }
+}
