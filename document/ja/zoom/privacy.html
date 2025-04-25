@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+  <!-- アイコン CSS -->
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <!-- アニメーション CSS -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+  <!-- 調整用 CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="../../ja/zoom/js/common.js"></script>
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script> -->
+
+  <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+  <script type="text/javascript">
+    $(function () {
+      if (window.matchMedia("(max-width: 414px)").matches) {
+        //スマホ処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6800) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else if (window.matchMedia("(max-width:813px)").matches) {
+        //タブレット処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 5300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else {
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 一旦hide()で隠してフェードインさせる
+      $("div.container-fluid.slide").hide().fadeIn("slow");
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+
+  <title>プライバシーポリシー|株式会社カナミックネットワーク</title>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar" data-offset="100">
+  <div class="container-fluid header">
+    <div class="nav_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/KANAMIC_logo_cr.png" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="zoom.html">Zoom連携方法</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">利用規約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">お問合せ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">プライバシーポリシー</a>
+            </li>
+            <li class="nav-item corptop">
+              <a class="nav-link" href="https://www.kanamic.net/" data-target="#top">コーポレートサイトへ</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid slide clearfix">
+    <div class="h1area">
+      <div class="langarea">
+        <div class="langselect cp_sl01">
+          <select required>
+            <option value="" hidden>language</option>
+            <option value="1" selected>Japanese</option>
+            <option value="2">English</option>
+          </select>
+        </div>
+      </div>
+      <h1>個人情報の取り扱いについて</h1>
+    </div>
+    <div class="main">
+      <p class="kaitei"><br>
+        平成17年４月１日制定<br>
+        平成20年６月２日改定<br>
+        平成22年９月３日改定<br>
+        平成24年９月18日改定<br>
+        平成27年９月29日改定<br>
+        平成29年12月１日改定<br>
+        平成30年５月11日改定<br>
+        令和２年11月１日改定<br>
+</p>
+      <h3>I 個人情報の利用目的について</h3>
+      <p>当社のサイトにて収集する個人情報は、次のような目的に使用されます。</p>
+      <ul class="dot">
+        <li>ご購入商品のご利用サポート</li>
+        <li>当社商品に関するサービス提供</li>
+        <li>各種お問い合わせ及び資料送付</li>
+        <li>ご購入商品または当社取り扱い商品の新情報の提供</li>
+        <li>個人情報を特定しない統計情報への利用</li>
+        <li>採用選考への利用</li>
+      </ul>
+      <p>上記目的の範囲外で利用する場合は事前にお客様にお知らせし、ご了解をいただいた場合に限り利用させていただきます。</p>
+      <h3>II 個人情報の種類等について</h3>
+      <p>弊社では以下の個人情報をお預かりしております。</p>
+      <h4>【お問合せ関連】<br></h4>
+      <p>当社に対するお問合せの際に、ご本人が記載または入力した勤務先、氏名、住所、電話番号、メールアドレス等<br></p>
+      <h4>
+        【採用関連</h4>
+      <p>申込者が記載した、氏名、性別、生年月日、年齢、郵便番号、住所、電話番号、携帯電話番号、メールアドレス、学校名、入年月、卒業(見込)年月保有する資格、職歴等</p>
+      <h4>【カナミッククラウドサービス関連】<br></h4>
+      <p>
+        契約申込者が記載した、氏名、郵便番号、住所、電話番号等<br>
+        カナミッククラウドサービスをご利用されている方が登録した、利用者様の医療・介護・福祉サービスに関する項目等<br>
+      </p>
+      <h4>【広報・IR関連】<br></h4>
+      <p>対象者が提供した、氏名、郵便番号、住所、電話番号、映像等</p>
+      <h4>【当社役員、顧問、従業員等関連】<br></h4>
+      <p>履歴書、職務経歴書、家族情報、年金情報等</p>
+      <h4>【株主関連】<br></h4>
+      <p>株主名、住所、株主番号、等</p>
+      <h4>【要配慮個人情報および機微（センシティブ）情報 】<br></h4>
+      <p>要配慮個人情報および機微（センシティブ）情報については、業務の適切な運営の確保その他必要と認められる目的以外で収集、保管または利用いたしません。 </p>
+      <h3>III 個人情報の共同利用について</h3>
+      <p>当社は、カナミックネットワークの経営資源を活用し、お客様に付加価値の高いサービスをご提供することを通じ、企業価値向上を図っております。</p>
+      <p>そのために以下の範囲内で必要な場合に限り、厳格な管理・監督のもとに個人情報を共同利用させていただきたいと考えておりますので、何卒ご理解を賜りますようお願い申し上げます。<br>
+        なお、共同利用の取扱いにつきましては、今後必要に応じて見直しをさせていただくことがございます。その際には、あらかじめ当社ホームページに掲載するプライバシーポリシーにて公表させていただきます。</p>
+        <h4>1. 共同利用する目的 </h4>
+        <ol class="list3em">
+          <li>(1) カナミッククラウドサービスおよびサポート提供のため</li>
+          <li>(2) カナミッククラウドサービスのサービス品質向上を図るため</li>
+          <li>(3) カナミッククラウドサービスをご契約いただいているお客様とのご契約履行のため</li>
+          <li>(4) 公衆衛生の向上または児童の健全な育成の推進のため</li>
+          <li>(5) 社会保障費適正化、科学的介護に向けた取組のため</li>
+        </ol>
+      <h4>2. 共同利用者範囲</h4>
+      <p>以下の(1)～(3)の範囲の者が、個人情報を共同利用させていただきます。</p>
+      <ol class="list3em">
+        <li>(1) 当該個人情報を取得されたカナミッククラウドサービスのご契約者様（「ユーザー様」といいます。）</li>
+        <li>(2) ユーザー様と連携して当該個人情報の主体であるご本人様に医療、介護またはその他サービス提供を行う業務に関わる方で、カナミッククラウドサービスを利用することにつきあらかじめユーザー様の指定を受け当社の許可を得ておられる方（「連携ユーザー様」といいます。）</li>
+        <li>
+          (3) 当社 Kanamic Network Co.,LTD<br>
+          ただし、ユーザー様および連携ユーザー様は、ご自身が医療、介護またはその他サービスを提供する対象となる方の個人情報のみご利用することができ、その他のカナミッククラウドサービスに収録された個人情報にアクセスし、これをご利用することはできません。<br>
+        </li>
+      </ol>
+        <h4>3. 共同利用個人データ項目</h4>
+        <p>
+          カナミッククラウドサービスに入力された個人データの項目はすべて共同で利用させていただく可能性がございますが、その場合も「１．共同利用する目的」に定める業務の遂行のために必要な最小限度において利用させていただきます。具体的には、氏名、性別、生年月日、住所、電話番号のほか、要介護度に関するデータ項目、医療・介護・福祉サービスの提供に関するデータ項目を共同で利用させていただく場合がございます。
+        </p>
+        <h4>4. 共同利用個人データの管理責任者名称</h4>
+        <p>株式会社カナミックネットワーク Kanamic Network Co.,LTD<br></p>
+        <h4>5. 個人情報の取得方法</h4>
+        <p>
+          共同利用する個人情報は、カナミッククラウドサービスご利用ユーザー様、ご利用ユーザー様が指定する連携ユーザー様がカナミッククラウドサービスに入力されたもの若しくはカナミッククラウドサービスご利用ユーザー様の委託によりシステム利用開始時に登録した遡及・移行データといたします。
+        </p>
+      <h3>IV 個人情報の第三者への開示について</h3>
+      <p>
+        当社は、原則として、あらかじめご本人から同意をいただいている場合のほか、ご提供いただいた個人情報を第三者に提供・開示することはいたしません。<br>
+        ただし、以下のような場合には、必要最小限度にて個人の情報を第三者に開示する場合がございます。<br>
+      </p>
+      <ol class="list2em">
+        <li>1. 法令に基づく場合<br></li>
+        <li>2. 人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難である場合<br></li>
+        <li>3. 公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難である場合<br></li>
+        <li>4. 国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがある場合</li>
+      </ol>
+      <h3>V 匿名加工情報</h3>
+      <h4>1.匿名加工情報の作成・第三者提供について</h4>
+      <p>
+        当社は、カナミッククラウドサービスに係る以下の情報について、特定の個人を識別することおよび作成に用いる個人情報を復元することができないよう適切な保護措置を講じたうえで匿名加工情報として作成し、カナミッククラウドサービスおよびサポート提供、サービス品質向上、公衆衛生の向上、児童の健全な育成の推進又は社会保障費適正化、科学的介護に向けた取組のために第三者に提供することがございますので、公表いたします。</p>
+      <h4>2.情報の項目</h4>
+      <p>性別、生年月日のうち年月迄のデータ項目（ただしトップ（ボトム）コーディング処理したもの）住所のうち都道府県及び市郡区迄のデータ項目、要介護度に関するデータ項目、医療・介護・福祉サービスの提供に関するデータ項目
+        </p>
+      <h4>3.提供の方法</h4>
+      <p>パスワードにより保護された電子ファイルを外部記憶媒体で手交もしくは当社提供のカナミッククラウドサービスの共有システムを利用</p>
+      <h3>VI 個人情報の保管期間について</h3>
+      <p>弊社ではお預かりした個人情報を原則5年間保管させて頂いております。
+        (※別途個別契約で5年以内に破棄する場合もございます。)保管期間が過ぎた個人情報に関しては、個人情報の媒体種類によってシュレッダー・溶解・データの完全消去等の適切な処置により破棄させていただいております。</p>
+      <h3>VII 個人情報を郵送する場合の注意点について</h3>
+      <p>
+        郵送等により個人情報の受け渡しを行う場合（CDやUSBメモリなどを郵送する場合）送付元の責任のもと、暗号化等の措置を行うものとします。<br>
+        合わせて、お客様がデータを暗号化せずに郵送した場合に郵送事故などの弊社責任範囲外の原因により起こった情報漏洩に関して弊社は一切責任を負わないものとします。<br>
+        また、紙媒体などの暗号化できないものに関して、郵便事故などの弊社責任範囲外の原因により起こった情報漏洩に関して弊社は一切責任を負わないものとします。<br>
+      </p>
+      <h3>VIII 個人情報の開示・訂正・利用停止をご請求される場合の手続きについて</h3>
+      <p>
+        個人情報の開示・訂正・利用停止をご希望の方は[こちら]をご覧下さい。<br>
+        →<a href="http://www.kanamic.net/pdf/privacy_demand.pdf" target="_blank">個人情報の開示・訂正・利用停止をご請求される場合の手続きについて</a>
+      </p>
+      <h3>IX プライバシーポリシーの変更及び告知について</h3>
+      <p>
+        プライバシーポリシーの内容は、個人情報利用目的以外必要に応じて変更することがございます。<br>
+        お客様の方へは、その都度ご連絡はいたしかねますので、 ご利用の際には本ページの最新の内容をご参照ください。
+      </p>
+      <h4>著作権についてCopyright<br></h4>
+      <p>
+        当サイト内で提供されるすべての情報やコーポレートマーク、商標、映像や画像などの著作権はカナミックネットワークに帰属します。<br>
+        それら著作権保護対象物の取り扱い、及び使用に関しては下記の通りとします。
+        個人的な利用に関しては、あくまでも第三者が閲覧可能な環境に流用されない、または営利的な目的で利用されないという前提において、表示、複製、印刷などは認められるものとしますが、改変などは認められません。また個人的な使用であっても著作権等に関するあらゆる表示を削除してはなりません。<br>
+        また上記以外に該当する利用に関しては予め書面によって申請をし、カナミックネットワークの正式な許可を取った後でのみ、再利用し、複製し、再配布出来ます。ただし、あくまでも利用者の誤解を受けるような使用方法はお断り致します。<br>
+      </p>
+      <h4>クッキー(Cookie)について<br></h4>
+      <p>
+        弊社のサイトには、「クッキー（Cookie）」と呼ばれる技術を利用したページがあります。<br>
+        クッキーとは、Webサーバからお客様のブラウザに送信される小規模なデータのことをいい、お客様のディスクにファイルとして格納されるものもあります。<br>
+        クッキーの使用は業界の標準となっており、多くのサイトで、利用者に有益な機能を提供する目的で クッキーが使用されています。<br>
+        クッキーにより、利用者の使用するコンピュータは特定されますが、利用者個人の身元を特定できるわけではありません。<br>
+        なお、ブラウザの設定により、クッキーの設定を変更してクッキーの機能を無効にすることができますが、その結果弊社ウェブページ上のサービスの一部がご利用いただけなくなることがあります。<br>
+      </p>
+      <h4>SSLについて<br></h4>
+      <p>
+        弊社のウェブサイトは、お客様の個人情報を保護するために「SSL（Secure Socket Layer）」に対応しています。<br>
+        お客様が入力される個人情報を暗号化して送受信することで、高いレベルで安全性の確保を図っています。<br>
+        ただし、お使いのウェブブラウザのSSLに関する設定が有効になっていない場合やSSLに対応していないブラウザをご利用の場合は、弊社のウェブサイトにアクセスできなかったり、情報の入力ができない場合があります。<br>
+        ※ほとんどの主要なウェブブラウザはSSLに対応していますので、通常はお客様が特にSSLを意識される必要はありません。<br>
+      </p>
+      <h4>その他、ご確認及びご留意いただくこと</h4>
+      <p>
+        弊社のウェブサイトからリンクされている他社のウェブサイトにおけるプライバシー情報の取り扱いの基準や内容において、弊社は責任を負うものではありません。<br>
+        弊社のウェブサイト以外のインターネットサイトでは、掲示板などでお客様が自発的に個人情報を開示した場合、その情報は他の利用者によって収集され使用されるおそれがあることにご留意ください。<br>
+        従いまして、お客様はご自身の責任において情報を発信していただくとともに、取り扱いには十分にご注意くださいますようお願いいたします。<br>
+      </p>
+      <h4>認定個人情報保護団体について</h4>
+      <p>
+        当社は、個人情報の保護に関する法律に基づく下記の認定個人情報保護団体の会員となっております。<br>
+        <a href="https://privacymark.jp/" target="_blank">一般財団法人 日本情報経済社会推進協会</a><br>
+        個人情報に関する苦情・相談の申出先<br>
+        【個人情報の取扱いに関する相談受付電話】<br>
+        受付電話番号：0120-116-213／0120-700-779<br>
+      </p>
+    </div>
+
+    <div class="container-fluid footer clearfix">
+      <p>Copyright © Kanamic Network Co.,LTD All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

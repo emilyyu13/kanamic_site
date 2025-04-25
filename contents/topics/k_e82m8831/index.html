@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>TRITRUS トピックス</title>
+    <link rel="stylesheet" href="base.css" type="text/css" />
+    <link rel="stylesheet" href="customize.css" type="text/css" />
+    <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/kanamic_point.css" />
+    <script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/yuga.js" type="text/javascript"></script>
+    <script src="../js/tinyscrolling.js" type="text/javascript"></script>
+    <script src="../js/prefixfree.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function () {
+        kanaDate = new Date();
+        kanaYear = kanaDate.getFullYear();
+        $('.year').html(kanaYear);
+      });
+
+      $(function () {
+        $('.BtnRefusal').click(function () {
+          var href = document.referrer;
+          var d = 'https://portal.kanamic.net/';
+          if (!href || href.length == 0) {
+          } else {
+            d = href.match(/https?:\/\/[a-zA-Z0-9\-_\.:@!~*'\(¥);\+$,]+\//i)[0];
+          }
+          window.open(d + 'tritrus/help/inquiry/');
+        });
+      });
+
+      $(function () {
+        $('.BtnStartTpoint').click(function () {
+          var href = document.referrer;
+          var d = 'https://portal.kanamic.net/';
+          if (!href || href.length == 0) {
+          } else {
+            d = href.match(/https?:\/\/[a-zA-Z0-9\-_\.:@!~*'\(¥);\+$,]+\//i)[0];
+          }
+          location.href = d + 'tritrus/tpoint/tpIndex';
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-462660-7', 'auto');
+      ga('send', 'pageview');
+
+      $(function () {
+        /* click tracking google ana */
+        /* click tracking google ana */
+        var dir1 = location.href.split('/');
+        var dir = dir1[dir1.length - 2];
+        $('a').click(function (e) {
+          var ahref = $(this).attr('href');
+          var atxt = '';
+          if ($(this).children('img').length > 0) {
+            atxt = '画像_' + $(this).children('img').attr('alt');
+          } else {
+            atxt = $(this).text();
+          }
+          if (
+            (ahref.indexOf('https') != -1 || ahref.indexOf('http') != -1) &&
+            ahref.indexOf('http://www.kanamic.net/') == -1
+          ) {
+            ga('send', 'event', dir + '_外部link', atxt, ahref);
+          } else if (ahref.indexOf('.pdf') != -1) {
+            ga('send', 'event', dir + '_PDFlink', atxt, ahref);
+          }
+        });
+      });
+    </script>
+    <div id="pagetop">
+      <div id="page" class="topics_page">
+        <div id="topics_header">
+          <div class="mw1280 cf">
+            <h1 class="fl">
+              <img src="../img/topics_logo.png?20240523" alt="TRITRUSトピックス" width="425" height="43" />
+            </h1>
+          </div>
+          <div class="topics_header_hr"></div>
+        </div>
+        <div id="pageContents">
+          <div class="t_content">
+            <!--div class="subNavi">
+     <ul class="cf">
+      <li><a href="#k01"><span>カナメダル<br class="unDisplay_Tablet" />とは？</span></a></li>
+      <li><a href="#k02"><span>どうやって<br />貯めるの？</span></a></li>
+      <li><a href="#k03"><span>どんな特典が<br />あるの？</span></a></li>
+      <li><a href="#k04"><span>Vポイントについて</span></a></li>
+      <li><a href="#k05"><span>ご利用手順</span></a></li>
+      <li class="unDisplay_PC"><span></span></li>
+     </ul>
+    </div-->
+
+            <div id="k01">
+              <h4><span>カナメダルとは？</span></h4>
+              <p>
+                カナミックは日本初の医療介護地域連携のクラウドサービスです。<br />
+                より良い地域連携が行われることにより、日本全体の医療介護が良くなることを<br
+                  class="unDisplay_PC"
+                />望んでおります。<br />
+                そこで、カナミックから独自にポイントを差し上げるサービスをご提供いたします。<br />
+                コミュニティのケアレポート上で、他参加者から押された「Good Job!」数などに応じて<br
+                  class="unDisplay_PC"
+                />カナメダルが貯まります。
+              </p>
+
+              <p class="txtC" style="margin-top: 20px"><img src="img/outline_img01.png?20240523" /></p>
+            </div>
+
+            <div id="k02">
+              <h4><span>どうやって貯めるの？</span></h4>
+              <h5 class="num">
+                １<span>あなたがコミュニティに投稿したコメントが“Good Job!”される</span>
+              </h5>
+              <p class="txtC"><img src="img/howto_img01.png?20240523" /></p>
+              <h5 class="num">
+                ２<span
+                  ><img
+                    src="img/kanamic_point.png?20240523"
+                    style="height: 50px; vertical-align: middle; margin-right: 5px"
+                  />マークのついたニュースを閲覧する</span
+                >
+              </h5>
+              <p class="txtC"><img src="img/howto_img02.png?20240523" /></p>
+              <h5 class="num">３<span>アンケートに協力する</span></h5>
+              <p class="txtC"><img src="img/howto_img03.png?20240523" /></p>
+            </div>
+
+            <div id="k03">
+              <h4><span>どんな特典があるの？</span></h4>
+              <h5>カナメダルの一部が <img src="img/text_tpoint.png?20240523" /> になります！</h5>
+              <p class="txtC"><img src="img/tpoint_img01.png?20240523" /></p>
+              <p class="mb30" style="padding-left: 2em">
+                ※１Good Job!あたり１ポイントが貯まります。（他法人からのGood Job!のみ）<br />
+                <!--※獲得したカナメダル及びVポイント数は前日分までが確定数として表示されます。<br />
+     ※当日のみ、Good Job!が押されたコメントを削除するとカナメダル及びVポイントも無効となります。<br />-->
+                ※ニュース閲覧やアンケート回答は内容によって付与されるVポイント数が異なります。
+              </p>
+              <div class="box">
+                <h5 style="color: #ff7800" class="mb0 mt0 f30">法人管理者様へ</h5>
+                <h5 class="mt10">
+                  法人内でVポイント付与サービスをご利用にならない場合は<br />「利用停止申請」が行えます。<br />
+                  以下のボタンからお問合せフォームに移動します。<br />
+                  「お問合せ分類」は「Vポイント - 利用停止申請」を選択してください。
+                </h5>
+                <p>
+                  ※法人単位のため、法人に紐づく全ての事業所で無効化されます。<br />
+                  ※カナミック独自のカナメダルは表示されます。Vポイント利用手続き及び申請のみ停止されます。
+                </p>
+                <p class="txtC mt10 mb30">
+                  <button class="BtnRefusal">利用停止申請はこちら</button>
+                </p>
+              </div>
+            </div>
+
+            <div id="k04">
+              <h4><span>Vポイントについて</span></h4>
+              <h5 class="num">
+                １<span
+                  >Vポイントは、全国にあるVポイント提携先やインターネットの提携先で、<br />
+                  ご利用金額に応じて貯めたり、お使いいただくことができる共通ポイントです。</span
+                >
+              </h5>
+              <!--      <h5 class="num">１<span>Vポイント付与サービスは2017年9月1日（金）9:00より始まります</span></h5>-->
+              <div class="txtC">
+                <p class="">
+                  ※Vポイントについて詳しく知りたい方はこちら(Vポイントサイトへ移動します)
+                </p>
+                <ul class="ml20 tsite cf">
+                  <li>
+                    <a href="https://t-point.tsite.jp/guide/" target="_blank"
+                      ><span
+                        >Vポイント<br class="unDisplay_Mobile" />
+                        初めてガイド</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://tsite.jp/pc/r/al/list.pl" target="_blank"
+                      ><span>提携先一覧</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://vpoint.net/faq" target="_blank"
+                      ><span
+                        >よくあるご質問・<br class="unDisplay_Mobile" />
+                        お問い合わせ</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <h5 class="num">２<span>Vポイントを貯める・使う</span></h5>
+              <ul class="caution txtL mb40">
+                <li>
+                  カナミッククラウド上でVポイント利用手続きを行い、Vポイント申請を行うとVポイントが貯まります。<br />
+                  ※申請したVポイントは、翌月の10日以降に付与されます。
+                </li>
+                <li>
+                  貯まったVポイントは、Vポイント提携先でご利用いただけます。<a
+                    href="http://tsite.jp/pc/r/al/list.pl"
+                    target="_blank"
+                    >Vポイント提携先はこちらをご覧ください。（Vポイントサイトへ移動します）</a
+                  ><br />
+                  ※カナミッククラウドサービスでは貯まったVポイントは利用できません。
+                </li>
+              </ul>
+              <p class="mt10 txtC p10"><img src="img/tpoint_img03.png?20240523" /></p>
+              <h5 class="num">
+                ３<span
+                  >Vポイント付与対象のカナメダルを貯めるには、Vポイント利用手続き（無料）が必要です</span
+                >
+              </h5>
+              <p>Vポイント利用手続き後に取得したカナメダルの一部が、Vポイント付与対象になります</p>
+              <p class="txtC mb30" style="margin-top: 30px">
+                <button class="BtnStartTpoint">
+                  Vポイント利用手続きは<br class="unDisplay_PC" />こちら
+                </button>
+              </p>
+              <div class="caution">
+                <dl>
+                  <dt><span class="f20">ご利用前に必ずご確認ください</span></dt>
+                  <dd>
+                    <ul>
+                      <li>CCCMKホールディングス株式会社が運営する「Vポイントサイト」での手続きとなります。<br>
+                        以下のいずれかをお持ちの場合は、「設定を始める」ボタンを押して連携してください。
+                        <br>
+                        　・Yahoo! JAPAN ID<br>
+                        　・V会員番号<br>
+                        　・VポイントカードまたはTカード<br>
+                        上記のいずれもお持ちでない場合は、「新規登録」ボタンを押して会員登録を行ってください。<br>
+                        </li>
+                      <li>
+                        <span
+                          >Vポイント利用手続き前に獲得されていたカナメダルは、Vポイント申請の対象外</span
+                        >となります。
+                      </li>
+                      <li>
+                        複数のカナミックIDと同一のV会員でVポイント利用手続きを行うことはできません。
+                      </li>
+                      <li>
+                        所属するご法人によりVポイントサービスを利用することができない場合がございます。<br />Vポイントサービスの対象可否については、所属するご法人にご確認ください。
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+
+              <h5 class="num">
+                ４<span>Vポイント申請後、実際にポイントが付与されるのは翌月の10日頃となります</span>
+              </h5>
+              <p>
+                Vポイント付与の申請はいつでも可能ですが、実際にVポイントとして付与されるのは翌月の10日頃となります。<br />
+                また、申請できるVポイント数は100単位で申請することができます。
+              </p>
+              <h5 class="num">
+                ５<span>1日に獲得できるVポイント付与対象の“Good Job”は1法人につき2GJまで</span>
+              </h5>
+              <p class="txtC"><img src="img/tpoint_img02.png?20240523" /></p>
+            </div>
+
+            <div id="k05">
+              <h4><span>ご利用手順</span></h4>
+              <p class="txtC mb30" style="margin-top: 30px">
+                <a class="BtnPdf" href="tp_241126.pdf" target="_blank"
+                  ><span class="icon-file-pdf"></span
+                  >Vポイント利用手続きから<br />ポイント付与までの流れ</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="pageTop clear">
+      <a href="#pagetop"><span class="icon-page-top f18"></span>ページの先頭へ</a>
+    </p>
+    <div id="footer">
+      <div class="boder"></div>
+      <ul>
+        <li class="line">
+          <a target="_blank" href="http://www.kanamic.net/company/outline.html">会社概要</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.kanamic.net/company/privacy.html"
+            >プライバシーポリシー</a
+          >
+        </li>
+      </ul>
+      <p>Copyright(c) <span class="year"></span> Kanamic Network Co.,LTD</p>
+    </div>
+  </body>
+</html>

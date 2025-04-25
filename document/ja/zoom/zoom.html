@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+  <!-- アイコン CSS -->
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <!-- アニメーション CSS -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+  <!-- 調整用 CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="../../ja/zoom/js/common.js"></script>
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script> -->
+
+  <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+  <script type="text/javascript">
+    $(function () {
+      if (window.matchMedia("(max-width: 414px)").matches) {
+        //スマホ処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6800) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else if (window.matchMedia("(max-width:813px)").matches) {
+        //タブレット処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 5300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else {
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 一旦hide()で隠してフェードインさせる
+      $("div.container-fluid.slide").hide().fadeIn("slow");
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+
+  <title>Zoom連携方法|株式会社カナミックネットワーク</title>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar" data-offset="100">
+  <div class="container-fluid header">
+    <div class="nav_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/KANAMIC_logo_cr.png" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="zoom.html">Zoom連携方法</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">利用規約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">お問合せ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">プライバシーポリシー</a>
+            </li>
+            <li class="nav-item corptop">
+              <a class="nav-link" href="https://www.kanamic.net/" data-target="#top">コーポレートサイトへ</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid slide clearfix">
+    <div class="h1area">
+      <div class="langarea">
+      <div class="langselect cp_sl01">
+        <select required>
+          <option value="" hidden>language</option>
+          <option value="1" selected>Japanese</option>
+          <option value="2">English</option>
+        </select>
+        </div>
+      </div>
+            <h1>Zoom連携方法</h1>
+  </div>
+    <div class="main">
+      <div class="assumptions">
+        <h2>≪前提≫</h2>
+        <ul>
+          <li>
+            ・Zoomアカウントを取得していること
+          </li>
+          <li>・カナミック クラウドサービスのアカウントを取得していること</li>
+        </ul>
+
+
+
+      </div>
+
+      <h3 class="heading" id="company">１．カナミック クラウドサービスにログイン後、右上のメニューから「外部サービス連携」
+       をクリックします。(図1-1参照) 
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-1j.png" />
+
+
+      </div>
+
+      <h3 class="heading" id="company">２．外部サービス連携ページのZoomの欄にある「連携する」ボタンをクリックします。
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-2.png" />
+        <p class="caption">図1-2　外部サービス連携ページ</p>
+
+
+      </div>
+      <h3 class="heading" id="company">３．Zoom側の画面が表示されます。<br>
+        ログイン後、以下のような画面に遷移しますので、内容を確認後、「許可」ボタンをクリックしてください。(図1-3参照) 
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-3.png" />
+        <p class="caption">図1-3　Zoomリクエスト確認ページ</p>
+
+
+      </div>
+
+      <h3 class="heading" id="company">４．外部サービス連携ページに戻ると、連携済みを確認することができます。(図1-4参照) 
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-4.png" />
+        <p class="caption">図1-4　外部サービス連携ページ（Zoom連携後）</p>
+
+
+
+        <p>※「解除する」ボタンをクリックすると、Zoomとの連携を解除することができます。</p>
+      </div>
+
+    </div>
+    <div class="h1area">
+      <h1>Zoomミーティングの開始方法</h1>
+      </div>
+    <div class="main">
+
+      <h3 class="heading" id="company">１．会議を行いたい利用者（患者）部屋へ移動します。(図2-1-1、図2-1-2参照)
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-1j.png" />
+      </div>
+
+
+      <h3 class="heading" id="company">２．「会議予約・調整」をクリックします。(図2-2参照) 
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-2.png" />
+        <p class="caption">図2-2　コミュニティ一覧ページ</p>
+
+
+
+      </div>
+      <h3 class="heading" id="company">３．会議予約・調整画面から「新しく会議を設定」をクリックします。（図2-3参照)
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-3.png" />
+        <p class="caption">図2-3　会議予約・調整ページ</p>
+
+
+
+      </div>
+      <h3 class="heading" id="company">４．「日程調整せずに設定する」をクリックし、Web会議設定で「Zoomミーティング」を選択します。（図2-4参照) Click on 「日程調整せずに設定する」<br>
+        ※「日程調整をして設定する」場合も同じようにZoomミーティングを開始できます。
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-4.png" />
+        <p class="caption">図2-4　会議設定ページ</p>
+
+
+
+      </div>
+      <h3 class="heading" id="company">
+        ５．その他必要事項（開催日時、参加予定者等）を入力後、画面下部の「確認画面へ」ボタンをクリックし(図2-5-1参照)、内容確認後、「通知する」ボタンで会議を確定します。(図2-5-2参照)
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-5j.png" />
+      </div>
+      <h3 class="heading" id="company">６．設定した会議の時間（会議の10分前から）になると、会議予約・調整画面に「開始」ボタンが
+        表示されますので、クリックするとZoomミーティンを開始することができます。
+        （図2-6参照) 
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-6.png" />
+        <p class="caption">図2-6　会議予約・調整画面：開催予定欄に、設定した会議の一覧が表示されます。</p>
+        
+      </div>
+
+    </div>
+
+    <div class="container-fluid footer clearfix">
+      <p>Copyright © Kanamic Network Co.,LTD All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

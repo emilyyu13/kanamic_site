@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../ja/zoom/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../ja/zoom/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="../../ja/zoom/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="../../ja/zoom/css/swiper.min.css" />
+
+  <!-- アイコン CSS -->
+  <link rel="stylesheet" href="../../ja/zoom/css/fonts.css" type="text/css" />
+  <!-- アニメーション CSS -->
+  <!-- <link href="../../ja/zoom/https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+  <!-- 調整用 CSS -->
+  <link rel="stylesheet" href="../../ja/zoom/css/style.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../../ja/zoom/js/jquery-3.3.1.min.js"></script>
+  <script src="../../ja/zoom/js/bootstrap.bundle.min.js"></script>
+  <script src="../../ja/zoom/js/bootstrap.min.js"></script>
+  <script src="../../ja/zoom/js/common.js"></script>
+
+  <!-- <script src="../../ja/zoom/https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script> -->
+
+  <!--
+    <script src="../../ja/zoom/js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+  <script type="text/javascript">
+    $(function () {
+      if (window.matchMedia("(max-width: 414px)").matches) {
+        //スマホ処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6800) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else if (window.matchMedia("(max-width:813px)").matches) {
+        //タブレット処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 5300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else {
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 一旦hide()で隠してフェードインさせる
+      $("div.container-fluid.slide").hide().fadeIn("slow");
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+
+  <title>Terms of Use|株式会社カナミックネットワーク</title>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar" data-offset="100">
+  <div class="container-fluid header">
+    <div class="nav_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../../ja/zoom/#">
+          <img src="../../ja/zoom/img/KANAMIC_logo_cr.png" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="zoom.html">How to Zoom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">Terms of Use</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item corptop">
+              <a class="nav-link" href="https://www.kanamic.net/en/" data-target="#top">Go to corporate website</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid slide clearfix">
+    <div class="h1area">
+      <div class="langarea">
+        <div class="langselect cp_sl01">
+          <select required>
+            <option value="" hidden>language</option>
+            <option value="1">Japanese</option>
+            <option value="2" selected>English</option>
+          </select>
+        </div>
+      </div>
+      <h1>Terms of Use for the Kanamic Cloud Service for Zoom </h1>
+    </div>
+    <div class="main">
+      <h3>Article 1 (Purpose)</h3>
+      <p>
+        The
+        purpose of these Terms of Use is to set forth the conditions of use and other matters applicable to medical /
+        long-term care service providers, individuals, and family members who use the application for ZOOM integration
+        on the &ldquo;Kanamic Cloud Service&rdquo; provided by Kanamic Network Co., LTD. </p>
+      <h3>Article 2 (Definitions)<br></h3>
+      <p> &ldquo;The Company&rdquo; refers to Kanamic Network Co., LTD. (the
+        provider of the system) <br>
+        &ldquo;The system&rdquo; refers to the &ldquo;Kanamic Cloud
+        Service&rdquo; provided by Kanamic Network Co., LTD.<br>
+        &ldquo;System user&rdquo; refers to medical / long-term care service providers, individuals, and family members
+        who use the system</p>
+      <h3>Article 3 (Consent to these Terms of Use) <br></h3>
+      <p>The system user must use
+        the system in accordance with the provisions of these Terms of Use, and may not use the system unless he / she
+        fully understands and agrees to these Terms of Use.</p>
+      <p>２ When the system user actually starts
+        using the system, he / she is considered to have fully understood and agreed to these Terms of Use. </p>
+      <h3>Article 4 (Initiation / use of the system)<br></h3>
+      <p>Those who wish to
+        use the service shall consent to these Terms of Use and apply (according to procedures separately specified by
+        the Company) to use the service. The applicant shall be considered a system user the moment that the Company
+        grants approval. </p>
+      <p> ２ To use the system, system users must provide
+        registration information and any subsequent changes thereof to the Company.  </p>
+      <p> ３ System users shall take responsibility for maintaining the
+        confidentiality of their own user IDs and corresponding passwords.</p>
+      <h3>Article 5 (Intellectual property, etc. related to the system) <br></h3>
+      <p>
+        All
+        rights (including copyrights, moral rights, trademark rights, other intellectual property rights, and other
+        rights related to know-how / intellectual property, etc.) related to services, programs, and copyrighted works
+        provided by the Company to system users (including these Terms of Use and the usage manual, etc.) belong to the
+        Company.</p>
+      <p> ２ When using the system, system
+        users shall handle all services, programs and copyrighted works provided by the Company to system users in
+        accordance with the following:</p>
+      <ol class="list3em">
+        <li>(1) Use is permitted only for the proper use of the system in accordance
+          with
+          these Terms of Use.</li>
+        <li>(2) Copying, modifying, editing, distributing, reverse engineering,
+          etc.
+          are prohibited.</li>
+        <li>(3) Irrespective of whether for commercial purposes, all of
+          the
+          following are prohibited: loaning, transferring, and offering as collateral to third parties.</li>
+        <li>(4) Deletion or modification of copyright notices or trademark
+          notices
+          placed by designees of the Company is prohibited.</li>
+      </ol>
+      <h3>Article 6 (Operating hours and suspension of operation, etc.)<br></h3>
+      <p>In general, this
+        system can be used 24 hours a day, 365 days a year. However, some functions of this system may be unavailable at
+        certain times depending on the operating status of the management system and on regular maintenance.</p>
+      <p>２ The Company reserves
+        the
+        right<a name="_Hlk65994660"> to suspend, pause, or halt use of the system</a> in the event of the occurrence of
+        any of the following:</p>
+      <ol class="list3em">
+        <li>(1) planned maintenance of the operating system </li>
+        <li>(2) failure of telecommunications operator to provide service</li>
+        <li>(3) natural disaster, incident, or other emergency; OR a
+          serious
+          failure related to the operation of the system </li>
+        <li>(4) laws / regulations (or measures taken thereunder) that render
+          operation
+          of the system impossible</li>
+        <li>(5) a determination is made by the Company that it is necessary to
+          suspend, pause, or halt use of the system</li>
+        <li>(6) The long-term care
+          service provider (with whom the system user has a contractual relationship) cancels usage of the
+          Company&rsquo;s &ldquo;Kanamic Cloud Service&rdquo; or takes measures such as suspending use of the system; OR
+          the long-term care provider withdraws from the industry, etc. </li>
+      </ol>
+      <p>３ The Company reserves the right to impose restrictions on
+        usage of the system when usage of the system becomes considerably overconcentrated.  </p>
+      <h3>Article 7 (Prohibited acts and compliance items) <br></h3>
+      <p>When using the system, the system user is prohibited from
+        performing
+        any of the following acts:</p>
+      <ol class="list3em">
+        <li>(1) Use of the system for unintended purposes</li>
+        <li>(2) Unauthorized access,
+          interference with the system&rsquo;s server / network-system, unauthorized manipulation of the system, or
+          intentional exploitation of system defects </li>
+        <li>(3)
+          Repeatedly
+          making similar or identical inquiries unnecessarily, making unreasonable requests of the system provider,
+          interfering with / obstructing the proper management and operation of the system, or interfering with /
+          obstructing use of the system by third parties</li>
+        <li>(4) Deliberately uploading files infected with viruses (or malware,
+          etc.) to the system.</li>
+        <li>(5) Committing
+          acts that violate or risk violating laws, regulations, or socially-accepted norms / morals; Cooperating with
+          or supplying benefit to an &quot;antisocial force&quot; (criminal organization/individual, terrorist
+          organization, etc.); Impersonating the provider or a third party; or Intentionally effecting the dissemination
+          of false information</li>
+        <li>(6) Unauthorizedly collecting, disclosing, or providing personal
+          information (or usage information, etc.) of a third party</li>
+        <li>(7) Committing other acts that the Company deems to
+          be
+          obstructive or potentially obstructive to the proper operation of the system</li>
+        <li>(8) Committing acts that will or may infringe
+          upon
+          the rights (including copyrights) of other system users, third parties, or the Company</li>
+        <li>(9) Committing acts that will or may infringe
+          upon
+          the assets or privacy of <a name="_Hlk66012226">other system users, third parties, or the Company</a></li>
+        <li>(10) Committing acts, not listed in (8) or
+          (9)
+          above, that will or may cause detriment or damage to other system users, third parties, or the Company </li>
+        <li>(11) Committing acts that defame other system users, third parties, or the
+          Company</li>
+        <li>(12) Committing criminal (or potentially criminal) acts; or
+          committing
+          acts that will or may lead to a crime being committed. </li>
+      </ol>
+      <p>２ If
+        the system user is judged to have performed or is deemed likely to perform any of the acts listed above, the
+        Company shall have the right to suspend the system user&rsquo;s use of the system without prior notice.</p>
+      <p>３ The system user shall comply with the following conditions when using
+        the system.</p>
+      <ol class="list3em">
+        <li>(1) When saving data acquired via the
+          system to a smartphone, etc., the user shall take the upmost precautions. Furthermore, managing the data shall
+          be the sole responsibility of the user.</li>
+        <li>(2) Prior to
+          loaning, transferring, or destroying a smartphone, etc. that was used to store data acquired through the
+          system, the system login account as well as data shall be deleted.</li>
+      </ol>
+      <p>４ If the system user causes damage to the Company
+        in connection with usage of the system, the system user shall be obliged to compensate the Company for the full
+        amount of damages.</p>
+      <h3>Article 8 (System user equipment, etc.) <br></h3>
+      <p>
+        The
+        system user shall acquire/prepare all devices and software necessary for using the service at the system
+        user&rsquo;s own expense (this includes smartphones and all communications related items). All necessary
+        procedures for acquiring/preparing these items shall be taken at the system user&rsquo;s own risk.</p>
+      <p>２ All cost (including communications costs) required to
+        use the system shall be borne solely by the system user.</p>
+      <p>３ If
+        the system user is a minor, the system user shall, upon obtaining the consent of his / her parent or other legal
+        guardian, use the system on a smartphone, etc. of his / her own designation. </p>
+      <h3>Article 9 (Collection of personal information and purpose of use thereof) <br></h3>
+      <p>Personal information related to system
+        users may, through the use of the system, be acquired and used by legal and appropriate means within the scope
+        necessary to achieve the following purposes of use:  </p>
+      <ol class="list3em">
+        <li>(1) To improve the service quality of long-term care
+          service providers, to improve the quality of various services provided by the company, and in pursuance of new
+          endeavors </li>
+        <li>(2) To assess the status of system users when responding to
+          inquiries
+          from long-term care service providers</li>
+        <li>(3) To participate in national projects such as those conducted by the Cabinet
+          Office
+          or the Ministry of Health, Labor and Welfare. </li>
+        <li>(4) To make efforts toward the realization of scientific nursing care</li>
+        <li>(5) To properly and smoothly carry out transactions with
+          long-term
+          care service providers and system users</li>
+        <li>(6) To
+          provide anonymized information to a third party (anonymized information is information about an individual
+          obtained by processing personal information, in accordance with laws/regulations, in such a way as to render
+          impossible the identification of specific individuals and to render impossible the restoration of the
+          underlying personal information). </li>
+      </ol>
+      <p>２ In
+        cases where we seek to use personal information for a purpose which goes beyond the scope of use described
+        above, the Company will notify the system user in advance and proceed only with the consent of the system user.
+        However, the company may act without prior consent under any of the following circumstances: </p>
+      <ol class="list3em">
+        <li>(1) Where necessary for the protection of the life,
+          body,
+          or property of a person but it is difficult to obtain prior consent</li>
+        <li>(2) Where necessary in order to improve public
+          health or to promote the healthy upbringing of children but it is difficult to obtain prior consent</li>
+        <li>(3) Where
+          it is necessary to cooperate with national or municipal governments or public organizations or parties
+          entrusted by national or municipal governments or public organizations in performing their legal duties, and
+          where it is feared that obtaining prior consent might obstruct the execution of the said duties.</li>
+        <li>(4) Where required by laws or regulations</li>
+      </ol>
+      <p>3 Unless prohibited from
+        doing so by relevant laws and regulations, whenever the Company discloses personal data to a third party, the
+        Company will create a record of the disclosure (including date, type of recipient, type of personal data
+        provided, etc.) </p>
+      <h3>Article 10 (Provision of personal data to third parties) <br></h3>
+      <p>We
+        will not provide personal information about system users to third parties (including foreign third parties)
+        without the advance consent of the system user unless required to do so by the Act on the Protection of Personal
+        Information or other relevant laws, regulations, or guidelines. </p>
+      <h3>Article 11 (Anonymized information) <br></h3>
+      <p>
+        When the Company creates anonymized information (information about an individual obtained by processing personal
+        information, in accordance with laws/regulations, in such a way as to render impossible the identification of
+        specific individuals and to render impossible the restoration of the underlying personal information), the
+        company adopts the following measures: </p>
+      <ol class="list3em">
+        <li>(1) Appropriately processing the data in accordance with the criteria specified by
+          relevant laws and regulations</li>
+        <li>(2) Adopting (in accordance with the standards
+          stipulated
+          by law) safety control measures to prevent leaks related to deleted data or processing methods </li>
+        <li>(3) Publicizing the information items included in the anonymized information
+        </li>
+        <li>(4) Refraining from acts which would identify the subject of the underlying
+          personal information used to create the anonymized information</li>
+      </ol>
+      <p>２ When
+        the Company provides anonymized information (meaning &ldquo;anonymized information&rdquo; as stipulated in
+        Article 2, Paragraph 9 of the Act on the Protection of Personal Information), the Company will appropriately
+        process the data in accordance with the criteria specified by relevant laws and regulations. Furthermore, the
+        Company will adopt safety/control protocols. The Company will also publicize the personal information items
+        included in the anonymized data as well as the method of providing the data. </p>
+      <h3>Article 12 (safety/control protocols for personal data) <br></h3>
+      <p>The Company shall
+        strive to prevent leaks, loss, or damage of personal data. Furthermore, the Company shall establish relevant
+        rules, a framework for implementing safety/control protocols, and adequate security measures. </p>
+      <h3>Article 13 (Requesting disclosure/amendments, etc. of personal data) <br></h3>
+      <p>
+        For
+        requests regarding notification, disclosure, correction, and suspension of use of retained personal data under
+        the Act on Personal Information Protection, please contact the Company. The Company will confirm that the
+        requester is the subject of the information. Following this, the requester will complete a written request in
+        the format prescribed by the Company and perform the relevant procedures. Subsequently, the Company will, in
+        general, respond in writing on a later date. In addition, the Company will charge a fee (specified by the
+        Company) upon responding to disclosure requests. If the Company finds, as a result of conducting the necessary
+        investigation, that information about the individual is inaccurate, the Company will amend the information
+        accordingly. </p>
+      <h3>Article 14 (Disclaimers) <br></h3>
+      <p>
+        The Company shall not be liable for any damages incurred by the system user or a third party due to or in
+        connection with the system (even in the case of system malfunction, communication line failure, or other
+        reasons). This applies to damages incurred as a result of using the system (regardless of the reason for using
+        the system and including usage resulting from virus infection or malware); and this also applies to damages
+        incurred as a result of an inability to use the system (regardless of whether use of the system was suspended,
+        paused, interrupted, or restricted and regardless of whether the system malfunctioned, a communication line
+        failed, or the presence of any other causative factor). However, if the Company has caused all or part of the
+        damage through its own volition or gross negligence, the forgoing may be inapplicable to all or part of the
+        damage.
+      </p>
+      <p>２ System
+        users who register their ID and password (on the website or the system) should take care in managing these. The
+        Company shall take absolutely no responsibility for any damages caused by unauthorized use of IDs/passwords.</p>
+      <p>３ The system user shall bare responsibility for all legal
+        liability arising from information or files uploaded by the system user.</p>
+      <p>４ If
+        the system user causes damage to a third party or receives a complaint from a third party due to the use of the
+        system, the matter shall be addressed and resolved at the system user&rsquo;s own risk and expense. The same
+        shall apply when the Company receives a complaint or claim for damages from a third party in connection with the
+        use of the system by the system user.</p>
+      <p>５ The Company does not make any
+        guarantee about the contents of the system. Also, the company does not make any guarantee about the completeness
+        of information, etc. obtained by system users or third parties through the system.</p>
+      <p>６ The Company shall not be liable for information provided on
+        this system by any third party other than the Company.</p>
+      <p>７ The
+        Company does not guarantee that electronic records, such as receipts, obtained through using this service
+        (hereinafter referred to as &quot;receipts, etc.&quot;) comply with the provisions of relevant laws and
+        regulations. Furthermore, we do not guarantee that receipts, etc. will be stored on this service for the
+        statutory storage period. It is the responsibility of the system user to store receipts, etc. as required by
+        relevant laws and regulations.</p>
+      <p>８ This service is a service to
+        assist with the startup of the Zoom application. The Company is not responsible for any system interruptions
+        occurring after the Zoom application has started.</p>
+      <h3>Article 15 (Discontinuation of use of the system)<br></h3>
+      <p>Since the system is being provided as a
+        result of entrustment from the long-term care service provider, use of the system cannot be discontinued at the
+        request of the system user.<br>
+      </p>
+      <h3>Article 16 (Changes to these Terms of Use)<br></h3>
+      <p>The Company
+        reserves the right to change these Terms of Use at any time it deems necessary and without providing prior
+        notice to system users. However, the foregoing, may be inapplicable to changes regarding the purposes of use of
+        personal information.</p>
+      <p>２
+        Following a change to these terms of use (as prescribed above), the moment that system users use the system,
+        they are deemed to fully understands the contents of the (changed) Terms of Use and to have agreed to the
+        (changed) Terms of Use.
+      </p>
+      <h3>Article 17 (Prohibition of transfer)  <br></h3>
+      <p>System use privileges cannot be transferred, loaned, inherited,
+        or offered as collateral to third parties.<br>
+      </p>
+      <h3>Article 18 (Inquiries about the System) <br></h3>
+      <p>For inquiries about this system, please refer to the contact information below.<br>
+        〒150-6031<br>
+        4-20-3 Ebisu, Shibuya-ku, Tokyo<br>
+        Phone: 03-5798-3955<br>
+        Reception hours: Weekdays 9:00 - 18:00
+      </p>
+      <h3>Article 19 (Governing Law and Court of Jurisdiction)<br></h3>
+      <p>These Terms of Use (and all matters related to the use of the system)
+        are governed by the laws of Japan. </p>
+      <p>２ Any disputes arising as a
+        result of use of the System or, in connection thereof, between the Company and the system user, shall be subject
+        to the jurisdiction of the Tokyo District Court and the Tokyo Summary Court in the first instance.</p>
+      <h3>Article 20 (Handling of personal information) <br></h3>
+      <p>Regarding the Company&rsquo;s collection and
+        use of system users&rsquo; personal information when providing the system, please refer to the Privacy Policy.
+      </p>
+      <h3>Article 21 (Usage fee of the system) <br></h3>
+      <p>The system can be used with a Kanamic Cloud Service basic usage
+        contract.   </p>
+      <h3>Article 22 (Zoom API Integration) <br></h3>
+      <p>Account information and meeting content information, etc., from the use of the Zoom API will not be stored on
+        the Kanamic Cloud Service for Zoom. In addition, neither the Company nor the Kanamic Cloud Service have access
+        to this information. Regarding Zoom&rsquo;s privacy policy, please refer to the following URL.  <br>
+        Zoom&rsquo;s privacy policy: https://zoom.us/jp-jp/privacy.html</p>
+      <h3>Supplementary provisions: </h3>
+      <p>Article 1 (Effective date)<br>
+        This agreement shall come into effect on April 1, 2021.</p>
+
+    </div>
+
+    <div class="container-fluid footer clearfix">
+      <p>Copyright © Kanamic Network Co.,LTD All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

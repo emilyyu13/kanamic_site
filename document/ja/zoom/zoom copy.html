@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+  <!-- アイコン CSS -->
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <!-- アニメーション CSS -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+  <!-- 調整用 CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script> -->
+
+  <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+  <script type="text/javascript">
+    $(function () {
+      if (window.matchMedia("(max-width: 414px)").matches) {
+        //スマホ処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6800) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else if (window.matchMedia("(max-width:813px)").matches) {
+        //タブレット処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 5300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else {
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 一旦hide()で隠してフェードインさせる
+      $("div.container-fluid.slide").hide().fadeIn("slow");
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+
+  <title>Zoom連携方法|株式会社カナミックネットワーク</title>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar" data-offset="100">
+  <div class="container-fluid header">
+    <div class="nav_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/KANAMIC_logo_cr.png" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="zoom.html">Zoom連携方法</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">利用規約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">お問合せ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">プライバシーポリシー</a>
+            </li>
+            <li class="nav-item corptop">
+              <a class="nav-link" href="https://www.kanamic.net/" data-target="#top">コーポレートサイトへ</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid slide clearfix">
+    <div class="h1area">
+      <div class="langarea">
+      <div class="langselect cp_sl01">
+        <select required>
+          <option value="" hidden>language</option>
+          <option value="1" selected>Japanese</option>
+          <option value="2">English</option>
+        </select>
+        </div>
+      </div>
+            <h1>Zoom連携方法</h1>
+  </div>
+    <div class="main">
+      <div class="assumptions">
+        <h2>≪前提Assumptions≫</h2>
+        <ul>
+          <li>
+            ・Zoomアカウントを取得していることYou have a Zoom account
+          </li>
+          <li>・カナミック クラウドサービスのアカウントを取得していることYou have a Kanamic Cloud Service account</li>
+        </ul>
+
+
+
+      </div>
+
+      <h3 class="heading" id="company">１．カナミック クラウドサービスにログイン後、右上のメニューから「外部サービス連携」
+        　　をクリックします。(図1-1参照) After logging in to the Kanamic Cloud Service, click 「外部サービス連携」 ("Connect with
+        External　Service") from the menu on the upper right.
+        (See Figure 1-1).
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-1j.png" />
+
+
+      </div>
+
+      <h3 class="heading" id="company">２．外部サービス連携ページのZoomの欄にある「連携する」ボタンをクリックします。
+        (図1-2参照) In the “Zoom” field of the 「外部サービス連携」 ("Connect with External　Service") screen, click the 「連携する」
+        (“Connect”) button (see Figure 1-2).
+
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-2.png" />
+        <p class="caption">図1-2　外部サービス連携ページ Figure 1-2: "Connect with External Service” screen</p>
+
+
+      </div>
+      <h3 class="heading" id="company">３．Zoom側の画面が表示されます。The Zoom screen appears.
+        　　Zoomにログインしていない場合は、ログイン画面が表示されます。If you are not logged in to Zoom, you will be brought to the Zoom login
+        screen.
+        　　ログイン後、以下のような画面に遷移しますので、内容を確認後、「許可」ボタンをクリックしてください。(図1-3参照) After logging in to Zoom, the following screen will
+        appear. Examine the request and click the 「許可」 ("Allow") button (see Figure 1-3).
+
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-3.png" />
+        <p class="caption">図1-3　Zoomリクエスト確認ページ Figure 1-3: Zoom requests screen</p>
+
+
+      </div>
+
+      <h3 class="heading" id="company">４．外部サービス連携ページに戻ると、連携済みを確認することができます。(図1-4参照) When you return to the 「外部サービス連携」
+        ("Connect with External　Service") screen, the word 「連携済み」 (“Connected”) appears as seen below (Figure 1-4).
+
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/1-4.png" />
+        <p class="caption">図1-4　外部サービス連携ページ（Zoom連携後） Figure 1-4: "Connect with External　Service” Screen (prior to connecting to Zoom)</p>
+
+
+
+        <p>※「解除する」ボタンをクリックすると、Zoomとの連携を解除することができます。You can disconnect from Zoom by clicking the 「解除する」 (“Disconnect”)
+          button.</p>
+      </div>
+
+    </div>
+    <div class="h1area">
+      <h1>Zoomミーティングの開始方法How to initiate a zoom meeting</h1>
+      </div>
+    <div class="main">
+
+      <h3 class="heading" id="company">１．会議を行いたい利用者（患者）部屋へ移動します。(図2-1-1、図2-1-2参照) Open the digital room of the care
+        recipient/patient for whom you wish to conduct a meeting. (See Figure 2-1-1 and Figure 2-1-2)
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-1j.png" />
+      </div>
+
+
+      <h3 class="heading" id="company">２．「会議予約・調整」をクリックします。(図2-2参照) Click on 「会議予約・調整」 (“schedule/arrange meeting”) (see
+        figure 2-2).
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-2.png" />
+        <p class="caption">図2-2　コミュニティ一覧ページ Figure 2-2: “Community List” Screen</p>
+
+
+
+      </div>
+      <h3 class="heading" id="company">３．会議予約・調整画面から「新しく会議を設定」をクリックします。（図2-3参照) From the 「会議予約・調整」 (“schedule/arrange
+        meeting”) screen, next click on 「新しく会議を設定」 (“set up new meeting”).
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-3.png" />
+        <p class="caption">図2-3　会議予約・調整ページ Figure 2-3:: “schedule/arrange meeting” screen</p>
+
+
+
+      </div>
+      <h3 class="heading" id="company">４．「日程調整せずに設定する」をクリックし、Web会議設定で「Zoomミーティング」を選択します。（図2-4参照) Click on 「日程調整せずに設定する」
+        (“set up a meeting without scheduling date/time”) and under web conferencing settings select 「Zoomミーティング」 (“Zoom
+        meeting”) (See Figure 2-4).
+        　　※「日程調整をして設定する」場合も同じようにZoomミーティングを開始できます。*You can also initiate a Zoom meeting via 「日程調整をして設定する」 (“set up a
+        meeting and schedule date/time”).
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-4.png" />
+        <p class="caption">図2-4　会議設定ページ Figure 2-4: web conferencing settings screen</p>
+
+
+
+      </div>
+      <h3 class="heading" id="company">
+        ５．その他必要事項（開催日時、参加予定者等）を入力後、画面下部の「確認画面へ」ボタンをクリックし(図2-5-1参照)、内容確認後、「通知する」ボタンで会議を確定します。(図2-5-2参照) After entering
+        other necessary information (date and time of the event, planned participants, etc.), click the 「確認画面へ」
+        ("Proceed to Confirmation Screen") button at the bottom of the screen (See Figure 2-5-1). Next, double check the
+        meeting details and click the 「通知する」 ("Notify") button to finalize the meeting (See Figure 2-5-2).
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-5j.png" />
+      </div>
+      <h3 class="heading" id="company">６．設定した会議の時間になると、会議予約・調整画面に「開始」ボタンが
+        表示されますので、クリックするとZoomミーティンを開始することができます。
+        （図2-6参照) When the scheduled time of the meeting arrives, the 「開始」 (“Start”) button will appear on the
+        (“schedule/arrange meeting”) screen (from (3.) above). Click this button to start the Zoom meeting. (Figure 2-6)
+      </h3>
+
+      <div class="container message" data-aos="fade-up">
+        <img src="img/manual/2-6.png" />
+        <p class="caption">図2-6　会議予約・調整画面：開催予定欄に、設定した会議の一覧が表示されます。 Figure 2-6: The meeting should appear within the “scheduled meetings” field of the “schedule/arrange meeting” screen. </p>
+        
+      </div>
+
+    </div>
+
+    <div class="container-fluid footer clearfix">
+      <p>Copyright © Kanamic Network Co.,LTD All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
