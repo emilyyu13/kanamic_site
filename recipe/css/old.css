@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+
+
+div#recipePage {
+	width:800px;
+	margin:0 auto;
+	text-align:left;
+	background: url(img/bg.gif);
+	position:relative;
+}
+div#recipePage #header{
+	background: url(img/header_bg.jpg) no-repeat;
+	height: 94px;
+	position:relative;
+}
+
+div#header h1{
+	position:absolute;
+	top:22px;
+	left:40px;
+}
+div#header p{
+	position:absolute;
+	top:8px;
+	right:19px;
+}
+
+div.section01 {
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+div.section01 p {
+	line-height: 1.4;
+	text-align: justify;
+}
+div.section01 p span{
+	font-size: 120%;
+	font-weight: bold;
+}
+
+div#recipePage h2{
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #FF6600;
+}
+div#recipePage h3{
+	font-size: 105%;
+	font-weight: bold;
+	margin-bottom: 3px;
+	color: #333;
+}
+div#sPfooter {
+	text-align:center;
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+	background: url(img/h_footer.gif) no-repeat;
+	height: 43px;
+	padding-top: 5px;
+}
+div.formLink {
+	background: url(../common/img/inquiry/form_link_bg.jpg) no-repeat bottom;
+	padding-bottom: 10px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+/*div.formLink h2 {
+	margin-bottom: 1em;
+	background: url(../common/img/inquiry/form_link_h2.gif) no-repeat;
+	height: 30px;
+	width: 570px;
+	line-height: 2.2em;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 30px;
+}*/
+
+div.formLink h2 {
+	margin-bottom: 1em;
+	background: url(../common/img/inquiry/form_link_h2.gif) no-repeat;
+	height: 30px;
+	width: 600px;
+	line-height: 2.2em;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.formLink h2 span{
+	margin-left: 30px;
+}
+
+div.formLink p {
+	line-height: 1.4;
+	margin-bottom: 1em;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+div.formLink ul  {
+	margin:10px 50px 0;}
+
+div.formLink li.formTel {float:left;}
+
+div.formLink li.formOnline  {float:right;}
+
+.link {
+	width: 551px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+div.fukidashi {
+	font-size:130%;
+	width:402px;
+	height:222px;
+	background: url(img/fukidashi.gif) no-repeat;
+	margin-bottom: 50px;
+}
+
+div.fukidashi p{
+	margin:0px 70px 0 15px;
+	padding: 10px 0px 0px;
+}
+
+p.kanamikkun {
+	position: absolute;
+	top: 30px;
+	left: 450px;
+}
+/* -----左右に振り分けるボックス----- */
+#areaLeft {
+	width: 290px;
+	float: left;
+	margin: 0px;
+}
+#areaRight {
+	width: 385px;
+	float: right;
+}
+
+.breakfast01 {
+background:#CCE3FF url(img/recipe_bg01.gif) no-repeat scroll left top;
+padding:5px;
+}
+
+/*---------旧CSS--------------------------------------------------------------------------------------*/
+/* -----テーブル設定----- */
+.recipeTable01 {
+	text-align: left;
+}
+.recipeTable02 {
+	text-align: left;
+	background: #CCFFCE;
+	padding: 5px;
+}
+.recipeTable02 p{
+	font-size:12px;
+}
+.recipeTable02 input {width:35px;}
+.recipeTable02 td {font-size:11px;}
+.recipeTable03 {
+	text-align: left;
+	margin: 0px 20px 0px;
+	padding-left: 5px;
+}
+.recipeTable04 {
+}
+/* -----テーブル右角丸----- */
+.breakfast01 {
+	background: #CCE3FF url(img/recipe_bg01.gif) no-repeat left top;
+	padding: 5px;
+}
+.breakfast02 {
+	background: #CCE3FF url(img/recipe_bg01.gif) no-repeat left bottom;
+	padding: 5px 5px 10px;
+}
+.breakfast03 {
+	background: #CCE3FF;
+	padding: 0px 5px 5px;
+}
+.lunch01 {
+	background: #FFF4CC url(img/recipe_bg02.gif) no-repeat left top;
+	padding: 5px;
+}
+.lunch02 {
+	background: #FFF4CC url(img/recipe_bg02.gif) no-repeat left bottom;
+	padding: 5px 5px 10px;
+}
+.lunch03 {
+	background: #FFF4CC;
+	padding: 0px 5px 5px;
+}
+.dinner01 {
+	background: #DCCCFF url(img/recipe_bg03.gif) no-repeat left top;
+	padding: 5px;
+}
+.dinner02 {
+	background: #DCCCFF url(img/recipe_bg03.gif) no-repeat left bottom;
+	padding: 5px 5px 10px;
+}
+.dinner03 {
+	background: #DCCCFF;
+	padding: 0px 5px 5px;
+}
+/* -----テーブル左角丸----- */
+.bg01 {
+	background: #CCFFCE url(img/recipe_bg04.gif) no-repeat left top;
+	padding: 5px;
+}
+.bg02 {
+	background: #CCFFCE url(img/recipe_bg04.gif) no-repeat left bottom;
+	padding: 0px 5px 5px;
+}
+
+/* -----テーブル内テキスト設定----- */
+.choice01 {
+	background: url(img/recipe_marker.gif) no-repeat left center;
+	padding-left: 15px;
+	padding-top: 3px;
+	padding-bottom: 4px;
+}
+.choice02 {
+	padding-left: 5px;
+	font-size: small;
+	font-weight: bold;
+}
+/* -----見出し設定----- */
+#mainContents h2 {
+	margin: 10px 20px;
+}
+/* -----リンクのマージン設定----- */
+.recipeTable02 a {
+	margin-left: 5px;
+}
+/* -----作り方リンクid----- */
+#makeBF {
+	text-decoration: none;
+	background: url(../hj_img/recipe_bf_btn.gif) no-repeat;
+	height: 25px;
+	width: 120px;
+	text-indent: -1600em;
+	display: block;
+}
+#makeBF:hover {
+	text-decoration: none;
+	background: url(../hj_img/recipe_bf_btn-over.gif) no-repeat;
+}
+#makeLC {
+	text-decoration: none;
+	background: url(../hj_img/recipe_lc_btn.gif) no-repeat;
+	height: 25px;
+	width: 120px;
+	text-indent: -1600em;
+	display: block;
+}
+#makeLC:hover {
+	text-decoration: none;
+	background: url(../hj_img/recipe_lc_btn-over.gif) no-repeat;
+}
+#makeDN {
+	text-decoration: none;
+	background: url(../hj_img/recipe_dn_btn.gif) no-repeat;
+	height: 25px;
+	width: 120px;
+	text-indent: -1600em;
+	display: block;
+}
+#makeDN:hover {
+	text-decoration: none;
+	background: url(../hj_img/recipe_dn_btn-over.gif) no-repeat;
+}
+.mainTxt01 {
+	line-height: 1.5em;
+	margin: 5px 20px 10px;
+	padding: 4px 5px 5px;
+	background: #FBF7D4;
+	border: 1px solid #808080;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/* -----基準設定----- */
+h1,h2,h3,h4,p {
+	margin: 0px;
+	padding: 0px;
+}
+h1 { text-align: center; }
+/* -----角丸テーブルの両脇のライン----- */
+.line01 {
+	border-left:1px solid #F69B1A;
+	border-right: 1px solid #F69B1A;
+}
+/* -----材料テーブル設定----- */
+#material {
+	font-size:14px;
+}
+#material td {
+	padding: 5px;
+}
+#material th {
+	padding: 0px 5px 2px;
+}
+/* -----作り方テーブル設定----- */
+#howto {
+	font-size:14px;
+	text-align: left;
+}
+h2 {
+	font-size: 16px;
+	color: #00974B;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+.howtoTxt01 {
+	padding-left: 10px;
+	line-height: 130%;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+h3 {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+/* -----背景----- */
+.top {
+	background: url(../img/recipe_top.gif) no-repeat;
+}
+.bottom { background: url(../img/recipe_bottom.gif) no-repeat; }
+/* -----フォーム部分padding設定----- */
+#instruction td { padding: 5px 10px 0px; }
+/* -----プリント用改ページ位置指定----- */
+.pagebreak { page-break-before: always; }
+/* -----イメージのテキスト----- */
+.imageTxt {
+	font-size: small;
+}
+/* -----作り方説明----- */
+ol {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+li {
+	font-size: 14px;
+	line-height: 130%;
+	letter-spacing: 1px;
+}

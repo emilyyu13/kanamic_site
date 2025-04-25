@@ -1,0 +1,711 @@
+@charset "utf-8";
+
+*{
+	padding:0;
+	margin:0;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:12px;
+	line-height:17px;
+}
+a{
+	text-decoration:none;
+	color:#3333FF;
+}
+a:hover {
+	text-decoration:underline;
+}
+img{
+	border:0;
+  padding:0px;
+  margin:0px;
+  display:block;
+}
+.center{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+.left{
+  float:left;
+  display:block;
+  padding:0px;
+  margin:0px;
+}
+.right{
+  float:right;
+  display:block;
+  padding:0px;
+  margin:0px;
+}
+.font_l{
+font-size:18pt!important;
+}
+.font_m{
+font-size:12pt!important;
+}
+.font_s{
+font-size:9pt!important;
+line-height:12pt!important;
+}
+.font_12 {
+	font-size:12px!important;
+}
+.font_13 {
+	font-size:13px!important;
+}
+.font_14 {
+	font-size:14px!important;
+}
+.mt20 {
+	margin-top:20px!important;
+}
+.mt40 {
+	margin-top:40px!important;
+}
+.mb10 {
+	margin-bottom:10px!important;
+}
+.mb20 {
+	margin-bottom:20px!important;
+}
+.mb40 {
+	margin-bottom:40px!important;
+}
+.clear {
+	clear:both;
+}
+
+div#wrapper {
+	width:840px;
+	position:relative;
+	margin:0 auto;
+	background:url(../../zaitaku-iryou/img/he_1.gif) 	repeat-y scroll center top transparent;
+	
+}
+
+h1{
+  background:url(../../zaitaku-iryou/img/he_2.jpg) top left repeat-x;
+  height:22px;
+  color:#fff;
+  padding:5px 0px 0px 10px;
+  font-size:12px;
+}
+
+h2.bar1 {
+	height:56px;
+	background:url(../img/sec_h3top.gif) left top no-repeat;
+	font-size:20px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding:15px 0 0 20px;
+}
+h2.bar2 {
+	height:56px;
+	background:url(../img/sec_h3.gif) left top no-repeat;
+	font-size:20px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding:15px 0 0 20px;
+}
+h3.large {
+	color:#003399;
+	font-size:22px;
+	font-weight:bold;
+	line-height:24px;
+	margin:0 0 20px 60px;
+}
+h3.system {
+	color:#0066FF;
+	font-size:18px;
+	font-weight:bold;
+	width:690px;
+	height:66px;
+	margin:0 0 0 60px;
+	line-height:45px;
+	padding-left:115px;
+}
+h3.point1 {background:url(../img/point1.gif) no-repeat;}
+h3.point2 {background:url(../img/point2.gif) no-repeat;}
+h3.point3 {background:url(../img/point3.gif) no-repeat;}
+h3.point4 {background:url(../img/point4.gif) no-repeat;}
+
+p.style1 {
+	color:#333333;
+	font-size:16px;
+	line-height:24px;
+	margin:0 0 10px 75px;
+}
+p.style2 {
+	color:#FF6600;
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
+}
+p.style3 {
+	color:#333333;
+	font-size:14px;
+	line-height:24px;
+	margin:0 0 10px 60px;
+}
+p.style4 {
+	color:#FF6600;
+	font-size:16px;
+	line-height:24px;
+	font-weight:bold;
+	text-align:center;
+}
+p.style5 {
+	color:#333333;
+	float:left;
+	font-size:14px;
+	width:540px;
+	line-height:20px;
+	margin-left:20px;
+}
+
+/*---------------
+------------header--------------*/
+div#header {
+	width:940px;
+	position:relative;
+	height:92px;
+	margin:0 auto;
+}
+	
+img.he_1 {
+	position:absolute;
+	left: 10px;
+	top: 34px;
+}	
+	
+img.he_2 {
+	position:absolute;
+	left: 575px;
+	top: 38px;
+}		
+
+img.he_3 {
+	position:absolute;
+	left: 764px;
+	top: 37px;
+}	
+
+div.movie {
+	position:absolute;
+	
+	top:97px;
+	left:326px;
+}
+
+
+div#pankuzu {
+	margin:0 0 20px 0;
+}
+
+/*---------------
+------------ビジュアル--------------*/
+
+div.main {
+	width:940px;
+	height:500px;
+	margin:0 auto;
+	background:url(../img/top_cloud.jpg) top left no-repeat;
+	margin-top:12px;
+}
+div.main h2 {
+	padding:20px 0; 
+}
+div.main p.movie {
+	text-align:right;
+	margin-top:10px;
+	margin-right:64px;
+}
+div.main p.subText {
+	font-size:22px;
+	font-weight:bold;
+	color:#3366CC;
+	text-align:center;
+	margin-top:60px;
+	text-shadow:0px 0px 3px #FFFFFF;
+}
+
+.mainImg {
+	width:940px;
+	height:495px;
+	margin:0 auto;
+	margin-top:12px;
+	margin-bottom:20px;
+}
+.subImg {
+	margin:0 auto;
+	margin-top:20px;
+	/*margin-bottom:20px;*/
+}
+.pointImg {
+	margin-left:80px;
+	float:left;
+}
+
+/*---------------
+------------sec1--------------*/
+
+#sec1 {
+	height:300px;
+	position:relative;
+}
+/*---------------
+------------sec2--------------*/
+
+#sec2 {
+	height:1500px;
+	position:relative;
+}
+		
+/*---------------
+------------sec3--------------*/
+
+div#sec3 {
+	margin:0;
+	position:relative;
+	height:680px;
+}
+
+div.example {
+	margin:0 0 0 70px;
+}
+div.example p {
+	width:675px;
+	margin:0 0 30px 5px;
+	font-size:14px;
+	line-height:24px;
+}
+
+/*---------------
+------------sec3-2--------------*/
+
+div#sec3-2 {
+	margin:0;
+	position:relative;
+	height:1170px;
+}
+
+/*---------------
+------------sec4--------------*/
+
+div#sec4 {
+	height:600px;
+	position:relative;
+}
+
+h2.sec4_h2 {
+	margin:0 0 23px 0;
+}
+	
+div.sec4_1 {
+	background-image:url(../../zaitaku-iryou/img/sec3_2.jpg);
+	background-repeat:no-repeat;
+	width:730px;
+	height:163px;
+	margin:0 0 0 55px;
+	position:relative;
+}
+
+img.sec4_1p {
+	position:absolute;
+	left: 16px;
+	top: 11px;
+	z-index: 1;
+}
+	
+img.sec4_2p {
+	position:absolute;
+	left: 17px;
+	top: 13px;
+}	
+	
+img.sec4_3p {
+	position:absolute;
+	top: 19px;
+	right: 24px;
+}	
+	
+img.sec4_4p {
+	position:absolute;
+	left: 17px;
+	top: 9px;
+	z-index: 1;
+}
+
+p.sec4_t1 {
+	position:absolute;
+	font-size:14px;
+	line-height:18px;
+	width: 453px;
+	left: 258px;
+	top: 52px;
+	z-index: 2;
+}	
+	
+p.sec4_t2 {
+	position:absolute;
+	font-size:14px;
+	line-height:18px;
+	width: 412px;
+	left: 30px;
+	top: 52px;
+}							
+
+p.sec4_t3 {
+	position:absolute;
+	font-size:14px;
+	line-height:18px;
+	width: 451px;
+	left: 258px;
+	top: 52px;
+	z-index: 2;
+}
+
+/*---------------
+------------sec5--------------*/
+
+div#sec5 {
+	height:270px;
+}
+	
+div#sec5 div.clearfix {
+	margin:0 0 0 60px;
+}
+
+div.sec5_1 {
+	height:200px;
+	position: relative;
+}	
+	
+div.sec5_2 {
+	position:relative;
+	width:350px;
+	height:610px;
+	margin-right:17px;
+	background-image:url(../../zaitaku-iryou/img/bg_gray.jpg);
+	background-repeat:repeat-x repeat-y;
+}
+	
+img.sec5_1p {
+	position:absolute;
+	left: 490px;
+	top: 10px;
+}
+
+img.sec5_2p {
+	position:absolute;
+	left: 8px;
+	top: 8px;
+}	
+	
+img.sec5_3p {
+	position:absolute;
+	left: 61px;
+	top: 70px;
+}
+
+p.sec5_t1 {
+	position:absolute;
+	width: 393px;
+	left: 70px;
+	top: 39px;
+}
+
+p.sec5_t2 {
+	position:absolute;
+	width: 302px;
+	left: 26px;
+	top: 233px;
+}
+
+/*---------------
+------------sec6--------------*/
+
+#sec6 {
+	height:775px;
+	
+	}
+	
+div.sec6_1 {
+	background:url(../../zaitaku-iryou/img/sec6_2.jpg) no-repeat;
+	height:639px;
+	width:730px;
+	margin: 20px 0 0 55px;
+	position:relative;
+}	
+
+img.sec6_1p {
+	position:absolute;
+	left: 31px;
+	top: 42px;
+	
+}
+	
+img.sec6_2p {
+	position:absolute;
+	left: 31px;
+	top: 135px;
+	
+}	
+	
+img.sec6_3p {
+	position:absolute;
+	left: 31px;
+	top: 248px;
+	
+}	
+	
+img.sec6_4p {
+	position:absolute;
+	left: 31px;
+	top: 362px;
+
+}	
+	
+img.sec6_5p {
+	position:absolute;
+	left: 31px;
+	top: 455px;
+
+}	
+	
+img.sec6_6p {
+	position:absolute;
+	left: 31px;
+	top: 562px;
+
+}	
+
+p.sec6_t1 {
+	position:absolute;
+	left: 216px;
+	top: 52px;
+	}
+p.sec6_t2 {
+	position:absolute;
+	top:152px;
+	left: 216px;
+	}	
+p.sec6_t3 {
+	position:absolute;
+	top:238px;
+	left: 216px;
+	width: 368px;
+}	
+	
+p.sec6_t4 {
+	position:absolute;
+	top:370px;
+	left: 216px;
+	}	
+	
+p.sec6_t5 {
+	position:absolute;
+	top:456px;
+	left: 216px;
+	width: 368px;
+}	
+p.sec6_t6 {
+	position:absolute;
+	top:565px;
+	left: 216px;
+	width: 368px;
+	}
+/*---------------
+------------sec7--------------*/
+
+div#sec7 {
+	height:360px;
+}
+
+div.sec7_1 {
+	position:relative;
+	background-image:url(../../zaitaku-iryou/img/bg_gray.jpg);
+	background-repeat:repeat-y repeat-x;
+	height:217px;
+	width:730px;
+	margin: 23px 0 0 55px;
+}
+
+div.sec7_1 ul li {
+	float:left;
+	width:30%;
+	padding: 0 20px 0 0;
+}	
+	
+div.sec7_2 {
+	position:absolute;
+	left: 23px;
+	top: 32px;
+	width: 707px;
+}	
+	
+div.sec7_3 {
+	position:absolute;
+	left: 24px;
+	top: 170px;
+	width: 706px;
+}	
+		
+img.sec7_1p {
+	position:absolute;
+	left: 19px;
+	top: 4px;
+}	
+	
+img.sec7_2p {
+	position:absolute;
+	left: 18px;
+	top: 142px;
+}	
+
+
+/*---------------
+------------sec8--------------*/
+
+#sec8 {
+	height:398px;
+	position:relative;
+}
+
+img.sec8_1p {
+	position:absolute;
+	left: 80px;
+	top: 69px;
+}
+	
+
+img.sec8_2p {
+	position:absolute;
+	left: 252px;
+	top: 67px;
+}
+
+img.sec8_3p {
+	position:absolute;
+	left: 82px;
+	top: 225px;
+}
+
+img.sec8_4p {
+	position:absolute;
+	left: 256px;
+	top: 225px;
+}
+
+p.sec8_t1 {
+	position:absolute;
+	left: 251px;
+	top: 153px;
+}
+
+p.sec8_t2 {
+	position:absolute;
+	left: 252px;
+	top: 310px;
+}
+
+div.under {
+	width:829px;
+	height:48px;
+	background:url(../img/h_under.gif) left bottom no-repeat;
+}
+
+/*---------------
+------------contact--------------*/
+div.mail {
+	width:730px;
+	height:190px;
+	margin:0 0 50px 55px;
+	background:url(../../zaitaku-iryou/img/ma_1.jpg) no-repeat bottom;
+	position:relative;
+}
+	
+img.mail_1 {
+	position:absolute;
+	left: 100px;
+	top: 106px;
+}
+	
+img.mail_2 {
+	position:absolute;
+	left: 404px;
+	top: 102px;
+}
+	
+img.mail_3 {
+	position:absolute;
+	left: 403px;
+	top: 125px;
+}			
+
+img.mail_4 {
+	position:absolute;
+	left: 171px;
+	top: 49px;
+}			
+/*---------------
+------------パンくず--------------*/
+div.breadCrumbs ul{
+	margin-left:50px;
+}
+
+div.breadCrumbs ul li{
+	display:inline;
+	
+}
+div.breadCrumbs a{
+	color:#000000;
+}
+
+/*---------------
+------------footer--------------*/
+
+#footer {
+	position:relative;
+	margin-top:10px;
+}
+	
+#footer a {
+	font-size:12px;
+	color:#FF6600;
+}
+	
+adress {
+	font-style:normal;
+	font-size:10px;
+	vertical-align:bottom;
+	color: #333333;
+}	
+	
+img.fo_1p {
+	position:absolute;
+	left: 629px;
+	top: 180px;
+}
+
+	
+div.footer_1 {
+	margin:0px 0 5px 17px;
+	color:#FF6600;
+	font-size:10px;
+	text-align:center;
+}
+
+div.ad_bg {
+	height:21px;
+	background-image:url(../../zaitaku-iryou/img/bg_or.jpg);
+	background-repeat:repeat-x;
+	text-align:center;
+	margin:9px 0 0 0;
+	padding: 10px 0 0 0;
+	bottom:0px;
+}

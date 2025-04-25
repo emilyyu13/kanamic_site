@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+ file name  :module.css
+ author     :Sho Miura (admin)
+ style info :共通（ヘッダー、フッター）
+=================================================================== */
+
+/* -----------------------------------------------------------
+	#header
+		ヘッダー
+----------------------------------------------------------- */
+div#header{
+	background: url(../img/header_bg.jpg) no-repeat;
+	height: 94px;
+	position:relative;
+}
+div#header h1{
+	position:absolute;
+	top:22px;
+	left:40px;
+}
+div#header p{
+	position:absolute;
+	top:8px;
+	right:19px;
+}
+
+/*
+	グローバルナビゲーション
+*/
+
+
+/*
+	ガイドナビゲーション
+*/
+
+
+/* -----------------------------------------------------------
+	#footer
+		フッター
+----------------------------------------------------------- */
+div#footer {
+	text-align:center;
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+	background: url(../img/h_footer.gif) no-repeat;
+	height: 43px;
+	padding-top: 5px;
+}

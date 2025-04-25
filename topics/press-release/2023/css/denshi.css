@@ -1,0 +1,883 @@
+/* ------------------------------------------
+電子帳簿保存法 追加css top_visual
+------------------------------------------ */
+
+.denshi_main_visual {
+    background-color: #62C1C5;
+    background-image: url(../img/denshi/main_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.main_visual_container {
+    display: grid;
+    justify-content: center;
+    max-width: 1320px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3/auto);
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.main_visual_picture,.top_img {
+    width: 30vw;
+}
+.main_visual_picture,.sub_img {
+    width: 120px;
+}
+.item1 {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: right;
+}
+.item2 {
+    grid-row: 1;
+    grid-column:  2 / 5;
+}
+.item3 {
+    grid-row: 1 / 3;
+    grid-column: 4 / 6;
+    margin: 0 auto;
+}
+.item4 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 6;
+    margin: -25px auto auto 100px;
+}
+.item5 {
+    grid-row: 3;
+    grid-column:  1 / 3;
+    margin: 150px auto 0;
+    position: relative;
+}
+.item6 {
+    grid-row: 3;
+    grid-column:  3 / 5;
+    margin: 150px auto 0;
+    position: relative;
+}
+.item7 {
+    grid-row: 3;
+    grid-column:  5 / 7;
+    margin: 150px auto 0;
+    position: relative;
+}
+.twinkle01 {
+    position: absolute;
+    width: 40px;
+    top: -50px;
+    left: -18px;
+}
+.twinkle02 {
+    position: absolute;
+    width: 40px;
+    top: 90px;
+    left: 295px;
+}
+.twinkle03 {
+    position: absolute;
+    width: 40px;
+    top: -89px;
+    left: 31px;
+}
+.twinkle04 {
+    position: absolute;
+    width: 40px;
+    top: 10px;
+    left: 350px;
+}
+.twinkle05 {
+    position: absolute;
+    width: 40px;
+    top: -100px;
+    left: 280px;
+}
+.twinkle06 {
+    position: absolute;
+    width: 40px;
+    top: 60px;
+    left: 330px;
+}
+.feature {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0 4vw 2vw;
+    text-align: center;
+    height: 150px;
+}
+.feature span {
+    font-size: 80%;
+}
+.feature {
+    width: 200px;
+    margin-top: -60px;
+}
+.feature_img {
+    width: 12vw;
+    margin-top: -60px;
+}
+div.item4,h1.main_visual_text span {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-shadow: none;
+}
+div.item4,h1.main_visual_text {
+    color: #188A8D;
+    text-shadow:3px 3px 0 #FFF, -3px -3px 3px #FFF,
+              -3px 3px 0 #FFF, 3px -3px 3px #FFF,
+              0px 3px 0 #FFF,  0 -3px 3px #FFF,
+              -3px 0 0 #FFF, 3px 0 3px #FFF;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: normal;
+}
+.balloon1-left {
+    position: relative;
+    display: inline-block;
+    margin: 2.4em 0 1.5em 15px;
+    padding: 10px 28px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background: #fff;
+    border-radius: 8px;
+  }
+.balloon1-left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    margin-top: -20px;
+    border: 20px solid transparent;
+    border-right: 27px solid #fff;
+}
+.balloon1-left p {
+    margin: 0;
+    padding: 0;
+}
+.main_visual_cta {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto 180px;
+    position: relative;
+    top: 30px;
+}
+.main_visual_cta a {
+    color: #fff;
+}
+.btn_denshi01,.btn_denshi02 {
+    background-color: #FF9D00;
+    width: 450px;
+    height: 65px;
+    transition: .2s;
+    border: 0;
+    border-radius: 36px;
+    box-shadow: 0 4px 10px 0 rgba(0,26,99,.2);
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_visual_cta a:hover {
+    opacity: 1;
+    transform: translate3d(0, 2px, 0);
+    box-shadow: none;
+    text-decoration: none;
+}
+.btn_denshi01 p {
+    margin-right: 50px;
+    line-height: normal;
+}
+.btn_denshi01 {
+    background-color: #FF9D00;
+}
+.btn_denshi02 {
+    background-color: #F46600;
+}
+.btn_denshi02 p {
+    margin-left: -10px;
+    margin-right: 15px;
+}
+.btn_denshi01 span {
+    font-size: 1.1rem;
+}
+.btn_denshi01 img {
+    width: 30px;
+    height: auto;
+}
+.btn_denshi02 img {
+    width: 50px;
+    height: auto;
+}
+
+/* ------------------------------------------
+電子帳簿保存法 追加css 中身
+------------------------------------------ */
+.outline img{width: 90%; margin: 0 auto;}
+img.denshi_icon{width: 5%;}
+
+
+div#sec01 .outline h3.denshi_title {
+	border-bottom: solid 5px #62C1C5;
+	position: relative;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 60px auto 30px;
+}
+div#sec01 .outline h3.denshi_title span.number{
+	color: #62C1C5;
+	font-size: 1.2em;
+}
+div#sec01 .outline h3.denshi_title::after {
+	position: absolute;
+  	content: " ";
+  	display: block;
+  	border-bottom: solid 5px #188A8D;
+  	bottom: -5px;
+  	width: 6%;
+}
+div#sec01 .outline h3.denshi_title span {
+	font-size: 0.9em;
+}
+div#sec01 .outline .pc_flex .denshi_box {
+	border: 1px solid;
+	padding: 20px;
+}
+div#sec01 .outline .pc_flex .denshi_box h5 {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+}
+div#sec01 .outline .denshi_icon {
+	position: relative;
+	top: 7px;
+}
+div#sec01 .outline .denshi_point {
+	position: relative;
+	top: 12px;
+}
+div#sec01 .outline .denshi_casebox {
+	background: #FFFAEC;
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 50px;
+}
+div#sec01 .outline .denshi_caseicon {
+	position: absolute;
+	top: -40px;
+	left: 40px;
+}
+div#sec01 .outline .denshi_casemidashi {
+	position: absolute;
+	color: #fff;
+	background: #FB9A00;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 50px;
+	left: 160px;
+	top: -20px;
+}
+div#sec01 .outline .denshi_text {
+	margin: 50px;
+	padding: 20px 0 40px;
+}
+div#sec01 .outline .denshi_cta {
+	background: #F46600;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 50px;
+	display: inline-block;
+	color: #fff;
+	width: 600px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+div#sec01 .outline div.denshi_agenda {
+	width: 55%;
+}
+div#sec01 .outline h3.denshi_title_agenda {
+	border-bottom: solid 3px #62C1C5;
+	position: relative;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 60px auto 30px;
+	color: #188A8D;
+}
+div#sec01 .outline h3.denshi_title_agenda::after {
+	position: absolute;
+  	content: " ";
+  	display: block;
+  	border-bottom: solid 3px #188A8D;
+  	bottom: -2.5px;
+  	width: 12%;
+}
+div#sec01 .outline ul.agenda_denshi li {
+	text-indent: -1.8em;
+	margin-left: 2.5em;
+	margin-bottom: 5px;
+}
+div#sec01 .outline ul.agenda_denshi li a {
+	color: #000;
+	text-decoration: none;
+   	border-bottom: 1px solid #62C1C5;
+   	padding-bottom: 2px;
+}
+div#sec01 .outline ul.agenda_denshi li span.number {
+	color: #188A8D;
+	margin-right: 10px;
+	font-size: 1.2em;
+}
+.indente2x {
+	text-indent: -2em;
+	margin-left: 2em;
+}
+.denshi_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 220px;
+}
+.denshi_flexf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.denshi_waku {
+    position: absolute;
+    border: #FFD400 5px dotted;
+    width: 490px;
+    height: 250px;
+    left: 298px;
+    top: -20px;
+}
+.denshi_wakuwaku {
+    position: absolute;
+    border: #FFD400 5px dotted;
+    width: 146px;
+    height: 230px;
+    left: 309px;
+    top: -10px;
+}
+.denshi_flex p {
+    background-color: #FFFAEC;
+    border-radius: 10px;
+    color: #F46600;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    width: 75px;
+    height: 75px;
+}
+p.denshi_waku_text {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    width: 270px;
+    padding-top: 135px;
+    padding-left: 195px;
+    background-color:#fff;
+}
+p.denshi_wakuwaku_text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    width: 100px;
+    padding-top: 110px;
+    background-color:#fff;
+}
+.square_triangle_arrow {
+    position: relative;
+}
+.square_triangle_arrow::before { /* 長方形（棒）の表示設定 */
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 20px;
+    height: 10px;
+    background: #F46600;
+}
+.square_triangle_arrow::after { /* 三角形（矢頭）の表示設定 */
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 134px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 18px solid #F46600;
+}
+.kn_feature {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.kn_feature_text {
+    font-size: 28px;
+    text-align: center;
+    color: #FF9D00;
+    font-weight: bold;
+}
+.kn_feature_img img {
+    width: 65px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+.kn_feature_img::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transform: skew(-30deg);
+    background-color: #FFF8D6;
+    width: 80px;
+    height: 73px;
+}
+.feature_content {
+    display: flex;
+}
+.feature_content h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F46600;
+}
+.feature_bg {
+    background-color: #FFFAEC;
+    padding: 2vw 0 0 0;
+    height: 320px;
+}
+.feature_bg2 {
+    background-color: #FFFAEC;
+    padding: 2vw 0 0 0;
+    height: 320px;
+}
+.ml10vw {
+    margin-left: 20vw;
+    border-radius: 60px 0 0 60px;
+}
+.mr10vw {
+    margin-right: 20vw;
+    border-radius: 0 60px 60px 0;
+}
+.flex_re {
+    flex-direction: row-reverse;
+}
+.feature_text {
+    width: 36vw;
+    padding: 1vw 6vw 0;
+}
+.denshi_icon_point img {
+    width: 5vw;
+}
+.feature_text p {
+    line-height: 30px;
+}
+.feature_text p span {
+    font-weight: bold;
+    border-bottom: #F46600 2px solid;
+}
+.feature_content_img {
+    position: relative;
+    top: -70px;
+}
+.kn_denshi_img {
+    width: 30vw;
+    position: relative;
+    right: 115px;
+}
+.kn_denshi_img2 {
+    width: 25vw;
+    min-width: 450px;
+}
+.kn_denshi_img_pc {
+    right: 80px!important;
+}
+.parallelogram {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 22vw;/*平行四辺形の横幅*/
+    height: 390px;/*平行四辺形の高さ*/
+  }
+.parallelogram::before {
+    transform: skewX(-30deg);/*平行四辺形の角度*/
+    content: "";
+    position: absolute;
+    top: 39px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #FFF8D6;
+}
+.parallelogram2 {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 22vw;/*平行四辺形の横幅*/
+    height: 390px;/*平行四辺形の高さ*/
+  }
+.parallelogram2::before {
+    transform: skewX(-30deg);/*平行四辺形の角度*/
+    content: "";
+    position: absolute;
+    top: 39px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #FFF8D6;
+}
+.denshi_icon_point {
+    margin-right: 30px;
+}
+.pc940_none {
+    display: block;
+}
+
+@media only screen and (max-width: 1320px) {
+    .top_img {
+        width: 35vw;
+    }
+    div.item4, h1.main_visual_text {
+        font-size: 4.5rem;
+        white-space: nowrap;
+    }
+    div.item4, h1.main_visual_text span {
+        font-size: 2.2rem;
+    }
+    .item4 {
+        margin: 0 0 0 50px;
+    }
+    .feature_img {
+        width: 15vw;
+    }
+    .main_visual_cta {
+        width: 90vw;
+    }
+    .btn_denshi01, .btn_denshi02 {
+        width: 42vw;
+    }
+    .feature_content h5 {
+        margin-left: 10px;
+    }
+    .feature_bg {
+        height: 270px;
+    }
+    .feature_content_img {
+        top: -52px;
+    }
+    .parallelogram {
+        height: 321px;
+    }
+    .kn_denshi_img2 {
+        width: 35.8vw;
+    }
+    .kn_denshi_img_pc {
+        right: 0!important;
+    }
+    .parallelogram2 {
+        height: 369px;
+    }
+    .parallelogram::before,.parallelogram2::before {
+        top: 26px;
+    }
+    .ml10vw {
+        margin-left: 10vw;
+        border-radius: 30px 0 0 30px;
+    }
+    .mr10vw {
+        margin-right: 10vw;
+        border-radius: 0 30px 30px 0;
+    }
+    .twinkle05 {
+        display: none;
+    }
+    .twinkle06 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main_visual_container {
+        padding-top: 120px;
+    }
+    .balloon1-left {
+        font-size: 0.8rem;
+    }
+    div.item4, h1.main_visual_text span {
+        font-size: 1.2rem;
+    }
+    div.item4, h1.main_visual_text {
+        font-size: 3rem;
+    }
+    .feature {
+        font-size: 0.8rem;
+        height: 130px;
+    }
+    .btn_denshi01 span {
+        font-size: 0.6rem;
+    }
+    .btn_denshi01,.btn_denshi02 {
+        font-size: 0.8rem;
+    }
+    .btn_denshi01, .btn_denshi02 {
+        width: 43vw;
+    }
+    .denshi_flex {
+        display: block;
+    }
+    .denshi_flex p {
+        width: 30vw;
+        height: auto;
+        font-size: 1rem;
+        margin-bottom: 60px;
+    }
+    .pc940_none {
+        display: none;
+    }
+    .mb_displaynone {
+        display: none;
+    }
+    .feature_content h5 {
+        font-size: 0.8rem;
+    }
+    .feature_text p {
+        line-height: 1.8em;
+        font-size: 0.9rem;
+    }
+    .feature_bg {
+        height: auto;
+        width: 90vw;
+        margin: 30px auto;
+    }
+    div#sec01 .outline .denshi_cta {
+        font-size: 0.8em;
+    }
+    .feature_bg2 {
+        height: auto;
+        width: 90vw;
+        margin: 30px auto;
+    }
+    .feature_content {
+        display: block;
+        height: 670px;
+    }
+    .feature_content h5 {
+        font-size: 1rem;
+    }
+    .feature_text {
+        padding-top: 20px;
+    }
+    .denshi_flexf {
+        align-items: normal;
+    }
+    .parallelogram {
+        width: auto;
+    }
+    .denshi_icon_point img {
+        width: 12vw;
+    }
+    .parallelogram2 {
+        width: auto;
+    }
+    .parallelogram::before {
+        display: none;
+    }
+    .parallelogram2::before {
+        display: none;
+    }
+    .feature, .feature_img {
+        width: 180px;
+    }
+    .feature {
+        font-size: 1rem;
+        width: 80vw;
+        display: flex;
+        padding: 10px 20px;
+        height: 55px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: -80px;
+    }
+    .feature_img {
+        margin-top: 0;
+    }
+    .btn_denshi01, .btn_denshi02 {
+        font-size: 0.7rem;
+    }
+    .ml10vw,.mr10vw {
+        border-radius: 10px;
+    }
+    .feature_text {
+        width: 80vw;
+    }
+    .kn_denshi_img {
+        width: 350px;
+        position: inherit;
+        margin-top: 80px;
+        min-width: auto;
+    }
+    .kn_denshi_img2 {
+        width: 300px;
+        position: inherit;
+        margin-top: 80px;
+        min-width: auto;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .main_visual_container {
+        padding-top: 110px 0 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main_visual_picture, .top_img {
+        width: 372px;
+    }
+    .item2 {
+        grid-column: 2 / 4;
+    }
+    .item3 {
+        grid-row: 3;
+        grid-column: 2 / 3;
+    }
+    .item4 {
+        grid-row: 2;
+        grid-column: 1 / 4;
+    }
+    .item5 {
+        grid-row: 4;
+        grid-column: 1 / 4;
+        margin: 120px auto 0;
+    }
+    .item6 {
+        grid-row: 5;
+        grid-column: 1 / 4;
+        margin: 120px auto 0;
+    }
+    .item7 {
+        grid-row: 6;
+        grid-column: 1 / 4;
+        margin: 120px auto 0;
+    }
+    .twinkle01 {
+        top: -92px;
+        left: 220px;
+    }
+    .twinkle02 {
+        top: 112px;
+    }
+    .twinkle03 {
+        top: -22px;
+    }
+    .twinkle04 {
+        z-index: 2;
+        top: 67px;
+        left: 484px;
+    }
+    .twinkle05 {
+        display: block;
+        top: -60px;
+        left: 222px;
+    }
+    .twinkle06 {
+        display: block;
+        top: -332px;
+        left: 472px;
+    }
+    .balloon1-left {
+        font-size: 0.8rem;
+        margin: 2.4em 1em 1.5em 15px;
+    }
+    div.item4, h1.main_visual_text {
+        font-size: 2rem;
+        white-space: normal;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .denshi_flex p {
+        width: 40vw;
+        margin-bottom: 100px;
+    }
+    div#sec01 .outline h3.denshi_title::after {
+        width: 25%;
+    }
+	div#sec01 .outline h3.news_title{
+		font-size: 1.4em;
+	}
+	div#sec01 .outline div.denshi_agenda {
+		width: 100%;
+	}
+	div#sec01 .outline .pc_flex .denshi_box h5 {
+		font-size: 1rem;
+	}
+	div#sec01 .outline .denshi_casebox {
+		margin-bottom: 60px;
+	}
+	div#sec01 .outline .denshi_caseicon {
+		top: -50px;
+		left: 30px;
+	}
+	div#sec01 .outline .denshi_casemidashi {
+		top: -40px;
+		font-size: 1.3em;
+		padding: 5px 40px;
+	}
+    div#sec01 .outline h3.denshi_title {
+        font-size: 1.5em;
+    }
+	div#sec01 .outline .denshi_text {
+		margin: 20px;
+		padding: 20px 0 40px;
+	}
+	div#sec01 .outline .denshi_point {
+		display: none;
+	}
+	div#sec01 .outline .denshi_icon {
+		margin-right: 10px;
+	}
+	div#sec01 .outline .denshi_cta {
+		font-size: 1em;
+		height: 70px;
+		line-height: 70px;
+	}
+    .main_visual_cta {
+        display: block;
+        margin-bottom: 100px;
+    }
+    .btn_denshi01, .btn_denshi02 {
+        width: 80vw;
+        margin: auto auto 30px;
+        font-size: 0.9rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 100px;
+    }
+    .denshi_flex {
+        margin-bottom: 0px;
+    }
+    .indentex {
+        text-indent: -1em;
+        margin-left: 1.3em;
+    }
+}

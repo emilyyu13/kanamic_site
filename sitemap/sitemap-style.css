@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.sitemap #sec01 .block ul li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.sitemap #sec01 .block ul li a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sitemap #sec01 .block h2{
+    text-decoration: underline;
+
+}
+
+.sitemap #sec01 .block h2::after{
+    /* content: '>';
+    display: inline-block;
+    margin-left: 8px; */
+}
+
+
+/* ホーム */
+.home-block li a{
+    /* font-weight: bold; */
+}
+
+/* 事例 */
+.case-block h3{
+    /* border-bottom: 1px dotted #000; */
+    width: 80%;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+
+.case-block p{
+    margin-left: 10px;
+}
+.case-block p a{
+    /* color: chocolate!important; */
+}
+
+/* リストの強調
+　グループ会社 */
+.list-pickup{
+    /* border-bottom: 1px dotted #000; */
+    width: 80%;
+    margin-top: 12px;
+    font-weight: bold;
+}
+.listup-link{
+    margin-left: 10px;
+}
+.listup-link a{
+    /* color: chocolate!important; */
+}

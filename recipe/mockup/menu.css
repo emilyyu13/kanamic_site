@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+ file name  :menu.css
+ author     :Sho Miura (admin)
+ style info :モックアップ用
+ 
+=================================================================== */
+body {
+	padding-top:100px;
+}
+
+div.sectionMenu {
+	width:300px;
+	margin:0 auto;
+}
+div.sectionMenu2 {
+	width:600px;
+	margin:0 auto;
+}
