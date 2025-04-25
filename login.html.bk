@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="copyright" content="http://www.kanamic.net" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<link rel="start" href="http://www.kanamic.net/" title="Home" />
+<link rel="Shortcut Icon" href="http://www.kanamic.net/favicon.ico" type="image/vnd.microsoft.icon" />
+<title>カナミックネットワーク | 地域連携型ASP介護システム ログイン画面</title><link rel="stylesheet" type="text/css" href="help/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="help/css/style.css" />
+<script src="help/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="help/js/yuga.js" type="text/javascript"></script>
+<script src="help/js/prefixfree.js" type="text/javascript"></script>
+<script src="common/js/ll.js" type="text/javascript"></script>
+
+</head>
+
+<body id="loginNoflash">	
+<div id="pagetop">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-462660-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<div id="page">
+
+<div id="head">
+<div class="mw1024">
+	<h1><a href="http://www.kanamic.net/"><img src="help/img/base/KANAMIC_logo.png" alt="株式会社カナミックネットワーク" width="300" /></a></h1>
+   </div>
+</div>
+
+<div class="unDisplay_Mobile">
+<div class="caution">
+	<h2>【警告】お使いのブラウザは古いバージョンです。<!--Internet Explorer 6をご使用のお客様--></h2>
+    <p>現在お使いのInternet Explorer 6又は7は推奨されていない古いブラウザ環境になっており、<span class="redTxt">セキュリティに大きな脆弱性</span>を抱えております。<br />
+    また、OS環境がWindows XPの場合、OS自体もマイクロソフト社のサポート終了に伴いセキュリティ上の問題があり、ご使用されることにはリスクがあり推奨されておりません。<br />
+    弊社システムではOSがXP、且つInternet Explorer 6および7をご使用中の方は<span class="redTxt">11月のシステムバージョンアップ以降にはシステムのご利用ができなくなります。</span>Internet Explorerを最新版にアップグレードするか、OS自体のアップグレードをお願い申し上げます。</p>
+    <!--<p class="dlBtn"><a href="http://windows.microsoft.com/ja-jp/internet-explorer/download-ie">Internet Explorer 8をダウンロード</a></p>-->
+</div>
+<ul id="loginNav">
+	<li class="houkatsu01"><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/rs/r1-1_page.jsp');"><img src="help/img/systemselect/houkatsu01.gif" alt="地域包括支援センター" width="113" height="112" class="btn" /></a></li>
+    <li class="service02"><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/service_enterprise/t3-1_page.jsp');"><img src="help/img/systemselect/service02.gif" alt="サービス事業所" width="113" height="112" class="btn" /></a></li>
+    <li class="cm04"><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/care_support_enterprise/t2-1_page.jsp');"><img src="help/img/systemselect/kyotaku03.gif" alt="居宅介護支援事業所" width="113" height="112" class="btn" /></a></li>
+    <li class="iryou05"><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/care_manager/t1-1_page.jsp');"><img src="help/img/systemselect/cm04.gif" alt="ケアマネジャー" width="113" height="112" class="btn" /></a></li>
+    <!--<li class="iryou05"><img src="help/img/systemselect/iryou05.gif" alt="医療機関" width="113" height="112" class="btn" /></li>-->
+    <li class="tritrus06"><a href="javascript:loadClassic('https://www.kanamic.net/portalsite/');"><img src="help/img/systemselect/tritrus06.gif" alt="トリトラス" width="189" height="91" class="btn" /></a></li>
+    <li class="certificate"><a href="javascript:loadClassic('https://p.kanamic.net/tritrus/');"><img src="help/img/systemselect/certificate.png" alt="電子証明書専用ログイン" width="189" height="91" class="btn" /><span class="tooltip">電子証明書をインストールしている<br />お客様専用ページです。</span></a></li>
+    <li class="honsha07"><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/ham/hamadminlogin.jsp');"><img src="help/img/systemselect/honsha07.gif" alt="本社用" width="112" height="112" class="btn" /></a></li>
+    <li class="jigyousho08"><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/ham/hamlogin.jsp');"><img src="help/img/systemselect/jigyousho08.gif" alt="事業所用" width="112" height="112" class="btn" /></a></li>
+</ul>
+</div>
+
+
+<div class="unDisplay_PC" style="padding:0;">
+    <div id="section" class="system">
+       <div class="systemSection">
+            <div class="subSectionMiddle">
+                <h4 class="tri">TRITRUS SYSTEM</h4>
+                <ul class="cf">
+                    <li><a href="javascript:loadClassic('https://www.kanamic.net/portalsite/');">トリトラス</a></li>
+                    <li><a href="javascript:loadClassic('https://p.kanamic.net/tritrus/');">電子証明書専用ログイン</a></li>
+                </ul>
+                <h4 class="cic">CIC SYSTEM</h4>
+                <ul class="cf">
+                    <li><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/service_enterprise/t3-1_page.jsp');">サービス事業所</a></li>
+                    <li><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/rs/r1-1_page.jsp');">地域包括支援センター</a></li>
+                    <li><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/care_support_enterprise/t2-1_page.jsp');">居宅介護支援事業所</a></li>
+                    <li><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/cic/care_manager/t1-1_page.jsp');">ケアマネジャー</a></li>
+                </ul>
+                <h4 class="ham">HAM SYSTEM</h4>
+                <ul class="cf">
+                    <li><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/ham/hamadminlogin.jsp');">本社用</a></li>
+                    <li><a href="javascript:loadClassic('https://www2.kanamic.net/kanamic/jsp/default/ham/hamlogin.jsp');">事業所用</a></li>
+                </ul>
+            </div>
+<!--             <div class="systemSectionBottom">
+            </div>-->
+       </div><!-- systemSection end -->
+     </div><!-- section end -->
+</div>
+
+<div class="tablet_wrapper">
+	<p class="unDisplay_PC" style="margin:10px">旧TRITRUSをご利用の方は<a href="https://www.kanamic.net/portalsite/top.html">こちら</a>から。</p>
+<p class="txtR mr10"><a href="http://www.kanamic.net/" title="カナミックネットワークホームページに戻る"><img src="help/img/systemselect/return.png" alt="カナミックネットワークホームページに戻る" width="131" height="41" class="btn" /></a></p>
+</div>
+
+<div class="tritrus unDisplay_Mobile">
+<div class="tablet_wrapper txtL">
+	<p style="margin:10px 0">旧TRITRUSをご利用の方は<a href="https://www.kanamic.net/portalsite/top.html">こちら</a>から。</p>
+	
+    <table align="right">
+    <tr>
+    <td align="left" valign="top"><p style="font-size:14px; color:#FF6600;">お使いのパソコンでID・パスワード入力画面が表示されない場合>></p></td>
+    <td width="154" align="left" valign="top"><p><a href="help/popup.html" target="_blank"><img src="help/img/systemselect/login_notice.gif" alt="システムをご利用になる前に" name="Image12" width="153" height="42" border="0"  class="btn" id="Image12"/></a></p></td>
+    </tr>
+    </table>
+    
+		
+		<div style="clear:both;"></div>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</body>
+</html>
