@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+
+/* ↓ header -------------------------------------------------------------- */
+html{
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #333;
+	font-size: 62.5%;    /* ルートのフォントサイズ10px */
+}
+body {
+	font-size: 1.6em;	/* ルートのフォントサイズ1.6em（16pxと同等） */
+}
+.wrapper{
+    overflow: hidden;
+}
+
+header {
+	height: 80px;
+	border-bottom: #ED6207 5px solid;
+	width: 100vw;
+}
+.header_inner {
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.header_logo {
+    width: 340px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* ↓ main -------------------------------------------------------------- */
+main{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    color: #333;
+    font-size: 32px;
+    margin-top: 100px;
+    text-align:center
+}
+p{
+    font-size: 2.0rem;
+    line-height: 3.2rem;
+    font-weight: 300;
+    margin-top: 2.5rem;
+    letter-spacing: 0.1rem;
+    text-align:left;
+}
+a.inquiry-btn {
+    color: #fff;
+    background-color: #f46600;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: inline-block;
+    position: relative;
+    padding: 1.3rem 4rem 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.3rem;
+    width: 350px;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, .15);
+    margin: 50px auto 0;
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+/* 768~px */
+@media screen and (min-width: 768px) {
+    .pc-only{display:block;}
+    .sp-only{display:none;}
+    main{
+        max-width: 1200px;
+    }
+    h1{
+        font-size:40px;
+    }
+    p{
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        text-align: center;
+    } 
+}

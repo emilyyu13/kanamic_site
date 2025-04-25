@@ -1,0 +1,1298 @@
+　/* CSS Document */
+
+
+/* ----------------------------------------
+	font face
+---------------------------------------- */
+@font-face {
+	font-family: "YuGothic-M";
+	font-weight: normal;
+	 src: local("YuGothic-Medium"),
+		  local("Yu Gothic Medium"),
+		  local("YuGothic-Regular");
+}
+@font-face {
+	font-family: "YuGothic-M";
+	font-weight: bold;
+	 src: local("YoGothic-Bold"),
+		  local("Yu Gothic");
+}
+html {
+	font-size: 62.5%;/* 16px x 0.625 = 10px(=1rem) */
+}
+body {
+	font-size: 1.6rem;/* 16px */
+	font-family: -apple-system, blinkMacSystemFont, Meiryo, YuGothic-M, YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	font-feature-settings: "palt";
+	word-wrap : break-word;
+	overflow-wrap : break-word;
+}
+textarea {
+	font-size: 15px;
+	font-family: -apple-system, blinkMacSystemFont, Meiryo, YuGothic-M, YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	font-feature-settings: "palt";
+	word-wrap : break-word;
+	overflow-wrap : break-word;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	::i-block-chrome, body {
+		font-feature-settings: "pkna";
+	}
+}
+
+/* ----------------------------------------
+	default styles
+---------------------------------------- */
+html,body {
+	color: #000000;
+}
+* {
+	box-sizing: border-box;
+}
+
+
+/* ----------------------------------------
+	styles
+---------------------------------------- */
+
+h1 {
+	font-size: 30px;
+	font-size: 3rem;
+}
+h1 img {
+	margin-left: 10px;
+}
+
+header {
+	width: 100%;
+	margin-bottom: 8rem;
+	background: url(img/header_border.png) bottom center no-repeat;
+}
+
+header h1 {
+	max-width: 90rem;
+	margin: 0 auto;
+	height: 8.8rem;
+	padding-top: 2rem;
+}
+
+div#wrapper {
+	width: 100%;
+	padding: 0 1rem;
+}
+
+#thanks {
+	max-width: 90rem;
+	margin: 0 auto;
+	text-align: left;
+}
+#thanks h1 {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 90rem;
+	padding-bottom: 2.9rem;
+	background: url(img/stripe.png) bottom repeat-x;
+}
+
+#thanks p {
+	margin: 47px 10px 45px 10px;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1.6em;
+}
+#contact {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 90rem;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#phoneReq {
+	width: 50%;
+	min-width: 280px;
+	padding-left: 6rem;
+	padding-top: 1.2rem;
+	background: url(img/call_icon.png) no-repeat top left;
+}
+
+#phoneReq h2 {
+	font-size: 2rem;
+	font-weight:bold;
+}
+#phoneReq .callNumber {
+	color: #eb5c02;
+	font-size: 3.4rem;
+	font-weight: bold;
+	margin: 1rem 0 2rem 0;
+}
+#phoneReq .callNumber a {
+	color: #eb5c02;
+}
+
+#phoneReq .timeIn {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+#phoneReq .guide {
+	line-height: 1.57em;
+	font-size: 1.4rem;
+}
+
+#mailReq {
+	width: 50%;
+	min-width: 280px;
+	background: url(img/mail_icon.png) no-repeat top left;
+	padding-left: 6rem;
+	padding-top: 1.2rem;
+}
+
+#mailReq h2 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#mailReq ul {
+	font-size: 1.5rem;
+	margin: 3.2rem 0;
+}
+
+#mailReq ul li {
+	margin-bottom: 3.2rem;
+}
+
+#irReq {
+	font-size: 1.5rem;
+	max-width: 90rem;
+	margin: 0 auto;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+}
+
+#irReq h2 {
+	margin-bottom: 1.2rem;
+	color: #ca0000;
+	font-weight: bold;
+}
+
+#irReq p {
+	line-height: 1.8em;
+}
+
+/* ---------- ぱんくず ---------- */
+
+#bredcrumbSec {
+	margin: 0 auto;
+	max-width: 900px;
+	margin-bottom: 4rem;
+}
+#bredcrumbSec p {
+	font-size: 1.5rem;
+	text-align: left;
+	margin: 0 1rem;
+}
+ul#breadcrumb {
+	list-style: none;
+	width: 100%;
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 4rem;
+	display: flex;
+	justify-content: center;
+}
+ul#breadcrumb li {
+	height: 5.5rem;
+	background: #eee;
+	text-align: center;
+	position: relative;
+	margin-right: 10px;
+	font-size: 1.8rem;
+	padding-top: 1.4rem;
+	width: 100%;
+}
+ul#breadcrumb li span.itemNum {
+	font-size: 2.4rem;
+	margin-right: 1.2rem;
+}
+ul#breadcrumb li:after {
+	content: "";
+	border-top: 2.75rem solid transparent;
+	border-bottom: 2.75rem solid transparent;
+	border-left: 1rem solid #eee;
+	position: absolute;
+	right: -1rem;
+	top: 0;
+	z-index: 1;
+}
+ul#breadcrumb li.now {
+	background: #ef8e13;
+	color: #FFF;
+}
+ul#breadcrumb li.now:after {
+	border-left: 1rem solid #ef8e13;
+}
+
+ul#breadcrumb li:before {
+	content: "";
+	border-top: 2.75rem solid transparent;
+	border-bottom: 2.75rem solid transparent;
+	border-left: 1rem solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+ul#breadcrumb li:first-child {
+	margin-left: 1%;
+}
+ul#breadcrumb li:first-child:before {
+	display: none;
+}
+ul#breadcrumb li:last-child {
+}
+ul#breadcrumb li:last-child:after {
+	display: none;
+}
+
+/* ---------- メールフォーム ---------- */
+div.mailForm {
+	margin: 0 auto;
+	max-width: 90rem
+}
+div.mailForm div.formBox  {
+	border-bottom: 1px dotted #545454;
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+div.mailForm div.formBox:first-child {
+	border-top: 1px dotted #545454;
+}
+div.mailForm div.formBox .formLabel {
+	flex-basis: 280px;
+}
+div.mailForm div.formBox .formLabel label {
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 6rem;
+	display:inline-block;
+	width: 12em;
+}
+div.mailForm div.formBox .formLabel span.required {
+	font-size: 1.4rem;
+	padding: 0.5rem 1.2rem;
+	color: #FFF;
+	background: #ca0000;
+}
+div.mailForm div.formBox .formLabel div.irNotice {
+	font-size: 1.4rem;
+	line-height:1.4em;
+	margin: 2rem 2rem 2rem 0;
+}
+div.mailForm div.formBox .formLabel div.irNotice::before {
+	content:"※";
+	font-size: 1.4rem;
+	margin-left: -1.4rem;
+
+}
+div.mailForm div.formBox .formContent {
+	flex-grow: 10;
+}
+div.mailForm div.formBox .formContent input[type=text] {
+	height: 6rem;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 2rem;
+	border: 1px solid #cccccc;
+	background: #fef7f2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+}
+div.mailForm div.formBox .formContent input[type=text]:focus {
+	background: #fef7f2;
+	color: #000000;
+}
+div.mailForm div.formBox .formContent input[type=text]#postalCode {
+	height: 6rem;
+	width: 50%;
+	font-size: 1.5rem;
+	float: left;
+	margin-right: 3%;
+	padding: 2rem;
+	border: 1px solid #cccccc;
+	background: #fef7f2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+}
+
+div.mailForm div.formBox .formContent textarea#formSubject {
+	height: 19rem;
+	width: 100%;
+	padding: 2rem;
+	border: 1px solid #cccccc;
+	background: #fef7f2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+}
+div.mailForm div.formBox .formContent textarea#formSubject:focus {
+	background: #fef7f2;
+	color: #000;
+}
+div.mailForm div.formBox .formContent select {
+	width: 100%;
+	padding: 2rem;
+	border: 1px solid #cccccc;
+	/*background: #fef7f2;*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+}
+
+/* --- メールフォーム > 郵便番号入力箇所 --- */
+div.postalCode .postal2address-container {
+	text-align: center;
+}
+div.postalCode .postal2address-container .postal2address-button {
+	float: left;
+	width: 47%;
+	border: 0;
+	background-color:#ef8e13;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 0.7rem 1rem;
+	text-decoration:none;
+}
+div.postalCode .postal2address-container .postal2address-button:hover {
+	background-color:#e86a10;
+	border:0;
+}
+div.postalCode .postal2address-container .postal2address-button:active {
+	position:relative;
+	top:1px;
+	border:0;
+}
+
+
+/* --- 個人情報取り扱いについての同意とSubmit --- */
+div.agreement {
+	margin: 6rem auto;
+	max-width: 90rem;
+}
+div.agreement .policy {
+	max-width:100%;
+	padding: 1em;
+	border: 1px dotted #545454;
+	margin-bottom:5rem;
+	text-align:center;
+}
+div.agreement .policy h2 {
+	margin-bottom: 1.2rem;
+    color: #ca0000;
+    font-weight: bold;
+}
+div.agreement .policy p {
+	line-height:1.6;
+	color:#545454;
+}
+div.agreement .policy p a {
+	font-weight: bold;
+	color: #006990;
+	transition: 0.1s linear;
+}
+div.agreement .policy p a:hover {
+	color:#3785a5;
+}
+div.agreement div#termsBox {
+	border: 1px solid #cccccc;
+	height: 32rem;
+	padding: 3rem;
+	overflow: auto;
+	margin-bottom: 6rem;
+	font-size: 1.5rem;
+	color: #282828;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+div.agreement div#termsBox h2 {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+div.agreement div#termsBox h3 {
+	font-weight: bold;
+	margin-bottom: 0.46em;
+}
+div.agreement div#termsBox p {
+	margin-bottom: 1em;
+	line-height: 1.46em;
+}
+div.agreement div#termsBox ul {
+	margin-bottom: 1em;
+}
+div.agreement div#termsBox ul li {
+	list-style-type: disc;
+	margin-left: 2em;
+	margin-bottom: 0.5rem;
+}
+div.agreement div#termsBox ol {
+	margin-bottom: 1em;
+}
+div.agreement div#termsBox ol li {
+	list-style-type: disc;
+	margin-left: 2em;
+	margin-bottom: 0.5rem;
+}
+
+/* --- 同意チェックボックス --- */
+div.agreement p.agreeChk {
+	font-size: 1.5rem;
+	color: #545454;
+	text-align: center;
+}
+
+/* --- 同意Submitボタン --- */
+div.agreement .submit-container {
+	text-align: center;
+	margin-top: 6rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+div.agreement .submit-container .submit-button {
+	border: 0;
+	width: 100%;
+	max-width: 36rem;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f09114), color-stop(1, #e86a10));
+	background:-moz-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-webkit-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-o-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-ms-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:linear-gradient(to bottom, #f09114 5%, #e86a10 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09114', endColorstr='#e86a10',GradientType=0);
+	background-color:#f09114;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding: 2rem 0;
+	text-decoration:none;
+}
+div.agreement .submit-container .submit-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #333333), color-stop(1, #f09114));
+	background:-moz-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-webkit-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-o-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-ms-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:linear-gradient(to bottom, #e86a10 5%, #f09114 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e86a10', endColorstr='#f09114',GradientType=0);
+	background-color:#e86a10;
+}
+div.agreement .submit-container .submit-button:active {
+	position:relative;
+	top:1px;
+}
+
+div.agreement .submit-container .back-button {
+	border: 0;
+	width: 100%;
+	max-width: 36rem;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #999), color-stop(1, #666));
+	background:-moz-linear-gradient(top, #999 5%, #666 100%);
+	background:-webkit-linear-gradient(top, #999 5%, #666 100%);
+	background:-o-linear-gradient(top, #999 5%, #666 100%);
+	background:-ms-linear-gradient(top, #999 5%, #666 100%);
+	background:linear-gradient(to bottom, #999 5%, #666 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#999', endColorstr='#666',GradientType=0);
+	background-color:#f09114;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding: 2rem 0;
+	text-decoration:none;
+}
+div.agreement .submit-container .back-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #666), color-stop(1, #999));
+	background:-moz-linear-gradient(top, #666 5%, #999 100%);
+	background:-webkit-linear-gradient(top, #666 5%, #999 100%);
+	background:-o-linear-gradient(top, #666 5%, #999 100%);
+	background:-ms-linear-gradient(top, #666 5%, #999 100%);
+	background:linear-gradient(to bottom, #666 5%, #999 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#999',GradientType=0);
+	background-color:#666;
+}
+div.agreement .submit-container .back-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* --- ラジオボタンの装飾 --- */
+input[type=radio] {
+  display: none;
+}
+.radioBtn {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 3.9rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radioBtn:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: 0.1rem;
+}
+.radioBtn:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  content: '';
+}
+
+.radioBtn:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.7rem;
+  display: block;
+  margin-top: -0.7rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=radio]:checked + .radioBtn:before {
+  opacity: 1;
+}
+
+/* --- 同意チェックボックスの装飾 --- */
+input[type=checkbox] {
+	position: absolute;
+	left: -1000em;
+}
+/*-- DL -- */
+.chkBoxReqDL {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 4.4rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chkBoxReqDL:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: -0.1rem;
+}
+.chkBoxReqDL:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  content: '';
+}
+
+.chkBoxReqDL:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  display: block;
+  margin-top: -1.3rem;
+  width: 0.7rem;
+  height: 1.4rem;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #ef8e13;
+  border-right: 3px solid #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=checkbox]:checked + .chkBoxReqDL:before {
+  opacity: 1;
+}
+/* -- 郵送 -- */
+.chkBoxReqPost {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 4.4rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chkBoxReqPost:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: -0.1rem;
+}
+.chkBoxReqPost:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  content: '';
+}
+
+.chkBoxReqPost:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  display: block;
+  margin-top: -1.3rem;
+  width: 0.7rem;
+  height: 1.4rem;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #ef8e13;
+  border-right: 3px solid #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=checkbox]:checked + .chkBoxReqPost:before {
+  opacity: 1;
+}
+
+/* -- その他 -- */
+.chkBoxReqOther {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 4.4rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chkBoxReqOther:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: -0.1rem;
+}
+.chkBoxReqOther:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  content: '';
+}
+
+.chkBoxReqOther:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  display: block;
+  margin-top: -1.3rem;
+  width: 0.7rem;
+  height: 1.4rem;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #ef8e13;
+  border-right: 3px solid #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=checkbox]:checked + .chkBoxReqOther:before {
+  opacity: 1;
+}
+
+
+
+/* ----- form Validate error message Customize ----- */
+
+span.authError {
+	color: #ca0000;
+	font-family: -apple-system, blinkMacSystemFont, Meiryo, YuGothic-M, YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 1em;
+	display: block;
+}
+	/* エラーバリデーション時のハイライト */
+	.formError[type=text] {
+		border: 3px solid #cc0500 !important;
+	}
+	.formValid[type=text] {
+		border: 1px solid #ccc !important;
+	}
+	textarea.formError {
+		border: 3px solid #cc0500 !important;
+	}
+	textarea.formValid {
+		border: 1px solid #ccc !important;
+	}
+	select.formError {
+		border: 3px solid #cc0500 !important;
+	}
+	select.formValid {
+		border: 1px solid #ccc !important;
+	}
+
+
+
+/* ----- フォームのセレクター ----- */
+
+.formDL {
+	display:none;
+}
+.formMailIn {
+	/*display:none;*/
+}
+.formOther {
+	display:none;
+}
+
+/* --------------------
+   confirm styles
+-------------------- */
+.formBox .entryChk {
+	padding: 2.2rem 0 2.2rem 1em;
+}
+
+/* --------------------
+   complete styles
+-------------------- */
+#completeSec {
+	max-width: 90rem;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 60px;
+}
+#completeSec p {
+	font-size: 2rem;
+	line-height: 1.7;
+}
+
+
+/* --- トップへ戻るボタン --- */
+p.btnN {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+p.btnN a {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(0,0,0,0.70);
+	border-radius: 5px;
+    background: #eee;
+}
+p.btnN a:hover {
+    background: #ddd;
+}
+p.btnN a span {
+	padding-left: 24px;
+    background:url(img/complete_arrow.png) no-repeat left ;
+
+}
+
+/* --------------------
+   download
+-------------------- */
+body.download {}
+
+body.download .catalogue {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+body.download .catalogue .catalogueInner {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: space-between;
+    align-items: space-between;
+}
+
+body.download .catGeneral {
+	width: 270px;
+	background: #fff;
+	border: 6px solid #DDD;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+}
+body.download .catGeneral .catCover {
+	width: 220px;
+	margin-bottom: 20px;
+}
+body.download .catGeneral h2 {
+	width: 220px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px
+}
+body.download .catGeneral .catOutline {
+	width: 220px;
+	text-align: left;
+	line-height: 1.3;
+}
+body.download .catGeneral a.catBtnDL {
+	width: 220px;
+	margin-top: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-family: Open Sans;
+	font-size: 16px;
+	padding: 15px 10px;
+	background-color: #eb5c02;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+body.download .catGeneral a.catBtnDL:hover {
+	background: #1E62D0;
+	text-decoration: none;
+}
+body.download .caution {
+	max-width: 640px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	padding: 20px;
+	border: 1px solid #666;
+	color:red;
+}
+body.download .caution li {
+	font-weight: bold;
+	
+}
+/* --------------------
+   footer
+-------------------- */
+footer {
+	width: 100%;
+	margin-top: 10rem;
+	padding-top: 3.3rem;
+	background: url(img/header_border.png) top center no-repeat;
+	text-align: center;
+	font-size: 1.4rem;
+	height: 8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------
+   media screen
+-------------------- */
+
+/* タブレット向けのスタイル：1023px以下に適用 */
+@media only screen and (max-width: 1023px) {
+}
+/* 768pxから適用 */
+@media only screen and (min-width: 768px) {
+}
+/* 767pxまで適用 */
+@media only screen and (max-width: 767px) {
+}
+/* PC向けのスタイル1：1280pxから適用 */
+@media only screen and (min-width: 1280px) {
+}
+/* PC向けのスタイル2：1024pxから適用 */
+@media only screen and (min-width: 1024px) {
+	.unDisplay_PC2 {display:none;}
+}
+/* 768pxから適用 */
+@media only screen and (min-width: 768px) {
+	.unDisplay_PC {display:none;}
+}
+/* PC以外向けのスタイル：1023px以下に適用 */
+@media only screen and (max-width: 1023px) {
+	.unDisplay_Tablet {display:none;}
+}
+/* スマホ向けのスタイル：767px以下に適用 */
+@media only screen and (max-width: 767px) {
+	.unDisplay_Mobile {display:none;}
+}
+/* 640pxから適用 */
+@media only screen and (max-width: 640px) {
+}
+/* 639px以下に適用 */
+@media only screen and (max-width: 639px) {
+#mailReq,#phoneReq {
+	width: 100%;
+}
+}
+/* 570px以下に適用 */
+@media only screen and (max-width: 570px) {
+
+div.mailForm div.formBox .formLabel label {
+	width: inherit;
+}
+div.mailForm div.formBox .formLabel div.irNotice {
+	margin: 2rem 0 2rem 0;
+}
+
+ul#breadcrumb li {
+	font-size: 1.4rem;
+}
+ul#breadcrumb li span.itemNum {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+}
+/* 481pxから適用 */
+@media only screen and (min-width: 481px) {
+	.unDisplay_Tab-PC {display:none;}
+}
+/* スマホ向けのスタイル：480px以下に適用 */
+@media only screen and (max-width: 480px) {
+	.unDisplay_Smart {display:none;}
+	
+}
+/* スマホ向けのスタイル：320px以下に適用 */
+@media only screen and (max-width: 320px) {
+	.unDisplay_Smart {
+		display: none;
+	}
+}
+
+
+
+/* --------------------
+	module
+-------------------- */
+
+.fs11 { font-size: 1.1rem }
+.fs12 { font-size: 1.2rem }
+.fs13 { font-size: 1.3rem }
+.fs14 { font-size: 1.4rem }
+.fs15 { font-size: 1.5rem }
+.fs16 { font-size: 1.6rem }
+.fs17 { font-size: 1.7rem }
+.fs18 { font-size: 1.8rem }
+.fs19 { font-size: 1.9rem }
+.fs20 { font-size: 2rem }
+.fs21 { font-size: 2.1rem }
+.fs22 { font-size: 2.2rem }
+.fs23 { font-size: 2.3rem }
+.fs24 { font-size: 2.4rem }
+
+.mr12 { margin-right: 1.2rem; }
+
+/*	clearfix  */
+.pkg:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*******モーダルウィンドウ-*******/
+
+div.remodal_sml {
+	padding: 35px 20px 10px;
+	max-width: 500px;
+	max-height: 90%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+div.remodal_mid {
+	padding: 35px 20px 10px;
+	max-width: 800px;
+	max-height: 90%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+div.remodal_custom {
+	padding: 35px 20px 10px;
+	max-height: 90%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+div.remodal_large {
+	padding: 35px 20px 10px;
+	max-width: 1600px;
+	max-height: 90%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+div.remodal h1,
+div.remodal h2,
+div.remodal h3,
+div.remodal h4 {
+	text-align: left;
+}
+
+div.remodal div.modal_contents {
+    padding: 0 0px;
+	font-size: 16px;
+	border: 1px solid #999;
+}
+
+div.remodal  p.attention {
+    text-align: center;
+    margin: 0 auto 10px;
+    font-size: 25px;
+}
+
+div.remodal  p.attention span {
+	color: #ffca00;
+	font-size: 35px;
+    line-height: 1.3em;
+}
+
+div.remodal {
+	z-index:9999;
+	overflow-y: auto;
+	padding: 35px 15px 10px;
+}
+
+.remodal-wrapper {
+    z-index: 9999;
+}
+
+div.remodal h3.tb1 {
+    margin-top: 15px;
+}
+
+/* 備考　キャプション */
+span.caption {
+	font-size: 14px;
+}
+
+div.text_alert {
+	background: #fffaea;
+	padding: 10px;
+}
+
+div.text_alert p {
+	font-size: 16px;
+	color: #d60b0b;
+	margin-bottom: 10px;
+}
+
+.remodal-close {
+	width: 83px;
+    margin-right: 10px;
+    text-align: right;
+    height: 50px;
+    font-size: 18px;
+}
+
+.remodal-close:before {
+    font-size: 45px;
+    line-height: 50px;
+    width: 30px;
+}
+
+
+/*チラつき防止*/
+div.remodal [class^='customBtn_'] a,
+div.remodal button,
+div.remodal .page_btn button,
+div.remodal .page_btn-s button {
+	transition: 0;
+}
+
+/* モーダル内コンテンツ */
+.remodal .modal_contents{
+	text-align: left;
+	font-size: 16px;
+	padding: 0;
+    overflow-y: scroll;
+	height: 50vh;
+}
+/* スクロールの幅の設定 */
+.remodal .modal_contents::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* スクロールの背景の設定 */
+.remodal .modal_contents::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: 0 0 4px #aaa inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+.remodal .modal_contents::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #777777;
+}
+.remodal .ttlLL {
+    font-size: 172%;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 0 25px 0;
+	border-bottom: 3px solid #f09114;
+}
+.modal_contents .ttlBgGrayNoSquare {
+    font-size: 108%;
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #666;
+}
+.modal_contents .section {
+    margin-bottom: 15px;
+}
+.modal_contents h3 {
+    margin: 1em 0 0 1em;
+}
+.modal_contents p {
+    padding-left: 20px;
+	padding-right: 20px;
+	line-height: 1.2;
+}
+.modal_contents ul.typeDisc {
+    margin: 1em 0;
+}
+.modal_contents ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.modal_contents ul.typeDisc > li {
+    list-style-type: disc;
+	margin: 2px 0 2px 2em;
+}
+.modal_contents .section ol {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.modal_contents .section ol.typeDecimal {
+    margin-top: 1em;
+}
+.modal_contents .section ol > li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.modal_contents .section ol.typeDecimal > li {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+div.page_btn {
+	max-width: 450px;
+	margin: 0 auto;
+}
+div.page_btn ul li:first-child {
+    float: left;
+}
+div.page_btn ul li:last-child {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+@media only screen and (max-width: 480px) {
+	/* スマホ向けのスタイル：480px以下に適用 */
+	div.page_btn ul li {
+		float: none !important;
+	    margin-left: 0 !important;
+	}
+	
+}
