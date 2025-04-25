@@ -1,0 +1,986 @@
+弊社にご関心をお持ちくださいまして、誠にありがとうございます。
+　/* CSS Document */
+
+
+/* ----------------------------------------
+	font face
+---------------------------------------- */
+@font-face {
+	font-family: "YuGothic-M";
+	font-weight: normal;
+	 src: local("YuGothic-Medium"),
+		  local("Yu Gothic Medium"),
+		  local("YuGothic-Regular");
+}
+@font-face {
+	font-family: "YuGothic-M";
+	font-weight: bold;
+	 src: local("YoGothic-Bold"),
+		  local("Yu Gothic");
+}
+html {
+	font-size: 62.5%;/* 16px x 0.625 = 10px(=1rem) */
+}
+body {
+	font-size: 1.6rem;/* 16px */
+	font-family: -apple-system, blinkMacSystemFont, Meiryo, YuGothic-M, YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	font-feature-settings: "palt";
+	word-wrap : break-word;
+	overflow-wrap : break-word;
+}
+textarea {
+	font-size: 15px;
+	font-family: -apple-system, blinkMacSystemFont, Meiryo, YuGothic-M, YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	font-feature-settings: "palt";
+	word-wrap : break-word;
+	overflow-wrap : break-word;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	::i-block-chrome, body {
+		font-feature-settings: "pkna";
+	}
+}
+
+/* ----------------------------------------
+	default styles
+---------------------------------------- */
+html,body {
+	color: #000000;
+}
+* {
+	box-sizing: border-box;
+}
+
+
+/* ----------------------------------------
+	styles
+---------------------------------------- */
+
+h1 {
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+
+
+div#wrapper {
+	width: 100%;
+	padding: 0 2rem;
+}
+
+#thanks {
+	max-width: 90rem;
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 22rem;
+}
+#thanks h1 {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 90rem;
+	padding-bottom: 2.9rem;
+	background: url(img/stripe.png) bottom repeat-x;
+}
+
+#thanks p {
+	margin: 47px 0 45px 0;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+#contact {
+	margin: 0 auto;
+	max-width: 90rem;
+}
+
+#phoneReq {
+	float:left;
+	width: 50%;
+	padding-left: 8rem;
+	padding-top: 1.2rem;
+	max-width: 47rem;
+	background: url(img/call_icon.png) no-repeat top left;
+}
+
+#phoneReq h2 {
+	font-size: 2rem;
+	font-weight:bold;
+}
+#phoneReq .callNumber {
+	color: #eb5c02;
+	font-size: 3.4rem;
+	font-weight: bold;
+	margin: 1rem 0 2rem 0;
+}
+#phoneReq .timeIn {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+#phoneReq .guide {
+	line-height: 1.57em;
+	font-size: 1.4rem;
+}
+
+#mailReq {
+	float:left;
+	width: 50%;
+	max-width: 47rem;
+	background: url(img/mail_icon.png) no-repeat top left;
+	padding-left: 8rem;
+	padding-top: 1.2rem;
+}
+
+#mailReq h2 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#mailReq ul {
+	font-size: 1.5rem;
+	margin: 3.2rem 0;
+}
+
+#mailReq ul li {
+	margin-bottom: 3.2rem;
+}
+
+#irReq {
+	font-size: 1.5rem;
+	max-width: 90rem;
+	margin: 0 auto;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+}
+
+#irReq h2 {
+	margin-bottom: 1.2rem;
+	color: #ca0000;
+	font-weight: bold;
+}
+
+#irReq p {
+	line-height: 1.8em;
+}
+
+/* ---------- ぱんくず ---------- */
+#bredcrumbSec {
+	margin: 0 auto;
+	max-width: 900px;
+	margin-bottom: 4rem;
+}
+#bredcrumbSec p {
+	font-size: 1.5rem;
+	text-align: left;
+}
+ul#breadcrumb {
+	list-style: none;
+	width: 100%;
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 4rem;
+}
+ul#breadcrumb li {
+	float: left;
+	height: 5.5rem;
+	/*	height: 50px; */
+	background: #eee;
+	text-align: center;
+	width: 32%;
+	position: relative;
+	margin-right: 1%;
+	font-size: 1.8rem;
+	line-height: 5.5rem;
+}
+ul#breadcrumb li span.itemNum {
+	font-size: 2.4rem;
+	margin-right: 1.2rem;
+}
+ul#breadcrumb li:after {
+	content: "";
+	border-top: 2.75rem solid transparent;
+	border-bottom: 2.75rem solid transparent;
+	border-left: 1rem solid #eee;
+	position: absolute;
+	right: -1rem;
+	top: 0;
+	z-index: 1;
+}
+ul#breadcrumb li.now {
+	background: #ef8e13;
+	color: #FFF;
+}
+ul#breadcrumb li.now:after {
+	border-left: 1rem solid #ef8e13;
+}
+
+ul#breadcrumb li:before {
+	content: "";
+	border-top: 2.75rem solid transparent;
+	border-bottom: 2.75rem solid transparent;
+	border-left: 1rem solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+ul#breadcrumb li:first-child {
+	margin-left: 1%;
+}
+ul#breadcrumb li:first-child:before {
+	display: none;
+}
+ul#breadcrumb li:last-child {
+}
+ul#breadcrumb li:last-child:after {
+	display: none;
+}
+
+
+/* 768pxから適用 */
+@media only screen and (min-width: 768px) {
+	.spview {
+		display: none;
+	}
+
+	.pcview {
+		display: block;
+	}
+	
+}
+
+
+
+/* 767pxまで適用 */
+@media only screen and (max-width: 767px) {
+	html {
+		font-size: 100%;
+	}
+ 	
+	.spview {
+		display: block;
+	}
+		
+	.pcview {
+		display: none;
+	}
+	
+	#thanks {
+		margin-top: 5rem;
+	}
+	
+	#thanks p {
+		padding: 0 2rem;
+	}
+	
+	#contact {
+		width: 100%;
+	}
+
+	#irReq h2 {
+		font-size: 2rem;
+	}
+	
+	#irReq p {
+		font-size: 1.8rem;
+	}
+ 	
+	#mailReq {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    padding: 1rem 1rem 1rem 8rem;
+    background-position: 1rem 1rem;
+    border: 1px solid #cccccc;
+	}
+
+	#phoneReq {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    padding: 1rem 1rem 1rem 8rem;
+    background-position: 1rem 1rem;
+    border: 1px solid #cccccc;
+	}
+	
+	#bredcrumbSec {
+		
+	}
+	
+	#bredcrumbSec ul#breadcrumb li {
+		font-size: 1.4rem;
+		line-height: 2rem;
+		padding-top: 0.7rem;
+	}
+	
+	#bredcrumbSec ul#breadcrumb li span.itemNum {
+		font-size: 2rem;
+		margin-right: 0;
+	}
+	
+	#bredcrumbSec p {
+		font-size: 1.8rem;
+    	padding: 0 2rem;
+	}
+	
+	
+	
+}
+
+/* ---------- メールフォーム ---------- */
+div.mailForm {
+	margin: 0 auto;
+	max-width: 90rem
+}
+div.mailForm div.formBox  {
+	border-bottom: 1px dotted #545454;
+	padding: 2rem;
+	display: block;
+}
+div.mailForm div.formBox:first-child {
+	border-top: 1px dotted #545454;
+}
+div.mailForm div.formBox .formLabel {
+	float: left;
+	width: 33%;
+	padding-right: 2rem;
+}
+div.mailForm div.formBox .formLabel label {
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 6rem;
+}
+div.mailForm div.formBox .formLabel span.required {
+	font-size: 1.4rem;
+	padding: 0.7rem 1.4rem;
+	color: #FFF;
+	background: #ca0000;
+	float: right;
+	margin-top: 1.4rem;
+}
+div.mailForm div.formBox .formLabel div.irNotice {
+	font-size: 1.4rem;
+	line-height:1.4em;
+	margin-top: 20px;
+}
+div.mailForm div.formBox .formLabel div.irNotice::before {
+	content:"※";
+	font-size: 1.4rem;
+	margin-left: -1.4rem;
+
+}
+div.mailForm div.formBox .formContent {
+	width: 66%;
+	float: left;
+}
+div.mailForm div.formBox .formContent input[type=text] {
+	height: 6rem;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 2rem;
+	border: 1px solid #cccccc;
+	background: #fef7f2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+}
+div.mailForm div.formBox .formContent input[type=text]:focus {
+	background: #fef7f2;
+	color: #000000;
+}
+div.mailForm div.formBox .formContent input[type=text]#postalCode {
+	height: 6rem;
+	width: 50%;
+	font-size: 1.5rem;
+	float: left;
+	margin-right: 3%;
+	padding: 2rem;
+	border: 1px solid #cccccc;
+	background: #fef7f2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+}
+
+div.mailForm div.formBox .formContent textarea#formSubject {
+	height: 19rem;
+	width: 100%;
+	padding: 2rem;
+	border: 1px solid #cccccc;
+	background: #fef7f2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+}
+div.mailForm div.formBox .formContent textarea#formSubject:focus {
+	background: #fef7f2;
+	color: #000;
+}
+
+/* --- メールフォーム > 郵便番号入力箇所 --- */
+div.postalCode .postal2address-container {
+	text-align: center;
+}
+div.postalCode .postal2address-container .postal2address-button {
+	float: left;
+	width: 47%;
+	border: 0;
+	background-color:#ef8e13;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 1.1rem 0;
+	text-decoration:none;
+	margin-top: 1rem;
+}
+div.postalCode .postal2address-container .postal2address-button:hover {
+	background-color:#e86a10;
+	border:0;
+}
+div.postalCode .postal2address-container .postal2address-button:active {
+	position:relative;
+	top:1px;
+	border:0;
+}
+
+
+/* --- 個人情報取り扱いについての同意とSubmit --- */
+div.agreement {
+	margin: 6rem auto;
+	max-width: 90rem;
+}
+div.agreement div#termsBox {
+	border: 1px solid #cccccc;
+	height: 32rem;
+	padding: 3rem;
+	overflow: auto;
+	margin-bottom: 6rem;
+	font-size: 1.5rem;
+	color: #282828;
+}
+div.agreement div#termsBox h2 {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+div.agreement div#termsBox h3 {
+	font-weight: bold;
+	margin-bottom: 0.46em;
+}
+div.agreement div#termsBox p {
+	margin-bottom: 1em;
+	line-height: 1.46em;
+}
+div.agreement div#termsBox ul {
+	margin-bottom: 1em;
+}
+div.agreement div#termsBox ul li {
+	list-style-type: disc;
+	margin-left: 2em;
+	margin-bottom: 0.5rem;
+}
+div.agreement div#termsBox ol {
+	margin-bottom: 1em;
+}
+div.agreement div#termsBox ol li {
+	list-style-type: disc;
+	margin-left: 2em;
+	margin-bottom: 0.5rem;
+}
+
+/* --- 同意チェックボックス --- */
+div.agreement p.agreeChk {
+	font-size: 1.5rem;
+	color: #545454;
+	text-align: center;
+}
+
+/* --- 同意Submitボタン --- */
+div.agreement .submit-container {
+	text-align: center;
+	margin-top: 6rem;
+}
+
+div.agreement .submit-container .submit-button {
+	border: 0;
+	width: 36rem;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f09114), color-stop(1, #e86a10));
+	background:-moz-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-webkit-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-o-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-ms-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:linear-gradient(to bottom, #f09114 5%, #e86a10 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09114', endColorstr='#e86a10',GradientType=0);
+	background-color:#f09114;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding: 2rem 0;
+	text-decoration:none;
+}
+div.agreement .submit-container .submit-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e86a10), color-stop(1, #f09114));
+	background:-moz-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-webkit-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-o-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-ms-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:linear-gradient(to bottom, #e86a10 5%, #f09114 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e86a10', endColorstr='#f09114',GradientType=0);
+	background-color:#e86a10;
+}
+div.agreement .submit-container .submit-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* --- ラジオボタンの装飾 --- */
+input[type=radio] {
+  display: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.radioBtn {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 3.9rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radioBtn:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: 0.1rem;
+}
+.radioBtn:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  content: '';
+}
+
+.radioBtn:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.7rem;
+  display: block;
+  margin-top: -0.7rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=radio]:checked + .radioBtn:before {
+  opacity: 1;
+}
+
+/* --- 同意チェックボックスの装飾 --- */
+input[type=checkbox] {
+	position: absolute;
+	left: -1000em;
+}
+/*-- DL -- */
+.chkBoxReqDL {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 4.4rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chkBoxReqDL:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: -0.1rem;
+}
+.chkBoxReqDL:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  content: '';
+}
+
+.chkBoxReqDL:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  display: block;
+  margin-top: -1.3rem;
+  width: 0.7rem;
+  height: 1.4rem;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #ef8e13;
+  border-right: 3px solid #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=checkbox]:checked + .chkBoxReqDL:before {
+  opacity: 1;
+}
+/* -- 郵送 -- */
+.chkBoxReqPost {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 4.4rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chkBoxReqPost:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: -0.1rem;
+}
+.chkBoxReqPost:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  content: '';
+}
+
+.chkBoxReqPost:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  display: block;
+  margin-top: -1.3rem;
+  width: 0.7rem;
+  height: 1.4rem;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #ef8e13;
+  border-right: 3px solid #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=checkbox]:checked + .chkBoxReqPost:before {
+  opacity: 1;
+}
+
+/* -- その他 -- */
+.chkBoxReqOther {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 4.4rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chkBoxReqOther:hover:after {
+	border: 2px solid #ef8e13;
+	margin-top: -1.3rem;
+	left: -0.1rem;
+}
+.chkBoxReqOther:after {
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  content: '';
+}
+
+.chkBoxReqOther:before {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  display: block;
+  margin-top: -1.3rem;
+  width: 0.7rem;
+  height: 1.4rem;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #ef8e13;
+  border-right: 3px solid #ef8e13;
+  content: '';
+  opacity: 0;
+}
+input[type=checkbox]:checked + .chkBoxReqOther:before {
+  opacity: 1;
+}
+
+
+
+/* ----- form Validate error message Customize ----- */
+
+span.authError {
+	color: #ca0000;
+	font-family: -apple-system, blinkMacSystemFont, Meiryo, YuGothic-M, YuGothic, "Hiragino Kaku Gothic ProN", sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 1em;
+	display: block;
+}
+	/* エラーバリデーション時のハイライト */
+
+	.formError[type=text] {
+		border: 3px solid #cc0500 !important;
+	}
+	.formValid[type=text] {
+		border: 1px solid #ccc !important;
+	}
+	textarea.formError {
+		border: 3px solid #cc0500 !important;
+	}
+	textarea.formValid {
+		border: 1px solid #ccc !important;
+	}
+
+/* ----- フォームのセレクター ----- */
+
+.formDL {
+	display:none;
+}
+.formMailIn {
+	display:none;
+}
+.formOther {
+	display:none;
+}
+
+
+/* 767pxまで適用 */
+@media only screen and (max-width: 767px) {
+
+	div.mailForm div.formBox .formLabel {
+		float: none;
+		padding: 0;
+		width: 100%;
+		
+	}
+
+	div.mailForm div.formBox .formContent {
+		width: 100%;
+	}
+
+	div.mailForm div.formBox .formLabel span.required {
+		float: none;
+	}
+	
+	div.agreement {
+		padding: 2rem;
+	}
+ 
+	div.mailForm div.formBox .formContent input[type=text]#postalCode {
+		width: 60%;
+	}
+	
+	div.postalCode .postal2address-container .postal2address-button {
+		width: 37%;
+		margin: 0;
+		padding: 0.6rem 1rem;
+	}
+	
+	
+}
+
+
+/* ----- フォームの確認画面 ----- */
+
+div.mailForm div.formBox .formConfirm p {
+    float: left;
+    line-height: 6rem;
+}
+
+
+
+div.nextStep {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+div.nextStep .submit-container .submit-button {
+	border: 0;
+	width: 36rem;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f09114), color-stop(1, #e86a10));
+	background:-moz-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-webkit-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-o-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:-ms-linear-gradient(top, #f09114 5%, #e86a10 100%);
+	background:linear-gradient(to bottom, #f09114 5%, #e86a10 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09114', endColorstr='#e86a10',GradientType=0);
+	background-color:#f09114;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding: 2rem 0;
+	text-decoration:none;
+}
+div.nextStep .submit-container .submit-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e86a10), color-stop(1, #f09114));
+	background:-moz-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-webkit-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-o-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:-ms-linear-gradient(top, #e86a10 5%, #f09114 100%);
+	background:linear-gradient(to bottom, #e86a10 5%, #f09114 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e86a10', endColorstr='#f09114',GradientType=0);
+	background-color:#e86a10;
+}
+div.nextStep .submit-container .submit-button:active {
+	position:relative;
+	top:1px;
+}
+
+#bredcrumbSec p.complete {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* ----- /フォームの確認画面 ----- */
+
+
+
+
+
+
+/* --------------------
+   media screen
+-------------------- */
+
+/* タブレット向けのスタイル：1023px以下に適用 */
+@media only screen and (max-width: 1023px) {
+}
+/* 768pxから適用 */
+@media only screen and (min-width: 768px) {
+}
+/* 767pxまで適用 */
+@media only screen and (max-width: 767px) {
+}
+/* PC向けのスタイル1：1280pxから適用 */
+@media only screen and (min-width: 1280px) {
+}
+/* PC向けのスタイル2：1024pxから適用 */
+@media only screen and (min-width: 1024px) {
+	.unDisplay_PC2 {display:none;}
+}
+/* 768pxから適用 */
+@media only screen and (min-width: 768px) {
+	.unDisplay_PC {display:none;}
+}
+/* PC以外向けのスタイル：1023px以下に適用 */
+@media only screen and (max-width: 1023px) {
+	.unDisplay_Tablet {display:none;}
+}
+/* スマホ向けのスタイル：767px以下に適用 */
+@media only screen and (max-width: 767px) {
+	.unDisplay_Mobile {display:none;}
+}
+/* 640pxから適用 */
+@media only screen and (max-width: 640px) {
+}
+/* 481pxから適用 */
+@media only screen and (min-width: 481px) {
+	.unDisplay_Tab-PC {display:none;}
+}
+/* スマホ向けのスタイル：480px以下に適用 */
+@media only screen and (max-width: 480px) {
+	.unDisplay_Smart {display:none;}
+	
+}
+/* スマホ向けのスタイル：320px以下に適用 */
+@media only screen and (max-width: 320px) {
+}
+.unDisplay_Smart {
+	display: none;
+}
+
+
+/* --------------------
+	module
+-------------------- */
+
+.fs11 { font-size: 1.1rem }
+.fs12 { font-size: 1.2rem }
+.fs13 { font-size: 1.3rem }
+.fs14 { font-size: 1.4rem }
+.fs15 { font-size: 1.5rem }
+.fs16 { font-size: 1.6rem }
+.fs17 { font-size: 1.7rem }
+.fs18 { font-size: 1.8rem }
+.fs19 { font-size: 1.9rem }
+.fs20 { font-size: 2rem }
+.fs21 { font-size: 2.1rem }
+.fs22 { font-size: 2.2rem }
+.fs23 { font-size: 2.3rem }
+.fs24 { font-size: 2.4rem }
+
+.mt15 { margin-top: 15px; }
+
+.mr12 { margin-right: 1.2rem; }
+
+/*	clearfix  */
+.pkg:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+

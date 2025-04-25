@@ -1,0 +1,8 @@
+・scssファイルです。よく使用する色、フォント、フォントサイズを定義しています。
+
+・使い方は
+　読み込みする方のscssファイルの頭に@use "scss/_variable";と記載して読み込む
+　(@importはサポート終了するため使わない)
+  @useの場合は
+　「variable.$color-kanamic-orange-20;」というように頭にvariable.とファイル名をつける
+

@@ -1,0 +1,806 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/*行の高さをフォントサイズと同じにしています*/
+body {
+  line-height: 1;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article,
+aside,
+details,
+figcaption,
+figure,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+/*nav ul {
+    list-style:none;
+}*/
+ol,
+ul {
+  list-style: none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote,
+q {
+  quotes: none;
+}
+
+/*blockquote要素、q要素の前後にコンテンツを追加しないように指定しています*/
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/*a要素のフォントサイズなどをリセットしフォントの縦方向の揃え位置を親要素のベースラインに揃えるようにしています*/
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* ins要素のデフォルトをセットし、色を変える場合はここで変更できるようにしています */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* mark要素のデフォルトをセットし、色やフォントスタイルを変える場合はここで変更できるようにしています
+また、mark要素とは、文書内の検索結果で該当するフレーズをハイライトして、目立たせる際に使用するようです。*/
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*テキストに打ち消し線が付くようにしています*/
+del {
+  text-decoration: line-through;
+}
+
+/*IEではデフォルトで点線を下線表示する設定ではないので、下線がつくようにしています
+また、マウスオーバー時にヘルプカーソルの表示が出るようにしています*/
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input,
+select {
+  vertical-align: middle;
+}
+
+/*画像を縦に並べた時に余白が出ないように*/
+.img01 {
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  width: 100%;
+}
+
+/*box-sizingを全ブラウザに対応*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button,
+button:active,
+button:checked,
+button:focus {
+  outline: none;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-bottom: 70px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.inner {
+  box-sizing: border-box;
+  position: relative;
+  zoom: 1;
+  /* width: 960px; */
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#menuSp {
+  display: none;
+}
+
+.sp_block {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #006990;
+  transition: color 0.1s linear;
+}
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: underline;
+}
+
+/* .ipad header #gNav ul ul {
+  border-radius: 0 0 0 5px !important;
+}
+.ipad header .close {
+  display: block !important;
+}
+.ipad #floatNav {
+  display: none;
+} */
+
+/* トップ */
+.container-fluid.top {
+  margin-bottom: 40px;
+}
+
+
+
+.breadCrumbs {
+  margin-bottom: 15px;
+}
+.breadCrumbs ul li {
+  display: inline;
+  font-size: 86%;
+}
+.breadCrumbs ul li a {
+  color: inherit;
+}
+.breadCrumbs ul li:after {
+  content: " > ";
+}
+.breadCrumbs ul li:last-child:after {
+  content: "";
+}
+
+.introduction {
+  border: 2px solid #f4cbe6;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.introduction .text {
+}
+
+.introduction .text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #f4cbe6;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.introduction .text p {
+}
+
+.introduction .frame {
+  text-align: center;
+}
+
+/* .introduction .frame img {
+    width: 140px;
+} */
+
+.introduction .frame span {
+  font-weight: bold;
+}
+
+.afterword {
+  padding: 15px;
+  border: 1px solid #efefef;
+  background: url(../img/bg_afterword.jpeg) no-repeat center;
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+.afterword .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.afterword .title span {
+  color: #e6a3c7;
+  margin-left: 5px;
+  vertical-align: -0.1rem;
+}
+
+div.index {
+  background: #e9911a;
+  height: 173px;
+  margin-bottom: 30px;
+}
+
+div.index h3 {
+  font-size: 2.2rem;
+  display: table-cell;
+  font-weight: bold;
+  color: #ffffff;
+  height: 173px;
+  vertical-align: middle;
+}
+
+div.index .img_area {
+  border: 1px solid #e9911a;
+  background-size: cover;
+  height: 173px;
+}
+
+div.index .img_area.cloud {
+  background: #ffffff url(../img/h3_img01.png) no-repeat center;
+  background-size: cover;
+}
+
+div.index .img_area.inquiry {
+  background: #ffffff url(../img/h3_img02.png) no-repeat center;
+  background-size: cover;
+}
+
+div.index .row {
+  margin: 0;
+}
+
+div.service {
+}
+
+div.service .col-sm {
+  margin-bottom: 20px;
+}
+
+div.service h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+div.service img {
+  margin-bottom: 10px;
+}
+
+div.inquiry {
+  border: 1px solid #cccccc;
+}
+
+.inquiry.tab {
+  display: inline-block;
+}
+
+.inquiry.sp {
+  display: none;
+}
+
+div.inquiry .conversion {
+  padding: 15px;
+  background: url(../img/Inquiry_bg.png) no-repeat right;
+  min-height: 150px;
+}
+
+div.inquiry .conversion p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: 40px;
+  margin: 20px 0 15px 0;
+}
+
+div.inquiry .conversion p.tel span {
+  vertical-align: -0.2rem;
+  color: #ff6600;
+  font-size: 2.4rem;
+}
+
+div.inquiry img {
+  box-shadow: 0px 2px 2px 0px #cccccc;
+  -moz-box-shadow: 0px 2px 2px 0px #cccccc;
+  -webkit-box-shadow: 0px 2px 2px 0px #cccccc;
+}
+
+div.inquiry img:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+div.inquiry .conversion p.mail {
+  margin: 0;
+}
+
+div.inquiry .conversion p.mail span {
+  vertical-align: -0.1em;
+}
+
+div.inquiry .online {
+  padding: 10px;
+  background: #e9911a;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+div.inquiry .online span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+div.subsidy {
+  background: url(../img/subsidy_bg.png) no-repeat center;
+  background-size: cover;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+div.subsidy p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2.2rem;
+  background: rgba(255, 255, 255, 0.54);
+  padding: 10px;
+}
+
+div.sales {
+}
+
+div.sales .strength {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+div.sales .col-sm {
+  margin-bottom: 20px;
+}
+
+div.corporate {
+  text-align: center;
+  background: url(../img/bg_company.png) center no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+div.corporate img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+div.corporate p {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.41);
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+div.corporate ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+div.corporate ul li a.links {
+  border: 1px solid #ff9502;
+  padding: 15px 10px;
+  display: inline-block;
+  width: 18rem;
+  background: #ffffff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff9502;
+
+  box-shadow: 0px 2px 2px 0px #cccccc;
+  -moz-box-shadow: 0px 2px 2px 0px #cccccc;
+  -webkit-box-shadow: 0px 2px 2px 0px #cccccc;
+}
+
+div.corporate ul li a.links:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+div.corporate ul li a span {
+  vertical-align: -0.2rem;
+  font-size: 1.5rem;
+  color: #ff9502;
+}
+
+div.container-fluid.entry {
+  position: fixed;
+  z-index: 9999;
+  padding: 0;
+  bottom: 0;
+}
+
+div.row.entry_area {
+  text-align: center;
+  display: inherit;
+  border-bottom: 2px solid #f29300;
+  margin: 0;
+}
+
+div.row.entry_area button {
+  background: #f29300;
+  box-shadow: 0px 1px 10px -2px #333333;
+  -moz-box-shadow: 0px 1px 10px -2px #333333;
+  -webkit-box-shadow: 0px 1px 10px -2px #333333;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px 6px 0px 0px;
+}
+
+div.row.entry_area button:hover,
+div.row.entry_area button:active {
+  background: #eeab45;
+  box-shadow: 0px 2px 2px 0px #a5a5a5;
+  -moz-box-shadow: 0px 2px 2px 0px #a5a5a5;
+  -webkit-box-shadow: 0px 2px 2px 0px #a5a5a5;
+  transition: 0.2s linear;
+}
+
+div.row.entry_area button span {
+  font-size: 1rem;
+}
+
+div.mt10 {
+  margin-top: 10px;
+}
+
+div.mt20 {
+  margin-top: 20px;
+}
+
+div.mb20 {
+  margin-bottom: 20px;
+}
+
+div.pr15 {
+  padding-right: 15px;
+}
+
+div.pl15 {
+  padding-left: 15px;
+}
+
+.under .section .col_2n {
+  position: relative;
+  margin-bottom: 50px;
+  zoom: 1;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  min-height: 200px;
+  padding-right: 15px;
+    padding-left: 15px;
+}
+
+.under .section .col .text {
+  display: table-cell;
+  vertical-align: top;
+  width: 680px;
+  box-sizing: border-box;
+}
+
+.under .section .col_2n .text {
+  float: left;
+  width: 680px;
+  box-sizing: border-box;
+}
+
+.under .section .col_2n .img {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 400px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.under .section .col_2n .img img {
+  width: 100%;
+  height: auto;
+}
+table.bace{
+  font-size: 16px;
+}
+
+table.bace th{
+  padding: 8px;
+  width: 20%;
+}
+
+table.bace td{
+  padding: 8px;
+}
+
+.tr{
+  text-align: right;
+}
+
+.tl{
+  text-align: left;
+}
+
+.tc{
+  text-align: center;
+}
+
+/* フッター */
+div.container-fluid.footer {
+  background: #efefef;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #f29300;
+  border-top: 1px solid #cccccc;
+}
+
+/****** 文字関連 *****/
+span.pickup {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff6600;
+}
+
+span.emphais {
+  font-weight: bold;
+}
+
+.container p {
+  line-height: 1.6rem;
+}
+
+p.tr {
+  text-align: right;
+}
+
+p.tc {
+  text-align: center;
+}
+
+/* ----------menu icon for sp ----------*/
+/* --- スマホ用のアイコン。資料請求用にcontactアイコンを流用するために記載--- */
+
+@font-face {
+	font-family: 'icon_menu_sp';
+	src:
+	  url('fonts/icon_menu_sp.ttf?o699z1') format('truetype'),
+	  url('fonts/icon_menu_sp.woff?o699z1') format('woff'),
+	  url('fonts/icon_menu_sp.svg?o699z1#icon_menu_sp') format('svg');
+	font-weight: normal;
+	font-style: normal;
+  }
+  .icon-contact {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icon_menu_sp' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/*line-height: 1;*/
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  .icon-edit:before {
+	content: "\e622";
+  }
+ 
+  }
+  /* ----------/menu icon for sp ----------*/
+
+/****** スマホ対応系共通 *****/
+div.mobile_img {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .introduction {
+    margin: 0 0px 20px;
+  }
+
+  .container-fluid.top .main_img,
+  .container-fluid.top .main_img02,
+  .container-fluid.top .main_img03,
+  .container-fluid.top .main_img04 {
+    height: 300px;
+  }
+
+  div.index h3 {
+    font-size: 1.6rem;
+    height: 100px;
+  }
+
+  div.subsidy p {
+    width: 100%;
+  }
+
+  div.service h4 {
+    font-size: 1.2rem;
+  }
+
+  div.index {
+    height: auto;
+  }
+
+  div.inquiry .conversion p {
+    padding: 0;
+  }
+
+  div.inquiry .conversion p.text {
+    width: 65%;
+    font-size: 1.3rem;
+  }
+
+  div.inquiry .conversion p.tel {
+    margin-bottom: 15px;
+  }
+
+  div.inquiry .conversion p.tel a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  .sp{
+	  display: none;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .sp_hide {
+    display: none;
+  }
+
+  .container-fluid.top .main_img,
+  .container-fluid.top .main_img02,
+  .container-fluid.top .main_img03,
+  .container-fluid.top .main_img04 {
+    height: 220px;
+  }
+
+  .inquiry.tab {
+    display: none;
+  }
+
+  .inquiry.sp {
+    display: inline-block;
+  }
+}

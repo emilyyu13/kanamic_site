@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+  <!-- アイコン CSS -->
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <!-- アニメーション CSS -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+  <!-- 調整用 CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="../../ja/zoom/js/common.js"></script>
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script> -->
+
+  <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+  <script type="text/javascript">
+    $(function () {
+      if (window.matchMedia("(max-width: 414px)").matches) {
+        //スマホ処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6800) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else if (window.matchMedia("(max-width:813px)").matches) {
+        //タブレット処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 5300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else {
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 一旦hide()で隠してフェードインさせる
+      $("div.container-fluid.slide").hide().fadeIn("slow");
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+
+  <title>お問合せ|株式会社カナミックネットワーク</title>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar" data-offset="100">
+  <div class="container-fluid header">
+    <div class="nav_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/KANAMIC_logo_cr.png" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="zoom.html">Zoom連携方法</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">利用規約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">お問合せ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">プライバシーポリシー</a>
+            </li>
+            <li class="nav-item corptop">
+              <a class="nav-link" href="https://www.kanamic.net/" data-target="#top">コーポレートサイトへ</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid slide clearfix">
+    <div class="h1area">
+      <div class="langarea">
+        <div class="langselect cp_sl01">
+          <select required>
+            <option value="" hidden>language</option>
+            <option value="1" selected>Japanese</option>
+            <option value="2">English</option>
+          </select>
+        </div>
+      </div>
+      <h1>お問合せ</h1>
+    </div>
+    <div class="main">
+      <div class="assumptions support">
+        <h2>お電話でのお問合せ</h2>
+        <p>
+          カナミックネットワーク<br>
+          03-5798-3955<br>
+          受付時間：平日9時00分～18時00分<br>
+          土日祝祭日、年末年始、GW、夏季休暇時は休業となります。<br>
+          毎月10日（国保請求最終日）直前の土曜日は通常通り対応を行なっております。
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container-fluid footer clearfix">
+      <p>Copyright © Kanamic Network Co.,LTD All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+  <!-- アイコン CSS -->
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <!-- アニメーション CSS -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+  <!-- 調整用 CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="../../ja/zoom/js/common.js"></script>
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script> -->
+
+  <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+  <script type="text/javascript">
+    $(function () {
+      if (window.matchMedia("(max-width: 414px)").matches) {
+        //スマホ処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6800) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else if (window.matchMedia("(max-width:813px)").matches) {
+        //タブレット処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 5300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else {
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 一旦hide()で隠してフェードインさせる
+      $("div.container-fluid.slide").hide().fadeIn("slow");
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+
+  <title>Zoom連携方法|株式会社カナミックネットワーク</title>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar" data-offset="100">
+  <div class="container-fluid header">
+    <div class="nav_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/KANAMIC_logo_cr.png" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="zoom.html">Zoom連携方法</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">利用規約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">お問合せ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">プライバシーポリシー</a>
+            </li>
+            <li class="nav-item corptop">
+              <a class="nav-link" href="https://www.kanamic.net/" data-target="#top">コーポレートサイトへ</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid slide clearfix">
+    <div class="h1area">
+      <div class="langarea">
+        <div class="langselect cp_sl01">
+          <select required>
+            <option value="" hidden>language</option>
+            <option value="1" selected>Japanese</option>
+            <option value="2">English</option>
+          </select>
+        </div>
+      </div>
+      <h1>個人情報の取り扱いについてPrivacy Policy (Policy on handling of personal information)</h1>
+    </div>
+    <div class="main">
+      <p class="kaitei"><br>
+        平成17年４月１日制定<br>
+        平成20年６月２日改定<br>
+        平成22年９月３日改定<br>
+        平成24年９月18日改定<br>
+        平成27年９月29日改定<br>
+        平成29年12月１日改定<br>
+        平成30年５月11日改定<br>
+        令和２年11月１日改定<br>
+        Established on April 1, 2005<br>
+        Revised on June 2, 2008<br>
+        Revised on September 3, 2010<br>
+        Revised on September 18, 2012<br>
+        Revised on September 29, 2015<br>
+        Revised on December 1, 2017<br>
+        Revised on May 11, 2018<br>
+        Revised on November 1, 2020</p>
+      <h3>I 個人情報の利用目的について Purposes for utilization of personal information</h3>
+      <p>当社のサイトにて収集する個人情報は、次のような目的に使用されます。Personal information that we collect through our website is utilized for the
+        following purposes:</p>
+      <ul class="dot">
+        <li>ご購入商品のご利用サポートto provide user support for products customers purchase</li>
+        <li>当社商品に関するサービス提供 to provide services in relation to our products</li>
+        <li>各種お問い合わせ及び資料送付 to process inquiries and send materials</li>
+        <li>ご購入商品または当社取り扱い商品の新情報の提供 to provide the latest information about products customers previously purchased or
+          about other products we offer.</li>
+        <li>個人情報を特定しない統計情報への利用 to compile statistical information, (which does not include identifiable personal
+          information)</li>
+        <li>採用選考への利用 to conduct employment screening</li>
+      </ul>
+      <p>上記目的の範囲外で利用する場合は事前にお客様にお知らせし、ご了解をいただいた場合に限り利用させていただきます。 In cases where we seek to use personal information for
+        a purpose which goes beyond the scope of use described above, we will notify the customer in advance and proceed
+        only with the consent of the customer. </p>
+      <h3>II 個人情報の種類等について　Types of personal information</h3>
+      <p>弊社では以下の個人情報をお預かりしております。We collect the following personal information: <br>
+      <h4>【お問合せ関連 Personal information collected in relation to inquiries】<br></h4>
+      当社に対するお問合せの際に、ご本人が記載または入力した勤務先、氏名、住所、電話番号、メールアドレス等 Personal information (such as place of work, name, home
+      address, phone number, and email address) provided by inquirers upon making inquiries to us<br>
+      <h4>
+        【採用関連Personal information related to employment screening】<br>
+
+      </h4>
+      <p>申込者が記載した、氏名、性別、生年月日、年齢、郵便番号、住所、電話番号、携帯電話番号、メールアドレス、学校名、入年月、卒業(見込)年月保有する資格、職歴等 Personal information provided by
+        job applicants (such as name, gender, date of birth, age, zip code, home address, phone number, mobile phone
+        number, email address, name of school being attended, year admitted to university, expected date of graduation,
+        qualifications, and work history)<br></p>
+      <h4>【カナミッククラウドサービス関連 Personal information collected in relation to the Kanamic Cloud Service】<br></h4>
+      <p>
+        契約申込者が記載した、氏名、郵便番号、住所、電話番号等　Personal information (such as name, zip code, home address, and phone number)
+        provided by applicants to our service<br>
+        カナミッククラウドサービスをご利用されている方が登録した、利用者様の医療・介護・福祉サービスに関する項目等 Personal information registered by current users of the
+        Kanamic Cloud Service regarding the user's medical care/nursing care/social welfare services, etc.<br>
+      </p>
+      <h4>【広報・IR関連 Personal information collected in relation to PR / IR activities】<br></h4>
+      <p>対象者が提供した、氏名、郵便番号、住所、電話番号、映像等 Personal information (such as name, zip code, home address, phone number, and
+        image data) provided by applicable individuals <br></p>
+      <h4>【当社役員、顧問、従業員等関連 Personal information related to our officers, counsel, and employees】<br></h4>
+      <p>履歴書、職務経歴書、家族情報、年金情報等　 CV, job history, family information, pension information, etc.<br></p>
+      <h4>【株主関連 Personal information related to shareholders】<br></h4>
+      <p>株主名、住所、株主番号、等 Name, home address, shareholder number, etc. <br></p>
+      <h4>【要配慮個人情報および機微（センシティブ）情報 Sensitive personal information 】<br></h4>
+      <p>要配慮個人情報および機微（センシティブ）情報については、業務の適切な運営の確保その他必要と認められる目的以外で収集、保管または利用いたしません。 We will not gather, store, or use
+        sensitive personal information other than to ensure the appropriate operation of business or for other purposes
+        that may be deemed necessary.<br></p>
+      <h3>III 個人情報の共同利用について Joint use (sharing) of personal information<br></h3>
+      <p>当社は、カナミックネットワークの経営資源を活用し、お客様に付加価値の高いサービスをご提供することを通じ、企業価値向上を図っております。 We strive to effectively deploy business
+        resources and deliver services with a high degree of added value, thereby enhancing enterprise value.</p>
+      <p>そのために以下の範囲内で必要な場合に限り、厳格な管理・監督のもとに個人情報を共同利用させていただきたいと考えておりますので、何卒ご理解を賜りますようお願い申し上げます。For this purpose, we may
+        conduct sharing of personal information within the scope detailed below when deemed necessary. In the event that
+        we conduct sharing of personal information, we shall exercise strict controls and supervision.<br>
+        なお、共同利用の取扱いにつきましては、今後必要に応じて見直しをさせていただくことがございます。その際には、あらかじめ当社ホームページに掲載するプライバシーポリシーにて公表させていただきます。Going forward, we
+        may make changes to how we handle the sharing of personal information. Should this occur, we will publish the
+        changes (in advanced) through the privacy policy document on our website. <br></p>
+        <h4>1. 共同利用する目的 Purposes for joint use (sharing) of personal information <br></h4>
+        <ol>
+          <li>(1) カナミッククラウドサービスおよびサポート提供のため to provide the Kanamic Cloud Service and deliver customer support thereof<br></li>
+          <li>(2) カナミッククラウドサービスのサービス品質向上を図るため To improve the quality of the Kanamic Cloud Service<br></li>
+          <li>(3) カナミッククラウドサービスをご契約いただいているお客様とのご契約履行のためto facilitate the fulfillment of Kanamic Cloud Service contractual obligations<br></li>
+          <li>(4) 公衆衛生の向上または児童の健全な育成の推進のためto facilitate improvements in community public health and promote the healthy upbringing of children in the community<br></li>
+          <li>(5) 社会保障費適正化、科学的介護に向けた取組のためto make social security less costly and to facilitate undertakings in Scientific Nursing Care. <br></li>
+        </ol>
+      <h4>2. 共同利用者範囲Scope of joint users of personal information<br></h4>
+      <p>以下の(1)～(3)の範囲の者が、個人情報を共同利用させていただきます。The following parties, (1) - (3), are in scope for the sharing of personal
+        information. <br></p>
+      <ol>
+        <li>(1) 当該個人情報を取得されたカナミッククラウドサービスのご契約者様（「ユーザー様」といいます。）The Kanamic Cloud Service user who has acquired the personal information (this individual is referred to as “the User”) <br></li>
+        <li>(2) ユーザー様と連携して当該個人情報の主体であるご本人様に医療、介護またはその他サービス提供を行う業務に関わる方で、カナミッククラウドサービスを利用することにつきあらかじめユーザー様の指定を受け当社の許可を得ておられる方（「連携ユーザー様」といいます。）A person who coordinates with “the User” to provide medical care, nursing care, or other service (to the individual who is the subject of the foregoing personal information) and who (with regards to their use of the Kanamic Cloud Network) has been designated in advanced by “the User” and has also received approval from Kanamic Network Co.,LTD. (this individual is referred to as “the Collaborating User”)<br></li>
+        <li>
+          (3) 当社 Kanamic Network Co.,LTD (“the Company”)<br>
+          ただし、ユーザー様および連携ユーザー様は、ご自身が医療、介護またはその他サービスを提供する対象となる方の個人情報のみご利用することができ、その他のカナミッククラウドサービスに収録された個人情報にアクセスし、これをご利用することはできません。However,
+          “the User” and “the Collaborating User” can only use personal information pertaining to individuals to whom they
+          themselves provide medical care, nursing care, or other service. They are unable to access or use other personal
+          information recorded within the Kanamic Cloud Service.<br>
+        </li>
+      </ol>
+        <h4>3. 共同利用個人データ項目 Personal data items subject to joint use (sharing)<br></h4>
+        <p>
+          カナミッククラウドサービスに入力された個人データの項目はすべて共同で利用させていただく可能性がございますが、その場合も「１．共同利用する目的」に定める業務の遂行のために必要な最小限度において利用させていただきます。具体的には、氏名、性別、生年月日、住所、電話番号のほか、要介護度に関するデータ項目、医療・介護・福祉サービスの提供に関するデータ項目を共同で利用させていただく場合がございます。All
+          personal data items entered into the Kanamic Cloud Service may be subject to sharing, but sharing is limited to
+          the minimum extent required in order to carry out the work stipulated under “1. purposes for joint use of
+          personal information”. In specific, any of the following may be subject to sharing: name, gender, date of birth,
+          home address, and phone number. Additionally, data items related to the degree of care required and data items
+          related to the provision of medical care / nursing care / social welfare services may also be subject to
+          sharing.<br>
+        </p>
+        <h4>4. 共同利用個人データの管理責任者名称 Name of manager of jointly used (shared) personal data<br></h4>
+        <p>株式会社カナミックネットワーク Kanamic Network Co.,LTD<br></p>
+        <h4>5. 個人情報の取得方法 Methods of collecting personal data<br></h4>
+        <p>
+          共同利用する個人情報は、カナミッククラウドサービスご利用ユーザー様、ご利用ユーザー様が指定する連携ユーザー様がカナミッククラウドサービスに入力されたもの若しくはカナミッククラウドサービスご利用ユーザー様の委託によりシステム利用開始時に登録した遡及・移行データといたします。
+          Jointly used (shared) personal information is information that “the User” (or “the Collaborating User”
+          designated by “the User”) enters into the Kanamic Cloud Service. Alternatively, jointly used (shared) personal
+          information may also include data that “the User” contracted to have migrated into the system when “the User”
+          began using the system.<br>
+        </p>
+      <h3>IV 個人情報の第三者への開示について Disclosure of personal information to third parties<br></h3>
+      <p>
+        当社は、原則として、あらかじめご本人から同意をいただいている場合のほか、ご提供いただいた個人情報を第三者に提供・開示することはいたしません。In general, we will not provide/disclose
+        personal information to a third party without the advance consent of the customer.<br>
+        ただし、以下のような場合には、必要最小限度にて個人の情報を第三者に開示する場合がございます。However, under the following circumstances we will disclose
+        personal information to third parties (to the minimum extent necessary):<br>
+      </p>
+      <ol>
+        1. 法令に基づく場合 Where required by laws or regulations<br>
+        2. 人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難である場合 Where necessary for the protection of the life, body, or
+        property of a person but it is difficult to obtain prior consent <br>
+        3. 公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難である場合Where necessary in order to improve public health or
+        to promote the healthy upbringing of children but it is difficult to obtain prior consent<br>
+        4. 国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがある場合 Where it is
+        necessary to cooperate with national or municipal governments or public organizations or parties entrusted by
+        national or municipal governments or public organizations in performing their legal duties, and where it is
+        feared that obtaining prior consent might obstruct the execution of the said duties.<br>
+      </ol>
+      <h3>V 匿名加工情報 Anonymized information <br></h3>
+      <h4>1.匿名加工情報の作成・第三者提供についてCreation of anonymized information / provision of anonymized information to third
+        parties<br></h4>
+      <p>
+        当社は、カナミッククラウドサービスに係る以下の情報について、特定の個人を識別することおよび作成に用いる個人情報を復元することができないよう適切な保護措置を講じたうえで匿名加工情報として作成し、カナミッククラウドサービスおよびサポート提供、サービス品質向上、公衆衛生の向上、児童の健全な育成の推進又は社会保障費適正化、科学的介護に向けた取組のために第三者に提供することがございますので、公表いたします。We
+        create anonymized information from the Kanamic Cloud Service and provide it to third parties. In creating
+        anonymized information, we take appropriate measures to protect the underlying personal information in order to
+        ensure that anonymized information we generate cannot be used to identify specific individuals and to ensure
+        that it is impossible to use the anonymized information we generate to reconstruct the personal information from
+        which the anonymized information was originally created. We share anonymized information with third parties for
+        the following reasons: to provide the Kanamic Cloud Service and deliver customer support thereof; to improve
+        service quality; to facilitate improvements in community public health; to promote the healthy upbringing of
+        children in the community; to make social security less costly; and to facilitate undertakings in Scientific
+        Nursing Care.<br></p>
+      <h4>2.情報の項目 Anonymized information items<br></h4>
+      <p>性別、生年月日のうち年月迄のデータ項目（ただしトップ（ボトム）コーディング処理したもの）住所のうち都道府県及び市郡区迄のデータ項目、要介護度に関するデータ項目、医療・介護・福祉サービスの提供に関するデータ項目
+        gender, date of birth (month &amp; year only, day is excluded; top/bottom coding used for anonymization), home
+        address (prefecture and city only), data items related to the degree of care required, and data items related to
+        the provision of medical care / nursing care / social welfare services<br></p>
+      <h4>3.提供の方法 Method of provision of anonymized information<br></h4>
+      <p>パスワードにより保護された電子ファイルを外部記憶媒体で手交もしくは当社提供のカナミッククラウドサービスの共有システムを利用a password protected file is saved to an external
+        storage media device and handed off to the recipient or the Kanamic Cloud Service’s information sharing system
+        is used <br></p>
+      <h3>VI 個人情報の保管期間についてRetention period for personal information<br></h3>
+      <p>弊社ではお預かりした個人情報を原則5年間保管させて頂いております。
+        (※別途個別契約で5年以内に破棄する場合もございます。)保管期間が過ぎた個人情報に関しては、個人情報の媒体種類によってシュレッダー・溶解・データの完全消去等の適切な処置により破棄させていただいております。We retain
+        personal information for 5 years (*in some cases we retain personal information for less than 5 years as
+        stipulated by a separate contract). After the prescribed retention period expires, we will take appropriate
+        measures to discard the data. Depending on the data medium, this may include shredding, melting, or
+        irretrievably erasing.<br></p>
+      <h3>VII 個人情報を郵送する場合の注意点について Things to consider when sending personal information by postal mail<br></h3>
+      <p>
+        郵送等により個人情報の受け渡しを行う場合（CDやUSBメモリなどを郵送する場合）送付元の責任のもと、暗号化等の措置を行うものとします。 When personal information is delivered by
+        postal mail (when mailing CD, USB drives, etc.), it is the responsibility of the sender to take measures such as
+        encryption.<br>
+        合わせて、お客様がデータを暗号化せずに郵送した場合に郵送事故などの弊社責任範囲外の原因により起こった情報漏洩に関して弊社は一切責任を負わないものとします。Moreover, should a customer mail
+        data without encryption, we shall bare absolutely no responsibility for any information leaks that are beyond
+        our control, such as postal accidents, etc.<br>
+        また、紙媒体などの暗号化できないものに関して、郵便事故などの弊社責任範囲外の原因により起こった情報漏洩に関して弊社は一切責任を負わないものとします。Also, should a customer send data
+        using a medium that cannot be encrypted, such as paper, we shall bare absolutely no responsibility for any
+        information leaks that are beyond our control, such as postal accidents, etc.<br>
+      </p>
+      <h3>VIII 個人情報の開示・訂正・利用停止をご請求される場合の手続きについて Procedures for requesting disclosure/amendment/suspension-of-use of
+        personal information<br></h3>
+      <p>
+        個人情報の開示・訂正・利用停止をご希望の方は[こちら]をご覧下さい。Click here for information regarding requesting
+        disclosure/amendment/suspension-of-use of personal information. <br>
+        →<a href="http://www.kanamic.net/pdf/privacy_demand.pdf" target="_blank">個人情報の開示・訂正・利用停止をご請求される場合の手続きについて Regarding the procedures for requesting disclosure/amendment/suspension-of-use
+        of personal information</a>
+      </p>
+      <h3>IX プライバシーポリシーの変更及び告知についてChanges to the privacy policy and notifications thereof<br></h3>
+      <p>
+        プライバシーポリシーの内容は、個人情報利用目的以外必要に応じて変更することがございます。<br>
+        お客様の方へは、その都度ご連絡はいたしかねますので、 ご利用の際には本ページの最新の内容をご参照ください。We may make changes to the contents of the privacy policy
+        (apart from the “purposes for utilization of personal information”) without providing notice. We are unable to
+        contact customers each time we do this, so when using our service please check our website for the most
+        up-to-date privacy policy.<br>
+      </p>
+      <h4>著作権についてCopyright<br></h4>
+      <p>
+        当サイト内で提供されるすべての情報やコーポレートマーク、商標、映像や画像などの著作権はカナミックネットワークに帰属します。Kanamic Network owns the copyright on all
+        information provided on our website as well as our logo, trademarks, videos, images, etc.<br>
+        それら著作権保護対象物の取り扱い、及び使用に関しては下記の通りとします。
+        個人的な利用に関しては、あくまでも第三者が閲覧可能な環境に流用されない、または営利的な目的で利用されないという前提において、表示、複製、印刷などは認められるものとしますが、改変などは認められません。また個人的な使用であっても著作権等に関するあらゆる表示を削除してはなりません。These
+        items, which are subject to copyright protection, must be handled/utilized in accordance with the following: You
+        may display, reproduce or print part of the content of this website for your personal use based on the
+        preconditions that the information shall not be used in any way to allow access by third parties, and that the
+        information shall not be used for profit. Alterations, etc., to the content are prohibited. You may not remove
+        any notice/reference to our copyrights, even for personal use. <br>
+        また上記以外に該当する利用に関しては予め書面によって申請をし、カナミックネットワークの正式な許可を取った後でのみ、再利用し、複製し、再配布出来ます。ただし、あくまでも利用者の誤解を受けるような使用方法はお断り致します。You
+        may only reuse, duplicate, and redistribute these items for purposes beyond those stipulated above after
+        applying to do so in writing and obtaining the official permission of Kanamic Network. In any case, we forbid
+        any usage of these items which could lead to misunderstandings.<br>
+      </p>
+      <h4>クッキー(Cookie)について Cookies<br></h4>
+      <p>
+        弊社のサイトには、「クッキー（Cookie）」と呼ばれる技術を利用したページがあります。Our website uses cookies.<br>
+        クッキーとは、Webサーバからお客様のブラウザに送信される小規模なデータのことをいい、お客様のディスクにファイルとして格納されるものもあります。A cookie is a small data file that is
+        sent from a web server to your browser and stored on your computer.<br>
+        クッキーの使用は業界の標準となっており、多くのサイトで、利用者に有益な機能を提供する目的で クッキーが使用されています。Usage of cookies on our website is in line with
+        industry standards. Many websites use cookies to deliver useful features to users. <br>
+        クッキーにより、利用者の使用するコンピュータは特定されますが、利用者個人の身元を特定できるわけではありません。These cookies detect user’s computers but are not used to
+        identify users themselves.<br>
+        なお、ブラウザの設定により、クッキーの設定を変更してクッキーの機能を無効にすることができますが、その結果弊社ウェブページ上のサービスの一部がご利用いただけなくなることがあります。You can disable cookies
+        via your browser settings but doing so may prevent you from being able to use some features of our website.<br>
+      </p>
+      <h4>SSLについて SSL<br></h4>
+      <p>
+        弊社のウェブサイトは、お客様の個人情報を保護するために「SSL（Secure Socket Layer）」に対応しています。On our website, customers’ personal information is
+        protected by Secure Socket Layer (SSL).<br>
+        お客様が入力される個人情報を暗号化して送受信することで、高いレベルで安全性の確保を図っています。Personal information provided by customers through our website
+        is encrypted before being sent or received, thereby promoting a higher level of security. <br>
+        ただし、お使いのウェブブラウザのSSLに関する設定が有効になっていない場合やSSLに対応していないブラウザをご利用の場合は、弊社のウェブサイトにアクセスできなかったり、情報の入力ができない場合があります。If you use
+        a browser that does not support SSL, you may not be able to access our website or input information.<br>
+        ※ほとんどの主要なウェブブラウザはSSLに対応していますので、通常はお客様が特にSSLを意識される必要はありません。*Most major browsers support SSL, so there is usually
+        no need to bare our use of SSL in mind when using our site.<br>
+      </p>
+      <h4>その他、ご確認及びご留意いただくこと Other considerations<br></h4>
+      <p>
+        弊社のウェブサイトからリンクされている他社のウェブサイトにおけるプライバシー情報の取り扱いの基準や内容において、弊社は責任を負うものではありません。We are responsible for neither the
+        standards of nor the methods of the handling of privacy information within the websites of other companies
+        linked from our website.<br>
+        弊社のウェブサイト以外のインターネットサイトでは、掲示板などでお客様が自発的に個人情報を開示した場合、その情報は他の利用者によって収集され使用されるおそれがあることにご留意ください。<br>
+        従いまして、お客様はご自身の責任において情報を発信していただくとともに、取り扱いには十分にご注意くださいますようお願いいたします。Please be aware that if you voluntarily
+        disclose personal information on messaging boards or websites other than our website, that information may be
+        collected and used by other users. Therefore, customers are requested to disseminate information at their own
+        risk and to handle it with care.<br>
+      </p>
+      <h4>認定個人情報保護団体について Authorized personal information protection organization membership<br></h4>
+      <p>
+        当社は、個人情報の保護に関する法律に基づく下記の認定個人情報保護団体の会員となっております。In accordance with the Act on the Protection of Personal
+        Information, we are a member of the following authorized personal information protection organization:<br>
+        <a href="https://privacymark.jp/" target="_blank">一般財団法人 日本情報経済社会推進協会 Japan Information Processing Development Corporation</a><br>
+        個人情報に関する苦情・相談の申出先 Complaints and requests for consultations regarding handling of personal information:<br>
+        【個人情報の取扱いに関する相談受付電話】 Consultation by phone<br>
+        受付電話番号：0120-116-213／0120-700-779 Phone Number:<br>
+      </p>
+      <h4>Zoom API 連携について<br></h4>
+      <p>カナミッククラウドZoom連携サービス利用にあたり、Zoom
+        APIを使用したアカウント情報および会議コンテンツ情報等はカナミッククラウドZoom連携サービスには保存されません。また、カナミッククラウドサービスならびに株式会社カナミックネットワークはその情報を有しません。詳細はZoom社プライバシーポリシーを参照ください。<br>
+        Zoom’s privacy policy :  <a href="https://zoom.us/jp-jp/privacy.html" target="_blank">https://zoom.us/jp-jp/privacy.html</a></p>
+      <p>Account information and meeting content information, etc., from the use of the Zoom API will not be stored on
+        the Kanamic Cloud Zoom Integration Service. In addition, neither we nor the Kanamic Cloud Service have access to
+        this information. Regarding Zoom’s privacy policy, please refer to the following URL. <br>
+        Zoom’s privacy policy :  <a href="https://zoom.us/jp-jp/privacy.html" target="_blank">https://zoom.us/jp-jp/privacy.html</a></p>
+    </div>
+
+    <div class="container-fluid footer clearfix">
+      <p>Copyright © Kanamic Network Co.,LTD All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

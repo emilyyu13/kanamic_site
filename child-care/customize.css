@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+
+
+
+.txt
+{
+font-size:110%;
+	}
+	.article .ttlL
+{
+	font-size:150%;
+	}
+	.article .ttlLL
+{
+	font-size:179%;
+	}
+	.col{padding:0 10px;}
+.child-care article {
+	padding-bottom: 0
+}
+.child-care article #example {
+	margin-bottom: 0
+}
+.child-care article #example .catchCopy {
+	padding-bottom: 50px
+}
+.child-care #ttlArea {
+	background: #FFF1CE
+}
+/**
+.child-care #ttlArea .inner h1 {
+	background: url(img/ttl_child.jpg) no-repeat left top
+}**/
+.child-care .section #sec02_3 {
+	margin-top: -100px;
+	padding-top: 100px
+}
+.child-care .section#sec01 {
+	margin-top: -150px;
+	padding-top: 150px
+}
+.child-care .section#sec02 {
+	margin-top: -100px;
+	padding-top: 100px
+}
+.child-care .section#sec03 {
+	margin-top: -100px;
+	padding-top: 100px
+}
+.child-care .section#example {
+	margin-top: -50px;
+	padding-top: 50px
+}
+.child-care .section#sec03 .col {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 50px
+}
+.child-care .section#sec03 .img {
+	width: 480px;
+	padding-right:0px;
+}
+.child-care .section#sec03 .img img{
+	width: 480px;
+}
+.child-care .section#sec03 .txt {
+	width: 440px;
+	padding-right: 30px;
+}
+
+
+.child-care .section#sec04 {
+	margin-top: -100px;
+	padding-top: 100px
+}
+.child-care .section#sec04 .img {
+	width: 480px;
+	padding-left:0px;
+}
+.child-care .section#sec04 .img img{
+	width: 470px;
+}
+.child-care .section#sec04 .txt {
+	width: 440px;
+}
+
+
+.child-care .section#sec05 {
+	margin-top: -100px;
+	padding-top: 100px
+}
+.child-care .section#sec05 .img {
+	width: 480px;
+	padding-left:0px;
+}
+.child-care .section#sec05 .img img{
+	width: 470px;
+}
+.child-care .section#sec05 .txt {
+	width: 440px;
+}
+.fb{font-weight:bold;}
+
+/* PC向けのスタイル1：1280pxから適用 */
+@media only screen and (min-width: 1280px) {
+}
+/* PC向けのスタイル2：1024pxから適用 */
+@media only screen and (min-width: 1024px) {
+	/*div.appSection {width:85%;}*/
+}
+/* 768pxから適用 */
+@media only screen and (min-width: 768px) {
+}
+/* PC以外向けのスタイル：1023px以下に適用 */
+@media only screen and (max-width: 1023px) {
+}
+/* スマホ向けのスタイル：767px以下に適用 */
+@media only screen and (max-width: 767px) {
+}
+/* スマホ向けのスタイル：480px以下に適用 */
+@media only screen and (max-width: 480px) {
+
+/* スマホ向けのスタイル：320px以下に適用 */
+@media only screen and (max-width: 320px) {
+}

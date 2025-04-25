@@ -1,0 +1,740 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr">
+  <head>  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W54DTMS');</script>
+<!-- End Google Tag Manager -->
+	  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MZL6ZGP');</script>
+<!-- End Google Tag Manager -->
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>カナミックネットワーク</title>
+    <!-- <link rel="stylesheet" href="base.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./js/venobox/venobox.css" type="text/css" />
+    <script
+      src="./js/jquery-1.8.3.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="./js/yuga.js" type="text/javascript"></script>
+    <script src="./js/tinyscrolling.js" type="text/javascript"></script>
+    <script src="./js/prefixfree.js" type="text/javascript"></script>
+    <script
+      src="./js/venobox/venobox.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="./js/picturefill.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        kanaDate = new Date();
+        kanaYear = kanaDate.getFullYear();
+        $(".year").html(kanaYear);
+
+        /* default settings */
+        $(".venobox").venobox();
+      });
+    </script>
+  </head>
+
+  <body id="pagetop">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZL6ZGP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-462660-7", "auto");
+      ga("send", "pageview");
+
+      $(function () {
+        /* click tracking google ana */
+        /* click tracking google ana */
+        var dir1 = location.href.split("/");
+        var dir = dir1[dir1.length - 2];
+        $("a").click(function (e) {
+          var ahref = $(this).attr("href");
+          var atxt = "";
+          if ($(this).children("img").length > 0) {
+            atxt = "画像_" + $(this).children("img").attr("alt");
+          } else {
+            atxt = $(this).text();
+          }
+          if (
+            (ahref.indexOf("https") != -1 || ahref.indexOf("http") != -1) &&
+            ahref.indexOf("http://www.kanamic.net/") == -1
+          ) {
+            ga("send", "event", dir + "_外部link", atxt, ahref);
+          } else if (ahref.indexOf(".pdf") != -1) {
+            ga("send", "event", dir + "_PDFlink", atxt, ahref);
+          }
+        });
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-462660-12"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-462660-12");
+    </script>
+
+    <div>
+      <div class="txtC">
+        <img class="sp-none"
+          src="img/top_PC.png"
+          alt="カナミックかんたん介護記録"
+        />
+		         <div class="pc-none sp_top"><img 
+          src="img/sp_top_0803.png"
+          alt="カナミックかんたん介護記録"
+        />
+        <div class="link_pogi">
+          <div id="link_app"><a href="https://apple.co/39Njdi0" target="_blank"><img src="img/img_app.png"></a></div>
+          <div id="link_google"><a href="https://play.google.com/store/apps/details?id=net.kanamic.qrapp" target="_blank"><img src="img/img_google.png"></a></div>
+        </div>
+      </div> 
+
+		</div>	
+      </div>
+
+      <div class="txtC mt40 mb40">
+      <p class="sec01">「カナミックかんたん介護記録」は<br>介護業務をスムーズにする多機能アプリです。</p>
+      </div>
+
+      <div class="mt40 mb40 sp-none">
+      <p class="sec01_dl txtC">ダウンロードはこちらから</p>
+      <div class="link_pc">
+      <div>
+      <img src="img/QR_app.png" class="fr">
+      <p class="dl_p">iOS版</p>
+      <a href="https://apple.co/39Njdi0" target="_blank"><img src="img/img_app.png"></a>
+      <br class="clear">
+      </div>
+
+      <div>
+      <img src="img/QR_google.png" class="fr">
+      <p class="dl_p">Android版</p>
+      <a href="https://play.google.com/store/apps/details?id=net.kanamic.qrapp" target="_blank"><img src="img/img_google.png"></a>
+      <br class="clear">
+      </div>
+
+      </div>
+      <p class="txtC">※サービスのご利用にあたっては、別途カナミッククラウドサービスの契約が必要です。</p>
+
+    </div>
+
+      <div class="mt25">
+        <div class="bg_lightgreen mt10">
+        <h2 class="sec01_min txtC">現場向け機能</h2>
+        <ul class="sec01_row">
+          <li>
+            <figure><img src="img/img_02.png"></figure>
+                <p>QRでアクセス</p> 
+          </li>
+          <li><figure><img src="img/img_01.png"></figure>
+            <p>記録履歴確認
+            </p></li>
+            <li><figure><img src="img/img_04.png"></figure>
+              <p>タッチで記録</p></li>
+            <li><figure><img src="img/img_03.png"></figure>
+            <p>チェックイン機能</p>
+          <p class="sec01_cs">※Coming soon</p></li>
+            
+      </ul>
+        <!-- <div class="sec01_row">
+        <table class="sec01_table">
+            <tr>
+                <th><img src="img/img_01.png"><br>記録履歴確認</th>
+                <th><img src="img/img_02.png"><br>QRでアクセス</th>
+            </tr>
+        </table>
+        <table class="sec01_table">
+          <tr>
+              <th><img src="img/img_03.png"><br>チェックイン機能</th>
+              <th><img src="img/img_04.png"><br>ボタンタッチで記録</th>
+          </tr>
+      </table>
+    </div> -->
+
+        <h2 class="sec01_min txtC">管理者向け機能</h2>
+        <ul class="sec01_row">
+          <li><figure><img src="img/img_07.png"></figure>
+            <p>記録の共有</p></li>
+            <li>
+              <figure><img src="img/img_06.png"></figure>
+                  <p>特定事業所加算対応</p> 
+            </li>
+            <li><figure><img src="img/img_05.png"></figure>
+              <p>到着時間遅延<br>
+                アラート機能
+              </p>
+              <p class="sec01_cs">※Coming soon</p></li>
+      </ul>
+
+        <h2 class="sec01_min txtC">多職種他法人間連携</h2>
+        <ul class="sec01_row">
+            <li>
+              <figure><img src="img/img_09.png"></figure>
+                  <p>医療介護連携</p> 
+            </li>
+            <li><figure><img src="img/img_10.png"></figure>
+            <p>無料メッセージ機能</p></li>
+            <li><figure><img src="img/img_08.png"></figure>
+              <p>テレビ会議
+              </p></li>
+      </ul>
+        </div>
+
+    </div>
+
+    <div class="wrapper mt50">
+    <h1 class="sec02 txtC">使い方はとってもかんたん！</h1>
+    <div class="mt10 sec02_fx">
+        <div>
+        <img src="img/img_11.png" class="sec02_img">
+    </div>
+        <div>
+            <p class="sec02_min">STEP1</p>
+        <p class="sec02_picup">専用QRコード<span class="weak">(※1)</span>発行・設置とアプリダウンロード</p>
+        <p class="sec02_txt">事前に発行したご利用者様用のQRコードをサービス利用契約時などにご利用者様の近くに設置。記録をされるスタッフ様の端末には無料の「カナミックかんたん介護記録」アプリをダウンロードしておきます。</p>
+    <p class="mt10">※1 QRコードは株式会社デンソーウェーブの登録商標です。</p>
+      </div>
+    </div>
+    <div class="sec02_fx">
+      <div>
+        <img src="img/img_12.png" class="sec02_img" >
+      </div>
+        <div >
+            <p class="sec02_min">STEP2</p>
+        <p class="sec02_picup">QRコードを読み取って、即サービス開始可能</p>
+        <p class="sec02_txt">利用者様の専用QRコードを読み取ると現場の位置情報と時間が送信されるため、電話連絡不要でサービスを開始することができます。<br>
+            また、到着予定時間を大幅に超過していると管理者様側にアラートが通知され、ケア抜けの早期発見、早期対応が期待できます。</p>
+    </div>
+    </div>
+    <div class="sec02_fx">
+      <div>
+        <img src="img/img_13.png" class="sec02_img">
+      </div>
+        <div> 
+        <p class="sec02_min">STEP3</p>
+        <p class="sec02_picup">その日の計画、手順書、指示に沿ってサービス提供</p>
+        <p class="sec02_txt">ご利用者様ごとの計画、手順書、サービス提供責任者様からの指示が画面表示されるためケアの内容を確認しながら安心してサービスが進められます。</p>
+    </div>
+    </div>
+    <div class="sec02_fx">
+      <div>
+        <img src="img/img_14.png" class="sec02_img" >
+      </div>
+        <div>
+            <p class="sec02_min">STEP4</p>
+        <p class="sec02_picup">介護記録はタッチでかんたん！音声入力にも対応</p>
+        <p class="sec02_txt">ボタンを押すだけの簡単入力で素早く介護記録が完了できます。特記事項などのテキストには音声入力も対応。システムが苦手なスタッフ様でも簡単でわかりやすい画面です。<br>
+            サービス提供責任者様からの指示に対する報告も同一画面上で行えるので特定事業所加算２の要件に、無理なく対応できます。</p>
+    </div>
+    </div>
+    <br class="clear">
+    <div class="btn_wrapper txtC">
+        <a
+          href="https://www8.webcas.net/form/pub/kanamic/qrapp"
+          target="_blank"
+          class="form_btn"
+          >資料請求・お問合せ</a
+        >
+      </div>
+</div>
+
+<div class="wrapper mt50">
+    <h1 class="sec02 txtC">記録でとったデータを活用すれば<br>計画・請求・事務管理も効率化</h1>
+    <p class="sec02_picup txtC mt20">スタッフ間の連携強化で介護のPDCAをスムーズに運用</p>
+    <img src="img/img_15.jpg" class="mt40">
+    <div class="sec02_fl mt20">
+    <div class="sec03_mt">
+        <p class="sec02_picup">1) サービス計画入力</p>
+        <p class="sec02_txt">事務所で入力したサービスの予定がスタッフの端末に自動同期され連絡時のミスが減らせます。</p> 
+    </div>
+    <div class="sec03_mt">
+        <p class="sec02_picup">2) 実施記録</p>
+        <p class="sec02_txt">わかりやすい画面デザインでスタッフがモバイル端末ボタンを押せば記録と報告が完了します。</p> 
+    </div>
+    <div class="sec03_mt">
+        <p class="sec02_picup">3) 加算対応</p>
+        <p class="sec02_txt">カナミックかんたん介護記録を利用することで「特定事業所加算２」の要件である指示・報告をクリアできます。</p> 
+    </div>
+</div>
+<div>
+    <div class="sec03_mt">
+        <p class="sec02_picup">4) 介護保険・利用者請求</p>
+        <p class="sec02_txt">実施記録が事業所内でリアルタイムに共有でき、請求用データに反映されるため介護請求手続きがより簡単になります。</p> 
+    </div>
+    <div class="sec03_mt">
+        <p class="sec02_picup">5) 勤怠管理・給与計算</p>
+        <p class="sec02_txt">ヘルパーの勤怠情報を給与計算（※オプション）にも活用できます。</p> 
+    </div>
+</div>
+<br class="clear">
+<p class="sec02_picup txtC mt50">経営者、事務所スタッフ、ヘルパー、利用者皆様の希望を叶える介護ソフト</p>
+<div class="sec03_fl">
+<p class="sec02_txt">ご利用者様にとってはスタッフ様のサービスが向上、スタッフ様にとっては報告やサービスのミスが減り安心、事業所スタッフ様にとっては再入力の手間が減少、経営者様にとっては紙コストなど経費削減と、「かんたん介護記録」の導入によってみなさまにそれぞれのメリットが生まれます。<br>
+<br>
+    介護は一人では成り立たないもの。サービス利用者によりよいケアを提供するために、この機会に現在の業務を見直してみませんか？</p> 
+</div>
+<div class="mt50">
+    <table class="sec03_table">
+        <tr>
+            <th><img src="img/img_16.png"></th>
+            <th><img src="img/img_17.png"></th>
+        </tr>
+        <tr>
+            <td>【サービス利用者】</td>
+            <td>【訪問ヘルパー】</td>
+        </tr>
+    </table>
+    <table class="sec03_table mt10">
+        <tr>
+            <th><img src="img/img_18.png"></th>
+            <th><img src="img/img_19.png"></th>
+        </tr>
+        <tr>
+            <td>【事務所スタッフ】</td>
+            <td>【経営者】</td>
+        </tr>
+    </table>
+</div>
+<br class="clear">
+<div class="btn_wrapper txtC">
+    <a
+      href="https://www8.webcas.net/form/pub/kanamic/qrapp"
+      target="_blank"
+      class="form_btn"
+      >資料請求・お問合せ</a
+    >
+  </div>
+</div>
+
+<!-- <div class="wrapper mt50">
+    <h1 class="sec02 txtC">カナミックかんたん介護記録は<br>さまざまな介護現場で活用されています！</h1>
+    <p class="sec02_picup txtC mt25">かんたん介護記録を導入している事業所様からのご感想をご紹介いたします。</p>
+    <table class="sec04_table">
+        <tr>
+            <th><img src="img/img_20.png"></th>
+            <th><img src="img/img_21.png"></th>
+        </tr>
+        <tr>
+            <td>喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる</td>
+            <td>喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる</td>
+        </tr>
+        <tr>
+            <th><img src="img/img_22.png"></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる喜びコメントを入れる</td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="btn_wrapper txtC">
+        <a
+          href="https://www8.webcas.net/form/pub/kanamic/qrapp"
+          target="_blank"
+          class="form_btn"
+          >資料請求・お問合せ</a
+        >
+      </div>
+</div> -->
+    
+
+
+<div class="wrapper mt50">
+    <h1 class="sec02 txtC">
+      さらに！カナミックの業務ソフトは各種介護サービスに対応！
+    </h1>
+    
+      <p class="sec02_picup txtC">
+        カナミックネットワーク業務システムでできる範囲
+      </p>
+      <div class="mC">
+        <div class="txtC">
+      <p class="img">
+        <a class="venobox" data-type="iframe" href="popup/gyomflow.html"
+          ><img
+            src="img/gyomflow.jpg"
+            alt=""
+            class="sec05_fr nolink_sp"
+        /></a>
+      </p>
+    </div>
+      <!--<a class="venobox" data-type="iframe" href="popup/gyomflow.html"><img src="img/kanaerutouch/gyomuflow.jpg" alt="" class="fr ml20 "/></a>-->
+      <p class="sec05_txt sec02_txt">
+        「かんたん介護記録」に連動しているカナミックネットワークの<a
+          href="http://www.kanamic.net/care/"
+          >介護業務ソフト</a
+        >は、訪問介護サービスだけでなく各種介護サービスにフルラインアップ対応しております。<br />
+        ケアプランを作成するケアマネジャーとの連携や、営業活動支援機能、債権管理機能、経営・統計分析ツールなども利用可能です。<span
+          class="f12"
+          >（※一部オプション）</span
+        >
+      </p>
+      <p class="sec02_txt">
+        <a href="http://www.kanamic.net/medical/#sec02"
+          >医療・介護連携システム</a
+        >も含め、今後の介護事業経営に必須の高機能・多機能なシステムになっています。
+      </p>
+    </div>
+      <br class="clear">
+    
+<div class="btn_wrapper txtC">
+    <a
+      href="https://www8.webcas.net/form/pub/kanamic/qrapp"
+      target="_blank"
+      class="form_btn"
+      >資料請求・お問合せ</a
+    >
+  </div>
+
+    <p class="sec02_picup txtC">介護ソフト システムラインアップ</p>
+    
+      <ul class="u_lineup">
+          <li class="lineup">
+        <a href="../../care/houkatsu.html">
+          <figure>
+            <img
+              src="img/img_lineup01.jpg"
+              width=""
+              height=""
+              alt=""
+            />
+          </figure>
+          <h3>地域包括支援センター</h3>
+          <p>
+            相談業務機能を搭載。相談内容を自由に作成し検索管理が可能です
+          </p>
+        </a>
+    </li>
+     
+      <li class="lineup">
+        <a href="../../care/kyotaku.html">
+          <figure>
+            <img
+              src="img/img_lineup02.jpg"
+              width=""
+              height=""
+              alt=""
+            />
+          </figure>
+          <h3>居宅介護支援事業所</h3>
+          <p>
+            ケアマネジメントの質向上に適した情報共有システム、紙媒体、FAXなどのやり取りや、再入力の手間を大幅削減
+          </p>
+        </a>
+    </li>
+      <li class="lineup">
+        <a href="../../care/houmon.html">
+          <figure>
+            <img
+              src="img/img_lineup03.jpg"
+              width=""
+              height=""
+              alt=""
+            />
+          </figure>
+          <h3>介護事業者（訪問）</h3>
+          <p>
+            訪問先でも、移動中でも、「いつでも・どこでも」モバイル入力が可能。クラウドサービスのメリットを活かした機能
+          </p>
+        </a>
+    </li>
+      <li class="lineup">
+        <a href="../../care/tsusho.html">
+          <figure>
+            <img
+              src="img/img_lineup04.jpg"
+              width=""
+              height=""
+              alt=""
+            />
+          </figure>
+          <h3>介護事業者（通所）</h3>
+          <p>
+            日々入れ替わる来所者のスケジュールを個々で管理。本日来所される利用者様は一覧で確認可能
+          </p>
+        </a>
+    </li>
+    </ul>
+    <ul class="u_lineup">
+      <li class="lineup">
+        <a href="../../care/shisetsu.html">
+          <figure>
+            <img
+              src="img/img_lineup05.jpg"
+              width=""
+              height=""
+              alt=""
+            />
+          </figure>
+          <h3>介護事業者（施設、有老、サ高住）</h3>
+          <p>
+            入居前の見込み客管理ができる営業支援から、入居者の居室管理、バイタル等の記録機能など幅広く活用可能
+          </p>
+        </a>
+    </li>
+      <li class="lineup">
+        <a href="../../care/chiikimitchaku.html">
+          <figure>
+            <img
+              src="img/img_lineup06.jpg"
+              width=""
+              height=""
+              alt=""
+            />
+          </figure>
+          <h3>介護事業者（地域密着）</h3>
+          <p>
+            グループホーム、小規模多機能型居宅介護、夜間対応型訪問介護、定期巡回・随時対応型訪問介護看護管理などあらゆるサービスに対応
+          </p>
+        </a>
+    </li>
+      <li class="lineup">
+        <a href="../../care/yougu.html">
+          <figure>
+            <img
+              src="img/img_lineup07.jpg"
+              width=""
+              height=""
+              alt=""
+            />
+          </figure>
+          <h3>介護事業者（福祉用具）</h3>
+          <p>
+            自由なマスタ管理機能ができ、簡単な入力作業でご対応可能。貸与も・販売もご対応可能
+          </p>
+        </a>
+    </li>
+    <li class="lineup">
+      <a href="../../care/shogai.html">
+        <figure>
+          <img
+            src="img/img_lineup08.jpg"
+            width=""
+            height=""
+            alt=""
+          />
+        </figure>
+        <h3>障がい者総合支援</h3>
+        <p>
+          訪問介護併設の事業所の場合など限りあるヘルパーさんの人数の有効活用できます
+        </p>
+      </a>
+  </li>
+    </ul>
+      
+    <div class="btn_wrapper txtC">
+        <a
+          href="https://www8.webcas.net/form/pub/kanamic/qrapp"
+          target="_blank"
+          class="form_btn"
+          >資料請求・お問合せ</a
+        >
+      </div>
+</div>
+<div class="wrapper02 mt50">
+    <p class="sec02_picup txtC">お問合せから導入、アフターフォローまでの流れ</p>
+        <ul class="after">
+            <li><figure><img
+                src="img/img_flow01.jpg"
+                width="300"
+                height="140"
+                alt=""
+              /></figure>
+              <h3><span class="number">1</span>弊社にお問合せ</h3><p>
+                まずはお電話か、本サイト内の入力フォームからお問合せください。
+              </p></li>
+              <li>
+                <figure><img
+                    src="img/img_flow02.jpg"
+                    width="300"
+                    height="140"
+                    alt=""
+                  /> </figure>
+                  <h3><span class="number">2</span>営業担当からご連絡</h3>
+                    <p>弊社の営業担当者から、ご連絡させて頂きます。</p> 
+              </li>
+              <li><figure><img
+                src="img/img_flow03.jpg"
+                width="300"
+                height="140"
+                alt=""
+              /></figure>
+              <h3><span class="number">3</span>ヒアリング、詳細のご案内</h3>
+              <p>
+                介護業界に特化し、多数のソリューション実績を持っている専門の営業マンが、お客様の事業所にお伺いして介護システム及び介護ソフトに関するヒアリング及びご説明をさせて頂きます。
+                現状の問題点や解決したいポイントを明確にし、介護ソフトによるソリューションをご提案させて頂きます。お気軽にご相談ください。
+              </p></li>
+        </ul>
+        <ul class="after">
+            <li><figure><img
+                src="img/img_flow04.jpg"
+                width="300"
+                height="140"
+                alt=""
+              /></figure>
+              <h3><span class="number">4</span>ご契約</h3>
+        <p>システムの利用申し込みをして頂きます。</p></li>
+              <li>
+                <figure><img
+                    src="img/img_flow05.jpg"
+                    width="300"
+                    height="140"
+                    alt=""
+                  /></figure>
+                  <h3><span class="number">5</span>導入に向けてお客様とご相談</h3>
+        <p>
+          既存システムからのデータ移行や操作教育など、
+          介護ソフト導入に向けて詳しくスケジュールを立てさせて頂きます。
+        </p> 
+              </li>
+              <li><figure><img
+                src="img/img_flow06.jpg"
+                width="300"
+                height="140"
+                alt=""
+              /></figure>
+              <h3><h3><span class="number">6</span>ご訪問による操作説明</h3>
+              <p>
+                介護ソフト・システム導入支援専門の部署の社員が訪問させていただき説明を行います。<br />
+                1度目の訪問でシステム操作説明を、2度目の訪問で請求に関する説明を行います。
+              </p></li>
+        </ul>
+        <ul class="after">
+            <li><figure><img
+                src="img/img_flow07.jpg"
+                width="300"
+                height="140"
+                alt=""
+              /></figure>
+              <h3><span class="number">7</span>システム運用開始</h3>
+        <p>
+          全てのステップで専門のスタッフが担当させて頂きますので、
+          安心してシステム導入を出来ます。
+        </p></li>
+              <li>
+                <figure><img
+                    src="img/img_flow08.jpg"
+                    width="300"
+                    height="140"
+                    alt=""
+                  /></figure>
+                  <h3><span class="number">8</span>電話サポート</h3>
+        <p>
+          導入後もシステムに精通したカナミックネットワークのスタッフが電話でサポートいたします。<br />
+          ＰＣ操作に不安のある方も安心です。
+        </p>
+              </li>
+              <li><figure><img
+                src="img/img_flow09.jpg"
+                width="300"
+                height="140"
+                alt="研修会"
+              /></figure>
+              <h3><span class="number">9</span>研修会</h3>
+        <p>
+          カナミックネットワークでは月に１度ご希望のユーザー様に向けて社内でシステム研修会を開催しております。<br />
+          資料を見ながら操作方法などの説明を行い、その場でお客様のご質問にお答えいたします。
+        </p></li>
+        </ul>
+        <div class="btn_wrapper txtC">
+            <a
+              href="https://www8.webcas.net/form/pub/kanamic/qrapp"
+              target="_blank"
+              class="form_btn"
+              >資料請求・お問合せ</a
+            >
+          </div>
+</div>
+
+    <p class="pageTop clear">
+      <a href="#pagetop"
+        ><span class="icon-page-top f18"></span>ページの先頭へ</a
+      >
+    </p>
+    <div id="footer">
+      <div class="boder"></div>
+      <ul>
+        <li class="line">
+          <a target="_blank" href="http://www.kanamic.net/company/outline.html"
+            >会社概要</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="http://www.kanamic.net/company/privacy.html"
+            >プライバシーポリシー</a
+          >
+        </li>
+      </ul>
+      <p>Copyright(c) <span class="year"></span> Kanamic Network Co.,LTD</p>
+    </div>
+
+    <script type="text/javascript">
+      <!--
+      var i=0;
+      function disp(){
+       if(i%2==0)
+        document.getElementById("box").style.display="block";
+       else
+        document.getElementById("box").style.display="none";
+       i++;
+      -->
+      }
+    </script>
+  </body>
+</html>

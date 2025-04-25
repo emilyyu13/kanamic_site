@@ -1,0 +1,1856 @@
+@use "scss/_reset";
+@use "scss/_variable" as var;
+@use "scss/_mixin" as mix;
+@use "scss/_base";
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+//波模様
+.line{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  .--image{
+    img{
+      vertical-align: bottom;
+    }
+  }
+  &.-top{
+    .--image{
+      img{
+        vertical-align: top;
+      }
+    }
+  }
+}
+.title {
+  text-align: center;
+  line-height: 2.6rem;
+  letter-spacing: 0.1rem;
+  font-size: var.$font-size-pc-xxl;
+  @include mix.mq(under-md) {
+    font-size: var.$font-size-sp-xxl;
+  }
+  @include mix.mq(under-sm) {
+    font-size: var.$font-size-sp-xl;
+  }
+}
+.subtitle {
+  text-align: center;
+  line-height: 2.3rem;
+  font-size: var.$font-size-pc-xl;
+  @include mix.mq(under-md) {
+    font-size: var.$font-size-sp-xl;
+  }
+}
+
+// タイトルの上の吹き出し
+.title_catch1{
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var.$font-size-pc-xl;
+  background: var.$color-main1;
+  color: #fff;
+  border-radius: 60px;
+  position: relative;
+  display: inline-block;
+  @include mix.mq(under-sm) {
+    font-size: var.$font-size-sp-xl;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border:{
+      style: solid;
+      color:var.$color-main1 transparent transparent transparent;
+      width: 10px 10px 0 10px;}
+  }
+  // 事例上吹き出し
+  &.-type2{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var.$font-size-pc-lg;
+    @include mix.mq(under-lg) {
+      display: none;
+    }
+  }
+}
+
+// タイトルの下にラインとキャラが入る場合
+.underline_box{
+  padding: 30px 0;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 3px solid var.$color-main1;
+  // 左右にキャラクター画像
+  background-image: url(img/reason/reason_title1.png),url(img/reason/reason_title2.png);
+  background-repeat: no-repeat,no-repeat;
+  background-size: contain,20%;
+  background-position: 10%,95% bottom;
+  @include mix.mq(under-md) {
+    background-image:none;
+  }
+  @include mix.mq(under-md) {
+    padding: 35px 0 15px 0;
+  }
+}
+
+// 下線
+.underline{
+  border-bottom: solid 6px var.$color-main1;
+  width: 95px;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+  @include mix.mq(under-sm) {
+    width: 16%;
+    border-bottom: solid 3.5px var.$color-main1;
+  }
+}
+
+// 下線のみの吹き出し
+.underline_box2{
+    position: relative;
+    display: inline-block;
+    // background-color: #fff;
+    border-bottom: solid 3px var.$color-main1;
+    padding: 8px;
+    width: 200px;
+    margin: 0 auto;
+    // min-width: 100px;
+    max-width: 100%;
+    text-align: center;
+    &:before,
+    &:after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    &:before {
+        border: solid 16px transparent;
+        border-top: solid 16px var.$color-main1;
+    }
+    &:after {
+        border: solid 18px transparent;
+        border-top: solid 18px #FFF6DE;
+        margin-top: -5px;
+    }
+    & p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+//三角形
+.triangle{
+  content: "";
+  right: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: var.$color-main1 transparent transparent transparent;
+  border-width: 10px 20px 0 20px;
+}
+
+// テキストの強調部分の色変更
+.pointcolor{
+  color: var.$color-main1;
+  font-weight: bold;
+  &.-function1{
+    color: var.$color-function1;
+  }
+  &.-function2{
+    color: var.$color-function2;
+  }
+  &.-function3{
+    color: var.$color-function3;
+  }
+}
+
+.text {
+  font-size: var.$font-size-pc-lg;
+  @include mix.mq(under-md) {
+    font-size: var.$font-size-sp-lg;
+  }
+  &.-size-l {
+    font-weight: bold;
+  }
+}
+
+// テキストの大きさ調整
+.txt_size{
+  font-size: var.$font-size-pc-base;
+  //極大サイズ PC
+  &.-big{
+    font-size: var.$font-size-pc-xxxl;
+    @include mix.mq(under-sm) { 
+      font-size: var.$font-size-pc-xl2;
+    }
+  }
+  //大サイズ PC
+  &.-large{
+    font-size: var.$font-size-pc-xxl;
+  }
+
+  //小さいサイズ PC
+  &.-mini{
+    font-size: var.$font-size-pc-lg;
+  }
+  //極小サイズ PC
+  &.-micro{
+    font-size: var.$font-size-pc-xs;
+  }
+}
+
+// ドットの背景
+.dotto{
+  background :{
+    color   : #ffffff;
+    image   : radial-gradient(#fff4cb 9%, transparent 10%),radial-gradient(#fff4cb 9%, transparent 10%);
+    position: 0 0, 19px 19px;
+    size    : 38px 38px;
+    }
+  @include mix.mq(under-sm) {     
+    background:{
+      position: 0 0, 17px 17px;
+      size: 34px 34px;
+    } 
+  }
+} 
+
+//画像のパターン背景
+.img-back{
+  //雲背景
+  background-color: var.$color-back2;
+  background-image: url(img/read/cloudback.png);
+  background-repeat: repeat;
+  background-size: 670px;
+  background-position: top center;
+   
+  //三角形パターン
+  &.-back2{
+    background-color: #fff; 
+    background-image: url(img/function/function-back1.png),url(img/function/function-back2.png);
+    background-repeat: repeat-y,repeat-y;
+    background-size: 280px;
+    background-position: top right,top left;
+    width: 94%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+//マーカー
+.maker {
+  background: linear-gradient(transparent 60%, var.$color-coral-10 60%);
+  color: var.$color-coral-60;
+  font-weight: bold;
+  &.-color-coral {
+    background: linear-gradient(transparent 60%, var.$color-coral-10 60%);
+    color: var.$color-coral-60;
+  }
+  &.-color-sun {
+    background: linear-gradient(transparent 60%, var.$color-back3 60%);
+    color: var.$color-sun-60;
+  }
+  &.-color-sunlight {
+    background: linear-gradient(
+      transparent 60%,
+      var.$color-back1 60%
+    );
+    color: var.$color-sunlight-60;
+  }
+  &.-color-leef {
+    background: linear-gradient(transparent 60%, var.$color-leaf-10 60%);
+    color: var.$color-leaf-60;
+  }
+  &.-color-sky {
+    background: linear-gradient(transparent 60%, var.$color-sky-10 60%);
+    color: var.$color-sky-60;
+  }
+  &.-color-marin {
+    background: linear-gradient(transparent 60%, var.$color-marin-10 60%);
+    color: var.$color-marin-60;
+  }
+  &.-color-amethyst {
+    background: linear-gradient(
+      transparent 60%,
+      var.$color-amethyst-20 60%
+    );
+    color: var.$color-amethyst-60;
+  }
+}
+
+//テキストの下にアンダーライン
+.txt_underline{
+  border-bottom: 2px solid var.$color-main1;
+}
+
+/* 文字の上にドットで強調 */
+.dot{
+  background-image: radial-gradient(circle at center, orange 20%, transparent 20%); /* 点の色とサイズ調整 */
+  background-position: top right; /* 点の位置 */
+  background-repeat: repeat-x; /* 横方向に繰り返し */
+  background-size: 1em 0.2em; /* 点の間隔とサイズ調整 */
+  padding-top: .04em; /* 縦方向の位置調整 */
+  &.-color2{
+    background-image: radial-gradient(circle at center, #FF6801 20%, transparent 20%); /* 点の色とサイズ調整 */
+
+  }
+}
+
+// 四角いボタンの装飾
+.button_square {
+  border-radius: 8px;
+  width: 100%;
+  height: 130px;
+  padding: 1.5rem 1rem;
+  background: var.$button-color-1;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 3px 4px 4px 0 rgba(97, 97, 97, 0.3);
+  @include mix.mq(under-lg) {
+    height: 110px;
+  } 
+  @include mix.mq(under-sm) {
+    height: 80px;
+    padding: 0.6rem 1rem;
+  }
+  .subtxt{
+    background: #fff;
+    border-radius: 60px;
+    width: 82%;
+    margin: 0 auto;
+    color: #43A647;
+    font-size: var.$font-size-pc-xs;
+    letter-spacing: 0.05rem;    
+    @include mix.mq(under-lg) {
+      font-size: var.$font-size-sp-xs;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .maintxt{
+    margin-top: 15px;
+    font-size: var.$font-size-pc-xl;
+    letter-spacing: 0.15rem;
+    line-height: 1.8rem;
+    @include mix.mq(under-lg) {
+      font-size: var.$font-size-sp-xl;
+      letter-spacing: 0.1rem;
+    }
+    @include mix.mq(under-sm) {
+      margin-top: 0.4rem;
+    }
+  }
+  .txt_small{
+    margin-top: 7px;
+    font-size: var.$font-size-pc-xxs;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    @include mix.mq(under-lg) {
+      font-size: var.$font-size-sp-xxs;
+      letter-spacing: 0rem;
+    }
+    @include mix.mq(under-sm) {
+      margin-top: 0.05rem;
+    }
+  }
+
+  &.-color2 {
+    background: var.$button-color-2;
+    color: white;
+    .subtxt{
+      margin: 0 auto;
+      color: #FF6801;
+    }
+    .maintxt{
+      margin-top: 10px;
+      font-size: var.$font-size-pc-xxxl2;
+      letter-spacing: 0.1rem;
+      @include mix.mq(under-lg) {
+        font-size: var.$font-size-pc-xxl;
+      }
+      @include mix.mq(under-sm) {
+        margin-top: 0.1rem;
+        font-size: var.$font-size-sp-xxl;
+      }
+    }
+  }
+}
+
+// 丸いボタン装飾
+.button {
+  width: 160px;
+  border-radius: 2rem;
+  padding: 0 0.5rem 0.1rem 0.5rem;
+  background: var.$color-yellow;
+  color: white;
+  display: inline-block;
+  font-size: var.$font-size-pc-xs;
+  letter-spacing: 0.15rem;
+  font-weight: 500;
+  text-align: center;
+  &.-color-coral {
+    background: var.$color-coral-60;
+    color: white;
+  }
+  &.-color-sun {
+    background: var.$color-sun-60;
+    color: white;
+  }
+  &.-color-sunlight {
+    background: var.$color-sunlight-60;
+    color: white;
+  }
+}
+
+//横並び
+.flex-box-lp {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-basis: auto;
+  gap: 1rem;
+  
+  @include mix.mq(under-md) {
+    // flex-direction: column;
+  }
+}
+
+// ふわっと出現させる
+/*----------------------------
+/* fadeUp ｜下から上へ出現
+----------------------------*/
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+  .fadeUpTrigger{
+      opacity: 0;
+      &.-time02{transition-delay: .18s;}
+      &.-time03{transition-delay: .36s;}
+      &.-time04{transition-delay: .72s;}
+  }
+  }
+
+  // 読み込みで表示
+  // .fadein,
+  // .fadein2{
+  //   opacity: 0;
+  // }
+
+  // 読み込みで表示
+  .fuwa{ opacity: 0; transition: 3s; }
+  .fuwa-show{ opacity: 1; }
+  .fuwa2{ opacity: 0; transition: 10s; }
+  .fuwa2-show{ opacity: 1; }
+
+// -------
+// セクション別
+// -------
+// ヘッダー
+.header-section {
+  background: var.$primary-color;
+  color: #fff;
+  font-size: var.$font-size-pc-xl;
+  @include mix.mq(under-md) {
+    font-size: var.$font-size-sp-xl;
+  }
+  .--logo {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    width: 200px;
+    @include mix.mq(under-md) {
+      padding: 40px 0;
+    }
+    img {
+      width: 410px;
+      @include mix.mq(under-md) {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// heroセクション top
+.hero-section {
+  color: #000;
+
+  // スマホではトップビューを画像に切り替え
+  // @include mix.mq(under-sm) {
+  //   height: 550px;
+  //   background: url(img/top/top-sp.png);
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  // }
+  // スマホ用
+  .sp-img{
+    width: 100%;
+  }
+
+  .container{
+      margin-top: 4.5rem;
+      padding: 0;
+      height: 520px;
+      @include mix.mq(under-md) {
+        margin-top: 4rem;
+      }
+      // スマホではトップビューを画像に切り替え
+      // テキスト非表示
+      @include mix.mq(under-sm) {
+        display: none;
+      }
+      .wrapper-lp{
+        width: 78%;
+        max-width: 1300px;
+        min-width: 1200px;
+        margin: 0 auto;
+        @include mix.mq(under-md) {
+          width: 84%;
+        }
+        .inner-lp{
+          position: relative;//ボタンエリアの絶対位置
+          @include mix.mq(under-md) {
+            padding: 0;
+          }
+          .top-col{//flexbox
+            height: 520px;
+            @include mix.mq(under-md) {
+              height: auto;
+              display: block;//横並び解除
+            }
+            // 人物画像
+            .top-mimg{
+              width: 28%;
+              background: url(img/top/top-m.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: bottom;
+              position: relative;
+              z-index: -100;
+              @include mix.mq(under-md) {
+                display: none;
+              }
+              // タレント名
+              .top-mimg-small{
+                position: absolute;
+                left: 15%;
+                bottom: 11%;
+                font-size: var.$font-size-pc-sm;
+                //文字の縁取り
+                text-shadow:
+                2px 0 0 #fff,
+                0 2px 0 #fff,
+                -2px 0 0 #fff,
+                0 -2px 0 #fff;
+                @include mix.mq(under-md) {
+                  display: none;
+                }
+              }
+            }      
+            .toptxt{
+              width: 72%;
+              // 選ばれています
+              background: url(img/top/top_catch.png);
+              background-repeat: no-repeat;
+              background-size: 280px;
+              background-position: 90% 8%;
+              bottom: 0;
+              right: 0;
+              position: relative;//注釈用の絶対位置
+              
+              @include mix.mq(under-xl) {
+                background: none;
+              }
+              .--image{
+                margin-top: 10px;
+                width: 89%;
+                @include mix.mq(under-md) {
+                  display: none;
+                }
+              }
+
+              .top-title{
+                margin-top: 8px;
+                margin-bottom: 0px;
+                font-size: var.$font-size-pc-xxxl3;
+                line-height: 3.7rem;
+                letter-spacing: 0.13rem;
+                @include mix.mq(under-md) {
+                  font-size: var.$font-size-sp-xxl2;
+                  line-height: 4rem;
+                }
+                @include mix.mq(under-sm) {
+                  margin-bottom: 15px;
+                  font-size: var.$font-size-sp-xxl-8;
+                  letter-spacing: 0.15rem;
+                  line-height: 3rem;
+                }
+                .undermd-only{display: none;
+                  @include mix.mq(under-md) {
+                    display: block;
+                  }
+                }
+              }
+              .undermd-onlytxt{
+                display: none;
+                @include mix.mq(under-md) {
+                  display: block;
+                  margin-top: 8px;
+                }
+              }
+              .top-catch{
+                width: 330px;
+                margin-top: 20px;
+                padding: 0 1rem;
+                background: #FF9A02;
+                color: #fff;
+                border-radius: 5px;
+                text-align: left;
+                letter-spacing: 0.1rem;
+                @include mix.mq(under-md) {
+                  width: 80%;
+                  font-size: var.$font-size-sp-xxl;
+                  text-align: center;
+                }
+                @include mix.mq(under-sm) {
+                  width: 100%;
+                  padding: 0.2rem 0;
+                  font-size: var.$font-size-sp-md;
+                  letter-spacing: 0.07rem;
+                  line-height: 1.6rem;
+                }
+              }
+              .pointtxt{
+                text-align: left;
+                margin-left: 25px;
+                position: relative;
+                font-size: var.$font-size-sp-xxl-5;
+                letter-spacing: 0.05rem;
+                @include mix.mq(under-sm) {
+                  margin-left: 2%;
+                  font-size: var.$font-size-sp-lg;
+                }
+                &::before{
+                  content: "";
+                  display: block;
+                  width: 10px;
+                  height: 10px;
+                  background: url(img/top/diamond.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  position: absolute;
+                  top: 40%;
+                  left: -2.6%;
+                }
+              }
+              // 調査の注釈
+              .top-small{
+                margin-top: 15px;
+                position: absolute;
+                margin-left: 10px;
+                font-size: var.$font-size-pc-xxs2;
+              }
+            }
+          }
+          //ボタンエリア
+          .top-button-area{
+            z-index: 100;
+            position: absolute;
+            width: 800px;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            bottom: -40px;
+            @include mix.mq(under-lg) {
+              width: 100%;
+              margin: 0 auto;
+            }
+            @include mix.mq(under-md) {
+              display: none;
+            }
+            // @include mix.mq(under-sm) {
+            //   width:90%;        
+            // }
+            // @include mix.mq(xxl2) {
+            //   display: none;
+            // }
+            .button_box{
+              width: 372px;
+              margin: 0 1%;
+              @include mix.mq(under-lg) {            
+                width: 330px;
+              }         
+              .button_square {
+                border-radius: 8px;
+                width: 100%;
+                height: 80px;
+                // ホバーで大きく
+                @include mix.hoverstyle;
+                .maintxt {
+                  margin-top: 0;
+                  font-size: 1.1rem;
+                  letter-spacing: 0.08rem;
+                  text-shadow: 1px 2px 1px #9d9d9d41; 
+                  position: relative;//アイコンの絶対位置
+                  &.-top1{
+                    margin-left: 15px;
+                    @include mix.mq(under-sm) {
+                      margin-left: 0;
+                      margin-top: 0.8rem;
+                    }
+                    &.-top1::before{
+                      content: "";
+                      display: block;
+                      width: 70px;
+                      height: 70px;
+                      background: url(img/top/topbutton_icon1.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      position: absolute;
+                      top: -25%;
+                      left: -3%;
+                      @include mix.mq(under-lg) {                    
+                        top: -25%;
+                        left: -10%;
+                      }
+                      @include mix.mq(under-sm) {
+                        background: none;
+                      }
+                    }
+                  }
+                  &.-top2{
+                    margin-left: 8px;
+                    &.-top2::before{
+                      content: "";
+                      display: block;
+                      width: 40px;
+                      height: 40px;
+                      background: url(img/top/topbutton_icon2.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      position: absolute;
+                      top: -20%;
+                      left: -2%;
+                      @include mix.mq(under-lg) {
+                        top: -10%;
+                        left: -8%;
+                      }
+                      @include mix.mq(under-sm) {
+                        background: none;
+                      }
+                    }
+                  }             
+                }
+              }
+            }        
+          }
+        }
+      }
+    } 
+}
+// Informationセクション 導入文
+.information-section {
+  position: relative;
+  //トップビュー下のアーチライン
+  .topline-lp{
+    position: absolute;
+    top: -50px;
+    z-index: -100;
+    @include mix.mq(under-lg) {
+      display: none;
+    }
+  }
+  .container{
+    padding: 2rem 0 6rem 0;
+    @include mix.mq(under-lg) {
+      padding: 2rem 0 4rem 0;
+    }
+    @include mix.mq(under-sm) {
+      padding: 1rem 0 3rem 0;
+    }
+
+    //スマホ用ボタンエリア
+    .top-button-area{
+      &.-sp{
+        display: none;
+        @include mix.mq(under-lg) {
+          display: flex;
+          width: 90%;
+          margin: 0 auto;
+          z-index: 100;
+          margin: 0 auto;
+        }
+        .button_box{
+          width: 100%;
+          margin: 0  auto;
+          .button_square {
+            border-radius: 8px;
+            width: 100%;
+            height: 80px;
+            padding: 1.5rem 0;
+            @include mix.mq(under-sm) {
+              height: 50px;
+            }
+            // ホバーで大きく
+            @include mix.hoverstyle;
+            .maintxt {
+              margin-top: 0;
+              font-size: 1.7rem;
+              letter-spacing: 0.2rem;
+              text-shadow: 1px 2px 1px #9d9d9d41; 
+              &.-top1{
+                margin-left: 0;
+              }           
+            }
+          }
+        }  
+      }      
+    }
+    // 白い枠
+    .wrapper-lp{
+      background-color: #fff;
+      border-radius: 15px;
+      margin-top: 50px;
+      padding: 4rem 3rem;
+      text-align: center;
+      @include mix.mq(under-xl) {        
+          width: 90%;
+          padding: 3.5rem 2rem;
+        }
+      @include mix.mq(under-sm) {
+        width: 96%;
+        padding: 3rem 0.8rem 0.8rem 0.8rem;
+        margin-top: 50px;
+        }
+      .inner-lp{
+        @include mix.mq(under-lg) {
+          padding: 0;
+        }
+        // カナミックは経営者様の目線に
+        .title{
+            margin-bottom: 30px;
+            @include mix.mq(under-lg) {
+              margin-bottom: 20px;
+            }
+            @include mix.mq(under-sm) {
+              line-height: 1.9rem;
+              font-size: var.$font-size-sp-xxl-5;
+              letter-spacing: 0.08rem;
+            }
+            .sp-small{
+              @include mix.mq(under-sm) {
+                font-size: var.$font-size-sp-sm;
+                letter-spacing: 0.09rem;
+
+              }
+            }
+          }
+          // こんなお悩みありませんか？
+          .readsub{
+            font-size: var.$font-size-pc-xxl;
+            letter-spacing: 0.18rem;
+            font-weight: 300;
+            margin-top: 80px;
+            text-align: center;
+            position: relative;
+            &::before{
+              content: "";
+              display: block;
+              width: 160px;
+              height: 160px;
+              background: url(img/read/read_fukidashi.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: -130%;
+              left: -25%;
+              @include mix.mq(under-lg) {
+                width: 110px;
+                height: 110px;
+                left: -1%;
+              }
+            }
+          }
+          // お悩みリスト
+          .readtxt{
+            width:100%;
+            margin: 20px auto 0 auto;
+            padding-left: 40px;
+            letter-spacing: 0.05rem;
+            @include mix.mq(under-sm) {
+              padding-left: 5px;
+              width: 70%;
+            }
+            p{
+              text-align: left;
+              margin-bottom: 6px;
+              position: relative;
+              &::before{
+                content: "";
+                display: block;
+                width: 25px;
+                height: 25px;
+                background: url(img/read/read_check.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 0;
+                left: -8%;
+                @include mix.mq(under-sm) {
+                  left: -15%;
+                }
+              }
+            }
+          }
+          // 悩んでるPCイラスト
+          .readimg{
+            margin: 30px auto 0 auto;
+            text-align: center;
+            .--image {
+              &:first-child{
+                margin-bottom: 30px;
+              }
+              img {
+                width: 180px;
+                @include mix.mq(under-sm) {
+                  width: 140px;
+                  }
+              }
+            }
+          }
+          // 解決できます
+          .solve_txtimg{
+            margin: 0 auto;
+            text-align: center;
+            @include mix.mq(under-sm) {              
+              margin-bottom: 8px;
+            }
+          }
+          //解決方法
+          .flex-box-lp{
+            width: 800px;
+            margin: 0 auto 20px auto;
+            @include mix.mq(under-xl) {              
+              width: 100%;
+            }
+            @include mix.mq(under-sm) {              
+              display: block;
+              margin: 0 auto;
+            }
+            // 解決方法の箱
+            .solve{
+              background: var.$color-back3;
+              border-radius: 10px;
+              width: 48%;
+              padding: 0.2rem 1rem;
+              @include mix.mq(under-md) {              
+                width: 80%;
+                margin: 0 auto 20px auto;
+              }
+              @include mix.mq(under-sm) {              
+                width: 94%;
+                margin: 0 auto 10px auto;
+                // padding: 0 0.5rem;
+                padding: 0;
+              }
+            }
+            .solve2{
+              background: var.$color-back1;
+            }
+            .solve3{
+              background: var.$color-back1;
+              @include mix.mq(under-sm) {              
+                background: var.$color-back3;
+              }
+            }
+            .solve4{
+              @include mix.mq(under-sm) {              
+                background: var.$color-back1;
+              }
+            }
+          }
+          //最後の説明文
+          .explanation-txtbox{
+            position: relative;
+            .--image{
+              position: absolute;
+              &.--image1{
+                width: 340px;
+                bottom: -45%;
+                left: -20%;
+                @include mix.mq(under-xl) {                     
+                  left: -16%;
+                }
+                @include mix.mq(under-lg) {   
+                  display: none;
+                }
+              }
+              &.--image2{
+                width: 280px;
+                bottom: -52%;
+                right: -15%;
+                @include mix.mq(under-xl) {                     
+                  right: -13%;
+                }
+                @include mix.mq(under-lg) {   
+                  display: none;
+                }
+              }
+            }
+            .explanation-txt{
+              margin-top: 50px;
+              font-size: var.$font-size-pc-lg;
+              letter-spacing: 0.1rem;
+              line-height: 2.5rem;
+              @include mix.mq(under-lg) {   
+                margin-top: 30px;
+              }
+              @include mix.mq(under-md) {   
+                margin-top: 28px;
+                font-size: var.$font-size-sp-lg;
+                line-height: 2.1rem;
+                margin-bottom: 5px;
+              }
+              @include mix.mq(under-sm) {   
+                display: none;
+              }
+            }
+          } 
+      }
+    }
+  } 
+}
+
+// reasonセクション 選ばれる理由
+.reason-section{
+  .container{
+    padding: 6rem 0 2rem 0;
+    @include mix.mq(under-lg) {   
+      padding: 4.5rem 0 2rem 0;
+    }
+    @include mix.mq(under-sm) { 
+      padding: 3.8rem 0 2rem 0;
+    }
+    .wrapper-lp{
+      .inner-lp {
+          background-color: var.$color-back2;
+          border-radius: 20px;
+          padding: 0.5rem 2.5rem 2rem 2.5rem;
+          @include mix.mq(under-sm) {
+            padding: 0 3% 8% 3%;
+          }
+          //選ばれる理由タイトル
+          .titlebox{
+            position: relative;
+            .title_catch1{
+              position: absolute;
+              right: 0;
+              left: 0;
+              margin: 0 auto;
+              top: -8%;
+            }
+            .title{
+              @include mix.mq(under-sm) {
+                line-height: 2rem;            }
+            }
+          }
+          // 理由３つ横ならび
+          .box-group {
+            gap: 1rem;
+            @include mix.mq(under-md) {
+              flex-direction: column;
+            }
+          }
+          //各理由の枠
+          .--box {
+            padding: 1rem 0 0.5rem 0;
+            border-radius: 1rem;
+            width: 100%;
+            .--image{
+              width: 70%;
+              margin: 0 auto;
+              @include mix.mq(under-md) {
+                width: 50%;
+                }
+              @include mix.mq(under-sm) {
+                width: 64%;
+              }
+              }
+            .--subtitle {
+              text-align: center;
+              font-size: var.$font-size-pc-lg;
+              letter-spacing: 0.1rem;
+              line-height: 2.1rem;
+              @include mix.mq(under-md) {
+                font-size: var.$font-size-sp-xxl;
+                letter-spacing: 0.06rem;
+                line-height: 2rem;
+                }
+              }
+            // 箇条書き
+            .--list{
+              padding-left: 22px;
+              @include mix.mq(under-md) { 
+                padding-left: 68px;
+              }
+              @include mix.mq(under-sm) { 
+                padding-left: 10%;
+                font-size: var.$font-size-sp-sm;
+              }
+              // リストの点の調整
+              .--item{
+                list-style-type: none; /*点を非表示*/
+                position: relative; /*基準位置*/
+                padding-left: 1.2em;
+                font-size: var.$font-size-pc-xs;
+                &::before{
+                  border-radius: 50%; /*丸くする*/
+                  width: 8px; /*点の幅*/
+                  height: 8px; /*点の高さ*/
+                  display: block;
+                  position: absolute; /*絶対配置*/
+                  left: 0; /*点の位置*/
+                  top: 0.6em; /*点の位置*/
+                  content: "";
+                  background:var.$color-main1; /*点の色*/
+                }
+              }
+            } 
+        }
+      }
+    }
+  }
+}
+
+// meritセクション 他にもメリットいっぱい
+.merit-section{
+  .container{
+    @include mix.mq(under-sm) {
+      padding: 1rem 0;
+    }
+    p{
+      text-align: center;
+      margin: 0 auto;
+      font-weight: bold;
+      font-size: var.$font-size-pc-xl1-5;
+      letter-spacing: 0.1rem;
+      // 左右にスラッシュ
+      @include mix.slash;
+      @include mix.mq(under-sm) {
+        font-size: var.$font-size-pc-xl;
+      }
+    }
+  }
+}
+
+// merit-imgセクション メリットの画像
+.merit-img-section{
+   .container{
+     padding: 0.25rem 0 0 0;
+     @include mix.mq(under-sm) {
+      width: 90%;
+      margin: 0 auto;
+      }
+     .--image{
+      
+        img{
+          vertical-align: bottom;
+          width: 100%;
+        }
+      }
+    }
+ }
+
+// movieセクション 動画 
+.movie-section{
+  padding-bottom: 80px;
+  @include mix.mq(under-md) {
+    padding-bottom: 50px;
+  }
+  .--image{
+    margin: 0 auto;
+    width: 500px;
+  }
+  .mooviebox{
+    margin: 0 auto;
+    position: relative;
+    //左側のセリフ 
+    &::before{
+      position: absolute;
+      top: 15%;
+      left: -17%;
+      content: "";
+      display: block;
+      width: 250px;
+      height: 250px;
+      background: url(img/movie/movie-catch.png) no-repeat;
+      background-size: contain;
+      background-position: top center;
+      @include mix.mq(under-xl) {
+        display: none;
+        }
+      }
+      iframe{
+        @include mix.movie;
+      }
+    }
+}
+
+//CTAセクション
+.cta-section {
+  background-color: var.$color-back4;
+  .container{
+    padding: 2.8rem 0;
+    .wrapper-lp{
+      background: #fff;
+      border-radius: 10px;
+      width: 60%;
+      max-width: 900px;;
+      padding: 1.6rem 0 2.1rem 0;
+      @include mix.mq(under-xl) {
+        width: 90%;
+        margin: 0 auto;
+      }
+      @include mix.mq(under-sm) {
+        padding: 0.9rem 0 0.8rem 0;
+      }
+      .inner-lp{
+        @include mix.mq(under-md) {
+          padding: 0;
+        }
+        .flex-box-lp{
+          // ボタンを横並び
+          @include mix.mq(under-sm) {
+            display: block;
+          }
+          .button_box{
+            width: 45%;
+            margin: 0 0.3rem;
+            text-align: center;
+            position: relative;
+            // ホバーで大きく
+            @include mix.hoverstyle;
+            
+            @include mix.mq(under-sm) {
+              width: 90%;
+              margin: 0 auto 15px auto;
+            }
+              a{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+              }
+            // ボタンの中身を横並び
+            .button_square{
+              padding: 0;
+              gap:0;
+              @include mix.mq(under-sm) {
+                display: block;
+              }
+              .button-inner-left{
+                width: 18%;
+                @include mix.mq(under-sm) {
+                  display: none;
+                }
+                &.-color1{
+                  position: relative;
+                  .--image{
+                    position: absolute;
+                    width: 150px;
+                    left: -50%;
+                    bottom: 0;
+                    @include mix.mq(under-lg) {
+                      width: 110px;
+                      left: -35%;
+                      bottom: 0%;
+                    }
+                  }
+                }
+                &.-color2{
+                  position: relative;
+                  .--image{
+                    position: absolute;
+                    width: 48px;
+                    top: 32%;
+                    right: -10%;
+                  }
+                }
+              }
+              .button-inner-right{
+                width: 82%;
+                margin: 0 auto;
+                padding: 5% 0;
+                text-align: center;
+                @include mix.mq(under-sm) {
+                  width: 100%;
+                  padding: 2.5% 0;
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+//cta下の波模様部分
+.line2{
+  background-color: var.$color-back4;
+}
+
+//caseセクション 導入事例タイトル
+.case-section {
+  background-color: var.$color-back2;
+  .container{
+      padding: 1.5rem 0 0 0;
+    .inner-lp{
+      text-align: center;
+      height: 300px;  
+      // 左に画像
+      background-image: url(img/case/case_m.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left bottom;
+      @include mix.mq(under-lg) {   
+        height: 250px; 
+      }
+      @include mix.mq(under-sm) { 
+        background: none;
+        height: 140px;
+      }
+      h2{
+      font-size: var.$font-size-pc-xxxl;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      line-height: 2.4rem;
+      @include mix.mq(under-sm) {
+        font-size: var.$font-size-pc-xxl;
+      }
+      position: relative;
+      &::after{
+        position: absolute;
+        bottom: -280px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        content: "";
+        display: block;
+        width: 700px;
+        height: 200px;
+        background: url(img/case/case_catch.png) no-repeat;
+        background-size: 270px;
+        background-position: top center;  
+        @include mix.mq(under-lg) {
+          width: 80%;
+          }
+        @include mix.mq(under-sm) {
+          background: none;
+        }
+        }
+      }
+    }
+  } 
+}
+
+//caselistセクション 導入事例
+.caselist-section{
+  background-color: var.$color-back4;
+  @include mix.mq(under-sm) {
+  background-color: var.$color-back2;
+  }
+  .container{
+    padding: 0 0 1rem 0;
+    .swipe-win-wrapper{ //test
+        overflow: hidden;
+        position: relative;
+        .swipeinner_wrapper{ //test_wrapper
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          // margin-block: 50px;
+          @include mix.mq(under-md) {
+            padding: 40px 0;
+          }
+          @include mix.mq(under-sm) {
+            padding: 5px 0;
+          }
+          .swiper{
+              overflow: visible;
+              // 左の余白サイズ
+              padding: 0 250px;
+              @include mix.mq(under-lg) {
+                padding: 0 100px;
+              }
+              // スライドの枠
+              .swiper-wrapper{
+                padding: 25px 0;
+                // 各事例のカード
+                .swiper-slide{
+                  background-color: #fff;
+                  width: 320px;
+                  height: 550px;
+                  padding: 2px;
+                  // 以下見た目調節 
+                  border-radius: 10px 10px 0 0; 
+                  box-shadow: 0px 3px 15px rgba(0,0,0,0.2); 
+                  // display: flex;
+                  align-items: center; 
+                  justify-content: center;
+                  position: relative;//リンク用絶対位置
+                  @include mix.hoverstyle2;
+                  @include mix.hide;
+
+                  @include mix.mq(under-sm) {
+                    width: 270px;
+                    height: 530px;
+                  }
+                  // overflow: hidden;
+
+                  // .hide-box{
+                  //   // display: none;
+                  //   position: absolute; 
+                  //   right: 0;
+                  //   left: 0;
+                  //   bottom: 0;
+                  //   margin: 0 auto;
+                  //   padding: 30px 10px;
+                  //   width: 100%;
+                  //   text-align: center;
+                  //   background: var.$color-main1;
+                  //   // opacity: 0.8;
+                  //   color: #fff;
+                  //   z-index: 100;
+                  //   transform: translateY(100%);
+                  //   transition: transform .5s;
+                  //   }
+                  //   &:hover{
+                  //     .hide-box{
+                  //       // display: block; 
+                  //       transform: translateY(0); 
+                  //     }
+                  //   }
+
+                  a{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                  }
+                  // 事業所情報画像とテキスト
+                  .case-profile{
+                    width: 86%;
+                    margin: 25px auto;
+                    position: relative;
+                    .--image{
+                      margin-bottom: 5px;
+                      @include mix.mq(under-sm) {
+                        margin-bottom: 0;
+                      }
+                    }
+                    h3{
+                      font-size: var.$font-size-pc-md;
+                      line-height: 1.8rem;
+                      margin-bottom: 5px;
+                      letter-spacing: 0.05rem;
+                    }
+                    .underline{
+                      border-bottom: solid 2px #FF9A02;
+                      width: 100%;
+                      margin-bottom: 10px;
+                    }
+                    p{
+                      font-size: var.$font-size-pc-xs;
+                    }
+                    .service-list{
+                      margin-top: 12px;
+                      padding: 6px 10px;
+                      background: var.$color-back1;
+                      font-size: var.$font-size-pc-xxs2;
+                      line-height: 1.2rem;
+                    }
+                  }
+                  // 詳しく見るボタン
+                  .case-button{
+                      position: absolute;
+                      right: 0;
+                      left: 0;
+                      bottom: 4%;
+                      margin: 0 auto;
+                      text-align: center;
+                      .button{
+                        // 擬似要素矢印
+                        position: relative;
+                        @include mix.arrow;
+                      }
+                  }
+                }
+              }
+          }
+          //スライドの矢印の色変更
+          .swiper-button-next,
+          .swiper-button-prev {
+              --swiper-navigation-color: #ff2911; 
+          }
+          .swiper-button-prev{
+            left: 0px;
+          }
+          .swiper-button-next{
+            right: 0px;
+          }
+          // アクティブなページネーションの色変更
+          .swiper-pagination-bullet-active{
+              background-color: #FF9A02;
+          }
+          //非アクティブなページネーションの色変更
+          // .swiper-pagination-bullet{}
+          .swiper-pagination{
+            bottom: -8px!important;
+        }
+      }
+    }
+  }
+}
+
+//functionセクション おすすめ機能
+.function-section {
+  .container{  
+    @include mix.mq(under-sm) { 
+      padding: 0;
+    } 
+    .inner-lp{
+      padding: 0;
+      .title_box{
+        padding-top: 100px;
+        padding-bottom: 60px;
+        // 左に画像
+        background-image: url(img/function/function_m.png);
+        background-repeat: no-repeat;
+        background-size: 80px;
+        background-position: 12% 100%;
+        @include mix.mq(under-lg) {   
+          // padding-top: 130px;
+          background-size: 68px;
+        }
+        @include mix.mq(under-md) {
+          background: none;
+        }
+        .pickup{
+          text-align: center;
+          margin: 0 auto;
+          font-size: var.$font-size-pc-lg2;
+          color:var.$color-main1;
+          /* 左右に斜め線を引く*/
+          align-items: center; /* 線を上下中央 */
+          display: flex; /* 文字と線を横並び */
+          justify-content: center; /* 文字を中央寄せ */
+          &::before,
+          &::after {
+            background-color:var.$color-main1;
+            border-radius: 5px; /* 線の両端を丸く */
+            content: "";
+            height: 5px; /* 線の高さ */
+            width: 40px; /* 線の長さ */
+          }
+          &::before {
+            margin-right: 10px; /* 文字との余白 */
+            transform: rotate(60deg); /* 傾ける */
+          }
+          &::after {
+            margin-left: 10px; /* 文字との余白 */
+            transform: rotate(-60deg); /* 傾ける */
+          }
+        }
+        .title{
+          font-size:var.$font-size-pc-xxxl2;
+          @include mix.mq(under-md) {
+            font-size: var.$font-size-pc-xl2;
+          }
+        }
+      }
+      // 各機能の枠
+      .function-flame{
+        // サポートの吹き出し
+        .subtxt{
+          background:var.$color-function1;
+          text-align: center;
+          color: #fff;
+          width: 350px;
+          margin: 70px auto 22px auto;
+          padding: 0.1rem;
+          border-radius: 5px;
+          position: relative;
+          @include mix.mq(under-sm) {
+            width: 100%;
+            margin: 50px auto 20px auto;
+          }
+          &::before{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -9px;
+            left: 0;
+            width: 0px;
+            height: 0px;
+            margin: auto;
+            border-style: solid;
+            border-color: var.$color-function1 transparent transparent transparent;
+            border-width: 10px 10px 0 10px;
+          }
+          &.-function2{
+            background:var.$color-function2;
+            &.-function2::before{
+              border-color: var.$color-function2 transparent transparent transparent;
+            }
+          }    
+          &.-function3{
+            background:var.$color-function3;
+            &.-function3::before{
+              border-color: var.$color-function3 transparent transparent transparent;
+            }
+          }
+        }
+        .subtitle{
+          margin-bottom: 18px;
+          font-size: var.$font-size-pc-xl2;
+          letter-spacing: 0.1rem;
+          @include mix.mq(under-sm) {
+            font-size: var.$font-size-pc-xl;
+          }
+        }
+        // 機能3を横並び
+        .function-list-box{
+          justify-content: space-between;
+          // ピックアップした01~03の機能
+          .function-list{
+            // background: #afa;
+            width: 200px;
+            // 機能の番号
+            .number{
+              display: block;
+              text-align: left;
+              font-size: var.$font-size-pc-xl2;
+              letter-spacing: 0.2rem;
+            }
+            .--image{
+              width: 72%;
+              text-align: center;
+              margin: 0 auto;
+              .icon1,.icon2,.icon3{width: 100px; height: 100px;}
+              // SVGアニメーション
+              .icon1-anime{
+                @include mix.svg-anime1;
+              }
+              .icon2-anime{
+                @include mix.svg-anime2;
+              }
+              .icon3-anime{
+                @include mix.svg-anime3;
+              }
+            }
+            // 機能の説明
+            p{
+              margin-top: 13px;
+              text-align: center;
+              font-size: var.$font-size-pc-md;
+              letter-spacing: 0.1rem;
+              font-weight: bold;
+              @include mix.mq(under-sm) {
+                font-size: var.$font-size-pc-xs;
+              }
+            }
+            
+          }
+        }     
+      }
+
+    }
+  }
+}
+
+//availableセクション 対応事業一覧
+.available-section{
+  .container{
+    padding: 0 0 6.5rem 0;
+    @include mix.mq(under-lg) {
+      padding: 0 0 3rem 0;
+    }
+    //黄色い枠
+    .wrapper-lp{
+    background-color: var.$color-back2;
+    margin-top: 6.5rem;
+    padding: 3rem 0 4rem 0;
+    border-radius: 20px;
+    // 左に画像
+    background-image: url(img/available/logo_back.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: left top;
+    @include mix.mq(under-lg) {
+      margin-top: 5rem;
+      padding: 3rem 0 3rem 0;
+    }
+    @include mix.mq(under-sm) {
+      padding: 3rem 0 1.8rem 0;
+    }
+      .flex-box-lp{
+        width: 72%;
+        margin: 40px auto 0 auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include mix.mq(under-lg) {
+          width: 90%;
+        }
+        @include mix.mq(under-md) {
+          width: 96%;
+        }
+        @include mix.mq(under-sm) {
+          display: block;
+        }
+        .card{
+          width: 45%;
+          margin-bottom: 10px;
+          padding: 2rem 0 1.4rem 0;
+          border-radius: 8px;
+          background:#fff;
+          text-align: center;
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .3);
+          position: relative;
+          @include mix.hoverstyle2;
+          @include mix.mq(under-md) {
+            width: 48%;
+            margin-bottom: 0;
+          }
+          @include mix.mq(under-sm) {
+            width: 94%;
+            margin: 0 auto 18px auto;
+            padding: 1.2rem 0 1.2rem 0;
+          }
+          .triangle{
+            position: absolute;
+            top: 0;
+            @include mix.mq(under-sm) {
+              display: none;
+            }
+          }
+          .--image{
+            width: 40%;
+            margin: 0 auto 8px auto;
+            @include mix.mq(under-sm) {
+              display: none;
+            }
+          }
+          .button{
+            // 擬似要素矢印
+            position: relative;
+             @include mix.arrow;
+
+          }
+          a{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          // かなみっくん
+          &.-chara{
+            position: relative;
+            // 右上のカードにかなみっくん表示
+            &::before{
+              content: "";
+              display: block;
+              width: 100px;
+              height: 100px;
+              background: url(img/available/kanamicun.png) no-repeat;
+              background-size: 100%;
+              position: absolute;
+              top: -75px;
+              right: 0;
+              //スマホではかなみっくん非表示
+              @include mix.mq(under-sm) {
+                display: none;
+              }
+            }       
+          }
+        }
+      }
+    }
+  }
+}
+
+// フッター
+.footer-section {
+  font-size: var.$font-size-pc-xl;
+  @include mix.mq(under-md) {
+    font-size: var.$font-size-sp-xl;
+  }
+  .--logo {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    width: 200px;
+    @include mix.mq(under-md) {
+      max-width: 400px;
+      width: 90%;
+      padding: 40px 0;
+    }
+    img {
+      width: 410px;
+      @include mix.mq(under-md) {
+        width: 70%;
+      }
+    }
+  }
+  .--copyright {
+    font-size: var.$font-size-pc-md;
+    @include mix.mq(under-md) {
+      font-size: var.$font-size-sp-md;
+    }
+  }
+}

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W54DTMS');</script>
+    <!-- End Google Tag Manager -->
+        
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZL6ZGP');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+
+    <!-- アイコン CSS -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- アニメーション CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- 調整用 CSS -->
+    <link href="../../common/css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="../../common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../common/js/jquery.transit.min.js" ></script>
+    <script type="text/javascript" src="../../common/js/ua.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        AOS.init();
+      });
+    </script>
+
+    <!-- gNavのバナーを読み込む -->
+    <script type="text/javascript" src="../../common/js/smbn.js"></script>
+    <!-- 右下の資料請求float-button -->
+    <script type="text/javascript" src="../../common/js/float-button.js" ></script>
+
+    <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+      var windowSm = 640;
+      if (windowWidth <= windowSm) {
+        //横幅640px以下のとき（つまりスマホ時）に行う処理を書く
+        $(function () {
+          var topBtn = $("div.container-fluid.entry");
+          topBtn.hide();
+          //スクロールが100に達したらボタン表示
+          $(window).scroll(function () {
+            if ($(this).scrollTop() < 4900) {
+              topBtn.fadeIn();
+            } else {
+              topBtn.fadeOut();
+            }
+          });
+        });
+      } else {
+        //横幅640px超のとき（タブレット、PC）に行う処理を書く
+        $(function () {
+          var topBtn = $("div.container-fluid.entry");
+          topBtn.hide();
+          //スクロールが100に達したらボタン表示
+          $(window).scroll(function () {
+            if ($(this).scrollTop() < 3800) {
+              topBtn.fadeIn();
+            } else {
+              topBtn.fadeOut();
+            }
+          });
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // 一旦hide()で隠してフェードインさせる
+        $("div.container-fluid.slide").hide().fadeIn("slow");
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".navbar-nav li a").click(function (event) {
+          $(".navbar-collapse").collapse("hide");
+        });
+      });
+    </script>
+
+    <title> ココライフ株式会社導入事例｜訪問介護記録と多職種間連携ツールの活用で得られた効果とは </title>
+    <meta name="keywords" content="ココライフ株式会社,訪問介護記録,多職種間連携ツール" />
+    <meta name="description" content="訪問介護記録と多職種間連携ツールの活用で得られた効果とは" />
+  </head>
+
+  <body data-spy="scroll" data-target="#Navbar" data-offset="100" class="under">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W54DTMS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZL6ZGP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --> 
+
+    <div class="float-button"></div>
+    <div id="wrapper" itemscope itemtype="http://schema.org/Organization">
+      <header>
+        <div class="header_text">
+          <div class="header_info_position">
+            <p> 介護ソフト・地域包括ケア（医療介護連携システム）の カナミッククラウドサービス </p>
+            <!-- <div class="langswitch">
+              <a href="#"
+                >Language<span id="lang_arrow" class="icon-Aarrow-down"></span
+              ></a>
+              <div class="lang_opt">
+                <a href="../" id="jp" class="lang_selected">Japanese</a>
+                <a href="../" id="eg" class="langswitchEn">English</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="inner">
+          <p id="siteLogo"><a href="../../">KANAMIC NETWORK</a></p>
+          <nav id="gNav">
+            <ul>
+              <li class="nav01"> <a href="../../care/"><span>介護向けシステム</span></a> </li>
+              <li class="nav02"> <a href="../../medical/"><span>医療向けシステム</span></a> </li>
+              <li class="nav03"> <a href="../../child-care/"><span>子育て支援システム</span></a> </li>
+              <li class="navcase current"> <a href="../index.html">導入事例</a> </li>
+              <li class="nav04"> <a href="../../company/"><span>企業情報</span></a> </li>
+              <li class="navir"> <a href="../../ir/"><span>IR情報</span></a> </li>
+              <li class="nav05"> <a href="../../recruit/recruit.html " target="_blank" ><span>採用情報</span></a > </li>
+              <li class="nav06"> <a href="https://www14.webcas.net/form/pub/kanamic/form" onclick="ga('send', 'event', '資料請求_link', 'gNav_click', 'https://www14.webcas.net/form/pub/kanamic/form', 1, {'nonInteraction': 1});" target="_blank" >資料請求 お問合せ</a > </li>
+            </ul>
+          </nav>
+          <div id="secondMenu" style="line-height: normal;">
+            <ul class="smbnCare">
+              <li class="secondMenuTitle">
+                <h2><a href="../../care/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <ul>
+                  <li> <a href="../../care/houkatsu.html">地域包括支援センター</a> </li>
+                  <li><a href="../../care/kyotaku.html">居宅介護支援</a></li>
+                  <li><a href="../../care/tsusho.html">通所系サービス</a></li>
+                  <li><a href="../../care/houmon.html">訪問系サービス</a></li>
+                  <li><a href="../../care/shisetsu.html">施設系サービス</a></li>
+                  <li> <a href="../../care/yougu.html">福祉用具貸与・販売</a> </li>
+                  <li> <a href="../../care/chiikimitchaku.html">地域密着型介護</a> </li>
+                  <li><a href="../../care/shogai.html">障がい者総合支援</a></li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnMedi">
+              <li class="secondMenuTitle">
+                <h2><a href="../../medical/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <ul>
+                  <li><a href="../../medical/#sec01">地域包括ケアを実現</a></li>
+                  <li> <a href="../../medical/#sec02" >在宅医療システムコンセプト</a > </li>
+                  <li><a href="../../medical/#sec02a">機能紹介</a></li>
+                  <li><a href="../../medical/#sec03">職種別の利用ケース</a></li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnChi">
+              <li class="secondMenuTitle">
+                <h2><a href="../../child-care/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <ul>
+                  <li> <a href="../../child-care/#sec02">システムのコンセプト</a> </li>
+                  <li><a href="../../child-care/#sec03">利用メリット</a></li>
+                  <li><a href="../../child-care/#sec04">情報配信機能</a></li>
+                  <li> <a href="../../child-care/#sec05">子育て成長記録機能</a> </li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnCom"><!--企業-->
+		          <li class="secondMenuTitle">
+			         <h2><a href="../../company/"></a></h2>
+		          </li>
+     	        <li class="secondMenuContent02">
+                <ul>
+                  <li><a href="../../company/concept.html">企業コンセプト</a></li>
+                  <li><a href="../../company/message.html">トップメッセージ</a></li>
+                  <li><a href="../../company/outline.html">会社概要</a></li>
+                  <li><a href="../../company/officer.html">役員一覧</a></li>
+                  <li><a href="../../company/access.html">拠点一覧</a></li>
+                  <li><a href="../../company/group.html">グループ会社</a></li>
+                  <li><a href="../../topics/">ニュース一覧</a></li>
+                </ul>
+		          </li>
+		          <li class="smbn"></li>
+            </ul>
+            <ul class="smbnIR">
+              <li class="secondMenuTitle">
+                <h2><a href="../../ir/"></a></h2>
+              </li>
+              <li class="secondMenuContent02">
+                <ul>
+                  <li><a href="../../ir/management.html">トップメッセージ</a></li>
+                  <li><a href="../../ir/library.html">IRライブラリ</a></li>
+				          <li><a href="../../ir/esg.html">ESGへの取り組み</a></li>
+                  <li><a href="../../ir/stock.html">株式情報</a></li>
+                  <li><a href="../../ir/calendar.html">IRカレンダー</a></li>
+                  <li><a href="../../ir/faq.html">FAQ</a></li>
+                  <li><a href="../../ir/notice.html">電子公告</a></li>
+                  <li> <a href="../../ir/irpolicy.html" >ディスクロージャーポリシー</a > </li>
+                  <li><a href="../../ir/disclimer.html">免責事項</a></li>
+                  <li><a href="../../ir/toiawa.html">お問合せ</a></li>
+                </ul>
+              </li>
+              <li class="smbn"></li>
+            </ul>
+            <ul class="smbnRecr">
+              <li class="secondMenuTitle">
+                <h2><a href="../../recruit/"></a></h2>
+              </li>
+              <li class="secondMenuContent">
+                <!-- <ul>
+                  <li><a href="../recruit/newgraduates.html">新卒採用</a></li>
+                  <li><a href="../recruit/careers.html">中途採用</a></li>
+                </ul> -->
+              </li>
+              <li class="smbn"></li>
+            </ul>
+          </div>
+
+          <p class="login"><a href="../../login.html">ログイン画面へ</a></p>
+        </div>
+      </header>
+
+      <header class="headerSp">
+        <div class="inner">
+          <p id="siteLogo"><a href="../../">KANAMIC NETWORK</a></p>
+          <p class="login">
+            <a href="../../login.html" ><span class="icon-login"></span>ログイン</a >
+          </p>
+          <p class="contactSp">
+            <a href="https://www14.webcas.net/form/pub/kanamic/form" onclick="ga('send', 'event', '資料請求sp_link', 'gNav_click', 'https://www14.webcas.net/form/pub/kanamic/form', 1, {'nonInteraction': 1});" target="blank" ><span class="icon-contact"></span>資料請求</a >
+          </p>
+          <p id="menuSp"><span class="icon-menu"></span>メニュー</p>
+          <nav id="gNav">
+            <ul>
+              <li class="gNavMedical">
+                <a href="../../medical/" ><span>医療介護連携支援システム</span></a >
+              </li>
+              <li class="gNavCare">
+                <span>介護業務支援システム</span>
+              <ul class="secondary_sp">
+              <li class="secondary"><a href="../../care/"><span>介護ソフト（介護保険システム）</span></a></li>
+              <li><a href="../../care/houkatsu.html"><span>地域包括支援センター</span></a></li>
+              <li class="noBorder_right"><a href="../../care/kyotaku.html"><span>居宅介護支援</span></a></li>
+              <li><a href="../../care/houmon.html"><span>訪問介護・看護</span></a></li>
+              <li class="noBorder_right"><a href="../../care/tsusho.html"><span>デイサービス<br>通所介護</span></a></li>
+              <li><a href="../../care/shisetsu.html"><span>施設・有老・サ高住</span></a></li>
+              <li class="noBorder_right"><a href="../../care/yougu.html"><span>福祉用具</span></a></li>
+              <li class="noBorder"><a href="../../care/chiikimitchaku.html"><span>地域密着型</span></a></li>
+              <li class="noBorder_right noBorder"><a href="../../care/shogai.html"><span>障がい者総合支援</span></a></li>
+              </ul>
+              </li>
+              <li class="gNavChild"> <a href="../../child-care/"><span>子育て支援システム</span></a> </li>
+              <li class="gNavCase"><a href="../index.html">導入事例</a></li>
+              <li class="gNavCompany"> <a href="../../company/"><span>企業情報</span></a> </li>
+              <li class="gNavIr"> <a href="../../ir/"><span>IR情報</span></a> </li>
+              <li class="gNavRecruit"> <a href="../../recruit/recruit.html " target="_blank" ><span>採用情報</span></a > </li>
+              <li class="gNavForm"> <a href="https://www14.webcas.net/form/pub/kanamic/form" target="_blank" >資料請求 お問合せ</a > </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="container-fluid top clearfix">
+        <div class="main_img05"><h1>ココライフ様導入事例</h1></div>
+      </div>
+
+
+      <div class="container">
+
+        <div class="breadCrumbs">
+          <ul>
+            <li><a href="../">ホーム</a></li>
+            <li><a href="../index.html">介護ソフト導入事例 </a></li>
+            <li><a>ココライフ株式会社 </a></li>
+          </ul>
+        </div>
+
+		    <div class="introduction row">
+          <div class="section" style="margin-bottom: 0;">
+            <div class="col" style="margin-bottom: 0;">
+              <div class="text col-sm-8">
+                <h2>
+                  訪問介護記録と多職種間連携ツールの活用で<br class="display_pc">得られた効果とは
+                </h2>
+                <p class="mb20">今回は藤沢市内の地域で在宅サービスを展開されているココライフ株式会社　代表取締役の小野田誠様より、カナミッククラウドの特長である「訪問介護記録機能」や「多職種間連携機能」を、ユーザー視点からその導入効果についてお話を頂きました。</p>
+              </div>
+              <div class="img" style="padding-right: 0;">
+                <img src="img/kokolife14.png" alt="ココライフ株式会社外観" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="introduction row">
+          <div class="section" style="margin-bottom: 0;">
+            <div class="col" style="margin-bottom: 0;">
+              <div class="text col-sm-8">
+                <h2>
+                  ココライフ株式会社
+                </h2>
+                <table class="bace">
+                  <tr>
+                    <th>組織概要</th>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>法人名</td>
+                    <td>ココライフ株式会社</td>
+                  </tr>
+
+                  <tr>
+                    <td>住所</td>
+                    <td>神奈川県藤沢市南藤沢7-6-202</td>
+					</tr>
+                  <tr>
+                    <td>業務内容</td>
+                    <td>介護サービス<br>
+						(居宅介護支援、訪問介護、介護予防訪問型サービス)<br>
+						障がい者総合支援サービス<br>
+						(居宅介護、重度訪問介護、同行援護、移動支援サービス)</td>
+					</tr>
+				 <tr>
+                    <td>導入システム</td>
+                    <td>
+						</td>
+					</tr>
+                  <tr>
+                    <td></td>
+                    <td class="tr">（※2021年11月17日時点）</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="img01" style="padding-right: 0;">
+                <img src="img/kokolife04.jpg" alt="ココライフ代表小野田様" width="260px"/><br>
+				  ココライフ株式会社　代表取締役　小野田 誠 様
+              </div>
+            </div>
+          </div>
+        </div>-->
+
+        <div class="case row">
+          <div class="section">
+            <div class="col" style="margin-bottom: 0;">
+              <div>
+                <p class="mb20">
+                  <span class="pickup"> カナミッククラウドを導入した経緯 </span>
+                </p>
+                <p class="mb20">
+                  ココライフ株式会社は2015年に会社を設立し、居宅介護支援と訪問介護のサービスを提供しており、ヘルパー事業では介護保険サービスと障がい福祉サービスの両方を運営しております。2020年10月には訪問看護もスタートしました。設立当時は別の介護システム（介護ソフト）を使っていましたが、訪問看護の事業を始める時に、これら3つの事業をもっとシステム的に融合できるような形にしていきたいと考えたのが介護システム（介護ソフト）を見直すきっかけでした
+                </p>
+				        <p class="mb20">
+                  １）効率よく業務を行えるICTであること。<br>
+                  ２）自社内の効率化だけでなく、多職種他法人と連携できること。
+                </p>
+                <p class="mb20">
+                  この2点を重要な評価ポイントとして検討した結果、多職種や地域での連携を重視した機能が充実している点や、藤沢市内での導入比率が高いことによる地域ネットワーク作りの可能性をメリットに感じカナミッククラウドの導入を決めました。<br>
+                  もうひとつ、この介護業界は今後もっと新しい方向に進んでいかなくてはと考えています。介護保険制度をリードしてきた政府の方針も新しい方向に進んでいく中、科学的介護「LIFE」への対応をはじめ「システムも変化していくべきである」という視点を持ち、そこに注力しているカナミックであれば、ユーザーとして長くお付き合いができると考えたのが導入を決めた理由のひとつです。
+                </p>
+                <br /><br />
+              </div>
+            </div>
+            
+            <div class="pr15 pl15">
+              <p class="mb20">
+                <span class="pickup"> カナミッククラウドの利点や期待する機能 </span>
+              </p>
+              <img src="img/kokolife03.jpg" alt="かんたん介護記録入力イメージ"  class="img_490_fr"/>
+              <p class="mb20">
+                事業拡大を想定していたので、ライセンス数や端末台数、利用場所が制限されてしまうインストール型ではなく、場所を選ばずネットワーク越しに利用できるクラウド型のシステムが必要だと考えており、カナミックは豊富な実績から「使いやすさ」「安定性」「セキュリティ面」に期待できるのではないかと思いました。特に質の高いサービスを提供するためには、法人内外に関わらず多職種それぞれの情報を利活用できることが、非常に重要となってきます。その他、紙の記録や報告をなくすことで業務を効率化したいと考えていたので、ヘルパーや看護師が訪問先のご利用者宅でサービス提供後すぐに記録や報告ができるカナミックの介護記録機能にも期待していました。
+              </p>
+              <br /><br />
+              <p style="clear: both;" class="mb20">
+                <span class="pickup">
+                 カナミッククラウドの導入で得た効果
+                </span>
+              </p>
+				      <p class="mb20">
+                <strong>＜かんたん介護記録機能＞</strong>
+              </p>
+              <p class="mb20">
+                特に効果が大きかった点は、紙の記録を全部やめてそれぞれのヘルパーに配布したスマートフォンから記録する運用にしたことです。シフトの確認や予定、ご利用者の住所や連絡先、ご自宅までの地図等もスマートフォンで全て確認できるので、現場のヘルパーがとても重宝しています。<br>
+                カナミックの訪問介護記録機能は、非常に無駄が少なく作り込まれています。<br>
+                サービス計画書の情報がヘルパーのスマートフォンに連動しており、サービス提供時にどのサービスを何分やるべきかが自動的に表示されます。ヘルパーはそれを見ながら記録できるので、やるべきサービスを適切な時間で進めることができます。時には計画に書かれていないサービスを実施しなければならず、提供時間が大きく変わる場合があります。そういった場合でも現場で画面を確認して、すぐに記録・報告できます。
+              </p>
+				      <p class="mt20 mb20" style="clear: both;"><strong>＜多職種間連携機能＞</strong></p>
+              <p class="img_300_fl tc"><img src="img/kokolife08.jpg" alt="ココライフ様利用イメージ" width="300px"/><br>イメージ画像</p>
+              <p class="mb20">システム内に「コミュニティ」というご利用者ごとの部屋を作ることにより、様々な情報を関係者間で共有できます。各ご利用者の日々の状態変化や、申し送り事項、服用する薬の種類なども共有できます。<br>
+              外部の専門職と連携する時にも活用しています。訪問看護では訪問診療をされる医師や薬を届ける薬剤師の方たちとご利用者の情報を共有することが多いです。従来の方法はFAXの送受信による連携が主でしたが、カナミックを導入してからは他事業所も共有可能なコミュニティを作り、担当医師に確認したいことを弊社の看護師がコミュニティ上で連絡、システム内ですぐに返事をもらうことができるようになりました。薬剤師からは「新しく薬が変わったので、こういうことに注意してください。」という情報が共有されるので、他事業所との連携も広げられるようになってきています。</p>
+              <p class="mt20 mb20" style="clear: both;"><strong>＜バックオフィス業務＞</strong></p>
+              <p class="mb20">ご利用者が増えていくにつれ、利用料金の請求と回収の管理も非常に煩雑になってきました。カナミックでは債権債務をきめ細かく管理する機能が豊富で、入金データから債権の自動消込や部分入金の管理など非常に効果があったと実感しています。</p>
+              <br /><br />
+            </div>
+			  
+			      <!--<div style="padding-right: 0; float: right;" class="tc"> <img src="img/kokolife04.jpg" alt="ココライフ株式会社　代表取締役　小野田 誠 様" class="img_490"><br>ココライフ株式会社　代表取締役　小野田 誠 様 <br /><br> </div>-->
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="container">
+        <div class="inquiry spDisNon">
+          <a href="https://www14.webcas.net/form/pub/kanamic/form" target="_blank" >
+            <img src="img/bnr_Inquiry.png" alt="お問い合わせフォーム" class="img01" />
+          </a>
+        </div>
+        <div class="inquiry sp_img">
+          <a href="https://www14.webcas.net/form/pub/kanamic/form" target="_blank" >
+            <img src="img/bnr_Inquiry_sp.png" alt="お問い合わせフォーム"  class="img01" />
+          </a>
+        </div>
+      </div>
+
+
+      <footer id="footer">
+        <div class="bg">
+          <div class="inner">
+            <div class="footBnr"></div>
+            <div id="pagetop"><a href="#">ページトップへ戻る</a></div>
+            <div id="footNav">
+              <div class="block b01">
+                <div class="box last">
+                  <h2><a href="../../care/">介護向けシステム</a></h2>
+                  <ul>
+                    <li> <a href="../../care/houkatsu.html" >地域包括支援センター向け</a > </li>
+                    <li> <a href="../../care/kyotaku.html">居宅介護支援向け</a> </li>
+                    <li> <a href="../../care/houmon.html">介護事業者(訪問)向け</a> </li>
+                    <li> <a href="../../care/tsusho.html">介護事業者(通所)向け</a> </li>
+                    <li> <a href="../../care/shisetsu.html" >介護事業者(施設・有老・サ高住)向け</a > </li>
+                    <li> <a href="../../care/yougu.html" >介護事業者(福祉用具)向け</a > </li>
+                    <li> <a href="../../care/chiikimitchaku.html" >介護事業者(地域密着)向け</a > </li>
+                    <li> <a href="../../care/shogai.html">障がい者総合支援</a> </li>
+                  </ul>
+                </div>
+                <div class="box mt15">
+                  <h2><a href="../../medical/">医療向けシステム</a></h2>
+                </div>
+                <div class="box">
+                  <h2><a href="../../child-care/">子育て支援システム</a></h2>
+                </div>
+              </div>
+              <div class="block b02">
+                <div class="box last">
+                  <h2><a href="../../company/">企業情報</a></h2>
+                  <ul>
+                    <li> <a href="../../company/concept.html">企業コンセプト</a> </li>
+                    <li> <a href="../../company/message.html">トップメッセージ</a> </li>
+                    <li><a href="../../company/outline.html">会社概要</a></li>
+                    <li><a href="../../company/officer.html">役員一覧</a></li>
+                    <li><a href="../../company/access.html">拠点一覧</a></li>
+					          <li><a href="../../company/group.html">グループ会社</a></li>
+                  </ul>
+                </div>
+                <div class="box mt15">
+                  <h2><a href="../../case/">導入事例</a></h2>
+                </div>
+                <div class="box">
+                  <h2> <a href="../../recruit/recruit.html " target="_blank" >採用情報</a > </h2>
+                  <!-- <ul>
+                    <li><a href="../recruit/newgraduates.html">新卒採用</a></li>
+                    <li><a href="../recruit/careers.html">中途採用</a></li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="block b03">
+                <div class="box last">
+                  <h2><a href="../../ir/">IR情報</a></h2>
+                  <ul>
+                    <li><a href="../../ir/management.html">トップメッセージ</a></li>
+                    <li> <a href="../../ir/library.html">IRライブラリ一覧</a> </li>
+					          <li><a href="../../ir/esg.html">ESGへの取り組み</a></li>
+                    <li><a href="../../ir/stock.html">株式情報</a></li>
+                    <li><a href="../../ir/calendar.html">IRカレンダー</a></li>
+                    <li><a href="../../ir/faq.html">FAQ</a></li>
+                    <li><a href="../../ir/notice.html">電子公告</a></li>
+                    <li> <a href="../../ir/irpolicy.html" >ディスクロージャーポリシー</a > </li>
+                    <li><a href="../../ir/disclimer.html">免責事項</a></li>
+                    <li><a href="../../ir/toiawa.html">お問合せ</a></li>
+                  </ul>
+                </div>
+              </div>
+				
+			<div class="block b04">
+                <div class="box last">
+                  <h2>
+                      <a href="https://www14.webcas.net/form/pub/kanamic/form"
+                        >資料請求・お問合わせ</a>
+                    </h2>
+                  <!-- / .box -->
+                </div>
+                <!-- / .block -->
+              </div>
+              <!-- / #footNav -->
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <footer id="footer2nd">
+        <div class="inner">
+          <div id="footSubNav">
+            <ul>
+              <li><a href="../../topics/">ニュース一覧</a></li>
+              <li> <a href="../../company/privacy.html">プライバシーポリシー</a> </li>
+              <li class="last"><a href="../../sitemap/">サイトマップ</a></li>
+            </ul>
+          </div>
+
+          <!-- 旧マーク -->
+          <!-- <div id="mark">
+            <ul>
+              <li>
+                <a href="https://www.jipdec.or.jp/" target="_blank" >
+                  <img src="../common/img/foot_ico_privacy.jpg" width="90" height="90" alt="プライバシーマーク" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.cloud-nintei.org/" target="_blank" >
+                  <img src="../common/img/foot_ico_asp.jpg" width="70" height="90" alt="ASPICクラウドサービス情報開示認定制度" />
+                </a>
+              </li>
+              <li style="padding: 0;">
+                <a href="../topics/press-release/2024/press-release0312.html">
+                  <img src="../img/speedtest_min/yuryo2023-min.jpg" width="" height="100" alt="健康経営優良法人" />
+                </a>
+              </li>
+            </ul>
+          </div> -->
+
+
+          <div id="mark">
+            <ul>
+              <li>
+                <a href="https://www.jipdec.or.jp/" target="_blank" >
+                  <img src="../../common/img/footer-icon/foot_ico_privacy.jpg" width="90" height="90" alt="プライバシーマーク" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.cloud-nintei.org/" target="_blank" >
+                  <img src="../../common/img/footer-icon/foot_ico_asp.jpg" width="70" height="90" alt="ASPICクラウドサービス情報開示認定制度" />
+                </a>
+              </li>
+              <li style="padding: 0;">
+                <a href="../../topics/press-release/2024/press-release0312.html">
+                  <img src="../../common/img/footer-icon/foot_ico_yuryo.png" width="" height="100" alt="健康経営優良法人" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <small >Copyright &copy; Kanamic Network Co.,LTD<br /> All Rights Reserved.</small >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

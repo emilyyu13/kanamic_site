@@ -1,0 +1,970 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap&subset=japanese");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+  vertical-align: top;
+  font-weight: normal;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select, textarea, img {
+  vertical-align: middle;
+}
+
+ul, dl, ol {
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* モバイル・PC */
+.is_sp {
+    display: block;
+}
+.is_pc {
+    display: none;
+}
+.is_none_LPC {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .is_sp {
+        display: none;
+    }
+    .is_pc {
+        display: block;
+    }
+}
+
+/* ========================================
+    ■ General
+======================================== */
+/* 1px = 0.01remに変換（100px = 1rem）*/
+html {
+    font-size: 13.02083vw;
+  }
+  
+@media screen and (min-width: 768px) {
+    html {
+      font-size: 6.51042vw;
+    }
+}
+  
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #000;
+    line-height: 1.6;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "palt" 1;
+            font-feature-settings: "palt" 1;
+    font-size: 0.24rem;
+}
+  
+@media screen and (min-width: 768px) {
+    body {
+      font-size: 0.23rem;
+    }
+}
+  
+a {
+    color: #0033cc;
+    text-decoration: underline;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+  
+a::before, a::after {
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+  
+a:hover {
+    text-decoration: none;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+  
+a:hover::before, a:hover::after {
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+  
+img,
+video,
+object {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: none;
+}
+  
+section {
+    position: relative;
+}
+  
+mark {
+    background: none;
+    color: inherit;
+    font-weight: normal;
+    font-style: normal;
+}
+  
+picture {
+    display: block;
+}
+  
+strong, b {
+    font-weight: 700;
+}
+
+/* ========================================
+    ■ margin/padding
+======================================== */
+.mt10 {
+    margin-top: 0.1rem;
+}
+.ml10 {
+    margin-left: 0.1rem;
+}
+.mr10 {
+    margin-right: 0.1rem;
+}
+.mb10 {
+    margin-bottom: 0.1rem;
+}
+.mt50 {
+    margin-top: 0.5rem;
+}
+.ml50 {
+    margin-left: 0.5rem;
+}
+.mr50 {
+    margin-right: 0.5rem;
+}
+.mb50 {
+    margin-bottom: 0.5rem;
+}
+.mb24 {
+    margin-bottom: 24px;
+}
+
+/* ========================================
+    ■ font
+======================================== */
+.fn28rem {
+    font-size: 0.28rem!important;
+}
+
+/* ========================================
+    ■ utility class
+======================================== */
+
+.wrap {
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+  
+@media screen and (min-width: 768px) {
+    .wrap {
+      max-width: 1280px;
+    }
+}
+  
+.clearfix {
+    overflow: hidden;
+    zoom: 1;
+}
+  
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ctaボタン（背景オレンジ/文字ホワイト） */
+/* ヘッダー箇所 */
+.cta_btn01 {
+    display: block;
+    position: relative;
+    background: linear-gradient(70deg, #f46600, #fb9a00);
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0.08rem 0.1rem rgba(0, 0, 0, 0.16);
+            box-shadow: 0 0.08rem 0.1rem rgba(0, 0, 0, 0.16);
+    padding: 0.1rem 0.2rem;
+    color: #fff;
+    font-size: 0.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+/* 問合せ */
+.cta_btn02 {
+    display: block;
+    position: relative;
+    background: linear-gradient(70deg, #f46600, #fb9a00);
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0.08rem 0.1rem rgba(0, 0, 0, 0.16);
+            box-shadow: 0 0.08rem 0.1rem rgba(0, 0, 0, 0.16);
+    padding: 0.1rem 0.4rem;
+    color: #fff;
+    font-size: 0.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+.cta_btn01.shining {
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.cta_btn01.shining::before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0;
+    transition: cubic-bezier(0.32, 0, 0.67, 0);
+}
+.cta_btn01.shining:hover::before {
+    animation: shining 0.5s linear 1;
+}
+
+@keyframes shining {
+      0% {
+        transform: scale(2) rotate(45deg);
+        opacity: 0;
+      }
+      20% {
+        transform: scale(20) rotate(45deg);
+        opacity: 0.6;
+      }
+      40% {
+        transform: scale(30) rotate(45deg);
+        opacity: 0.4;
+      }
+      80% {
+        transform: scale(45) rotate(45deg);
+        opacity: 0.2;
+      }
+      100% {
+        transform: scale(50) rotate(45deg);
+        opacity: 0;
+      }
+}
+
+
+/* ========================================
+    ■ header
+======================================== */
+.lp_header {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.header_logo_img {
+    width: auto;
+    height: 28px;
+    margin-left: 10px;
+}
+.header_cta {
+    margin-right: 10px;
+}
+
+/* ========================================
+    ■ main
+======================================== */
+.main_appeal {
+    height: 580px;
+    background-image: url(../images/bg_pc-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 75% 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .main_appeal {
+        height: 600px;
+    }
+}
+
+.main_appeal_contents {
+    display: grid;
+    grid-template-areas:
+        "careplan-text"
+        "careplan-cta"
+        "careplan-text-sub";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,auto);
+    padding: 100px 10px;
+    position: relative;
+}
+@media only screen and (max-width: 767px) {
+    .main_appeal_contents  {
+        padding: 130px 10px 100px 10px;
+    }
+}
+
+
+.main_text {
+    grid-area: careplan-text;
+    text-shadow: 2px 2px 10px #f46600 ,
+                -2px 2px 10px #f46600 ,
+                2px -2px 10px #f46600 ,
+                -2px -2px 10px #f46600;
+}
+.sub_text {
+    /* grid-area: careplan-text-sub; */
+
+    position: absolute;
+    right: 4%;
+    top: 28%;
+}
+
+@media only screen and (max-width: 767px) {
+    .sub_text {
+        display: none;
+    }
+}
+
+
+.main_title {
+    margin-bottom: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-size: min(0.55rem,70px);
+}
+@media only screen and (max-width: 767px) {
+    .main_title {
+        font-size: 0.8rem;
+        margin-bottom: 50px;
+
+    }
+}
+
+.sub_title {
+    background: #fff;
+    width: min(3rem,200px);
+    height: min(3rem,200px);
+    border-radius: 50%;
+    padding-top: 0.6rem;
+    margin: 40px 0 28px;
+    font-weight: 700;
+    color: #f46600;
+    text-align: center;
+    font-size: min(0.38rem,24px);
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    box-shadow: 0px 0px 15px #f46600;
+}
+.main_subtitle {
+    display: block;
+    margin-bottom: 16px;
+    font-size: min(0.38rem,40px);
+}
+.main-cta {
+    grid-area: careplan-cta;
+}
+
+/* ========================================
+    ■ first_contents
+======================================== */
+.careplan_info {
+    background: #FDFED7;
+}
+.topic_container {
+    padding: 40px 10px;
+    text-align: center;
+}
+h2,h3 {
+    margin-bottom: 24px;
+}
+.font_darkorange {
+    color: #f46600;
+    font-weight: 700;
+    font-size: 0.4rem;
+}
+.info_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info_text::before {
+    margin: 0 12px 0 0;
+    transform: rotate(-17.16deg);
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: currentColor;
+}
+.info_text::after {
+    margin: 0 0 0 12px;
+    transform: rotate(17.16deg);
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: currentColor;
+}
+.topic_contents_subtext {
+    font-weight: 700;
+    font-size: 0.35rem;
+}
+.topic_container p {
+    font-size: 0.35rem;
+    text-align: justify;
+}
+.careplan_info_money {
+    background: #FFF3D9;
+    font-size: 0.28rem!important;
+    text-align: center!important;
+    padding: 10px 0;
+}
+.strong_darkorange {
+    color: #f46600;
+    font-weight: 700;
+}
+.cta_container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.cta_reverse {
+    flex-direction: row-reverse;
+}
+.cta_area {
+    background-color: #3596AE;
+}
+.cta_subtext {
+    font-size: 0.28rem;
+    margin-bottom: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.cta_title {
+    font-size: 0.5rem;
+    margin-bottom: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.cta_announce_img {
+    width: 100px;
+}
+.img2,.merit_img {
+    text-align: center!important;
+}
+.img2 img,.merit_img img {
+    max-width: 600px;
+}
+.merit_box {
+    position: relative;
+    margin: 50px 0;
+    padding: 30px 10px;
+    border: solid 3px #F6AC0E;
+    border-radius: 8px;
+}
+.merit_box .merit_box_number {
+    position: absolute;
+    display: inline-block;
+    top: -36px;
+    left: -10px;
+    padding: 10px;
+    line-height: 1;
+    font-size: 0.8rem;
+    background: #fff;
+    color: #F6AC0E;
+}
+.merit_box h4 {
+    font-weight: 700;
+    font-size: 0.35rem;
+}
+.feature_box {
+    margin: 50px 0 0;
+    padding: 30px 10px;
+    background: #FFFEF3;
+    border: solid 3px #F6AC0E;
+    border-radius: 8px;
+}
+.feature_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feature_img {
+    width: 50%;
+    max-width: 400px;
+}
+.allinone {
+    text-align: center;
+    padding: 40px 10px;
+}
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid #f46600;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin: 0 auto;
+}
+.merit01 {
+    background: #FFFCDB;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.allinone_merit span {
+    color: #f46600;
+}
+.merit02 {
+    background: #FFF3C3;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.merit03 {
+    background: #FEEAB4;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.merit04 {
+    background: #FDE0A1;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.merit05 {
+    background: #FCD68C;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.merit06 {
+    background: #F8C48F;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.merit07 {
+    background: #F8BD83;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.merit08 {
+    background: #F7B77D;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.35rem;
+    margin: 10px;
+    padding: 10px;
+}
+.detail_flex {
+    display: flex;
+}
+.detail_list {
+    width: 25%;
+}
+.detail_list_p {
+    width: 70%;
+}
+#footer {
+    padding: 0.25rem 0;
+}
+.footer_copyright {
+    color: #9c9c9c;
+    font-size: 0.2rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+    768px～　タブレット端末
+======================================== */
+@media screen and (min-width: 768px) {
+    .header_cta {
+        margin-right: 20px;
+    }
+    .header_logo_img {
+        margin-left: 20px;
+    }
+    .main_appeal_contents {
+        grid-template-columns: 70%;
+        padding: 100px 30px;
+    }
+    .main_title {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+    .main_subtitle {
+        margin-bottom: 20px;
+    }
+    .topic_container {
+        padding: 40px 30px;
+    }
+    .cta_btn02 {
+        display: inline;
+    }
+    .cta_container {
+        padding: 30px;
+        justify-content: space-around;
+    }
+    .cta_title {
+        margin-bottom: 30px;
+    }
+    .cta_announce_img {
+        width: 150px;
+    }
+    .merit_box {
+        padding: 30px;
+    }
+    .merit_box h4 {
+        font-size: 0.4rem;
+    }
+    .feature_box {
+        padding: 30px;
+    }
+    .feature_image {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .allinone {
+        padding: 40px 30px;
+    }
+    .detail_flex {
+        padding-left: 1.5rem;
+    }
+    .is_none_LPC  {
+        display: none;
+    }
+    .lpc_text {
+        white-space: nowrap;
+    }
+}
+
+/* ========================================
+    1280px～　PC端末
+======================================== */
+@media screen and (min-width: 1280px) {
+    .header_logo_img {
+        height: 40px;
+    }
+    .main_appeal {
+        height: 700px;
+    }
+    .main_appeal_contents {
+        grid-template-areas:
+            "careplan-text ."
+            "careplan-cta careplan-text-sub";
+        grid-template-columns: 60%;
+    }
+    .sub_title {
+        transform: rotate(10deg)!important;
+        -moz-transform: rotate(10);
+        -webkit-transform: rotate(10);
+        margin: -0.5rem 0.5rem 0;
+        padding-top: 0.45rem;
+    }
+    .topic_flex {
+        display: flex;
+        align-items: center;
+    }
+    .topic_flex_text {
+        width: 48%;
+        text-align: justify;
+    }
+    .font_darkorange {
+        font-size: min(0.28rem, 40px);;
+    }
+    .merit_box {
+        margin: 100px 0;
+        padding: 50px 30px;
+    }
+    .allinone_merit {
+        display: flex;
+        align-items: center;
+    }
+    .merit01,.merit02,.merit03,.merit04,.merit05,.merit06,.merit07,.merit08 {
+        writing-mode: vertical-rl;
+        letter-spacing:  min(0.2rem, 20px);
+        padding: 50px 10px;
+        text-align: -webkit-auto;
+        height: 450px;
+        font-size: min(0.24rem,24px);
+    }
+    .triangle {
+        border-top: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-left: 20px solid #f46600;
+        border-bottom: 10px solid transparent;
+    }
+    .cta_announce_img {
+        width: 230px;
+    }
+    .cta_announce_img_man {
+        margin-right: 30px;
+    }
+    .cta_btn01 {
+        padding: 0.05rem 0.3rem;
+        font-size: min(0.2rem,20px);;
+    }
+    .main_appeal_contents {
+        padding: 1.2rem;
+    }
+    .main_title {
+        margin-bottom: 60px;
+    }
+    .cta_btn02 {
+        border-radius: 100px;
+        font-size: min(0.25rem,25px);;
+    }
+    .careplan_info {
+        margin: 0;
+    }
+    h2,h3 {
+        margin-bottom: 40px;
+    }
+    .topic_contents_subtext {
+        font-size: 0.3rem;
+    }
+    .topic_container p {
+        font-size:  min(0.2rem, 30px);
+    }
+    .careplan_info_money {
+        font-size: min(0.2rem,20px)!important;
+        width: 570px;
+        margin: 0 auto;
+    }
+    .fn28rem {
+        font-size: 0.15rem!important;
+        text-align: center!important;
+    }
+    .topic_container {
+        margin: 0 auto;
+        padding: 100px 30px;
+        max-width: 1200px;
+    }
+    .cta_container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .img2,.merit_img {
+        text-align: center!important;
+    }
+    .img2 img {
+        width: 80%;
+    }
+    .cta_text {
+        margin: 50px 0;
+    }
+    .cta_title {
+        font-size: min(0.4rem, 50px);
+    }
+    .cta_subtext {
+        font-size: min(0.24rem, 30px);
+    }
+    .merit_box .merit_box_number {
+        font-size:  min(0.8rem, 100px);
+        top: -80px;
+        left: -30px;
+    }
+    .merit_box h4 {
+        font-size: 0.22rem;
+    }
+    .merit_img img {
+        width: 80%;
+    }
+    .j_around {
+        justify-content: space-around;
+    }
+    .feature_img {
+        width: 50%;
+    }
+    .topic_flex_text_40 {
+        width: 60%;
+        margin-right: 30px;
+        text-align: justify;
+    }
+    .allinone {
+        margin: 0 auto 1rem;
+        max-width: 1200px;
+    }
+    .mx900 {
+        max-width: 900px;
+    }
+    .is_none_LPC  {
+        display: block;
+    }
+    .lpc_text {
+        white-space: wrap;
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    .sub_title {
+        margin: -0.7rem 1rem 0;
+        padding-top: 0.4rem;
+    }
+}
+/* ========================================
+    1920px～　大きいPC端末
+======================================== */
+@media screen and (min-width: 1920px) {
+    .is_none_LPC  {
+        display: none;
+    }
+    .lpc_text {
+        white-space: nowrap;
+    }
+    .detail_flex {
+        padding-left: 0;
+    }
+    .sub_title {
+        margin: -0.2rem 1rem 0;
+        padding-top: 0.3rem;
+    }
+}

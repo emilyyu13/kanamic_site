@@ -1,0 +1,582 @@
+/* CSS Document */
+
+/* ----------------------------------------
+	reset 
+---------------------------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* 行の高さをfont-sizeと同一に */
+body { line-height:1; }
+/* 新要素のinline属性(section等)をblock属性へ変更 */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { display:block; }
+ol, ul { list-style: none; }
+/* 引用符を削除 */
+blockquote, q { quotes:none; }
+/* 引用タグの前後にコンテンツを追加しない */
+blockquote:before, blockquote:after, q:before, q:after {
+    content:'';
+    content:none;
+}
+/* a要素をリセットし、文字の縦位置を親のベースラインに揃える */
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* 隣接するセルのボーダーを重ねて表示し間隔を0に */
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* 罫線を平面な線に */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+/* 縦位置を中央揃に */
+input, select { vertical-align:middle; }
+/* 画像を縦に並べた時に余白を出さない */
+img {
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+/* box-sizingを全ブラウザに適用 */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* ----------------------------------------
+	default styles
+---------------------------------------- */
+* { line-height: 1; }
+html { font-size: 62.5%; /* 10px */ }
+
+img { width:100%; }
+
+body {
+	background-color: #fcdc4d;
+	background-image: url(img/body_back.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	color:#000;
+	font-size: 1.6rem;
+}
+a { color:#000; }
+@media screen and (max-width:1366px) {}
+@media screen and (max-width:1024px) {}
+@media screen and (max-width:940px) {}
+@media screen and (max-width:764px) {}
+@media screen and (max-width:480px) {}
+@media screen and (max-width:414px) {}
+@media screen and (max-width:411px) {}
+@media screen and (max-width:375px) {}
+@media screen and (max-width:320px) {}
+
+/* ----------------------------------------
+	font face
+---------------------------------------- */
+@font-face {
+	font-family: "ns";
+	font-weight: 400;
+	font-style: normal;
+	src: url(./fonts/ns_Regular.woff) format("woff"),
+		 url(./fonts/fonts/ns_Regular.otf) format("opentype");
+}
+@font-face {
+	font-family: "ns";
+	font-weight: 500;
+	font-style: normal;
+	src: url(./fonts/ns_Medium.woff) format("woff"),
+		 url(./fonts/ns_Medium.otf) format("opentype");
+}
+@font-face {
+	font-family: "ns";
+	font-weight: 700;
+	font-style: normal;
+	src: url(./fonts/ns_Bold.woff) format("woff"),
+		 url(./fonts/ns_Bold.otf) format("opentype");
+}
+/* ----------------------------------------
+	styles
+---------------------------------------- */
+body {
+	font-family: ns, "Hiragino Sans", "ヒラギノ角ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+/* ----- float menu ----- */
+
+div#floatMenu {
+	width: 100%;
+	position:fixed;
+	top:0;
+	background: #fff url(img/header_border.png) bottom center no-repeat;
+	z-index: 10;
+	height: 10.6rem;
+	padding: 2.6rem 1.5rem 3rem 1.5rem;
+}
+div#floatMenu .headerInner {
+	width: 100%;
+	max-width: 94rem;
+	margin: 0 auto;
+}
+.headerInner ul.headerBtn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+ul.headerBtn li:first-child {
+	flex-grow:2;
+}
+ul.headerBtn li:first-child img {
+	max-width: 15.3rem;
+}
+ul.headerBtn li {
+	white-space: nowrap;
+	padding: 0 0.5rem;
+}
+ul.headerBtn li a {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+ul.headerBtn li span.icon {
+	max-width: 5rem;
+	margin-right:0.4rem;
+}
+@media screen and (max-width:640px) {
+	div#floatMenu {
+		padding: 1.6rem 0.5rem 2rem 0.5rem;
+		font-size: 3.5vw;
+		height: 6.5rem;
+	}
+	ul.headerBtn li span.icon {
+		max-width: 2.2rem;
+		min-width: 1.5rem;
+		margin-right:0.4rem;
+	}
+	ul.headerBtn li:first-child img { /* logo */
+		max-width: 10rem;
+	}
+}
+
+/* ----- main ----- */
+
+#main {
+	width: 100%;
+	max-width: 94rem;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10.6rem 1.5rem 0 1.5rem;
+	margin-bottom: 6rem;
+	font-family: "ns";
+}
+
+#main h2 {
+	font-size: 2.8rem;
+	margin: 2em auto;
+	font-weight: 700;
+}
+
+#main p.it-hojo {
+	max-width: 337px;
+	margin: 0 auto;
+}
+
+#main p.mainimg {
+	max-width: 744px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+#main p.limit {
+	display: block;
+	border-radius: 2em;
+	max-width: 744px;
+	background: #db4b19;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 2.2rem;
+	padding: 12px;
+	box-shadow: 0 4px rgba(255,255,255,1.0); 
+	margin-bottom: 2em;
+	font-weight: 500;
+}
+#main p.limit span {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+#main .exist {
+	display: block;
+	border-radius: 20px;
+	border: 3px dotted #000;
+	max-width: 896px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 2.2rem;
+	padding: 1em;
+	font-family: "ns";
+}
+#main .exist h3 {
+	font-size: 2.8rem;
+	color: #06348a;
+	font-weight: 700;
+	margin: 0 auto;
+	margin-bottom: 0.5em;
+	line-height:1.4;
+}
+#main .exist p {
+	font-size: 2.2rem;
+	color: #000;
+	font-weight: 500;
+	line-height:1.4;
+}
+@media screen and (max-width:640px) {
+	html {
+		font-size:50%;
+	}
+	#main {
+		padding: 6.5rem 1rem 0 1rem;
+	}
+	#main h2 {
+		margin: 1.5em 0;
+		line-height:1.4;
+	}
+	#main p.limit {
+
+	}
+}
+/* ----- support ----- */
+
+#support {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(img/support_back.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	padding: 0 1.5rem 4rem 1.5rem;
+	font-family: "ns";
+}
+#support h2 {
+	font-size: 5.6rem;
+	text-shadow: 2px 2px #FFF;
+	margin-bottom: 0.5em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
+
+#support .supportInner {
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+	min-height: 590px;
+}
+
+.supportInner .rightbox {
+	width: 100%;
+	float:right;
+	margin-top:1em;
+	max-width:640px;
+}
+
+.supportInner .rightbox p {
+	text-align: left;
+	font-weight: 500;
+}
+.supportInner .rightbox p span {
+	font-weight: 700;
+}
+
+.supportInner .rightbox p.block1 {
+	font-size: 3.6rem;
+	line-height:1.5;
+	margin-bottom: 1em;
+}
+.supportInner .rightbox p.block2 {
+	font-size: 2.4rem;
+	line-height: 1.8;
+	margin-bottom: 2em;
+}
+.supportInner .rightbox p.block2 span.fbul {
+	font-size: 4rem;
+}
+.supportInner .rightbox .aboutUs {
+	border: 2px dotted #000;
+	padding: 20px;
+	font-size: 1.6rem;
+}
+.supportInner .rightbox .aboutUs dl {
+	text-align: left;
+}
+.supportInner .rightbox .aboutUs dl dt {
+	float: left;
+	line-height: 1.8;
+}
+.supportInner .rightbox .aboutUs dl dd{
+	line-height: 1.8;
+	margin-left: 1em;
+}
+@media screen and (max-width:640px) {
+	#support h2 {
+		letter-spacing: 0;
+		font-size:4.8rem;
+		line-height:1.2;
+	}
+	.supportInner .rightbox {
+		float: none;
+	}
+	#support p br {
+		display:none;
+	}
+	.supportInner .rightbox p.block1,
+	.supportInner .rightbox p.block2 span.fbul {
+		font-size:2.4rem;
+	}
+	.supportInner .rightbox p.block2 {
+		font-size: 2.4rem;
+		line-height: 1.5;
+		margin-bottom: 2em;
+	}
+	#support {
+		background-image: none;
+	}
+	#support .supportInner {
+		min-height: 0;
+	}
+
+}
+
+/* ----- outline ----- */
+
+#outline {
+	width: 100%;
+	background: rgba(89, 49, 24, 0.75);
+	padding: 1.5em 1.5rem;
+	color: #FFF;
+	font-size: 2.8rem;
+	margin-bottom: 2.5em;
+	font-family: "ns";
+}
+
+#outline h2 {
+	margin-bottom: 1.5em;
+	font-weight: 400;
+	text-align: center;
+}
+
+#outline ul {
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 2em;
+}
+#outline ul li {
+	list-style-type: disc;
+	margin-bottom: 0.75em;
+	font-weight: 700;
+}
+#outline ul:last-child {
+	margin-bottom: 0;
+}
+@media screen and (max-width:640px) {
+	#outline ul li {
+		list-style-type: none;
+		line-height:1.4;
+	}
+}
+/* ----- contact ----- */
+
+#contact {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "ns";
+	padding: 0 1.5rem 0 1.5rem;
+}
+#contact .contactInner {
+	max-width: 940px;
+	margin: 0 auto;
+}
+#contact .contactInner h2 {
+	font-size: 5.6rem;
+	text-shadow: 2px 2px #fff;
+	margin-bottom: 1em;
+	font-weight: 700;
+	line-height:1.2;
+}
+.contactInner .contactDetail {
+	display: flex;
+	justify-content: space-between;
+}
+.contactInner .contactDetail .phoneCall,
+.contactInner .contactDetail .mail {
+	flex:1;
+}
+.contactInner .contactDetail h3 {
+	font-size: 3rem;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+.contactInner .contactDetail p.contactIcon {
+	max-width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: #fff;
+	position: relative;
+	margin-bottom: 30px;
+}
+.contactInner .contactDetail p.contactIcon img {
+	width: 50%;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+}
+.contactInner .contactDetail .contactBtn {
+	text-align: center;
+	max-width: 90%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+.contactInner .contactDetail .contactBtn a {
+	display: block;
+	background: #db4b19;
+	padding: 15px 0;
+	text-align: center;
+	border-radius: 8px;
+	color:#FFF;
+	font-size: 2.4rem;
+	background-image: url(img/arrow_white.png);
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+}
+.contactInner .contactDetail .subinfo {
+	text-align: left;
+}
+.contactInner .contactDetail .subinfo h4 {
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+.contactInner .contactDetail .subinfo p {
+	line-height: 1.5;
+	font-weight: 400;
+}
+@media screen and (max-width:640px) {
+	.contactInner .contactDetail {
+		flex-wrap: wrap;
+	}
+	.contactInner .contactDetail .phoneCall,
+	.contactInner .contactDetail .mail {
+		min-width:280px;
+		margin-bottom:1em;
+	}
+	.contactInner .contactDetail .contactBtn {
+		max-width: 280px;
+	}
+	.contactInner .contactDetail .subinfo {
+		text-align: center;
+		margin-bottom:1em;
+	}
+}
+/* --------------------
+   footer
+-------------------- */
+div#itFooter {
+	width: 100%;
+	padding: 3rem;
+	text-align: center;
+	margin-top: 3em;
+	background: #fff url(img/header_border.png) top center no-repeat;
+}
+
+/* --------------------
+   media screen
+-------------------- */
+/*
+@media (max-width: 750px) { 
+	.headerInner {
+		font-size: 16px;
+	}
+	#main {
+		margin-bottom: 50px;
+	}
+	#main h2 {
+		line-height: 1.4;
+		margin-bottom: 30px;
+	}
+	#support h2 {
+		letter-spacing: 0;
+		margin-bottom: 30px;
+		line-height: 1.4;
+	}
+	.supportInner .rightbox p {
+		text-align: center;
+	}
+	#support {
+		background: none;
+	}
+	#outline ul {
+		text-align: center;
+	}
+	#outline ul li {
+		list-style-type: none;
+	}
+	.contactInner h2 {
+		line-height: 1.4;
+	}
+	.contactInner .contactDetail .contactBtn a {
+		font-size: 18px;
+	}
+	.supportInner .rightbox {
+		width:90%;
+		margin-left: 0;
+	}
+}
+*/
+/* --------------------
+	module
+-------------------- */
+.underline {
+	background:linear-gradient(transparent 45%, rgba(77,255,255,0.47) 0%);
+	line-height: 1.1;
+	display: inline-block;
+}
+/*	clearfix  */
+.pkg:after {
+    content: "";
+    display: block;
+    clear: both;
+}

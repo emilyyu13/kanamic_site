@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>TRITRUS SYSTEM</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../mock/portal_contents/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../mock/portal_contents/css/login.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/css/fonts.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../mock/portal_contents/css/css_animations.css"
+    />
+    <script
+      src="../../mock/portal_contents/js/jquery-1.8.3.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/yuga.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/prefixfree.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      // 背景画像表示スクリプト
+      $(function() {
+        $.ajaxSetup({ cache: false });
+
+        var maxNum = 5; // 最大枚数
+        var rdm = parseInt(Math.random() * maxNum) + 1;
+
+        $("body").prepend(
+          '<div id="fullbg_base"><div id="fullbg_stretch">' +
+            '<img src="../../mock/portal_contents/img/login/photo/photo' +
+            rdm +
+            '.jpg">' +
+            "</div></div>"
+        );
+
+        $(window).load(function() {
+          var fadeSpeed = 1000;
+
+          var baseId = "#fullbg_base";
+          var stretchId = "#fullbg_stretch";
+          var stretchImg = $(stretchId).children("img");
+
+          $(baseId).css({
+            top: "0",
+            left: "0",
+            position: "absolute",
+            zIndex: "-1"
+          });
+          $(stretchId).css({
+            top: "0",
+            left: "50%",
+            position: "fixed",
+            zIndex: "-1",
+            overflow: "hidden"
+          });
+          $(stretchImg)
+            .css({
+              top: "0",
+              left: "0",
+              position: "absolute",
+              opacity: "0",
+              visibility: "visible"
+            })
+            .stop()
+            .animate({ opacity: "1" }, fadeSpeed, "linear");
+          selfWH = stretchImg.width() / stretchImg.height();
+
+          function bgAdjust() {
+            var bgWidth = $(window).width(),
+              bgHeight = bgWidth / selfWH;
+
+            if (bgHeight < $(window).height()) {
+              bgHeight = $(window).height();
+              bgWidth = bgHeight * selfWH;
+            }
+            $(stretchId).css({
+              marginLeft: -bgWidth / 2,
+              width: bgWidth,
+              height: bgHeight
+            });
+            $(stretchImg).css({ width: bgWidth, height: bgHeight });
+          }
+          bgAdjust();
+          $(window).bind("load resize", function() {
+            bgAdjust();
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body style="background:#000000;">
+    <div id="head">
+      <h1>
+        <a href="http://www.kanamic.net/"
+          ><img
+            src="../../mock/portal_contents/img/base/KANAMIC_logo.png"
+            alt="株式会社カナミックネットワーク"
+            width="300"
+        /></a>
+      </h1>
+      <p
+        style="width:445px; padding:6px 10px 0 0;"
+        class="f12 fr mb0 unDisplay_Mobile"
+      >
+        ここから先のコンテンツはユーザー用のページとなっておりますので、非ユーザーの方はご利用頂く事が出来ません。システム導入をご希望の方は<a
+          href="https://www.kanamic.net/form/request/input.jsp"
+          target="_blank"
+          >こちら</a
+        >からお問合せいただくか営業担当（TEL：03-5798-3955）までご連絡ください。
+      </p>
+    </div>
+
+    <div id="form">
+      <form class="form-container">
+        <h2>
+          <img
+            src="../../mock/portal_contents/img/base/TRITRUS_logo.png"
+            alt="TRITRUS"
+            width="240"
+          />
+        </h2>
+        <!--<p class="mistake clear">認証に失敗しました。</p>-->
+        <div class="form-area">
+          <p class="fl">ユーザーID</p>
+          <p class="fr">
+            <input class="form-field" type="text" name="account" />
+          </p>
+        </div>
+        <div class="form-area clear">
+          <p class="fl">パスワード</p>
+          <p class="fr">
+            <input class="form-field" type="text" name="password" />
+          </p>
+        </div>
+        <div class="submit-container">
+          <input
+            class="submit-button"
+            type="button"
+            value="ログイン"
+            onclick="location.href='index_2.html'"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="follow">
+      <p class="fl mb30">
+        <a class="button" href="old_design/portal/password_reissue/index.html"
+          ><span class="icon-help"></span>パスワードをお忘れの方はこちら</a
+        >
+      </p>
+      <p>
+        <a class="button" href="old_design/portal/password_reissue/index.html"
+          ><span class="icon-caution"></span>利用アカウントの復旧申請</a
+        >
+      </p>
+    </div>
+    <div id="footer" class="clear">
+      <ul class="company">
+        <li>株式会社　カナミックネットワーク</li>
+        <li>
+          <a href="http://www.kanamic.net/company/outline.html" target="_blank"
+            >会社概要</a
+          >｜<a
+            href="http://www.kanamic.net/company/privacy.html"
+            target="_blank"
+            >プライバシーポリシー</a
+          >｜<a href="../portal/rule/rule.html" target="_blank">利用規約</a>
+        </li>
+      </ul>
+      <div class="mark">
+        <ul class="footerMark">
+          <li>
+            <a
+              href="http://www.cloud-nintei.org/index.html"
+              target="_blank"
+              ><img
+                src="../../mock/portal_contents/img/login/mark_aspsaas.gif"
+                alt="ASP・SaaS安全・信頼性情報開示認定"
+            /></a>
+          </li>
+          <li>
+            <form
+              action="https://www.login.secomtrust.net/customer/customer/pfw/CertificationPage.do"
+              name="CertificationPageForm"
+              method="post"
+              target="_blank"
+            >
+              <input
+                type="image"
+                border="0"
+                name="Sticker"
+                src="../../mock/portal_content/img/login/mark_secom.gif"
+                alt="クリックして証明書の内容をご確認ください。"
+                oncontextmenu="return false;"
+              />
+              <input type="hidden" name="Req_ID" value="9906244188" />
+            </form>
+          </li>
+          <li>
+            <a href="https://www.jipdec.or.jp/" target="_blank"
+              ><img
+                src="../../mock/portal_contents/img/login/mark_pmark.gif"
+                alt="プライバシーマーク"
+                width="84"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="clear txtC pt10">
+        All Rights Reserved. Copyright KANAMIC NETWORK Co.LTD 2000-
+        <script type="text/javascript">
+          myDate = new Date();
+          myYear = myDate.getFullYear();
+          document.write(myYear);
+        </script>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,598 @@
+/*ヘッダー*/
+
+header.topHeader h1 {
+    max-width: 300px;
+    padding: 16px 0 16px 24px;
+}
+
+header.topHeader:after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+    background: -moz-linear-gradient(left, #ed6207 0%, #fbb441 50%, #ed6207 100%);
+    background: -webkit-linear-gradient(left, #ed6207 0%, #fbb441 50%, #ed6207 100%);
+    background: linear-gradient(to right, #ed6207 0%, #fbb441 50%, #ed6207 100%);
+}
+
+/*メイン*/
+body{
+  font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+img {
+    max-width: 100%;
+  display: block;
+}
+.section01{
+	font-size:0;
+}
+h2{
+	font-family: 'ヒラギノ角ゴシック';
+	font-size:28px;
+	color:#E85000;
+
+	padding:30px 0;
+	text-align: center;
+
+	
+}
+h3{
+	font-family: 'Zen Maru Gothic';
+	font-size:26px;
+	text-align: center;
+	margin:0 auto 20px;
+	border-bottom: 6px double #4CB9F6;
+	width:90%;
+}
+h4{
+	color:#00a99d;
+	font-size:28px;
+	text-align: center;
+	margin: 15px 0 25px;
+}
+h5{
+	color:#ffffff;
+	font-size:18px;
+	text-align: center;
+	line-height: 35px;
+	width:250px;
+	margin:0 auto 30px;
+}
+p{margin-bottom: 20px;
+font-size: 16px;
+line-height: 180%;}
+
+.main1 h2{
+
+}
+
+
+.main2 h2{
+
+}
+
+
+.main3 h2{
+
+}
+.main4 h2{
+	padding-left: 90px;
+	background:url("img/icon04.png");
+	background-repeat: no-repeat;
+	background-position: 90px 10px;
+	background-size:70px;
+}
+.main5 h2{
+	padding-left: 90px;
+	background:url("img/icon05.png");
+	background-repeat: no-repeat;
+	background-position: 110px 10px;
+	background-size:70px;
+}
+
+.mw1100 {
+    max-width: 1100px !important;
+    margin: 0 auto;
+}
+.mw1000 {
+    max-width: 1000px !important;
+    margin: 0 auto;
+	padding:60px 0;
+}
+.mw940 {
+    width: 820px !important;
+    margin: 0 auto;
+	padding:60px 0;
+}
+.section01{
+	background-color:#fcb623;
+}
+
+.section02{
+	background:#FFF3B3;
+
+}
+.section03{
+
+	background-color:#ea5413;
+	padding: 30px 10px;
+}
+.section04{
+
+	background-color:#539951;
+	padding: 30px 10px;
+}
+.section05{
+	background:#E9E3C7;
+	 background-image: url(img/bg.png);
+	font-weight: bold;
+}
+.section06{
+
+	background-color:#F4A300;
+	padding: 30px 10px;
+}
+.section07{
+	background:#FFFF95;
+	 background-image: url(img/bg.png);
+}
+.flex-box,.flex-box4{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-box2,.flex-box3,.flex-box5{
+	display:flex;
+	align-items: center flex-start;
+	justify-content:space-between;
+}
+
+.text-box{
+	font-family: 'Zen Maru Gothic';
+	font-size:18px;
+	line-height:30px;
+	color:#ffffff;
+	width:280px;
+	background-color:#00A99D;
+	border-radius: 20px;
+	padding:30px 20px;
+	margin:0 15px;
+}
+.text-box2{
+	font-family: 'Zen Maru Gothic';
+	color:#2f4f4f;
+	width:420px;
+	background-color:#fff462;
+	border-radius: 20px;
+	padding:40px 20px;
+	margin-left:30px;
+}
+.text-box2 ul{
+	width: fit-content;
+    margin: 0 auto;
+}
+.text-box2 ul li{
+	font-size:18px;
+	list-style:disc;
+}
+.text-box3{
+	font-family: 'Zen Maru Gothic';
+	font-size:24px;
+	color:#ffffff;
+	width:650px;
+	background-color:#00A99D;
+	border-radius: 20px;
+	padding:5px 0;
+	margin:0 auto;
+}
+
+.seminar-btn a p{
+	font-family: 'ヒラギノ角ゴシック';
+	color:#ffffff;
+	text-align: center;
+	background: #f7931e;
+	padding: 20px;
+	border-radius: 60px;
+	width: 600px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 24px;
+	box-shadow: 1px 3px 0px 0 #D44907;
+}
+
+.seminar-btn a p:hover{background: #F85622;
+transition: .2s linear;}
+
+.point-box{
+	font-family: 'ヒラギノ角ゴシック';
+	font-size:16px;
+	/*width:250px;*/
+}
+.point-box img{
+	width:283px;
+	height:218px;
+}
+
+.point-box span{
+	background:linear-gradient(transparent 60%, rgba(255,244,98,0.70) 60%);
+}
+
+.triangle{
+	margin:0 auto 20px;
+	border-top: 40px solid #00A99D;
+  border-left: 60px solid transparent; 
+  border-right: 60px solid transparent; 
+  height: 0;
+  width: 0;
+}
+.product-box{
+	/*width:400px;*/
+	width:90%;
+	font-family: 'Zen Maru Gothic';
+	background-color:#ffffff;
+	border-radius: 20px;
+	box-shadow: 2px 2px 7px #a9a9a9;
+	padding:30px;
+	margin:0 auto;
+}
+.product-box p{
+	font-size:16px;
+	line-height:30px;
+}
+.product-box span{
+	padding: 0.25em 0.5em;
+	color: #494949;
+	background: transparent;
+	border-left: solid 5px #7db4e6;
+}
+.product-box-txt{
+	width:50%;
+	padding:0 15px;
+}
+
+
+.product-btn{
+	font-family: 'Zen Maru Gothic';
+	background:#4682b4;
+	text-align:center;
+	width:330px;
+	margin:40px auto 20px;
+	border-radius: 30px;
+	transition: 0.6s;
+}
+.product-btn a{
+	display:block;
+	font-size:18px;
+	color:#ffffff;
+	padding:12px 0;
+}
+.product-btn:hover{
+	background:#7BA7CB;
+}
+
+#seminar{
+	text-align: center;
+}
+.seminar-box{
+	padding:30px 40px;
+	box-shadow: 2px 2px 7px #a9a9a9;
+	background-color:#ffffff;
+	border-radius: 20px;
+}
+/*.seminar-box .product-btn{
+	width:60%;
+	margin:0 auto;
+}
+.seminar-box .product-btn a{
+	font-size:20px;
+	padding:15px 0;
+}*/
+
+.form-btn{
+	font-family: 'Zen Maru Gothic';
+	background:#ffa500;
+	text-align:center;
+	width:70%;
+	margin:0 auto;
+	border-radius: 30px;
+	transition: 0.6s;
+	margin-top: 40px;
+}
+.form-btn a{
+	display:block;
+	font-size:20px;
+	color:#ffffff;
+	padding:15px 0;
+}
+.form-btn:hover{
+	background:#FB7D00;
+}
+.form-btn2{
+	font-family: 'Zen Maru Gothic';
+	background:#FF7200;
+	text-align:center;
+	width:80%;
+	margin:0 auto;
+	border-radius: 40px;
+	transition: 0.6s;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.form-btn2 a{
+	display:block;
+	font-size:26px;
+	color:#ffffff;
+	padding:20px 0;
+}
+.form-btn2:hover{
+	background:#DE4700;
+}
+
+.seminar-box img{
+	width:100%;
+}
+
+.company-info{
+	border-top:1px dotted #333;
+	padding-top:20px;
+}
+.circle {
+    display: inline-grid;
+    color: #fff;
+    background-color: #F15816;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+	font-size: 22px;
+	clear: both;
+	float: left;
+	margin-bottom: 50px;
+	position: relative;
+	top:-60px;
+	left: 60px;
+
+}
+.shikaku{
+	float: left;
+	background: #ffffff;
+padding: 40px 20px 20px 80px;
+border: #D3620E 3px solid;
+border-radius: 30px;
+	width: 75%;
+
+}
+.img_c{
+margin-left: 20px;
+	border: #AE7B3A 1px solid;
+}
+.syou{position: relative;
+	left: -30px;}
+.pt100{padding-top: 100px;}
+@media only screen and (max-width: 1000px) {
+.mw1000{
+	width:96%!important;
+	}
+
+}
+@media only screen and (max-width: 960px) {
+.mw940{
+	width:90%!important;
+	}
+.circle {
+	left: 30px;
+}
+.shikaku{
+	width: 70%;
+}
+}
+
+@media only screen and (max-width: 920px) {
+	.flex-box3{
+		flex-direction: column;
+		align-items: center;
+	}
+.form-btn2{
+	width:90%;
+}
+.form-btn2 a{
+	font-size:22px;
+	padding:15px 0;
+}
+
+}
+
+@media only screen and (max-width: 880px) {
+/*	h2{
+	margin:0 0 60px;
+	}*/
+	.flex-box2{
+		flex-direction: column;
+		align-items: center;
+		margin-bottom:0!important;
+	}
+	.flex-box{
+		flex-direction: column;
+	}
+	.flex-box4:first-child{
+		margin-bottom: 30px;
+	}
+	.text-box2{
+		margin-bottom:20px;
+	}
+	.text-box3{
+		width:80%;
+		padding:15px;
+	}
+	.product-box-txt{
+	width:100%;
+	}
+	
+	.main1 h2{
+	background-position: 10px 10px;
+}
+.main2 h2{
+	background-position: 110px 10px;
+}
+.main3 h2{
+	background-position: 120px 10px;
+}
+.main4 h2{
+	background-position: 70px 10px;
+}
+.main5 h2{
+	background-position: 100px 10px;
+}
+.form-btn{
+
+	width:90%;
+
+}
+	.img_c{
+	margin-top: 20px;}
+}
+
+@media only screen and (max-width: 810px) {
+	.main1 h2{
+	background-position: 0px 10px;
+}
+	.main2 h2{
+	background-position: 70px 10px;
+}
+	.main3 h2{
+	background-position: 80px 10px;
+}
+	.main4 h2{
+	background-position: 40px 10px;
+}
+	.main5 h2{
+	background-position: 60px 10px;
+}
+	
+}
+
+@media only screen and (max-width: 730px) {
+	.main2 h2{
+	background-position: 30px 10px;
+}
+	.main3 h2{
+	background-position: 40px 10px;
+}
+	.main4 h2{
+	background-position: 10px 10px;
+}
+	.main5 h2{
+	background-position: 20px 10px;
+}
+	
+}
+
+
+@media only screen and (max-width: 679px) {
+	.flex-box5{
+		flex-direction: column;
+		align-items: center;
+		margin-bottom:40px!important;
+	}
+	.flex-box5{
+		width:100%!important;
+	}
+	.point-box img{
+		margin-bottom:15px;
+	}
+	.point-box p{
+		margin-left:0!important;
+	}
+	
+/*	.main1 h2{
+	padding-left:70px;
+}
+	.main2 h2,.main3 h2,.main4 h2,.main5 h2{
+	padding-left:70px;
+	background-position: 0px 10px;
+}*/
+	
+	.seminar-btn a p,.form-btn{
+		width:100%;	
+	}
+	.seminar-box img{
+		width:100%;
+	}
+	.seminar-box .product-btn{
+		width:100%;
+	}
+	.product-box{
+		width:100%;
+	}
+	.text-box2{
+		width:100%;
+		margin:20px 40px;
+		padding:40px;
+	}
+.circle {
+	left: 20px;
+	    width: 140px;
+    height: 140px;
+	font-size: 18px;
+}
+.shikaku{
+	width: 70%;
+	padding-left: 30px;
+	margin-bottom: 80px;
+}	
+.img_d{
+width: 100%;}
+
+}
+
+
+
+
+@media only screen and (max-width: 530px) {
+	.mw940{width: 96%!important;}
+.circle {
+	left: 10px;
+	    width: 150px;
+    height: 150px;
+	font-size: 18px;
+	
+    display: inline-grid;
+    color: #fff;
+
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+
+	margin-bottom: 0;
+	top:40px;
+	
+}
+.shikaku{
+	width: 100%;
+	padding-left: 30px;
+	margin-bottom: 0!important;
+}
+.pt100{padding-top: 10px;}
+}
+.mbb1{margin-bottom: 60px!important;}
+@media only screen and (max-width: 414px) {
+	.main1 h2,.main2 h2,.main3 h2,.main4 h2,.main5 h2{
+		background-size: 60px;
+		font-size:20px;
+		background-position: 0px 30px;
+	}
+	.flex-box4 img{
+		display:none;
+	}
+	.flex-box5{
+		margin-bottom:60px!important;
+	}
+	h5{
+		width:80%;
+	}
+	.product-btn{
+		width:90%;
+	}
+}

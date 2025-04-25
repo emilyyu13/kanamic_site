@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+  <!-- アイコン CSS -->
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <!-- アニメーション CSS -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+  <!-- 調整用 CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="../../ja/zoom/js/common.js"></script>
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script> -->
+
+  <!--
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+            //disableOnInteraction: true
+          //},
+          on: {
+            slideChange: function () {
+              jQuery('.swiper-slide-content').css('opacity', '0');
+              realIndex = this.realIndex + 1;
+              jQuery('.swiper-slide-content-' + realIndex).css('opacity', '1');
+            },
+          },
+        });
+      });
+    </script>
+-->
+
+  <script type="text/javascript">
+    $(function () {
+      if (window.matchMedia("(max-width: 414px)").matches) {
+        //スマホ処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6800) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else if (window.matchMedia("(max-width:813px)").matches) {
+        //タブレット処理
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 5300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      } else {
+        var topBtn = $("div.container-fluid.entry");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() < 6300) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 一旦hide()で隠してフェードインさせる
+      $("div.container-fluid.slide").hide().fadeIn("slow");
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+
+  <title>利用規約|株式会社カナミックネットワーク</title>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar" data-offset="100">
+  <div class="container-fluid header">
+    <div class="nav_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/KANAMIC_logo_cr.png" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="zoom.html">Zoom連携方法</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">利用規約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">お問合せ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">プライバシーポリシー</a>
+            </li>
+            <li class="nav-item corptop">
+              <a class="nav-link" href="https://www.kanamic.net/" data-target="#top">コーポレートサイトへ</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid slide clearfix">
+    <div class="h1area">
+      <div class="langarea">
+        <div class="langselect cp_sl01">
+          <select required>
+            <option value="" hidden>language</option>
+            <option value="1" selected>Japanese</option>
+            <option value="2">English</option>
+          </select>
+        </div>
+      </div>
+      <h1>カナミッククラウドZoom連携サービス利用規約 Terms of Use for the Kanamic Cloud Service for Zoom </h1>
+    </div>
+    <div class="main">
+      <h3>第１条（目的）Article 1 (Purpose)</h3>
+      <p>
+        本利用規約は、株式会社カナミックネットワークが提供するカナミッククラウドサービス上でのZoom連携アプリケーションの利用に関し、これを利用する医療・介護サービス提供事業者および本人・ご家族等に適用される利用条件その他の事項を定めることを目的とします。The
+        purpose of these Terms of Use is to set forth the conditions of use and other matters applicable to medical /
+        long-term care service providers, individuals, and family members who use the application for ZOOM integration
+        on the &ldquo;Kanamic Cloud Service&rdquo; provided by Kanamic Network Co., LTD. </p>
+      <h3>第２条（定義） Article 2 (Definitions)<br></h3>
+      <p> 「当社」とは、本システムを提供する株式会社カナミックネットワークをいいます。 &ldquo;The Company&rdquo; refers to Kanamic Network Co., LTD. (the
+        provider of the system) <br>
+        「本システム」とは、株式会社カナミックネットワークが提供するカナミッククラウドサービスをいいます。 &ldquo;The system&rdquo; refers to the &ldquo;Kanamic Cloud
+        Service&rdquo; provided by Kanamic Network Co., LTD.<br>
+        「システム利用者」とは、本システムを使用する、<a name="_Hlk65507428">医療・介護サービス提供事業者</a> <strong>および本人・ご家族等</strong>をいいます。 <br>
+        &ldquo;System user&rdquo; refers to medical / long-term care service providers, individuals, and family members
+        who use the system</p>
+      <h3>第3条（本利用規約への同意） Article 3 (Consent to these Terms of Use) <br></h3>
+      <p> システム利用者は、本利用規約の定めに従って本システムを利用しなければならず、本利用規約の内容を十分に理解した上で、本利用規約に同意しない限り、本システムを利用できません。The system user must use
+        the system in accordance with the provisions of these Terms of Use, and may not use the system unless he / she
+        fully understands and agrees to these Terms of Use.</p>
+      <p>２ システム利用者は、実際に本システムの利用を開始した場合には、本利用規約の内容を十分に理解した上で、本利用規約に同意したものとみなされます。When the system user actually starts
+        using the system, he / she is considered to have fully understood and agreed to these Terms of Use. </p>
+      <h3>第4条（本システム利用開始および利用）Article 4 (Initiation / use of the system)<br></h3>
+      <p> 本サービスの利用を希望する者は、本規約を承認したうえで、当社が別途指定する手続きに従って、本サービスの利用を申し込み、当社がこれに承諾を行った時点でシステム利用者となるものとします。 Those who wish to
+        use the service shall consent to these Terms of Use and apply (according to procedures separately specified by
+        the Company) to use the service. The applicant shall be considered a system user the moment that the Company
+        grants approval. </p>
+      <p> ２ 本システムの利用に際し、システム利用者に関わる登録内容及び登録後の変更内容は当社に提供しなければなりません。 To use the system, system users must provide
+        registration information and any subsequent changes thereof to the Company.  </p>
+      <p> ３ システム利用者は、ログインID及びパスワードの管理責任を負うものとします。System users shall take responsibility for maintaining the
+        confidentiality of their own user IDs and corresponding passwords.</p>
+      <h3>第5条（本システム等に関する知的財産権等）Article 5 (Intellectual property, etc. related to the system) <br></h3>
+      <p>
+        当社がシステム利用者に提供する一切のサービス、プログラムおよび各種著作物（本利用規約および利用手順書等を含みます。以下同じ。）に関する著作権および著作者人格権、商標権その他の知的財産権ならびにノウハウ等その他の知的財産に係る権利は、全て当社に帰属します。All
+        rights (including copyrights, moral rights, trademark rights, other intellectual property rights, and other
+        rights related to know-how / intellectual property, etc.) related to services, programs, and copyrighted works
+        provided by the Company to system users (including these Terms of Use and the usage manual, etc.) belong to the
+        Company.</p>
+      <p> ２ システム利用者は、本システムの利用に際し、当社がシステム利用者に提供する一切のサービス、プログラムおよび各種著作物を次の各号のとおり取り扱うものとします。 When using the system, system
+        users shall handle all services, programs and copyrighted works provided by the Company to system users in
+        accordance with the following:</p>
+      <ol class="list3em">
+        <li>(1) 本利用規約に従った本システムの適正な利用のためにのみ使用すること。Use is permitted only for the proper use of the system in accordance
+          with
+          these Terms of Use.</li>
+        <li>(2) 複製、改変、編集、頒布等を行わず、また、リバースエンジニアリングを行わないこと。Copying, modifying, editing, distributing, reverse engineering,
+          etc.
+          are prohibited.</li>
+        <li>(3) 営利目的の有無にかかわらず、第三者に貸与、譲渡若しくは承継し、又は担保の設定をしないこと。 Irrespective of whether for commercial purposes, all of
+          the
+          following are prohibited: loaning, transferring, and offering as collateral to third parties.</li>
+        <li>(4) 当社が指定する者が表示した著作権表示または商標権表示を削除又は変更しないこと。Deletion or modification of copyright notices or trademark
+          notices
+          placed by designees of the Company is prohibited.</li>
+      </ol>
+      <h3>第6条（利用可能時間及び利用の停止等） Article 6 (Operating hours and suspension of operation, etc.)<br></h3>
+      <p> 本システムの利用可能時間は、原則として24時間365日とします。ただし、管理システムの運転状況および定期メンテナンス等により、本システムの一部の機能の提供ができない場合があります。 In general, this
+        system can be used 24 hours a day, 365 days a year. However, some functions of this system may be unavailable at
+        certain times depending on the operating status of the management system and on regular maintenance.</p>
+      <p>２ 当社は、次の各号のいずれかに該当すると認められる場合は、システム利用者に対し、事前に通知することなく本システムの利用の停止、休止または中断をさせることができるものとします。The Company reserves
+        the
+        right<a name="_Hlk65994660"> to suspend, pause, or halt use of the system</a> in the event of the occurrence of
+        any of the following:</p>
+      <ol class="list3em">
+        <li>(1) 本システムの運用機器等のメンテナンスが予定される場合 planned maintenance of the operating system </li>
+        <li>(2) 電気通信事業者の役務が提供されない場合 failure of telecommunications operator to provide service</li>
+        <li>(3) 天災、事変その他の非常事態が発生した場合または本システムの運用に係る重大な障害が発生した場合 natural disaster, incident, or other emergency; OR a
+          serious
+          failure related to the operation of the system </li>
+        <li>(4) 法令またはこれに基づく措置により、本システムの運用が不可能となった場合laws / regulations (or measures taken thereunder) that render
+          operation
+          of the system impossible</li>
+        <li>(5) その他、当社において、本システムの利用の停止、休止または中断が必要と判断した場合 a determination is made by the Company that it is necessary to
+          suspend, pause, or halt use of the system</li>
+        <li>(6) システム利用者が契約している介護サービス事業者が当社の提供するカナミッククラウドサービスを解約もしくはシステム停止等の処置ならびに介護事業者が事業撤退等を行った場合 The long-term care
+          service provider (with whom the system user has a contractual relationship) cancels usage of the
+          Company&rsquo;s &ldquo;Kanamic Cloud Service&rdquo; or takes measures such as suspending use of the system; OR
+          the long-term care provider withdraws from the industry, etc. </li>
+      </ol>
+      <p>３ 当社は、本システムの利用が著しく集中した場合には、本システムの利用を制限することができるものとします。 The Company reserves the right to impose restrictions on
+        usage of the system when usage of the system becomes considerably overconcentrated.  </p>
+      <h3>第7条（禁止事項及び遵守事項） Article 7 (Prohibited acts and compliance items) <br></h3>
+      <p> システム利用者は、本システムの利用に当たり、次の各号に掲げる行為を行ってはなりません。 When using the system, the system user is prohibited from
+        performing
+        any of the following acts:</p>
+      <ol class="list3em">
+        <li>(1) 本システムを本来の目的以外の目的で利用すること。 Use of the system for unintended purposes</li>
+        <li>(2) 不正アクセス行為、本システムのサーバーやネットワークシステムに支障を与える行為、本システムを不正に操作する行為、本システムの不具合を意図的に利用する行為をすること。 Unauthorized access,
+          interference with the system&rsquo;s server / network-system, unauthorized manipulation of the system, or
+          intentional exploitation of system defects </li>
+        <li>(3)
+          類似または同様の問い合わせを必要以上に繰り返す行為、提供者に対し不当な要求をする行為、その他の提供者による本システムの適正な管理および運用ならびに第三者による本システムの利用を妨害し、これらに支障を与える行為をすること。Repeatedly
+          making similar or identical inquiries unnecessarily, making unreasonable requests of the system provider,
+          interfering with / obstructing the proper management and operation of the system, or interfering with /
+          obstructing use of the system by third parties</li>
+        <li>(4) 本システムに対し、ウイルス・マルウェア等に感染したファイルを故意に送信すること。Deliberately uploading files infected with viruses (or malware,
+          etc.) to the system.</li>
+        <li>(5) 法令若しくは公序良俗に違反する行為またはそのおそれがある行為、反社会的勢力に対する利益供与その他の協力行為、提供者又は第三者になりすます行為、意図的に虚偽の情報を流布させる行為をすること。Committing
+          acts that violate or risk violating laws, regulations, or socially-accepted norms / morals; Cooperating with
+          or supplying benefit to an &quot;antisocial force&quot; (criminal organization/individual, terrorist
+          organization, etc.); Impersonating the provider or a third party; or Intentionally effecting the dissemination
+          of false information</li>
+        <li>(6) 第三者の個人情報、利用情報等を不正に収集、開示または提供する行為をすること。Unauthorizedly collecting, disclosing, or providing personal
+          information (or usage information, etc.) of a third party</li>
+        <li>(7) その他、本システムの適正な運用に支障を及ぼす行為またはそのおそれがある行為であると当社が判断する行為をすること。 Committing other acts that the Company deems to
+          be
+          obstructive or potentially obstructive to the proper operation of the system</li>
+        <li>(8) 他のシステム利用者、第三者もしくは当社の著作権又はその他の権利を侵害する行為、及び侵害するおそれのある行為をすること。Committing acts that will or may infringe
+          upon
+          the rights (including copyrights) of other system users, third parties, or the Company</li>
+        <li>(9) 他のシステム利用者、第三者もしくは当社の財産又はプライバシーを侵害する行為、及び侵害するおそれのある行為をすること。 Committing acts that will or may infringe
+          upon
+          the assets or privacy of <a name="_Hlk66012226">other system users, third parties, or the Company</a></li>
+        <li>(10) 上記（8）（9）の他、他のシステム利用者、第三者もしくは当社に不利益又は損害を与える行為、及び与えるおそれのある行為をすること。Committing acts, not listed in (8) or
+          (9)
+          above, that will or may cause detriment or damage to other system users, third parties, or the Company </li>
+        <li>(11) 他のシステム利用者、第三者もしくは当社を誹謗中傷する行為をすること。Committing acts that defame other system users, third parties, or the
+          Company</li>
+        <li>(12) 犯罪的行為、又は犯罪的行為に結び付く行為、もしくはそのおそれのある行為をすること。Committing criminal (or potentially criminal) acts; or
+          committing
+          acts that will or may lead to a crime being committed. </li>
+      </ol>
+      <p>２ 当社は、システム利用者が前項各号のいずれかに該当する行為を行った場合または行うおそれがあると認められた場合は、事前に通知することなく、当該システム利用者による本システムの利用を停止させることができるものとします。If
+        the system user is judged to have performed or is deemed likely to perform any of the acts listed above, the
+        Company shall have the right to suspend the system user&rsquo;s use of the system without prior notice.</p>
+      <p>３ システム利用者は、本システムの利用に当たり、以下の事項を遵守するものとします。The system user shall comply with the following conditions when using
+        the system.</p>
+      <ol class="list3em">
+        <li>(1) 本システムで取得したデータ等をスマートフォン等へ保存する場合、最善の注意を図るとともにデータ等の管理はシステム利用者が自ら責任を以て行うこと。When saving data acquired via the
+          system to a smartphone, etc., the user shall take the upmost precautions. Furthermore, managing the data shall
+          be the sole responsibility of the user.</li>
+        <li>(2) 本システムで取得したデータ等を保存したスマートフォン等を第三者に譲渡、承継もしくは貸与し、または破棄する場合は、あらかじめ本システムログインアカウントを削除するとともにデータ等も削除すること。Prior to
+          loaning, transferring, or destroying a smartphone, etc. that was used to store data acquired through the
+          system, the system login account as well as data shall be deleted.</li>
+      </ol>
+      <p>４ システム利用者が本システムの利用に関連して当社に損害を及ぼした場合、当社に生じた一切の損害を賠償しなければなりません。 If the system user causes damage to the Company
+        in connection with usage of the system, the system user shall be obliged to compensate the Company for the full
+        amount of damages.</p>
+      <h3>第8条（システム利用者の設備等） Article 8 (System user equipment, etc.) <br></h3>
+      <p>
+        システム利用者は、本サービスを利用するために必要なすべての機器およびソフトウェア（スマートフォン端末等および通信手段に係るすべてのものを含みます）を自己の負担において準備するものとします。その際、必要な手続は、システム利用者が自己の責任で行うものとします。The
+        system user shall acquire/prepare all devices and software necessary for using the service at the system
+        user&rsquo;s own expense (this includes smartphones and all communications related items). All necessary
+        procedures for acquiring/preparing these items shall be taken at the system user&rsquo;s own risk.</p>
+      <p>２ 本システムを利用するために必要な通信費用その他本システムの利用に係る一切の費用は、システム利用者の負担とします。All cost (including communications costs) required to
+        use the system shall be borne solely by the system user.</p>
+      <p>３ システム利用者が未成年者である場合は、当該システム利用者は、親権者その他の法定代理人が本システムの利用に同意した上で、自らに対してその使用を認めたスマートフォン端末等を使用して、本システムを利用するものとします。If
+        the system user is a minor, the system user shall, upon obtaining the consent of his / her parent or other legal
+        guardian, use the system on a smartphone, etc. of his / her own designation. </p>
+      <h3>第9条（個人情報の取得および利用目的） Article 9 (Collection of personal information and purpose of use thereof) <br></h3>
+      <p> 本システム利用によるシステム利用者に係る個人情報を次の利用目的の達成に必要な範囲内で、適法かつ適正な手段により取得し、利用することがあります。Personal information related to system
+        users may, through the use of the system, be acquired and used by legal and appropriate means within the scope
+        necessary to achieve the following purposes of use:  </p>
+      <ol class="list3em">
+        <li>(1) 介護サービス事業者のサービス品質の向上および当社が提供する各種サービス向上ならびに新たな取り組みを行うため To improve the service quality of long-term care
+          service providers, to improve the quality of various services provided by the company, and in pursuance of new
+          endeavors </li>
+        <li>(2) 介護サービス事業者からの問い合わせ等に対処する際のシステム利用者の状況を把握するため To assess the status of system users when responding to
+          inquiries
+          from long-term care service providers</li>
+        <li>(3) 内閣府ならびに厚生労働省等の国の事業に参画するため To participate in national projects such as those conducted by the Cabinet
+          Office
+          or the Ministry of Health, Labor and Welfare. </li>
+        <li>(4) 科学的介護実現に向けた取り組みを行うため To make efforts toward the realization of scientific nursing care</li>
+        <li>(5) その他、介護サービス事業者ならびにシステム利用者との取引を適切かつ円滑に履行するため To properly and smoothly carry out transactions with
+          long-term
+          care service providers and system users</li>
+        <li>(6) 匿名加工情報（法令に定める措置を講じて特定の個人を識別することができないように個人情報を加工して得られる個人に関する情報であって、当該個人情報を復元することができないようにしたもの）を第三者へ提供するため
+          To
+          provide anonymized information to a third party (anonymized information is information about an individual
+          obtained by processing personal information, in accordance with laws/regulations, in such a way as to render
+          impossible the identification of specific individuals and to render impossible the restoration of the
+          underlying personal information). </li>
+      </ol>
+      <p>２
+        本システム利用によるシステム利用者に係る個人情報を前項以外の利用目的で利用する必要が生じた場合には、次のいずれかに該当する場合を除き、事前にシステム利用者へ利用目的をご連絡し、システム利用者の同意を得た上で、利用いたします。In
+        cases where we seek to use personal information for a purpose which goes beyond the scope of use described
+        above, the Company will notify the system user in advance and proceed only with the consent of the system user.
+        However, the company may act without prior consent under any of the following circumstances: </p>
+      <ol class="list3em">
+        <li>(1) 人の生命、身体または財産の保護のために必要がある場合であって、システム利用者の同意を得ることが困難であるときWhere necessary for the protection of the life,
+          body,
+          or property of a person but it is difficult to obtain prior consent</li>
+        <li>(2) 公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、システム利用者の同意を得ることが困難であるときWhere necessary in order to improve public
+          health or to promote the healthy upbringing of children but it is difficult to obtain prior consent</li>
+        <li>(3)
+          国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、システム利用者の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるときWhere
+          it is necessary to cooperate with national or municipal governments or public organizations or parties
+          entrusted by national or municipal governments or public organizations in performing their legal duties, and
+          where it is feared that obtaining prior consent might obstruct the execution of the said duties.</li>
+        <li>(4) 法令に基づく場合Where required by laws or regulations</li>
+      </ol>
+      <p>3 当社は、法令で定める場合を除き、個人データを第三者に提供した場合には当該提供に関する事項（いつ、どのような提供先に、どのような個人データを提供したか等）について記録します。Unless prohibited from
+        doing so by relevant laws and regulations, whenever the Company discloses personal data to a third party, the
+        Company will create a record of the disclosure (including date, type of recipient, type of personal data
+        provided, etc.) </p>
+      <h3>第10条（個人データの第三者提供） Article 10 (Provision of personal data to third parties) <br></h3>
+      <p> 当社は、予めシステム利用者の同意をいただいている場合および法令等（<a
+          name="_Hlk66033219">個人情報保護法および関係諸法令（各ガイドラインを含みます）</a>を含みます）により認められている場合を除き、システム利用者の個人情報を第三者（外国にある第三者を含む）に提供することはいたしません。We
+        will not provide personal information about system users to third parties (including foreign third parties)
+        without the advance consent of the system user unless required to do so by the Act on the Protection of Personal
+        Information or other relevant laws, regulations, or guidelines. </p>
+      <h3>第11条（匿名加工情報） Article 11 (Anonymized information) <br></h3>
+      <p>
+        当社は、匿名加工情報（法令に定める措置を講じて特定の個人を識別することができないように個人情報を加工して得られる個人に関する情報であって、当該個人情報を復元することができないようにしたもの）を作成する場合には、以下の対応を行います。
+        When the Company creates anonymized information (information about an individual obtained by processing personal
+        information, in accordance with laws/regulations, in such a way as to render impossible the identification of
+        specific individuals and to render impossible the restoration of the underlying personal information), the
+        company adopts the following measures: </p>
+      <ol class="list3em">
+        <li>(1) 法令で定める基準に従って、適正な加工を施すこと Appropriately processing the data in accordance with the criteria specified by
+          relevant laws and regulations</li>
+        <li>(2) 法令で定める基準に従って、削除した情報や加工の方法に関する情報の漏えいを防止するために安全管理措置を講じることAdopting (in accordance with the standards
+          stipulated
+          by law) safety control measures to prevent leaks related to deleted data or processing methods </li>
+        <li>(3) 作成した匿名加工情報に含まれる情報の項目を公表すること Publicizing the information items included in the anonymized information
+        </li>
+        <li>(4) 作成の元となった個人情報の本人を識別するための行為をしないことRefraining from acts which would identify the subject of the underlying
+          personal information used to create the anonymized information</li>
+      </ol>
+      <p>２
+        当社が、匿名加工情報（個人情報保護法第2条第9項に定める匿名加工情報をいいます）を提供するときは、法令等に基づく適切な加工を行った上で、安全管理措置を講じ、当該匿名加工情報に含まれる個人情報の項目および提供方法を公表いたします。When
+        the Company provides anonymized information (meaning &ldquo;anonymized information&rdquo; as stipulated in
+        Article 2, Paragraph 9 of the Act on the Protection of Personal Information), the Company will appropriately
+        process the data in accordance with the criteria specified by relevant laws and regulations. Furthermore, the
+        Company will adopt safety/control protocols. The Company will also publicize the personal information items
+        included in the anonymized data as well as the method of providing the data. </p>
+      <h3>第12条（個人データの安全管理措置） Article 12 (safety/control protocols for personal data) <br></h3>
+      <p>当社は、取扱う個人データの漏洩、滅失または毀損の防止、その他個人データの安全管理のため、取扱規程等の整備および安全管理措置に係る実施体制の整備等、十分なセキュリティ対策を講じます。 The Company shall
+        strive to prevent leaks, loss, or damage of personal data. Furthermore, the Company shall establish relevant
+        rules, a framework for implementing safety/control protocols, and adequate security measures. </p>
+      <h3>第13条（個人データの開示、訂正等請求） Article 13 (Requesting disclosure/amendments, etc. of personal data) <br></h3>
+      <p>
+        個人情報保護法に基づく保有個人データに関する事項の通知、開示、訂正等、利用停止等に関するご請求については、当社お問い合わせ窓口までご連絡ください。その際、ご請求者がご本人であることを確認させていただくとともに、当社所定の書式にご記入いただいたうえで手続を行い、後日、原則として書面で回答いたします。また、開示請求については、回答にあたり、当社所定の手数料をいただきます。必要な調査を行った結果、ご本人に関する情報が不正確である場合は、その結果に基づいて正確なものに変更させていただきます。　For
+        requests regarding notification, disclosure, correction, and suspension of use of retained personal data under
+        the Act on Personal Information Protection, please contact the Company. The Company will confirm that the
+        requester is the subject of the information. Following this, the requester will complete a written request in
+        the format prescribed by the Company and perform the relevant procedures. Subsequently, the Company will, in
+        general, respond in writing on a later date. In addition, the Company will charge a fee (specified by the
+        Company) upon responding to disclosure requests. If the Company finds, as a result of conducting the necessary
+        investigation, that information about the individual is inaccurate, the Company will amend the information
+        accordingly. </p>
+      <h3>第14条（免責事項） Article 14 (Disclaimers) <br></h3>
+      <p>
+        当社は、本システムを利用すること（利用に際してウイルス・マルウェア等に感染等したことその他理由の如何を問いません。）または利用できないこと（本システムの利用の停止、休止、中断もしくは制限、本システムの動作不良または通信回線の障害その他理由の如何を問いません）その他本システムに起因または関連してシステム利用者または第三者が被った損害について一切の責任を負わないものとします。但し、当社が自らの故意または重大な過失によりかかる損害の全部または一部を生じさせたものである場合は、かかる損害の当該全部または一部については、この限りではありません。
+        <br>
+        The Company shall not be liable for any damages incurred by the system user or a third party due to or in
+        connection with the system (even in the case of system malfunction, communication line failure, or other
+        reasons). This applies to damages incurred as a result of using the system (regardless of the reason for using
+        the system and including usage resulting from virus infection or malware); and this also applies to damages
+        incurred as a result of an inability to use the system (regardless of whether use of the system was suspended,
+        paused, interrupted, or restricted and regardless of whether the system malfunctioned, a communication line
+        failed, or the presence of any other causative factor). However, if the Company has caused all or part of the
+        damage through its own volition or gross negligence, the forgoing may be inapplicable to all or part of the
+        damage.
+      </p>
+      <p>２ 本システム利用にあたり、IDおよびパスワードをウェブサイトおよび本システムに登録されている場合には、これらの管理に十分ご注意ください。これらの不正使用による損害については、当社は一切の責任を負いません。 System
+        users who register their ID and password (on the website or the system) should take care in managing these. The
+        Company shall take absolutely no responsibility for any damages caused by unauthorized use of IDs/passwords.<br>
+      <p>３ システム利用者は、アップロードした情報又はファイルについて生じたすべての法的な責任を負うものとします。The system user shall bare responsibility for all legal
+        liability arising from information or files uploaded by the system user.</p>
+      <p>４
+        システム利用者が本システムの利用に伴い、第三者に対して損害を与え、又は第三者からクレーム等の連絡を受けた場合、自己の責任と費用において処理、解決するものとします。当社が、システム利用者による本システムの利用に伴い、第三者からクレームその他の連絡又は損害賠償の請求等を受けた場合も同様とします。If
+        the system user causes damage to a third party or receives a complaint from a third party due to the use of the
+        system, the matter shall be addressed and resolved at the system user&rsquo;s own risk and expense. The same
+        shall apply when the Company receives a complaint or claim for damages from a third party in connection with the
+        use of the system by the system user.</p>
+      <p>５ 当社は、本システムの内容、及びシステム利用者、又は第三者が本システムを通じて得る情報等の完全性等については、いかなる保証も行わないものとします。The Company does not make any
+        guarantee about the contents of the system. Also, the company does not make any guarantee about the completeness
+        of information, etc. obtained by system users or third parties through the system.</p>
+      <p>６ 当社以外の第三者が本システム上に提供する情報について、当社はいかなる責任も負わないものとします。The Company shall not be liable for information provided on
+        this system by any third party other than the Company.</p>
+      <p>７
+        本サービス利用により提供される領収証等の電磁的記録（以下「領収証等」といいます。）が各種法令の規定に適合することを保証するものではありません。また、本サービス上に領収証等が法定された保存期間保管されることを保証するものではありません。各種法令にて求められる領収証等の保管については、システム利用者の責任において行うものとします。The
+        Company does not guarantee that electronic records, such as receipts, obtained through using this service
+        (hereinafter referred to as &quot;receipts, etc.&quot;) comply with the provisions of relevant laws and
+        regulations. Furthermore, we do not guarantee that receipts, etc. will be stored on this service for the
+        statutory storage period. It is the responsibility of the system user to store receipts, etc. as required by
+        relevant laws and regulations.</p>
+      <p>８ 本サービスはZoomアプリケーション起動を補助するためのサービスです。Zoomアプリケーション起動後のシステム停止等に関して当社は一切の責任を負いません。This service is a service to
+        assist with the startup of the Zoom application. The Company is not responsible for any system interruptions
+        occurring after the Zoom application has started.</p>
+      <h3>第15条（システムの利用中止） Article 15 (Discontinuation of use of the system)<br></h3>
+      <p> 本システムは介護サービス事業者からの委託によるシステム提供のため、システム利用者の申請によりシステムの利用中止を行うことはできません。Since the system is being provided as a
+        result of entrustment from the long-term care service provider, use of the system cannot be discontinued at the
+        request of the system user.<br>
+      </p>
+      <h3>第16条（本利用規約の変更） Article 16 (Changes to these Terms of Use)<br></h3>
+      <p>当社は、必要があると認めるときは、システム利用者に対し事前に通知を行うことなく、いつでも本利用規約を変更することができるものとします。ただし、個人情報の利用目的はこの限りではありません。 The Company
+        reserves the right to change these Terms of Use at any time it deems necessary and without providing prior
+        notice to system users. However, the foregoing, may be inapplicable to changes regarding the purposes of use of
+        personal information.</p>
+      <p>２
+        前項に規定する変更後の本利用規約の掲載後に、システム利用者が本システムを実際に利用した場合には、当該利用の時点で、システム利用者は変更後の本利用規約の内容を十分に理解した上で、変更後の本利用規約に同意したものとみなされます。
+        Following a change to these terms of use (as prescribed above), the moment that system users use the system,
+        they are deemed to fully understands the contents of the (changed) Terms of Use and to have agreed to the
+        (changed) Terms of Use.
+      </p>
+      <h3>第17条（譲渡等禁止） Article 17 (Prohibition of transfer)  <br></h3>
+      <p>本システムの利用権は、第三者に譲渡、貸与、承継、相続又は担保として提供することはできません。 System use privileges cannot be transferred, loaned, inherited,
+        or offered as collateral to third parties.<br>
+      </p>
+      <h3>第18条（本システムの問い合わせ） Article 18 (Inquiries about the System) <br></h3>
+      <p>本システムの問い合わせは、下記とします。For inquiries about this system, please refer to the contact information below.<br>
+        〒150-6031<br>
+        東京都渋谷区恵比寿4-20-3  4-20-3 Ebisu, Shibuya-ku, Tokyo<br>
+        電　　　話 03-5798-3955 Phone: 03-5798-3955<br>
+        受付時間 平日9時～18時 Reception hours: Weekdays 9:00 - 18:00
+      </p>
+      <h3>第19条（準拠法及び管轄裁判所） Article 19 (Governing Law and Court of Jurisdiction)<br></h3>
+      <p>本利用規約および本システムの利用に関連するすべての事項の準拠法は、日本法とします。These Terms of Use (and all matters related to the use of the system)
+        are governed by the laws of Japan. </p>
+      <p>２ 本システムの利用に起因または関連して当社とシステム利用者との間に生じたすべての紛争については、東京地方裁判所または東京簡易裁判所を第一審の専属的合意管轄裁判所とします。Any disputes arising as a
+        result of use of the System or, in connection thereof, between the Company and the system user, shall be subject
+        to the jurisdiction of the Tokyo District Court and the Tokyo Summary Court in the first instance.</p>
+      <h3>第20条（個人情報の取り扱い） Article 20 (Handling of personal information) <br></h3>
+      <p> 本システムのサービス提供時、システム利用者から収集する情報およびその情報の使用方法については、プライバシーポリシーを参照ください。　Regarding the Company&rsquo;s collection and
+        use of system users&rsquo; personal information when providing the system, please refer to the Privacy Policy.
+      </p>
+      <h3>第21条（本システム使用料） Article 21 (Usage fee of the system) <br></h3>
+      <p> 本システム利用にあたり、カナミッククラウドサービス基本利用契約の締結によりお使いいただけます。The system can be used with a Kanamic Cloud Service basic usage
+        contract.   </p>
+      <h3>第22条（Zoom API 連携） Article 22 (Zoom API Integration) <br></h3>
+      <p>
+        カナミッククラウドZoom連携サービス利用にあたり、ZoomＡＰＩを使用したアカウント情報および会議コンテンツ情報等はカナミッククラウドＺｏｏｍ連携サービスには保存されません。また、カナミッククラウドサービスならびに株式会社カナミックネットワークはその情報を有しません。詳細はZoom社プライバシーポリシーを参照ください。
+        <br>
+        Zoom&rsquo;s privacy policy: <a href="https://zoom.us/jp-jp/privacy.html">https://zoom.us/jp-jp/privacy.html</a>
+      </p>
+      <p>Account information and meeting content information, etc., from the use of the Zoom API will not be stored on
+        the Kanamic Cloud Service for Zoom. In addition, neither the Company nor the Kanamic Cloud Service have access
+        to this information. Regarding Zoom&rsquo;s privacy policy, please refer to the following URL.  <br>
+        Zoom&rsquo;s privacy policy: https://zoom.us/jp-jp/privacy.html</p>
+      <p>付則： Supplementary provisions: </p>
+      <ol>
+        <li>（効力発生日） Article 1 (Effective date)</li>
+      </ol>
+      <p>本規約は2021年４月１日より発効するものとします。This agreement shall come into effect on April 1, 2021.</p>
+
+    </div>
+
+    <div class="container-fluid footer clearfix">
+      <p>Copyright © Kanamic Network Co.,LTD All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

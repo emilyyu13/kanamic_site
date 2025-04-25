@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+
+.sp-non{display: none;}
+.pc-non{display: block;}
+
+@media only screen and (max-width: 768px) {
+	.sp-non{display: block;}
+	.pc-non{display: none;}
+}
+
+
+/*-------------------
+     文字装飾
+-------------------*/
+h3{margin-top: 50px;}
+h4{
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.bold{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.bold-ml{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-left: 320px;
+}
+
+@media only screen and (max-width: 768px) {
+	.bold{
+	font-size: 1.1em;
+	font-weight: bold;
+	}
+}
+    .bold-ml {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+.small{
+	font-size: 0.8em;
+}
+
+.strong_txt{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.color_orange{
+	color: #EB5C01;
+}
+
+
+
+
+/*-------------------
+     揃え
+-------------------*/
+.left{text-align: left;}
+.right{text-align: right;}
+.center{text-align: center;}
+
+
+/*-------------------
+     画像サイズ
+-------------------*/
+.imgbox100{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.imgbox100>img{
+	width: 100%;
+}
+
+
+/*-------------------
+     横並び
+-------------------*/
+.flex_box_press{
+	display: flex;
+	max-width: 100%;
+	justify-content: space-between;
+}
+
+
+/*アイコンと文を並べる*/
+.box_press_icon{
+	width: 10%;
+	margin: 0 auto;
+}
+.box_press_txt{
+	width: 82%;
+	margin-right: 2%;
+	text-align: left;
+}
+.box_press_txt h4{
+	margin-bottom: 5px;
+}
+.box_press_icon img{width: 100%;
+}
+
+/*アーバン大谷さん用*/
+.otani {
+	display: flex;
+	align-items: center;
+}
+  
+.otani img {
+	width: 40%;
+	height: auto;
+	margin-right: 10px;
+}
+
+/*フレーム内に画像と文章*/
+.pr-fl {
+	display: flex;
+	align-items: center;
+}
+  
+.pr-fl img {
+	width: 20%;
+	height: auto;
+	margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.box_press_icon{
+		width: 22%;
+		margin: 2% auto;
+	}
+	.box_press_txt{
+		width: 100%;
+	}
+	.box_press_txt h4{
+		text-align: center;
+	}
+	.otani {
+		flex-direction: column;
+		max-width: 100%;
+		height: auto;
+	  }
+}
+
+
+
+/*2つ並べる*/
+.box_press2{
+	width: 30%;
+	padding: 2%;
+}
+.box_press2 img{width: 100%;}
+
+.box_press2-45{
+	width: 45%;
+	padding: 2%;
+}
+.box_press2 img{width: 100%;}
+
+/*4つ並べる*/
+.box_press4{
+	width: 20%;
+	padding: 2%;
+}
+.box_press4 img{width: 100%;}
+
+@media only screen and (max-width: 768px) {
+	
+	.flex_box_press{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	}
+	.box_press4{
+	width: 70%;
+	margin: 0 auto;
+	padding: 2%;
+	}
+}
+
+
+/*-------------------
+    dldtdd装飾1
+
+リストにオレンジの点がつく、dtに<>がつく
+-------------------*/
+
+.dl_class1>dt{
+	margin-top: 8px;
+	font-weight: bold;}
+.dl_class1>dt::before{
+	content: '< ';
+}
+.dl_class1>dt::after{
+	content: ' >';
+}
+.dl_class1>dd{}
+.dl_class1>dd::before{
+	content: '・';
+	color: #EB5C01;
+}
+.dl_class1>dd.nonestyle::before{
+	content:none; 
+}
+
+/*-------------------
+    dldtdd装飾2
+
+リストに点なし、dtに<>がつく
+-------------------*/
+.dl_class2>dt{
+	margin-left: 1rem;
+	margin-top: 15px;
+	font-weight: bold;}
+
+.dl_class2>dd{
+	margin-left: 3rem;
+}
+
+/*-------------------
+    dldtdd装飾3
+
+テーブルのかたち
+-------------------*/
+.dl_class3,
+.dl_class3> dt,
+.dl_class3 > dd {box-sizing: border-box;}
+
+.dl_class3 > dt,
+.dl_class3> dd {
+   padding: 1em;
+   margin: 0px;
+}
+
+.dl_class3 > dt {
+   background-color: #FF9829;
+   color: #fff;
+}
+
+.dl_class3 > dd {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .dl_class3 > dd {
+        border: 2px solid #ddd;
+        border-top: none;
+    }
+    .dl_class3 > dt,
+    .dl_class3 > dd {
+        text-align: center;
+    }
+    .dl_class3 > dd > ul {
+        text-align: left;
+    }
+}
+@media print, (min-width: 768px) {
+    .dl_class3 {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #ddd;
+    }
+    .dl_class3 > dt,
+    .dl_class3 > dd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 2px solid #ddd;
+    }
+    .dl_class3 > dt {
+        width: 20%;
+    }
+    .dl_class3 > dd {
+        width: 80%;
+        border-right: 2px solid #ddd;
+    }
+}
+
+
+.wrap-url {
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    display: inline-block;
+    width: 100%;
+
+
+/*-------------------
+    table装飾1
+-------------------*/
+.press-table{
+  width: 100%;
+  table-layout: fixed;
+}
+
+.press-table th{text-align: center;}
+.press-table td{
+	text-align: right;
+	padding-right: 2em;
+}
+
+.press-table th,
+.press-table td{
+	margin: 5%;
+}
+
+
+/*-------------------
+     枠で囲む項目
+-------------------*/
+.point_title{
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.point_flame{
+	padding: 22px;
+	border: solid 3px #EB5C01;
+	border-radius: 15px;
+}
+.point_flame>ul li{
+	margin-bottom: 5px;
+	list-style: none;
+}
+.point_flame>ul li::before{
+	content: "⚪︎ ";
+  color: #EB5C01;
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*	tags
+----------------------------------------*/
+html { overflow-y: scroll; }
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #E5E5E5;
+	font: 100% Arial, "ＭＳ Ｐゴシック", sans-serif;
+	}
+address {
+	margin-top: 15px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	}
+
+table.topScreen { margin-top: 10px; }
+

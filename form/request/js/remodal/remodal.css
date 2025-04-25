@@ -1,0 +1,156 @@
+/*
+ *  Remodal - v1.1.1
+ *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+ *  http://vodkabears.github.io/remodal/
+ *
+ *  Made by Ilya Makarov
+ *  Under MIT License
+ */
+
+/* ==========================================================================
+   Remodal's necessary styles
+   ========================================================================== */
+
+/* Hide scroll bar */
+
+html.remodal-is-locked {
+  overflow: hidden;
+
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* Anti FOUC */
+
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+
+/* Necessary styles of the overlay */
+
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+
+  display: none;
+}
+
+/* Necessary styles of the wrapper */
+
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+  overflow: auto;
+
+  text-align: center;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.remodal-wrapper:after {
+  display: inline-block;
+
+  height: 100%;
+  margin-left: -0.05em;
+
+  content: "";
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Necessary styles of the modal dialog */
+
+.remodal {
+  position: relative;
+
+  outline: none;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block;
+}
+
+/*******モーダルウィンドウ-*******/
+
+div.remodal_sml {
+	padding: 35px 15px 10px;
+	max-width: 500px;
+	max-height: 90%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+div.remodal_mid {
+	padding: 35px 15px 10px;
+	max-width: 900px;
+	max-height: 90%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+div.remodal_large {
+	padding: 35px 15px 10px;
+	max-width: 1600px;
+	max-height: 90%;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+div.remodal h1,
+div.remodal h2,
+div.remodal h3,
+div.remodal h4 {
+	text-align: left;
+}
+
+div.remodal div.modal_contents {
+	padding: 0 20px;
+    font-size: 20px;
+}
+
+
+div.remodal  p.attention {
+    text-align: center;
+    margin: 0 auto 10px;
+    font-size: 25px;
+}
+
+div.remodal  p.attention span {
+	color: #ffca00;
+	font-size: 35px;
+}
+
+div.remodal {
+	z-index:9999;
+	overflow-y: auto;
+}
+
+.remodal-wrapper {
+    z-index: 9999;
+}
+
+div.remodal h3.tb1 {
+    margin-top: 15px;
+}

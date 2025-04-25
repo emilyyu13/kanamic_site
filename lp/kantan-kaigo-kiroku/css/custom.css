@@ -1,0 +1,760 @@
+.mb40 {
+  margin-bottom: 40px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mr70 {
+  margin-right: 70px;
+}
+.mC {
+  margin: 0 auto;
+}
+.sp_top {
+  position: relative;
+}
+
+.logo_line{text-align: left;}
+
+.logo{
+	width: 26%;
+	margin: 7px 0 2px 8px;
+}
+
+.link_pogi {
+	padding: 50px 0;
+  display: flex;
+  width: 300px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+
+#link_app {
+  -webkit-flex-basis: 100%;
+  -ms-flex-basis: 100%;
+  flex-basis: 100%;
+  margin-right: 10px;
+}
+#link_google {
+  -webkit-flex-basis: 100%;
+  -ms-flex-basis: 100%;
+  flex-basis: 100%;
+  margin-left: 10px;
+}
+.link_pc {
+  display: flex;
+  width: 580px;
+  margin: 0 auto;
+}
+.link_pc div:last-child {
+  margin-left: auto;
+}
+.link_pc div {
+  flex-basis: 240px;
+}
+.bg_lightgreen {
+  background: #daf1e1;
+  padding: 35px 30px 30px 30px;
+}
+.topimg{
+	text-align: center;
+}
+.topimg img{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 2200px;
+	vertical-align: bottom;
+}
+
+.sec01 {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  font-size: 40px;
+	font-weight: bold;
+  color: #ef6b37;
+}
+.sec01_dl {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  font-size: 28px;
+	font-weight: bold;
+  margin: 28px auto 12px auto;
+  color: #ef6b37;
+}
+.dl_p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* 機能一覧直下のタイトル */
+.sec01_min {
+  display: block;
+  margin: 100px auto 10px auto;
+	width: 80%;
+  max-width: 400px;
+  padding: 4px 10px 3px 10px;
+  background: #ef6b37;
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  /* font-size: 33px; */
+  font-size: 1.85rem;
+	letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.bg_lightgreen .sec01_row{
+	margin: 0 auto;
+	max-width: 1300px;
+	margin-top: 30px;
+}
+
+/* アイコン下の機能名 */
+.sec01_row p{
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.45rem;}
+
+/* アイコンの横幅 */
+.sec01_row li {
+	width: 17%;
+  margin: 10px 22px;
+	text-align: center;}
+
+.sec01_row li img{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.box{
+	max-width: 1200px;
+	margin: 60px auto;
+	padding: 2px 50px 40px 50px;
+	width: 72%;
+	background: #fff;
+	border-radius: 20px;
+}
+.box h2{
+  display: block;
+  margin: 35px auto 25px auto;
+	width: 100%;
+  max-width: 900px;
+  padding: 4px 10px 3px 10px;
+  background: #ef6b37;
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  font-size: 27px;
+	letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+.box h3{
+	font-size: 26px;
+	color: #FF9243;
+	margin-top: 25px;
+	margin-left: 5px;
+	padding: 0.1em 0.4em;
+	border-left: 10px solid #FF9243;
+}
+.box ul{
+	display:flex;
+	width: 100%;
+	margin-top: 8px;
+	flex-wrap: wrap;
+	justify-content: space-between!important;
+}
+.box li{
+	font-size: 19px;
+	font-weight: bold;
+	color: #555555;
+	width: 50%!important;
+	box-sizing: border-box;
+	text-align: left;
+	margin-top: 6px;
+	
+}
+.box li::before{
+	content: '●';
+	color:  #FFBC43;
+}
+
+.sec01_table {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sec01_table th {
+  text-align: center;
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  font-size: 32px;
+  padding: 8px 60px;
+}
+
+.pc_video {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+.sp_video {
+		width: 95%;
+		margin: 0 auto 30px auto;
+		text-align: center;
+	}
+
+.sp_download{
+	background: #fff;
+	margin: 0 auto 100px auto;
+	text-align: center;
+}
+
+.movie-wrap {
+     position: relative;
+     padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+     height: 0;
+     overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+ 
+.movie-wrap iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+	margin: 0 auto;
+     width: 100%;
+     height:100%;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+	max-width: 1400px;
+  border-bottom: solid 2px #555555;
+}
+.wrapper02 {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.sec02 {
+  font-size: 42px;
+}
+.weak {
+  font-size: 50%;
+}
+.sec02_img {
+  /* float: left; */
+  margin: 40px 40px 0px 0px;
+  width: 350px;
+}
+.sec02_fx {
+  display: flex;
+  justify-content: center;
+}
+.sec02_fx div img:nth-of-type(1) {
+  -webkit-flex-basis: 350px;
+  flex-basis: 350px;
+}
+.sec02_fx div:nth-of-type(2) {
+  -webkit-flex-basis: 800px;
+  flex-basis: 800px;
+  margin-left: 20px;
+}
+.sec02_mb50 {
+  margin-bottom: 50px;
+}
+.sec02_mt50 {
+  margin-top: 50px;
+}
+.sec02_picup {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.sec02_min {
+  position: relative;
+  display: inline-block;
+  padding: 1.5px 20px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  background: #ef6b37; /*背景色*/
+  /* border-bottom: solid 2px #d27d00; 少し濃い目の色に */
+  border-radius: 8px; /*角の丸み*/
+  font-weight: bold;
+}
+
+.sec02_txt {
+  margin-top: 15px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.sec02_fl {
+  float: left;
+  margin-right: 100px;
+  width: 45%;
+}
+.sec03_fl {
+  margin-top: 50px;
+  float: left;
+  width: 45%;
+  margin-right: 100px;
+}
+.btn_wrapper {
+  margin: 100px 0;
+}
+.form_btn {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 600px;
+  padding: 20px;
+  background: #ef6b37;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+.form_btn:hover {
+  background: #ff9872;
+  color: #fff;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.2);
+}
+a:hover,
+a:active {
+  color: #f77300;
+}
+.sec03_table {
+  text-align: center;
+}
+.sec03_table th {
+  padding: 0px 10px;
+}
+.sec03_table td {
+  font-size: 22px;
+  font-weight: bold;
+}
+.sec03_mt {
+  margin-top: 30px;
+}
+.sec04_table {
+  margin-top: 30px;
+}
+.sec04_table th {
+  padding: 5px 40px;
+}
+.sec04_table td {
+  padding: 0px 40px 40px;
+}
+span.number {
+  background: #eb7a12;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-block;
+  /* position: absolute; */
+  width: 20px;
+  box-sizing: border-box;
+  padding-top: 3px;
+  height: 20px;
+  left: 0;
+  top: 2px;
+  line-height: 1;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.sec05_table {
+  margin-top: 20px;
+}
+.sec05_txt {
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.sec05_fr {
+  float: right;
+  margin-left: 50px;
+}
+ul {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  margin-top: 30px;
+}
+.u_lineup {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.after li {
+  /* display: flex; */
+  width: 300px;
+  margin: 0 10px;
+}
+
+.u_lineup li {
+  /* display: flex; */
+  width: 300px;
+  margin: 0 10px;
+}
+
+.lineup {
+  max-width: 220px;
+}
+.lineup a,
+.lineup h3 {
+  text-decoration: none;
+  color: #006990;
+  transition: color 0.1s linear;
+}
+.lineup p {
+  color: #333;
+}
+/* .lineup img {
+  min-width: 220px;
+  height: 160px;
+} */
+.after {
+  flex-wrap: nowrap;
+}
+.after li {
+  margin-top: 15px;
+}
+.sp-none {
+  display: block;
+}
+.pc-none {
+  display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+	 .box{
+		margin: 60px auto;
+		padding: 2px 50px 40px 50px;
+		width: 90%;
+		background: #fff;
+		border-radius: 20px;
+	}
+}
+
+@media only screen and (max-width: 1180px) {
+  .sec05_fr {
+    float: none;
+    margin-left: 0em;
+    text-align: center;
+  }
+	
+	.logo{
+		width: 35%;
+		margin: 7px 0 0 8px;
+		}
+	.box{
+		margin: 40px auto;
+		padding: 2px 28px 40px 28px;
+		width: 90%;
+		border-radius: 20px;
+	}
+	.box h2{
+		margin: 35px auto 25px auto;
+		width: 100%;
+		padding: 4px 8px 3px 8px;
+		font-size: 21px;
+		letter-spacing: 0;
+	}
+	.box h3{
+		font-size: 20px;
+		margin-top: 20px;
+		margin-left: 4px;
+		padding: 0.1em 0.4em;
+		border-left: 8px solid #FF9243;
+	}
+	.box ul{
+		display:flex;
+		width: 100%;
+		margin-top: 7px;
+		flex-wrap: wrap;
+	}
+	.box li{
+		font-size: 16px;
+		width: 50%!important;
+		margin-top: 6px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 990px) {
+	
+	.sec01,
+  .sec02 {
+    font-size: 34px;
+  }
+}
+	
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+    border-bottom: solid 0.5px #555555;
+  }
+  .wrapper02 {
+    width: 90%;
+  }
+  .bg_lightgreen {
+    padding: 5px 10px 20px;
+  }
+  .sec01,
+  .sec02 {
+    font-size: 27px;
+  }
+  .sec01_min {
+    width: 60%;
+    padding: 5px;
+    font-size: 29px;
+  }
+  .sec01_cs {
+    font-size: 8px;
+  }
+  ul {
+    flex-wrap: wrap;
+  }
+	.sec01_row p{
+		font-size: 22px;
+	}
+  .sec01_row li {
+    width: 35%;
+		margin-top: 5px;
+    font-size: 16px;
+  }
+  .sec01_table th {
+    font-size: 20px;
+  }
+	
+  .sec02_fx {
+    display: inline;
+    justify-content: center;
+  }
+  .sec02_img {
+    width: 100%;
+    margin: 30px 0px 0px;
+    margin-right: 0px;
+  }
+  .sec02_mb50 {
+    margin-bottom: 0px;
+  }
+  .sec02_mt50 {
+    margin-top: 0px;
+  }
+  .sec02_min {
+    margin-top: 10px;
+  }
+  .sec02_picup {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .sec02_txt {
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .sec02_fl {
+    float: none;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .sec03_fl {
+    margin-top: 0px;
+    float: none;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .sec03_table td {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .sec03_mt {
+    margin-top: 15px;
+  }
+  .sec05_txt {
+    margin-right: 0px;
+  }
+  .btn_wrapper {
+    margin: 40px 0;
+  }
+  .form_btn {
+    width: 70%;
+    font-size: 20px;
+  }
+  a.nav {
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: 686px) {
+	
+	.link_pc{width: 100%;}
+	
+	.box{
+		margin: 30px auto 40px auto;
+		padding: 2px 30px 40px 30px;
+		width: 95%;
+	}
+	.box h2{
+		margin: 35px auto 25px auto;
+		width: 100%;
+		padding: 4px 10px 3px 10px;
+		font-size: 22px;
+		letter-spacing: 0;
+	}
+	.box h3{
+		font-size: 20px;
+		margin-top: 25px;
+		padding: 0.1em 0.4em;
+		border-left: 8px solid #FF9243;
+	}
+	.box ul{
+		display:block;
+		width: 100%;
+		margin-top: 7px;
+		flex-wrap: wrap;
+	}
+	.box li{
+		font-size: 18px;
+		width: 100%!important;
+		margin-top: 8px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	
+	.sec01, .sec02 {font-size: 25px;}
+	.sec01_dl{font-size: 23px;}
+
+	.box{
+		margin: 30px auto 30px auto;
+		padding: 2px 20px 40px 20px;
+	}
+	.box h2{
+		margin: 25px auto 25px auto;
+		width: 100%;
+		padding: 8px 10px 7px 10px;
+		font-size: 19px;
+		letter-spacing: 0;
+	}
+	.box h3{
+		font-size: 17px;
+		margin-top: 25px;
+		padding: 0.1em 0.4em;
+		border-left: 8px solid #FF9243;
+	}
+	.box ul{
+		display:block;
+		width: 100%;
+		margin-top: 7px;
+		flex-wrap: wrap;
+	}
+	.box li{
+		font-size: 16px;
+		width: 100%!important;
+		margin-top: 8px;
+	}
+	
+}
+	
+@media only screen and (max-width: 480px) {
+  .form_btn {
+    width: 90%;
+    font-size: 18px;
+  }
+  .u_lineup,
+  .after {
+    display: inline;
+  }
+  .after li {
+    margin: 0 auto;
+  }
+  .u_lineup li {
+    margin: 0 auto;
+  }
+  .after li,
+  .lineup {
+    margin-top: 20px;
+  }
+  .lineup {
+    max-width: 90%;
+  }
+  .lineup img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sp-none {
+    display: none;
+  }
+  .pc-none {
+    display: block;
+  }
+	.logo{
+		width: 65%;
+		margin: 7px 0 1px 8px;
+	}
+	.video {
+		width: 95%;
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+		height: 0;
+		padding: 30px 0 56.25%;
+		overflow: hidden;
+	}
+	.video iframe {
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.sec01, .sec02 {
+    font-size: 16px;
+	}
+	.sec01 .title1{
+    font-size: 23px;
+		font-weight: bold;
+	}
+	.sec01_min {
+    width: 90%;
+    padding: 5px;
+		font-size: 25px;}
+	
+	.sec01_row li {
+    width: 40%;
+    margin-top: 5px;
+    font-size: 16px;
+}
+	
+	.sec01_row p {
+		font-size: 16px;}
+}
+
+@media only screen and (max-width: 320px) {
+	.link_pogi {width: 100%;}
+	.after li{width: 100%;}
+	.sec01_row li {width: 70%;}
+	.sec01_min {
+    width: 95%;
+		font-size: 21px;}
+	
+}

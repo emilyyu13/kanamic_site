@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" charset="UTF-8" src="https://ssl-cache.stream.ne.jp/www50/eqd751mtwz/jmc_pub/jmc_swf/player/t3/if.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<title>カナミックネットワークの訪問看護システム</title>
+</head>
+
+<body style="background-color:#c1e3ea;">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-462660-7', 'auto');
+  ga('send', 'pageview');
+
+$(function() {
+    /* click tracking google ana */
+    $("a").click(function(e) {
+        var ahref = $(this).attr('href');
+        var atxt = $(this).text();
+        if ( ( ahref.indexOf("https") != -1 || ahref.indexOf("http") != -1)　&& ahref.indexOf("http://www.kanamic.net/") == -1 ) {
+            ga('send', 'event', '外部link', atxt, ahref);
+        }
+	});
+});
+	
+
+const mediasVol_def=function(){
+      //範囲： 0〜1 の間　※初期値=1(100%の最大)
+      
+      //videoの数だけ全部音量0.5(=50%)
+      const videos=document.getElementsByTagName('video');
+      for(let n=0; videos.length>0; n++ ){ videos[n].volume = 0.1; }
+
+}
+/* ページ読み込み時に処理 */
+window.addEventListener('DOMContentLoaded' , function(){
+      mediasVol_def();
+}, false); 
+	
+	
+</script>
+<style>
+	#pageContents{
+		width: 85%;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 60px;
+	}
+	
+.movie-wrap {
+		width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+		text-align: center;
+}
+	
+	video {
+		width: 100%;
+		text-align: center;
+}
+ 
+.movie-wrap iframe {
+    position: absolute;
+		right:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	h1.articleTitle {
+	width:100%;
+	margin: 0 auto;
+	font-size:18px;
+	font-weight:bold;
+	color:#333333;
+	margin-bottom:10px;
+	padding:10px;
+	background:#EFF8FF;
+}
+</style>
+
+<div id="pageContents">
+	<h1 class="articleTitle">カナミックネットワークの訪問看護システム</h1>
+<div class="movie-wrap">
+	
+<!--
+<script type="text/javascript">
+	jstream_t3.PlayerFactoryIF.create({
+	b:"eqd751mtwz.eq.webcdn.stream.ne.jp/www50/eqd751mtwz/jmc_pub/jmc_swf/player/",
+	c:"NDEzNQ==",
+	m:"MTEyMg==",
+	s:{
+		el:"off",
+		hp:360,
+		il:"off",
+		pr:"0.5,0.7,1.2,1.5,2.0",
+		rp:"fit",
+		sn:"",
+		tg:"off",
+		wm:"off",
+		wp:640
+	}});
+</script>
+<noscript>
+<div>このコンテンツを見るためにはJavaScriptを有効にしてください。Please enable JavaScript to watch this content.</div>
+</noscript>-->
+	
+	<div id="video">
+	<!--<video src="../img/movie.mp4" autoplay controls  type="video/mp4"></video>-->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/hefKlcOecr4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		
+	</div>
+	
+</div>
+	
+
+</body>
+</html>

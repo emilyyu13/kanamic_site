@@ -1,0 +1,2084 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>TRITRUS SYSTEM</title>
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/css/reset.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/css/style.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/css/fonts.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/css/css_animations.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/css/ui.tabs.css"
+      type="text/css"
+      media="print, projection, screen"
+    />
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/css/mypage3.css"
+      type="text/css"
+      media="print, projection, screen"
+    />
+    <link
+      rel="stylesheet"
+      href="../../mock/portal_contents/js/venobox/venobox.css"
+      type="text/css"
+    />
+    <script
+      src="../../mock/portal_contents/js/jquery-1.8.3.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/yuga.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/ui.core.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/ui.tabs.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/jquery.tools.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/tinyscrolling.js"
+      type="text/javascript"
+    ></script>
+    <!--<script src="js/prefixfree.js" type="text/javascript"></script>-->
+    <script
+      src="../../mock/portal_contents/js/scrollable.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/jQuerySimpleNewsTicker/jQuerySimpleNewsTicker.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/intro.js-2.0.0/intro.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../../mock/portal_contents/js/venobox/venobox.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#user_panel > dd").hide();
+
+        $("#user_panel > dt").click(function() {
+          var contents = $(this).next();
+          if (contents.is(":visible")) {
+            contents.slideUp("fast");
+          } else {
+            contents.slideDown("fast");
+          }
+        });
+
+        //職種入れて表示
+        //		introJs().start();
+      });
+
+      $(function() {
+        kanaDate = new Date();
+        kanaYear = kanaDate.getFullYear();
+        $(".year").html(kanaYear);
+      });
+
+      $(document).ready(function() {
+        /* default settings */
+        $(".venobox").venobox();
+
+        /* auto-open #firstlink on page load */
+        $("#firstlink")
+          .venobox()
+          .trigger("click");
+      });
+
+      $(function() {
+        var topBtn = $("#pagetop2");
+        topBtn.hide();
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 150) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+        //スクロールしてトップ
+        topBtn.click(function() {
+          $("body,html").animate(
+            {
+              scrollTop: 0
+            },
+            500
+          );
+          return false;
+        });
+
+        /*ご利用システムアコーディオン設定*/
+        if (!isSmartphone()) {
+          $(".slide_area_Mobile .appSection li").appendTo("#appArea");
+          $(".slide_area_Mobile .appSection").remove();
+        }
+
+        //アコーディオン
+        $(".slide_btn,.slide_btn_Mobile").on("click", function() {
+          //			$(this).next().slideToggle();
+          $(this)
+            .hide()
+            .prev()
+            .fadeIn("slow");
+        });
+      });
+    </script>
+
+    <!--<script src="js/jquery.infinitescroll.min.js"></script>
+<script>
+//トピックスをもっとみるの実装
+//$(function(){
+//  $('#topics_load_area').infinitescroll({
+//    navSelector  : ".load_btn",       // ナビゲーション要素を指定
+//    nextSelector : ".load_btn a",            // ナビゲーションの「次へ」の要素を指定
+//    itemSelector : ".community_notice", // コンテンツ要素を指定します。
+//	function(newElements) {
+//		$(newElements).hide().delay(100).fadeIn(600);
+//		$(".load_btn").appendTo("#topics_load_area").delay(300).fadeIn(600);
+//	}
+//  });
+//  $('#topics_load_area').infinitescroll('unbind');
+//  $(".load_btn a").click(function(){
+//	$('#topics_load_area').infinitescroll('retrieve');
+//	return false;
+//  });
+//});
+
+
+</script> -->
+
+    <style></style>
+  </head>
+
+  <body>
+    <div id="pagetop">
+      <div id="page" class="cf">
+        <div id="headMenu">
+          <dl id="user_panel">
+            <dt>
+              <a href="#"><span style="font-family:icomoon;">&#xe65a;</span></a>
+            </dt>
+            <dd>
+              <ul>
+                <li class="profile unDisplay_PC">
+                  <p class="myIcon fl mr10">
+                    <img
+                      src="../../mock/portal_contents/img/icon/user/myIcon2.jpg"
+                    />
+                  </p>
+                  <p class="mt10">
+                    サンプル居宅介護支援事業所<br />
+                    ケアマネ 花子
+                  </p>
+                </li>
+                <li>
+                  <a
+                    href="../../mock/portal_contents/popup/onlineUser_list.html"
+                    ><span class="icon-address-book f18"></span
+                    >コミュニティユーザー</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="venobox"
+                    data-type="iframe"
+                    href="../../mock/portal_contents/popup/edit_myprofile.html"
+                    ><span class="icon-edit f18"></span>プロフィール編集</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../../mock/portal_contents/old_design/portal/password_change/index.html"
+                    ><span class="icon-password f18"></span>パスワードの変更</a
+                  >
+                </li>
+                <li class="point_info">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="kanamikan">
+                          <img
+                            src="../../mock/portal_contents/tpoint/img/kanamic_point.png"
+                            height="18"
+                          /><span class="mikannum blackTxt">100</span>
+                        </div>
+                      </td>
+                      <td align="right">
+                        <a
+                          href="../../mock/portal_contents/tpoint/T_change.html"
+                          >ポイント申請</a
+                        >
+                      </td>
+                    </tr>
+                    <!-- tr><td><span class="point_gj">Goog Job数</span></td><td align="right" class="mikannum">776</td></tr>
+              <tr><td><span class="point_nw">ニュース</span></td><td align="right" class="mikannum">80</td></tr>
+              <tr><td><span class="point_an">アンケート</span></td><td align="right" class="mikannum">500</td></tr-->
+                  </table>
+                </li>
+                <!--<li><a href="popup/onlineUser_list.html"><span class="icon-address-book f18"></span>コミュニティユーザー</a></li>
+            <li><a class="venobox" data-type="iframe" href="popup/edit_myprofile.html"><span class="icon-edit f18"></span>プロフィール編集</a></li>
+            <li><a href="old_design/portal/password_change/index.html"><span class="icon-password f18"></span>パスワードの変更</a></li>
+            <li><a href="old_design/portal/account_stop/index.html"><span class="icon-stop f18 redTxt"></span>利用アカウントの停止</a></li>-->
+                <!-- 家族アカウント用 -->
+                <li>
+                  <a
+                    href="../../mock/portal_contents/old_design/portal/account_stop/index.html"
+                    ><span class="icon-stop f18 redTxt"></span
+                    >利用アカウントの停止</a
+                  >
+                </li>
+                <li class="noBorder">
+                  <a href="../../mock/portal_contents/login.html"
+                    ><span class="icon-logout f18"></span>ログアウト</a
+                  >
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <table class="user unDisplay_Mobile">
+            <tr>
+              <td>
+                <img
+                  src="../../mock/portal_contents/img/icon/user/myIcon2.jpg"
+                />
+              </td>
+              <td>
+                サンプル居宅介護支援事業所<br />
+                ケアマネ 花子
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- headMenu -->
+        <div id="header">
+          <h1>
+            <a href="#"
+              ><img
+                src="../../mock/portal_contents/img/base/TRITRUS_logo.png"
+                alt="TRITRUS"
+            /></a>
+          </h1>
+          <div class="boder"></div>
+          <!-- boder -->
+        </div>
+        <!-- header -->
+        <div id="Gnav" class="unDisplay_Mobile">
+          <ul>
+            <li>
+              <a href="#" class="current"
+                ><span class="icon-home"></span
+                ><span class="unDisplay_Mobile">マイページ</span></a
+              >
+            </li>
+            <li>
+              <a href="../../mock/portal_contents/timeline.html"
+                ><span class="icon-timeline"></span
+                ><span class="unDisplay_Mobile">タイムライン</span
+                ><span class="new">11</span></a
+              >
+            </li>
+            <li>
+              <a href="../../mock/portal_contents/message/index.html"
+                ><span class="icon-bubbles"></span
+                ><span class="unDisplay_Mobile">メッセージ</span
+                ><span class="new">8</span></a
+              >
+            </li>
+            <li>
+              <a href="../../mock/portal_contents/news/index.html"
+                ><span class="icon-news"></span
+                ><span class="unDisplay_Mobile">ニュース</span
+                ><span class="new">2</span></a
+              >
+            </li>
+            <li>
+              <a href="../../mock/portal_contents/infomation.html"
+                ><span class="icon-kanamic"></span
+                ><span class="unDisplay_Mobile">お知らせ</span
+                ><span class="new">1</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Gnav -->
+
+        <div id="Gnav_mobile" class="display_block_U767">
+          <ul class="cf">
+            <li>
+              <a href="#" class="current"
+                ><img
+                  src="../../mock/portal_contents/img/icon/top_menu/mypage.png"
+                  alt="マイページ"/></a
+              ><span class="new_text pt5">マイページ</span>
+            </li>
+            <li>
+              <a href="timeline.html"
+                ><img
+                  src="../../mock/portal_contents/img/icon/top_menu/timeline.png"
+                  alt="タイムライン"/></a
+              ><span class="new_text pt5">タイムライン</span
+              ><span class="new_notice">99+</span>
+            </li>
+            <li>
+              <a href="message/index.html"
+                ><img
+                  src="../../mock/portal_contents/img/icon/top_menu/message.png"
+                  alt="メッセージ"/></a
+              ><span class="new_text pt5">メッセージ</span
+              ><span class="new_notice">8</span>
+            </li>
+            <li>
+              <a href="#pickup"
+                ><img src="../img/icon/top_menu/news.png" alt="ニュース"/></a
+              ><span class="new_text pt5">ニュース</span
+              ><span class="new_notice">5</span>
+            </li>
+            <li>
+              <a href="infomation.html"
+                ><img
+                  src="../../mock/portal_contents/img/icon/top_menu/infomation.png"
+                  alt="お知らせ"/></a
+              ><span class="new_text pt5">お知らせ</span
+              ><span class="new_notice">11</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Gnav -->
+        <div id="pageContents">
+          <div class="infoScrollable firstChild">
+            <p class="infoTab firstChild">カナミックからのお知らせ</p>
+
+            <!--<ul class="infomation slideDown mb20">
+
+                <li class="midoku"><a class="venobox" data-type="iframe"
+                    href=""
+
+                    title=""> <span class="icon-kanamic f18"></span>
+                        2017年05月11日：運用で上限3件程度に制御
+                </a></li>
+                <li class="midoku"><a class="venobox" data-type="iframe"
+                    href=""
+                    title=""> <span class="icon-kanamic f18"></span>
+                        2017年05月11日：運用で上限3件程度に制御
+                </a></li>
+                <li class="midoku"><a class="venobox" data-type="iframe"
+                    href=""
+                    title=""> <span class="icon-kanamic f18"></span>
+                        2017年05月11日：運用で上限3件程度に制御
+                </a></li>
+
+
+        </ul>-->
+          </div>
+          <div style="width:100%;" class="cf">
+            <div class="gadgetL1">
+              <table class="colA fl unDisplay_Mobile">
+                <tr>
+                  <th height="26" style="padding:0 4px;">ケアマネ　花子</th>
+                </tr>
+                <tr>
+                  <td
+                    height="220"
+                    valign="top"
+                    class="myProf"
+                    style="padding:0;"
+                  >
+                    <div class="posRel">
+                      <p class="profImg">
+                        <img
+                          src="../../mock/portal_contents/img/icon/user/myIcon2.jpg"
+                        />
+                      </p>
+                      <ul class="profEdit3">
+                        <li>
+                          <a
+                            class="venobox cf"
+                            data-type="iframe"
+                            href="../../mock/portal_contents/popup/onlineUser_list.html"
+                            ><span class="ficon">&#xe62a;</span
+                            ><span class="profEdit3_name"
+                              >コミュニティユーザー</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="venobox cf"
+                            data-type="iframe"
+                            href="../../mock/portal_contents/popup/edit_myprofile.html"
+                            ><span class="ficon">&#xe622;</span
+                            ><span class="profEdit3_name"
+                              >プロフィール編集</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../../mock/portal_contents/old_design/portal/password_change/index.html"
+                            class="cf"
+                            ><span class="ficon">&#xe66a;</span
+                            ><span class="profEdit3_name"
+                              >パスワードの変更</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <!--div class="no_t"--><span class="kp_name"
+                        >カナメダル</span
+                      >
+                      <div class="kanamikan">
+                        <span class="mikannum">1,356</span
+                        ><img
+                          src="../../mock/portal_contents/tpoint/img/kanamic_point.png"
+                          height="28"
+                        /><a
+                          class="kanamikanhelp tooltip"
+                          href="../../mock/portal_contents/tpoint/kanamic_point.html"
+                          >詳細</a
+                        >
+                      </div>
+                      <!--<div class="tbutton"><a href="tpoint/T_change.html"><img src="tpoint/img/t_icon.png" width="20" height="20" /><span>Tポイント申請する</span></a></div></td>-->
+                      <div class="tbutton">
+                        <a
+                          class="venobox"
+                          data-type="iframe"
+                          href="../../mock/portal_contents/popup/tpoint.html"
+                          ><img
+                            src="../../mock/portal_contents/tpoint/img/t_icon.png"
+                            width="20"
+                            height="20"
+                          /><span>Tポイント数を確認</span></a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="gadget fr">
+              <div class="myCalendar unDisplay_Mobile mb20">
+                <ul class="selectSerch pkg">
+                  <li class="selectSerchL">
+                    <span class="icon-calendar f16"></span>2017年6月
+                  </li>
+                  <li class="selectSerchR">
+                    <a
+                      href="../../mock/portal_contents/old_design/portal/calendar/index.html"
+                      style="text-decoration:underline;"
+                      >マイカレンダーで確認</a
+                    >
+                  </li>
+                </ul>
+                <div class="scrollable mb10" style="height: 220px;">
+                  <table width="100%" id="calendarMonth" class="calendar">
+                    <tbody>
+                      <tr>
+                        <th class="sundayBg">日</th>
+                        <th class="weekdayBg">月</th>
+                        <th class="weekdayBg">火</th>
+                        <th class="weekdayBg">水</th>
+                        <th class="weekdayBg">木</th>
+                        <th class="weekdayBg">金</th>
+                        <th class="satdayBg">土</th>
+                      </tr>
+                      <tr>
+                        <td height="147" class="sunDay">
+                          <div class="height80">
+                            <p class="date">
+                              <a href="old_design/portal/calendar/day_view.html"
+                                >8日</a
+                              >
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="date">
+                            <a href="old_design/portal/calendar/day_view.html"
+                              >9日</a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <span class="time">16:00-17:00 </span><br />
+                            木村：予定あり<img
+                              src="../../mock/portal_contents/img/icon/calender/icon_private.gif"
+                              align="absmiddle"
+                              style="margin:0 2px 0;"
+                            />
+                          </p>
+                          <p class="schedule">
+                            <span class="time">16:00-17:00 </span><br />
+                            予定あり<img
+                              src="../../mock/portal_contents/img/icon/calender/icon_private.gif"
+                              align="absmiddle"
+                              style="margin:0 2px 0;"
+                            /><span class="agentSchedule"
+                              ><img
+                                src="../../mock/portal_contents/img/icon/calender/more_icon.gif"
+                                alt="複数"
+                                align="absmiddle"
+                            /></span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="date">
+                            <a href="old_design/portal/calendar/day_view.html"
+                              >10日</a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <a
+                              class="venobox"
+                              data-type="iframe"
+                              href="popup/editschedule.html"
+                              ><span class="time">15:00-16:00</span><br />
+                              <img
+                                src="../../mock/portal_contents/img/icon/calender/icon_agent.gif"
+                                width="13"
+                                height="13"
+                                align="absmiddle"/><span class="agentSchedule"
+                                >[会議]リーダー会議：<img
+                                  src="../../mock/portal_contents/img/icon/calender/more_icon.gif"
+                                  alt="複数"
+                                  align="absmiddle"/></span
+                            ></a>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="date">
+                            <a href="old_design/portal/calendar/day_view.html"
+                              >11日</a
+                            >
+                          </p>
+                        </td>
+                        <td class="currentDay">
+                          <p class="date">
+                            <a href="old_design/portal/calendar/day_view.html"
+                              >12日</a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <a
+                              class="venobox"
+                              data-type="iframe"
+                              href="popup/editschedule.html"
+                              >清原：全日予定</a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <a
+                              class="venobox"
+                              data-type="iframe"
+                              href="popup/editschedule.html"
+                              ><span class="time">15:00-16:00</span><br />
+                              山下：予定あり</a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <a
+                              class="venobox"
+                              data-type="iframe"
+                              href="popup/editschedule.html"
+                              ><span class="time">15:30-16:30</span><br />
+                              <span class="agentSchedule"
+                                >渡辺：介護食配食</span
+                              ></a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <span class="time">16:00-17:00 </span><br />
+                            大田：予定あり
+                          </p>
+                          <p class="schedule">
+                            <a
+                              class="venobox"
+                              data-type="iframe"
+                              href="popup/editschedule.html"
+                              ><span class="time">17:00-17:30</span><br />
+                              <span class="agentSchedule">田辺：訪問</span></a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <span class="time">18:00-20:00 </span><br />
+                            篠原：予定あり
+                          </p>
+                          <p class="schedule">
+                            <a
+                              class="venobox"
+                              data-type="iframe"
+                              href="popup/editschedule.html"
+                              ><span class="time">19:30-20:30</span><br />
+                              <span class="agentSchedule">藍田：研修</span></a
+                            >
+                          </p>
+                          <p class="schedule">
+                            <span class="time">21:00-22:00 </span><br />
+                            野々村：予定あり
+                          </p>
+                        </td>
+                        <td>
+                          <p class="date">
+                            <a href="old_design/portal/calendar/day_view.html"
+                              >13日</a
+                            >
+                          </p>
+                        </td>
+                        <td class="satDay">
+                          <p class="date">
+                            <a href="old_design/portal/calendar/day_view.html"
+                              >14日</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- scrollable -->
+              </div>
+              <!-- myCalendar -->
+            </div>
+            <blockquote>&nbsp;</blockquote>
+            <!-- gadget -->
+          </div>
+          <div style="width:100%;" class="cf">
+            <div id="section" class="fl topGadget">
+              <h2 id="community" class="orange">
+                <span class="icon-community"></span> コミュニティ情報
+              </h2>
+              <div class="mb10">
+                <table class="gj">
+                  <tr>
+                    <th rowspan="2" class="th1">
+                      <span class="icon-good-job4 f18"></span>あなたのGood Job数
+                    </th>
+                    <th align="center" class="th2">今月</th>
+                    <td align="right" style="border-right: 1px solid #ccc;">
+                      <span class="fb mr5 blueTxt">206</span>GJ
+                    </td>
+                  </tr>
+                  <tr>
+                    <th align="center" class="th2">総合</th>
+                    <td align="right" style="border-right: 1px solid #ccc;">
+                      <span class="fb mr5 orangeTxt">7,201</span>GJ
+                    </td>
+                  </tr>
+                </table>
+
+                <!--<table class="gj">
+                    	<tr>
+                <th width="59%" colspan="3" class="th1"><span class="icon-good-job4 f18"></span>あなたのGood Job数</th>
+                    	</tr>
+              <tr>
+                <th width="13%" align="center" class="th2">今月</th>
+                <td width="28%" align="right" style="border-right: 1px solid #ccc;"><span class="fb mr5 blueTxt">206</span>GJ</td>
+                <td width="28%" rowspan="2" align="center"><a style="font-size: 12px;"><img src="tpoint/img/t_icon.png" alt="" width="27" height="27"/><br />
+ポイント確認</a></td>
+              </tr>
+
+            </table>-->
+              </div>
+              <p class="comm_desc p5">
+                <span class="icon-community">コミュニティ名</span>
+                <span class="icon-bubbles">（未読数）トピック名</span>
+                <span class="icon-timeline">最終投稿日</span>
+              </p>
+              <div id="topics_load_area">
+                <ul class="community_notice">
+                  <li class="unread icon-Aarrow-right">
+                    <a href="community/care_report/careReport.html">
+                      <dl class="cf">
+                        <dt class="mb5 cf">
+                          <p class="cn_title">
+                            <img
+                              src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                              alt=""
+                              width="50"
+                              height="50"
+                              class=""
+                            />
+                          </p>
+                        </dt>
+                        <dd class="cf">
+                          <p class="cn_detail w100">
+                            <span class="icon-community"
+                              >介護 カナさんの部屋</span
+                            >
+                          </p>
+                          <p class="cn_detail">
+                            <span class="icon-bubbles"
+                              ><span class="notification">10</span
+                              >利用者情報共有</span
+                            >
+                          </p>
+                          <p class="cn_date">
+                            <span class="icon-timeline">5/10 17:29</span>
+                          </p>
+                        </dd>
+                      </dl>
+                    </a>
+                  </li>
+                  <li class="unread icon-Aarrow-right">
+                    <a href="community/care_report/careReport.html">
+                      <dl class="cf">
+                        <dt class="mb5 cf">
+                          <p class="cn_title">
+                            <img
+                              src="../../mock/portal_contents/img/sample/userimage/sample/list02.jpg"
+                              alt=""
+                              width="50"
+                              height="50"
+                              class=""
+                            />
+                          </p>
+                        </dt>
+                        <dd class="cf">
+                          <p class="cn_detail w100">
+                            <span class="icon-community"
+                              >平野 晴彦さんの部屋</span
+                            >
+                          </p>
+                          <p class="cn_detail">
+                            <span class="icon-bubbles"
+                              ><span class="notification">99+</span>連絡帳</span
+                            >
+                          </p>
+                          <p class="cn_date">
+                            <span class="icon-timeline">5/8 10:03</span>
+                          </p>
+                        </dd>
+                      </dl>
+                    </a>
+                  </li>
+                  <li class="icon-Aarrow-right">
+                    <a href="community/care_report/careReport.html">
+                      <dl class="cf">
+                        <dt class="mb5 cf">
+                          <p class="cn_title">
+                            <img
+                              src="../../mock/portal_contents/img/sample/userimage/sample/list05.jpg"
+                              alt=""
+                              width="50"
+                              height="50"
+                              class=""
+                            />
+                          </p>
+                        </dt>
+                        <dd class="cf">
+                          <p class="cn_detail w100">
+                            <span class="icon-community"
+                              >鶴岡 柚香さんの部屋</span
+                            >
+                          </p>
+                          <p class="cn_detail">
+                            <span class="icon-bubbles">連絡帳</span>
+                          </p>
+                          <p class="cn_date">
+                            <span class="icon-timeline">5/8 13:19</span>
+                          </p>
+                        </dd>
+                      </dl>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slide_area_Mobile">
+                  <ul class="community_notice">
+                    <li class="unread icon-Aarrow-right">
+                      <a href="community/care_report/careReport.html">
+                        <dl class="cf">
+                          <dt class="mb5 cf">
+                            <p class="cn_title">
+                              <img
+                                src="../../mock/portal_contents/img/sample/userimage/sample/list04.jpg"
+                                alt=""
+                                width="50"
+                                height="50"
+                                class=""
+                              />
+                            </p>
+                          </dt>
+                          <dd class="cf">
+                            <p class="cn_detail w100">
+                              <span class="icon-community"
+                                >井手 勤さんの部屋</span
+                              >
+                            </p>
+                            <p class="cn_detail">
+                              <span class="icon-bubbles"
+                                ><span class="notification">9</span
+                                >家族連絡ノート</span
+                              >
+                            </p>
+                            <p class="cn_date">
+                              <span class="icon-timeline">5/7 10:03</span>
+                            </p>
+                          </dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="unread icon-Aarrow-right">
+                      <a href="community/care_report/careReport.html">
+                        <dl class="cf">
+                          <dt class="mb5 cf">
+                            <p class="cn_title">
+                              <img
+                                src="../../mock/portal_contents/img/sample/userimage/sample/list01.jpg"
+                                alt=""
+                                width="50"
+                                height="50"
+                                class=""
+                              />
+                            </p>
+                          </dt>
+                          <dd class="cf">
+                            <p class="cn_detail w100">
+                              <span class="icon-community"
+                                >鶴田 寛子さんの部屋</span
+                              >
+                            </p>
+                            <p class="cn_detail">
+                              <span class="icon-bubbles"
+                                ><span class="notification">2</span>連絡帳</span
+                              >
+                            </p>
+                            <p class="cn_date">
+                              <span class="icon-timeline">5/7 10:03</span>
+                            </p>
+                          </dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="icon-Aarrow-right">
+                      <a href="community/care_report/careReport.html">
+                        <dl class="cf">
+                          <dt class="mb5 cf">
+                            <p class="cn_title">
+                              <img
+                                src="../../mock/portal_contents/img/sample/koureisha/20009004042.jpg"
+                                alt=""
+                                width="50"
+                                height="50"
+                                class=""
+                              />
+                            </p>
+                          </dt>
+                          <dd class="cf">
+                            <p class="cn_detail w100">
+                              <span class="icon-community"
+                                >大矢 明音さんの部屋</span
+                              >
+                            </p>
+                            <p class="cn_detail">
+                              <span class="icon-bubbles">連絡帳</span>
+                            </p>
+                            <p class="cn_date">
+                              <span class="icon-timeline">5/3 23:32</span>
+                            </p>
+                          </dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="icon-Aarrow-right">
+                      <a href="community/care_report/careReport.html">
+                        <dl class="cf">
+                          <dt class="mb5 cf">
+                            <p class="cn_title">
+                              <img
+                                src="../../mock/portal_contents/img/sample/koureisha/02336001472.jpg"
+                                alt=""
+                                width="50"
+                                height="50"
+                                class=""
+                              />
+                            </p>
+                          </dt>
+                          <dd class="cf">
+                            <p class="cn_detail w100">
+                              <span class="icon-community"
+                                >中尾 優香さんの部屋</span
+                              >
+                            </p>
+                            <p class="cn_detail">
+                              <span class="icon-bubbles">連絡帳</span>
+                            </p>
+                            <p class="cn_date">
+                              <span class="icon-timeline">5/3 22:20</span>
+                            </p>
+                          </dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="icon-Aarrow-right">
+                      <a href="community/care_report/careReport.html">
+                        <dl class="cf">
+                          <dt class="mb5 cf">
+                            <p class="cn_title">
+                              <img
+                                src="../../mock/portal_contents/img/sample/koureisha/00362010854.jpg"
+                                alt=""
+                                width="50"
+                                height="50"
+                                class=""
+                              />
+                            </p>
+                          </dt>
+                          <dd class="cf">
+                            <p class="cn_detail w100">
+                              <span class="icon-community"
+                                >川村 繁夫さんの部屋</span
+                              >
+                            </p>
+                            <p class="cn_detail">
+                              <span class="icon-bubbles">服薬管理</span>
+                            </p>
+                            <p class="cn_date">
+                              <span class="icon-timeline">5/1 21:02</span>
+                            </p>
+                          </dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="unread icon-Aarrow-right">
+                      <a href="community/care_report/careReport.html">
+                        <dl class="cf">
+                          <dt class="mb5 cf">
+                            <p class="cn_title">
+                              <img
+                                src="../../mock/portal_contents/img/sample/koureisha/01520011485.jpg"
+                                alt=""
+                                width="50"
+                                height="50"
+                                class=""
+                              />
+                            </p>
+                          </dt>
+                          <dd class="cf">
+                            <p class="cn_detail w100">
+                              <span class="icon-community"
+                                >篠田 崇さんの部屋</span
+                              >
+                            </p>
+                            <p class="cn_detail">
+                              <span class="icon-bubbles"
+                                ><span class="notification">5</span>連絡帳</span
+                              >
+                            </p>
+                            <p class="cn_date">
+                              <span class="icon-timeline">4/30 9:03</span>
+                            </p>
+                          </dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <!--<li class="unread icon-Aarrow-right"><a href="community/care_report/careReport.html">
+              <dl class="cf">
+                <dt class="mb5 cf">
+                	<p class="cn_title"><span class="icon-community">篠田 崇さんの部屋</span></p>
+                </dt>
+                <dd class="cf">
+					<p class="cn_detail"><span class="icon-bubbles"><span class="notification">(99+)</span>長いトピックス名の確認用かくにんよう確認確カクニン</span></p>
+                	<p class="cn_date"><span class="icon-timeline">2017/4/30 9:03</span></p>
+				</dd>
+              </dl>
+            </a></li>-->
+                    <li class="icon-Aarrow-right">
+                      <a href="community/care_report/careReport.html">
+                        <dl class="cf">
+                          <dt class="mb5 cf">
+                            <p class="cn_title">
+                              <img
+                                src="../../mock/portal_contents/img/sample/userimage/green02.jpg"
+                                alt=""
+                                width="50"
+                                height="50"
+                                class=""
+                              />
+                            </p>
+                          </dt>
+                          <dd class="cf">
+                            <p class="cn_detail w100">
+                              <span class="icon-community"
+                                >中尾 優香さんの部屋</span
+                              >
+                            </p>
+                            <p class="cn_detail">
+                              <span class="icon-bubbles">家族連絡用</span>
+                            </p>
+                            <p class="cn_date">
+                              <span class="icon-timeline">2016/4/20</span>
+                            </p>
+                          </dd>
+                        </dl>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="slide_area">
+                    <ul class="community_notice">
+                      <li class="unread icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >介護 カナさんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles"
+                                  ><span class="notification">10</span
+                                  >利用者情報共有</span
+                                >
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/10 17:29</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >鶴岡 柚香さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles">連絡帳</span>
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/8 13:19</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="unread icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >平野 晴彦さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles"
+                                  ><span class="notification">99+</span
+                                  >連絡帳</span
+                                >
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/8 10:03</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="unread icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >井手 勤さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles"
+                                  ><span class="notification">9</span
+                                  >家族連絡ノート</span
+                                >
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/7 10:03</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="unread icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >鶴田 寛子さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles"
+                                  ><span class="notification">2</span
+                                  >連絡帳</span
+                                >
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/7 10:03</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >大矢 明音さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles">連絡帳</span>
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/3 23:32</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >中尾 優香さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles">連絡帳</span>
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/3 22:20</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >川む～～～～～～～～～～～～～～～～～～～～～～ら
+                                  繁夫さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles">服薬管理</span>
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">5/1 21:02</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="unread icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >篠田 崇さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles"
+                                  ><span class="notification">(3)</span
+                                  >長いトピックス名の確認用かくにんよう確認確カクニン</span
+                                >
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">4/30 9:03</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="icon-Aarrow-right">
+                        <a href="community/care_report/careReport.html">
+                          <dl class="cf">
+                            <dt class="mb5 cf">
+                              <p class="cn_title">
+                                <img
+                                  src="../../mock/portal_contents/img/sample/userimage/community_photo.jpg"
+                                  alt=""
+                                  width="50"
+                                  height="50"
+                                  class=""
+                                />
+                              </p>
+                            </dt>
+                            <dd class="cf">
+                              <p class="cn_detail w100">
+                                <span class="icon-community"
+                                  >中尾 優香さんの部屋</span
+                                >
+                              </p>
+                              <p class="cn_detail">
+                                <span class="icon-bubbles">家族連絡用</span>
+                              </p>
+                              <p class="cn_date">
+                                <span class="icon-timeline">2016/4/20</span>
+                              </p>
+                            </dd>
+                          </dl>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="slide_btn tc p10">
+                    <span class="icon-arrow-down f18"></span>もっとみる
+                  </p>
+                </div>
+                <p class="slide_btn_Mobile tc p10">
+                  <span class="icon-arrow-down f18"></span>もっとみる
+                </p>
+                <!-- スマホ用 -->
+              </div>
+            </div>
+            <!-- section -->
+
+            <div id="section" class="fl topGadget">
+              <h2 id="systemlist">
+                <span class="icon-system"></span>ご利用システム
+              </h2>
+              <div class="appSection mb10">
+                <ul id="appArea" class="pkg">
+                  <li>
+                    <a href="old_design/portal/community/index.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/community.png"
+                        alt="コミュニティ"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">
+                      コミュニティ<br />
+                      <span class="orangeTxt fb">（3）</span>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="message/index.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/message2.png"
+                        alt="メッセージ"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">
+                      メッセージ<br />
+                      <span class="orangeTxt fb">（8）</span>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="old_design/portal/calendar/index.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/cal.png"
+                        alt="カレンダー"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">カレンダー</p>
+                  </li>
+                  <li>
+                    <a href="house_care/index.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/house_care.png"
+                        alt="訪問介護記録"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">
+                      訪問介護<br />
+                      記録
+                    </p>
+                  </li>
+                  <li>
+                    <a href="day_service/health.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/day_service.png"
+                        alt="通所介護記録"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">
+                      通所介護<br />
+                      記録
+                    </p>
+                  </li>
+                  <li>
+                    <a href="day_service/car.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/car.png"
+                        alt="配車確認"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">配車確認</p>
+                  </li>
+                  <li>
+                    <a href="old_design/care_watcher/index.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/cw.png"
+                        alt="ケアウォッチャー"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">ケアウォッチャー</p>
+                  </li>
+                  <li>
+                    <a href="old_design/portal/kintai/index.html"
+                      ><img
+                        src="../../mock/portal_contents/img/icon/mypage/calculation.png"
+                        alt="勤怠・給与"
+                        class="btn"
+                    /></a>
+                    <p class="mb0">勤怠・給与</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide_area_Mobile">
+                <div class="appSection mb10">
+                  <ul class="pkg">
+                    <li>
+                      <a href="old_design/portal/saiken/index.html"
+                        ><img
+                          src="../../mock/portal_contents/img/icon/mypage/saiken.png"
+                          alt="債権"
+                          class="btn"
+                      /></a>
+                      <p class="mb0 appLH">債権管理</p>
+                    </li>
+                    <li>
+                      <a href="old_design/portal/bi/index.html"
+                        ><img
+                          src="../../mock/portal_contents/img/icon/mypage/bi.png"
+                          alt="分析"
+                          class="btn"
+                      /></a>
+                      <p class="mb0">分析</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- systemlist -->
+                <div class="systemSection">
+                  <div class="subSectionMiddle">
+                    <h4 class="cic">居宅介護支援事業所</h4>
+                    <ul class="cf">
+                      <li><a href="#">居宅支援事業所</a></li>
+                    </ul>
+                    <h4 class="cic">ケアマネジャー</h4>
+                    <ul class="cf">
+                      <li><a href="#">居宅支援事業所 ケアマネジャー</a></li>
+                    </ul>
+                    <h4 class="cic">サービス事業所</h4>
+                    <ul class="cf">
+                      <li><a href="#">訪問看護ステーション</a></li>
+                      <li><a href="#">訪問介護事業所</a></li>
+                    </ul>
+                    <h4 class="ham">事業所管理用</h4>
+                    <ul class="cf">
+                      <li><a href="#">訪問看護ステーション</a></li>
+                      <li><a href="#">訪問介護事業所</a></li>
+                    </ul>
+                    <h4 class="tri">トリトラス</h4>
+                    <ul class="cf">
+                      <li><a href="#">トリトラス業務</a></li>
+                    </ul>
+                  </div>
+                  <!-- subSectionMiddle -->
+                  <div class="systemSectionBottom">
+                    <p>
+                      <a
+                        class="venobox"
+                        data-type="iframe"
+                        href="popup/all_system.html"
+                        ><span
+                          class="icon-arrow-right22 f14"
+                          style="font-weight:normal;"
+                        ></span
+                        >全てを表示</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- systemSection -->
+              <p id="system_more" class="slide_btn_Mobile tc p10">
+                <span class="icon-arrow-down f18"></span>他のシステムを表示する
+              </p>
+            </div>
+            <div id="sectionR" class="topGadget fl m0">
+              <h2 id="pickup"><span class="icon-news"></span>ニュース</h2>
+              <div class="banner_area">
+                <!-- タグ　8個　start -->
+                <a href="https://www.kanamic.net/uvc/" target="blank_">
+                  <img
+                    src="https://cdn.ad.kanamic.com/3/9e94d5a5-619c-457e-998e-76f1e18c19ff1587626219400.jpg"
+                /></a>
+
+                <a href="#"
+                  ><img
+                    src="https://cdn.ad.kanamic.com/3/8f306924-3c76-4b87-9d1a-79526c0c086a1588301570201.png"
+                /></a>
+
+                <a href="#"
+                  ><img
+                    src="https://cdn.ad.kanamic.com/3/7971f089-f82d-4cee-ae67-6b5bd4e44ac91589523980083.jpg"
+                /></a>
+
+                <a href="#"
+                  ><img
+                    src="https://cdn.ad.kanamic.com/3/9ce7cbdf-0860-4390-81ce-c7476cfcfb6c1590055413533.jpg"
+                /></a>
+                <!-- <script type="text/javascript" src="https://cdn.ad.kanamic.com/js/admiral.js" charset="UTF-8" async="true"></script>
+            <ins id="KV6BK520TOGWH551" class="admiral"></ins>
+            <script type="text/javascript">
+            window.admiral = window.admiral || {};
+            window.admiral.display = window.admiral.display || function(data){ admiral.dataList = admiral.dataList ? admiral.dataList : []; admiral.dataList.push(data); };
+            window.admiral.display({"mfk": "KV6BK520TOGWH551", "uid":["111111"], "c":[], "l":[], "s":["2"]});
+            </script>
+            <script type="text/javascript" src="https://cdn.ad.kanamic.com/js/admiral.js" charset="UTF-8" async="true"></script>
+            <ins id="KV6BK520TOGWH551" class="admiral"></ins>
+            <script type="text/javascript">
+            window.admiral = window.admiral || {};
+            window.admiral.display = window.admiral.display || function(data){ admiral.dataList = admiral.dataList ? admiral.dataList : []; admiral.dataList.push(data); };
+            window.admiral.display({"mfk": "KV6BK520TOGWH551", "uid":["111111"], "c":[], "l":[], "s":["2"]});
+            </script>
+            <script type="text/javascript" src="https://cdn.ad.kanamic.com/js/admiral.js" charset="UTF-8" async="true"></script>
+            <ins id="KV6BK520TOGWH551" class="admiral"></ins>
+            <script type="text/javascript">
+            window.admiral = window.admiral || {};
+            window.admiral.display = window.admiral.display || function(data){ admiral.dataList = admiral.dataList ? admiral.dataList : []; admiral.dataList.push(data); };
+            window.admiral.display({"mfk": "KV6BK520TOGWH551", "uid":["111111"], "c":[], "l":[], "s":["2"]});
+            </script>
+            <script type="text/javascript" src="https://cdn.ad.kanamic.com/js/admiral.js" charset="UTF-8" async="true"></script>
+            <ins id="KV6BK520TOGWH551" class="admiral"></ins>
+            <script type="text/javascript">
+            window.admiral = window.admiral || {};
+            window.admiral.display = window.admiral.display || function(data){ admiral.dataList = admiral.dataList ? admiral.dataList : []; admiral.dataList.push(data); };
+            window.admiral.display({"mfk": "KV6BK520TOGWH551", "uid":["111111"], "c":[], "l":[], "s":["2"]});
+            </script>
+            <script type="text/javascript" src="https://cdn.ad.kanamic.com/js/admiral.js" charset="UTF-8" async="true"></script>
+            <ins id="KV6BK520TOGWH551" class="admiral"></ins>
+            <script type="text/javascript">
+            window.admiral = window.admiral || {};
+            window.admiral.display = window.admiral.display || function(data){ admiral.dataList = admiral.dataList ? admiral.dataList : []; admiral.dataList.push(data); };
+            window.admiral.display({"mfk": "KV6BK520TOGWH551", "uid":["111111"], "c":[], "l":[], "s":["2"]});
+            </script>
+            <script type="text/javascript" src="https://cdn.ad.kanamic.com/js/admiral.js" charset="UTF-8" async="true"></script>
+            <ins id="KV6BK520TOGWH551" class="admiral"></ins>
+            <script type="text/javascript">
+            window.admiral = window.admiral || {};
+            window.admiral.display = window.admiral.display || function(data){ admiral.dataList = admiral.dataList ? admiral.dataList : []; admiral.dataList.push(data); };
+            window.admiral.display({"mfk": "KV6BK520TOGWH551", "uid":["111111"], "c":[], "l":[], "s":["2"]});
+            </script>-->
+                <!-- タグ　8個　end -->
+              </div>
+              <!--<div class="news-tab">
+            <div class="newsmenu select">総　合</div>
+            <div class="newsmenu">医　療</div>
+            <div class="newsmenu">介　護</div>
+            <div class="newsmenu">その他</div>
+          </div>-->
+              <!-- news-tab -->
+              <!--          <div class="banner_area cf unDisplay_Mobile">
+              <div><a href="#"><img src="img/banner/300x120_kanamic_kanaeru2.jpg" width="300" height="120" /></a></div>
+              <div><a href="#"><img src="img/banner/300x120_kanamic_systemseminar.jpg" width="300" height="120" /></a></div>
+              <div><a href="#"><img src="img/banner/300x120_kanamic_systemseminar.jpg" width="300" height="120" /></a></div>
+              <div><a href="#"><img src="img/banner/300x120_kanamic_kanaeru2.jpg" width="300" height="120" /></a></div>
+            </div>
+          <div class="banner_area cf unDisplay_Tab-PC">
+              <a href="#"><img src="img/banner/300x120_kanamic_kanaeru2.jpg"  /></a>
+            </div>-->
+              <div class="news-line">
+                <!--<div style="width:100%; padding:25px 0; margin:0 0 10px 0; text-align: center; border:1px solid #aaa; background-color:#efefef;">ここにバナーが入るイメージ</div>-->
+                <div class="news-content">
+                  <ul class="news_list cf">
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          急変時対応救急搬送　適切な連携体制提案へ
+                        </p>
+                        <p class="sub_txt_area">
+                          2017/05/26 <span class="new">NEW!</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          ニーズに応える多様なデイ展開「行きたい」意欲が自立に
+                        </p>
+                        <p class="sub_txt_area">
+                          2017/05/20 <span class="new">NEW!</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <!--                <li class="cf"><a href="news/index.html">
+                  <div class="news_list_thmb"><img src="img/sample/image/news_04.jpg" alt="ニュースの写真" width="50px;" /></div>
+					<div class="news_list_txt"><p>シマンテック、データセンターのサーバーを保護する製品を発表<span class="pr">PR</span></p></div></a>
+                </li>-->
+                    <li class="cf">
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          専門医の診察数が、かかりつけ医を上回る
+                        </p>
+                        <span class="sub_txt_area"
+                          >2017/05/20 <span class="new">NEW!</span></span
+                        ></a
+                      >
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          認知症対応に関する論点など提示
+                        </p>
+                        <p class="sub_txt_area">
+                          2017/05/18 <span class="new">NEW!</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          ウェアラブル端末の未来、半導体メーカーはどう見るか
+                        </p>
+                        <p class="sub_txt_area">2017/05/17</p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          「仕高住」で認知症予防　経済産業省ヘルスケア産業課
+                        </p>
+                        <p class="sub_txt_area">2017/05/15</p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          専門医の診察数が、かかりつけ医を上回る
+                        </p>
+                        <p class="sub_txt_area">2017/05/17</p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          ウェアラブル端末の未来、半導体メーカーはどう見るか
+                        </p>
+                        <p class="sub_txt_area">2017/05/17</p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          専門医の診察数が、かかりつけ医を上回る
+                        </p>
+                        <p class="sub_txt_area">2017/05/17</p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                    <li>
+                      <a href="news/index.html">
+                        <p class="main_txt_area">
+                          赤ちゃんとの添い寝に潜む危険性
+                        </p>
+                        <p class="sub_txt_area">2017/05/17</p>
+                      </a>
+                    </li>
+                    <!-- タグ　start -->
+                    <li class="cf">
+                      <script
+                        type="text/javascript"
+                        src="https://cdn.ad.kanamic.com/js/admiral.js"
+                        charset="UTF-8"
+                        async="true"
+                      ></script>
+                      <ins id="M6MA41IQHA5A2951" class="admiral"></ins>
+                      <script type="text/javascript">
+                        window.admiral = window.admiral || {};
+                        window.admiral.display =
+                          window.admiral.display ||
+                          function(data) {
+                            admiral.dataList = admiral.dataList
+                              ? admiral.dataList
+                              : [];
+                            admiral.dataList.push(data);
+                          };
+                        window.admiral.display({
+                          mfk: "M6MA41IQHA5A2951",
+                          uid: ["111111"],
+                          c: [],
+                          l: [],
+                          s: ["2"]
+                        });
+                      </script>
+                    </li>
+                    <!-- タグ　end -->
+                  </ul>
+                  <a href="news/index.html" class="more_btn01"
+                    ><span class="icon-arrow-right"></span>他の記事も見る</a
+                  >
+                </div>
+                <!-- news-content -->
+                <div class="news-content hide">
+                  <ul class="news_list cf">
+                    <li>
+                      <a href="news/index.html"
+                        >専門医の診察数が、かかりつけ医を上回る</a
+                      >
+                    </li>
+                    <li>
+                      <a href="news/index.html"
+                        >赤ちゃんとの添い寝に潜む危険性</a
+                      >
+                    </li>
+                    <li>
+                      <a href="news/index.html"
+                        >あまり知られていないメロンに隠された老化予防の効果</a
+                      >
+                    </li>
+                  </ul>
+                  <a href="news/index.html" class="more_btn01"
+                    ><span class="icon-arrow-right"></span>他の記事も見る</a
+                  >
+                </div>
+
+                <!-- news-content -->
+              </div>
+              <!-- news-line -->
+            </div>
+          </div>
+        </div>
+        <!-- pageContents -->
+
+        <p class="pageTop clear">
+          <a href="#pagetop"
+            ><span class="icon-page-top f18"></span>ページの先頭へ</a
+          >
+        </p>
+        <div id="footer">
+          <div class="boder"></div>
+          <ul>
+            <li class="line">
+              <a
+                target="_blank"
+                href="http://www.kanamic.net/company/outline.html"
+                >会社概要</a
+              >
+            </li>
+            <li class="line">
+              <a
+                target="_blank"
+                href="http://www.kanamic.net/company/privacy.html"
+                >プライバシーポリシー</a
+              >
+            </li>
+            <li><a href="../rule/index.html" title="">利用規約</a></li>
+          </ul>
+          <p>Copyright(c) <span class="year"></span> Kanamic Network Co.,LTD</p>
+        </div>
+        <!-- footer -->
+      </div>
+      <!-- page -->
+    </div>
+    <!-- pagetop -->
+  </body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:/contents/
+Disallow:/siryou/
+Disallow:/login.html
+
+Sitemap:https://www.kanamic.net/sitemap.xml

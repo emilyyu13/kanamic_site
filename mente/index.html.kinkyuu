@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mente.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>システムメンテナンスのお知らせ</title>
+<!-- InstanceEndEditable -->
+<meta name="copyright" content="http://www.kanamic.net" />
+
+<link rel="start" href="http://www.kanamic.net/" title="Home" />
+<link rel="Shortcut Icon" href="http://www.kanamic.net/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="../common/css/import_mente.css" rel="stylesheet" type="text/css" media="screen,tv" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="../common/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>DD_belatedPNG.fix('.png_bg,.iepngfix');</script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="container">
+<h1><img src="http://www.kanamic.net/common/img/logo_kanamic_error.png" alt="カナミックネットワーク" width="295" height="44" title="カナミックネットワーク" class="iepngfix" /></h1>
+
+<h2><img src="../common/img/txt_mente.png" alt="弊社システムをご利用の皆様へ" width="383" height="28" class="iepngfix" title="弊社システムをご利用の皆様へ" /></h2>
+
+<div class="main">
+<p>いつも弊社のサービスをご利用いただきありがとうございます。</p>
+<p>弊社のネットワークサービス｢CICシステム｣と「HAMシステム」、「TRITRUSシステム」は、システムメンテナンスの為、<br />
+サービスが一時停止となります。</p>
+<p class="mb0">ご迷惑をおかけしますが、ご了承の程宜しくお願い致します。</p>
+</div>
+
+<address>
+All Rights Reserved. Copyright &copy;KANAMIC NETWORK Co.LTD 2000-<script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script>
+</address>
+</div>
+</body>
+<!-- InstanceEnd --></html>

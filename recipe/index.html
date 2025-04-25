@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head>  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W54DTMS');</script>
+<!-- End Google Tag Manager -->
+	  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MZL6ZGP');</script>
+<!-- End Google Tag Manager -->
+
+<META name="y_key" content="3ad4f7111b8002dc">
+<meta name="google-site-verification" content="jnDOhLa2J_9Fv50_o5kXFX4lRwBbspcW_HEzxhhT71I" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="Description" content="介護食レシピシミュレーターは簡単に調理出来る介護食メニューを豊富に掲載しています。" />
+<meta name="copyright" content="http://www.kanamic.net" />
+<title>介護食レシピシミュレーター</title>
+<link rel="Shortcut Icon" href="http://www.kanamic.net/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="css/import.css" rel="stylesheet" type="text/css" media="screen,tv" />
+<link href="css/simulator.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common/js/jquery-1.2.3.pack.js"></script>
+<script type="text/javascript" src="../common/js/thickbox-3.1.js"></script>
+<script type="text/javascript" src="../common/js/yuga-0.6.1.js"></script>
+<script type="text/javascript" src="js/recipe_v1.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-462660-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body onLoad="init();">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZL6ZGP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="recipePage">
+  <div id="header">
+    <h1><img src="img/h1.jpg" alt="介護レシピシミュレーター" width="411" height="42" border="0" /></h1>
+    <p><a href="../"><img src="img/kanamic_link.jpg" alt="カナミックのホームページへ" border="0" class="btn"/></a></p>
+  </div>
+  <div class="section01 pkg">
+    <h2 align="center"><img src="img/h2.jpg" alt="高機能なレシピシミュレーター" width="661" height="120" /></h2>
+    <p class="mb20 ml20">献立を考えるのって結構面倒ですよね。この介護食レシピシミュレーターは簡単に調理出来る介護食メニューを豊富に掲載しています。 使い方は簡単、プルダウンメニューから作りたい献立メニューを選択して「作り方を表示する」ボタンを押せばレシピが表示されます。保存ボタンを押せば下のボックスに献立が保存されます。 カロリーや含まれる栄養素も朝食/昼食/夕食別、合計も表示されるので、面倒な計算も不要です。是非お役立て下さい。</p>
+    <div id="simulator">
+      <form name=myform action=../html/recipe/skill_search.php method=get>
+        <p class="select">食事ジャンルを選択してください</p>
+        <select name=type onChange='filter()'>
+          <option value="w">和食</option>
+          <option value="g">洋食</option>
+        </select>
+        <p class="select">メニューを選択してください</p>
+        <!-- 左右フッタースタート -->
+        <div id="areaLeft">
+          <table width="290" border="0" cellpadding="0" cellspacing="0" class="recipeTableLeft">
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="breakfastTop"><img src="img/recipe_breakfast.gif" alt="朝食" width="110" height="25"></td>
+            </tr>
+            <tr>
+              <td class="breakfastMiddle"><select name=equip1 onChange='setdata(1, this.value);' onFocus='document.myform.save1.value="↓保存"' style='width:250px'>
+                  <option value=loading></option>
+                </select>
+                <input type=hidden name=desc1 cols=25 rows=3>
+                <input name=save1 type=button value="↓保存" onClick='equip_edit(1, this.value);'>
+                <br>
+                <select name=stock1 onChange='copydata(1, this.value); setdata(1, this.value);' onFocus='copydata(1, this.value); setdata(1, this.value);document.myform.save1.value="×削除";' style='width:250px' size=3>
+                  <option value="0">ここにメニューの候補を保存できます</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td class="breakfastBottom"><a onClick="makingOpen(document.forms[0].breakfast14.value);"><img src="img/recipe_bf_btn.gif" alt="作り方を表示する" name="make01" width="120" height="25" border="0" id="make01" class="btn"></a></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="lunchTop"><p><img src="img/recipe_lunch.gif" alt="昼食" width="110" height="25" /></p></td>
+            </tr>
+            <tr>
+              <td class="lunchMiddle"><select name=equip2 onChange='setdata(2, this.value);' onFocus='document.myform.save2.value="↓保存"' style='width:250px'>
+                  <option value=loading></option>
+                </select>
+                <input type=hidden name=desc2 cols=25 rows=3>
+                <input name=save2 type=button value="↓保存" onClick='equip_edit(2, this.value);'>
+                <br>
+                <select name=stock2 onChange='copydata(2, this.value); setdata(2, this.value);' onFocus='copydata(2, this.value); setdata(2, this.value);document.myform.save2.value="×削除";' style='width:250px' size=3>
+                  <option value="0">ここにメニューの候補を保存できます</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td class="lunchBottom"><a onClick="makingOpen(document.forms[0].lunch14.value);"><img src="img/recipe_lc_btn.gif" alt="作り方を表示する" name="make02" width="120" height="25" border="0" id="make02" class="btn"></a></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="dinnerTop"><img src="img/recipe_dinner.gif" alt="夕食" width="110" height="25"></td>
+            </tr>
+            <tr>
+              <td class="dinnerMiddle"><select name=equip3 onChange='setdata(3, this.value);' onFocus='document.myform.save3.value="↓保存"' style='width:250px'>
+                  <option value=loading></option>
+                </select>
+                <input type=hidden name=desc3 cols=25 rows=3>
+                <input name=save3 type=button value="↓保存" onClick='equip_edit(3, this.value);'>
+                <br>
+                <select name=stock3 onChange='copydata(3, this.value); setdata(3, this.value);' onFocus='copydata(3, this.value); setdata(3, this.value);document.myform.save3.value="×削除";' style='width:250px' size=3>
+                  <option value="0">ここにメニューの候補を保存できます</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td class="dinnerBottom"><a onClick="makingOpen(document.forms[0].dinner14.value);"><a onclick="makingOpen(document.forms[0].dinner14.value);"><img src="img/recipe_dn_btn.gif" alt="作り方を表示する" name="make03" width="120" height="25" border="0" id="make03" class="btn" /></a></a></td>
+            </tr>
+          </table>
+        </div>
+        <!-- 栄養素表示エリア -->
+        <div id="areaRight">
+          <table width="385" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="bg01"><img src="img/recipe_nourishment.gif" alt="栄養素一覧" width="160" height="25"></td>
+            </tr>
+            <tr>
+              <td><table width=385 border=0 cellpadding=3 cellspacing=0 class="recipeTableRight">
+                  <tr>
+                    <th>栄養素</th>
+                    <th>朝食</th>
+                    <th>昼食</th>
+                    <th>夕食</th>
+                    <th>計</th>
+                  <tr>
+                    <td>エネルギー</td>
+                    <td><input type=text size=5 name=breakfast1>
+                      kcal</td>
+                    <td><input type=text size=5 name=lunch1>
+                      kcal</td>
+                    <td><input type=text size=5 name=dinner1>
+                      kcal</td>
+                    <td><input type=text size=5 name=total1>
+                      kcal</td>
+                  </tr>
+                  <tr>
+                    <td>たんぱく質</td>
+                    <td><input type=text size=5 name=breakfast2>
+                      g</td>
+                    <td><input type=text size=5 name=lunch2>
+                      g</td>
+                    <td><input type=text size=5 name=dinner2>
+                      g</td>
+                    <td><input type=text size=5 name=total2>
+                      g</td>
+                  </tr>
+                  <tr>
+                    <td>脂質</td>
+                    <td><input type=text size=5 name=breakfast3>
+                      g</td>
+                    <td><input type=text size=5 name=lunch3>
+                      g</td>
+                    <td><input type=text size=5 name=dinner3>
+                      g</td>
+                    <td><input type=text size=5 name=total3>
+                      g</td>
+                  </tr>
+                  <tr>
+                    <td>炭水化物</td>
+                    <td><input type=text size=5 name=breakfast4>
+                      g</td>
+                    <td><input type=text size=5 name=lunch4>
+                      g</td>
+                    <td><input type=text size=5 name=dinner4>
+                      g</td>
+                    <td><input type=text size=5 name=total4>
+                      g</td>
+                  </tr>
+                  <tr>
+                    <td>カルシウム</td>
+                    <td><input type=text size=5 name=breakfast5>
+                      mg</td>
+                    <td><input type=text size=5 name=lunch5>
+                      mg</td>
+                    <td><input type=text size=5 name=dinner5>
+                      mg</td>
+                    <td><input type=text size=5 name=total5>
+                      mg</td>
+                  </tr>
+                  <tr>
+                    <td>鉄</td>
+                    <td><input type=text size=5 name=breakfast6>
+                      mg</td>
+                    <td><input type=text size=5 name=lunch6>
+                      mg</td>
+                    <td><input type=text size=5 name=dinner6>
+                      mg</td>
+                    <td><input type=text size=5 name=total6>
+                      mg</td>
+                  </tr>
+                  <tr>
+                    <td>ビタミンＡ</td>
+                    <td><input type=text size=5 name=breakfast7>
+                      IU</td>
+                    <td><input type=text size=5 name=lunch7>
+                      IU</td>
+                    <td><input type=text size=5 name=dinner7>
+                      IU</td>
+                    <td><input type=text size=5 name=total7>
+                      IU</td>
+                  </tr>
+                  <tr>
+                    <td>ビタミンＢ１</td>
+                    <td><input type=text size=5 name=breakfast8>
+                      mg</td>
+                    <td><input type=text size=5 name=lunch8>
+                      mg</td>
+                    <td><input type=text size=5 name=dinner8>
+                      mg</td>
+                    <td><input type=text size=5 name=total8>
+                      mg</td>
+                  </tr>
+                  <tr>
+                    <td>ビタミンＢ２</td>
+                    <td><input type=text size=5 name=breakfast9>
+                      mg</td>
+                    <td><input type=text size=5 name=lunch9>
+                      mg</td>
+                    <td><input type=text size=5 name=dinner9>
+                      mg</td>
+                    <td><input type=text size=5 name=total9>
+                      mg</td>
+                  </tr>
+                  <tr>
+                    <td>ビタミンＣ</td>
+                    <td><input type=text size=5 name=breakfast10>
+                      mg</td>
+                    <td><input type=text size=5 name=lunch10>
+                      mg</td>
+                    <td><input type=text size=5 name=dinner10>
+                      mg</td>
+                    <td><input type=text size=5 name=total10>
+                      mg</td>
+                  </tr>
+                  <tr>
+                    <td>ビタミンＥ</td>
+                    <td><input type=text size=5 name=breakfast11>
+                      mg</td>
+                    <td><input type=text size=5 name=lunch11>
+                      mg</td>
+                    <td><input type=text size=5 name=dinner11>
+                      mg</td>
+                    <td><input type=text size=5 name=total11>
+                      mg</td>
+                  </tr>
+                  <tr>
+                    <td>食塩相当量</td>
+                    <td><input type=text size=5 name=breakfast12>
+                      g</td>
+                    <td><input type=text size=5 name=lunch12>
+                      g</td>
+                    <td><input type=text size=5 name=dinner12>
+                      g</td>
+                    <td><input type=text size=5 name=total12>
+                      g</td>
+                  </tr>
+                  <tr>
+                    <td>食物繊維</td>
+                    <td><input type=text size=5 name=breakfast13>
+                      g</td>
+                    <td><input type=text size=5 name=lunch13>
+                      g</td>
+                    <td><input type=text size=5 name=dinner13>
+                      g</td>
+                    <td><input type=text size=5 name=total13>
+                      g</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td class="bg02">&nbsp;</td>
+            </tr>
+          </table>
+          <input type=hidden size=60 name=breakfast14>
+          <input type=hidden size=60 name=lunch14>
+          <input type=hidden size=60 name=dinner14>
+        </div>
+      </form>
+    </div>
+    <div style="text-align:center"></div>
+  </div>
+  <br clear="all"/>
+  <div id="footer">
+    <address>
+    All Rights Reserved. Copyright Kanamic Network Co.,LTD 2000-
+    <script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script>
+    </address>
+    <!--// end #footer ====================-->
+  </div>
+</div>
+</body>
+</html>

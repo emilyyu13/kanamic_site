@@ -1,0 +1,608 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+body {
+    font-family:"Microsoft Yahei","PingHei" ,"sans-serif";
+}
+
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*行の高さをフォントサイズと同じにしています*/
+body {
+    line-height:1;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+/*nav ul {
+    list-style:none;
+}*/
+ol, ul {
+    list-style: none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+    quotes:none;
+}
+
+/*blockquote要素、q要素の前後にコンテンツを追加しないように指定しています*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+/*a要素のフォントサイズなどをリセットしフォントの縦方向の揃え位置を親要素のベースラインに揃えるようにしています*/
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* ins要素のデフォルトをセットし、色を変える場合はここで変更できるようにしています */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* mark要素のデフォルトをセットし、色やフォントスタイルを変える場合はここで変更できるようにしています
+また、mark要素とは、文書内の検索結果で該当するフレーズをハイライトして、目立たせる際に使用するようです。*/
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/*テキストに打ち消し線が付くようにしています*/
+del {
+    text-decoration: line-through;
+}
+
+/*IEではデフォルトで点線を下線表示する設定ではないので、下線がつくようにしています
+また、マウスオーバー時にヘルプカーソルの表示が出るようにしています*/
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+    vertical-align:middle;
+}
+
+/*画像を縦に並べた時に余白が出ないように*/
+img {
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+
+/*box-sizingを全ブラウザに対応*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button,
+button:active,
+button:checked,
+button:focus {
+    outline: none;
+}
+
+
+div.container-fluid.header {
+    position: fixed;
+	background-color: rgba(255,255,255,0.9)!important;
+	border-top: 2px solid #ff0000;
+    z-index: 9999;
+    padding: 0;
+}
+
+div.container-fluid.header img {
+    width: 230px;
+    float: left;
+}
+
+div.container-fluid.header div.nav_area {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+div.nav_area nav li a {
+    color: #333333;
+}
+
+
+
+div.jumbotron {
+	margin-bottom: 0;
+	height: 820px;
+}
+
+div.jumbotron.top {
+    background: url(../img/main_img.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+	padding: 12rem 2rem;
+}
+
+/* スマホ対応 */
+@media only screen and (max-width: 499px) {
+		div.jumbotron.top {
+		    background: none;
+		    background-size: cover;
+		    background-position: center;
+			padding: 5rem 0 1rem;
+		    height: auto;
+			}
+	}
+
+div.jumbotron.top h1 {
+    font-size: 3rem;
+}
+
+div.jumbotron.top p.top_comment {
+    font-size: 2rem;
+    margin: 1rem 0;
+    line-height: 1.5em;
+    text-shadow:3px 6px 5px #ffffff;
+}
+
+@media only screen and (max-width: 499px) {
+    div.jumbotron.top p.top_comment {
+        font-size: 1.5rem;
+    }
+}
+
+div.container-fluid.entry {
+    background: #E64E2F;
+}
+
+div.row.entry_area {
+
+}
+
+div.row.entry_area button {
+    font-size: 1rem;
+    padding: 0.3rem 3rem;
+	margin: 1rem 0;
+}
+
+div.row.entry_area button:hover {
+	background: #ffffff;
+	opacity: 0.9;
+	box-shadow: 0px 2px 2px 0px #a5a5a5;
+}
+
+div.row.entry_area button span {
+    font-size: 1rem;
+}
+
+div.row.entry_area button span.engineer {
+    color: #305BCF;
+    font-weight: bold;
+}
+
+div.row.entry_area button span.designer {
+    color: #049d69;
+    font-weight: bold;
+}
+
+div.row.entry_area button span.entry_text {
+    font-size: 1rem;
+
+}
+
+/* h2テキストの横ライン */
+h2.heading {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+
+.lines-on-sides, 
+h2.heading {
+  display: table;
+  text-align: center;
+  white-space: nowrap;
+  /*ページ内リンク調整*/
+  padding-top: 70px;
+  margin-top: -50px;
+}
+.lines-on-sides:after, 
+h2.heading:after, 
+.lines-on-sides:before, 
+h2.heading:before {
+  content: '';
+  display: table-cell;
+  width: 50%;
+  background: -webkit-linear-gradient(transparent 50%, currentColor 50%, currentColor -webkit-calc(50% + 1px), transparent -webkit-calc(50% + 1px));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, currentColor), color-stop(currentColor calc(50% + 1px)), to(transparent calc(50% + 1px)));
+  background: linear-gradient(transparent 50%, currentColor 50%, currentColor calc(50% + 1px), transparent calc(50% + 1px));
+  -webkit-background-clip: padding;
+  background-clip: padding;
+}
+.lines-on-sides:after, 
+h2.heading:after {
+  border-left: 1em solid transparent;
+  color: #ff0000;
+}
+.lines-on-sides:before, 
+h2.heading:before {
+  border-right: 1em solid transparent;
+  color: #ff0000;
+}
+ 
+
+/* ここまで テキストの横ライン */
+
+
+/* 会社概要 */
+div.container-fluid.message_img {
+    background: url(../img/top_text03.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 2rem;
+}
+
+div.container-fluid.message_img div.container {
+    height: 15rem;
+}
+
+div.container.message h3 {
+    text-align: center;
+    font-size: 34px;
+    margin: 2rem 0 4rem 0;
+}
+
+div.container.message p {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+div.container-fluid.company {
+    background: url(../img/bg_company.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 2rem;
+}
+
+div.container-fluid.company div.container {
+    background-color:rgba(255,255,255,0.8);
+    /* box-shadow */
+    box-shadow:3px 3px 6px -2px #333333;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 499px) {
+    div.container-fluid.company {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }	
+}
+
+
+
+div.container-fluid.company h3 {
+	font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+div.container-fluid.company ul {
+    margin-bottom: 30px;
+}
+
+div.container-fluid ul li {
+	padding: 5px 0;
+	font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+div.container-fluid.company div.container p {
+    line-height: 1.5em;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+div.container-fluid.company div.container button.japan {
+    border: 2px solid #ff6600;
+}
+
+div.container-fluid.company div.container button.japan img {
+    width: 1.6rem;
+    margin-right: 0.5rem;
+}
+
+div.container-fluid ul li span,
+div.container-fluid p span {
+	font-weight: bold;
+    font-size: 120%;
+}
+
+
+/* 拠点一覧 */
+div.container-fluid.office {
+	background: url("../img/office_map2022.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 2rem;
+}
+
+div.container-fluid.office div.container {
+    height: 35rem;
+}
+
+@media only screen and (max-width: 499px) {
+div.container-fluid.office {
+    background: none;
+    padding: 0;
+}
+
+	div.container-fluid.office div.container {
+	    height: auto;
+	}
+
+	div.container-fluid.office ul li {
+        font-size: 1.5rem;
+	}
+
+}
+
+/* 社長挨拶 */
+
+div.jumbotron.president {
+    background: url(../img/bg_president.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+	padding: 3rem 2rem;
+}
+
+@media only screen and (max-width: 499px) {
+
+	div.jumbotron.president {
+		background: none;
+	    padding: 0;
+	    height: auto;
+	}
+
+}
+
+div.jumbotron.president div.container h1 {
+    font-size: 2rem;
+    max-width: 30rem;
+}
+
+div.jumbotron.president div.container p.president_comment {
+    font-size: 1rem;
+    line-height: 1.6em;
+    margin: 1rem 0;
+    max-width: 26rem;
+    text-shadow: 2px 1px 5px #ffffff;
+}
+
+div.jumbotron.president div.container p.signature {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    max-width: 26rem;
+    text-align: right;
+}
+
+@media only screen and (max-width: 499px) {
+    div.jumbotron.president div.container p.signature {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+div.jumbotron.president div.container p.signature span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    max-width: 26rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+
+
+/* 業務内容 */
+
+
+div.container div.detail h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/**　一時的に募集職種 **/
+div.container-fluid.detail div.career {
+    margin-bottom: 2rem;
+}
+
+div.container-fluid.detail div.career h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 3px double #ff6600;
+}
+
+
+div.container div.row div.detail {
+    margin-bottom: 2rem
+}
+
+div.container div.row div.detail.engineer h3 {
+	background: #305BCF;
+    color: #ffffff;
+    padding: 0.5rem 0;
+}
+
+div.container div.row div.detail.designer h3 {
+	background: #049d69;
+    color: #ffffff;
+    padding: 0.5rem 0;
+}
+
+div.container div.row div.detail ul.career li {
+    font-size: 1rem;
+}
+
+div.container div.row div.detail ul.career li {
+    float: left;
+    background: #efefef;
+    color: #ffffff;
+    padding: 0.4rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+}
+
+div.container div.row div.detail.engineer ul.career li {
+    background: #305BCF;
+}
+
+div.container div.row div.detail.designer ul.career li {
+    background: #049d69;
+}
+
+div.container div.row div.detail img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+div.container div.row div.detail h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+div.container div.row div.detail.engineer h4 {
+    border-bottom: 1px solid #305BCF;
+}
+
+div.container div.row div.detail.designer h4 {
+    border-bottom: 1px solid #049d69;
+}
+
+div.container div.row div.detail p {
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+}
+
+/* 募集要項・応募条件 */
+div.container-fluid.career div.career table th {
+	width: 10rem;
+}
+
+div.container-fluid.career div.career table td {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+div.container-fluid.footer_img {
+    background: url("../img/footer_text03.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 2rem;
+}
+
+div.container-fluid.footer_img div.container {
+    height: 10rem;
+}
+
+div.container.footer_message p {
+    font-size: 30px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+div.container-fluid.footer {
+    background: #efefef;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid #ee0000;
+    border-top: 1px solid #cccccc;
+    margin-top: 4rem;
+}
+
+
+
+/****** スマホ対応系共通 *****/
+div.mobile_img {
+	display: none;
+}
+
+@media only screen and (max-width: 499px) {
+		div.mobile_img {
+			display: inline-block;
+		}
+
+		div.mobile_img img {
+			width: 100%
+		}
+
+		div.container-fluid {
+
+		}
+}
+
+
+

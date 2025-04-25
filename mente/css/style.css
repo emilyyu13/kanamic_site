@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+ file name  :  style.css
+ style info :  ページ装飾
+=================================================================== */
+
+div#contents {
+	width:100%;
+	height:100%;
+	margin:0 auto 40px auto;
+	padding:20px 0;
+	background:#FFFFFF;
+}
+div#contents h1 {
+	margin:30px;
+}
+div#contents h2 {
+	font-size:25px;
+	margin-bottom:20px;
+}
+div#contents p {
+	line-height:24px;
+}
+div#contents p span {
+	font-size:18px;
+	font-weight:bold;
+	color:#E10000;
+}
+div.menteInfo {
+	width:68%;
+	margin:0 auto;
+	background:url(../img/maintenanceImg.jpg) bottom right no-repeat;
+}
+div.menteInfo p {
+	text-align:left;
+}
+#toraTop {
+	width:100%;
+	height:25px;
+	background:url(../img/tiger-rope.gif) repeat-x;
+	position:fixed;
+	top:0;
+}
+#toraBottom {
+	z-index:-1;
+	width:100%;
+	height:50px;
+	background:url(../img/tiger-rope.gif) repeat-x bottom;
+	position:fixed;
+	bottom:0;
+}
+
+/* ===================================================================
+　　緊急メンテナンス画面
+=================================================================== */
+div#container {
+	width: 550px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+img.position {
+	position: absolute;
+	top: 200px;
+	left: 0;
+}

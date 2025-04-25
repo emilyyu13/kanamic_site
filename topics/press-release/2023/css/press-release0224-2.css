@@ -1,0 +1,72 @@
+/* ------------------------------------------
+press-release0224-2用
+------------------------------------------ */
+.wrapper{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper img{
+    width: 90%;
+}
+
+.imgbox100,
+.w80,
+.news_img
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* トップ画像 */
+.bg_invoice{padding-top: 30px;}
+
+/* 目次 */
+.news_agenda{
+    width: 70%;
+    background: #dde1ca;
+    margin: 2rem auto;
+    padding: 2% 4%;
+}
+.news_agenda h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.1rem;
+}
+.news_agenda li{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+.news_agenda li span{
+    margin-right: 8px;
+}
+
+h3.news_title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 3rem 0 1rem 0;
+}
+
+h4.news_title_orange{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: orange;
+}
+
+h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.invoice_casebox1{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.invoice_casebox2{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+} 
